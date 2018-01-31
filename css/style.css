@@ -45,10 +45,14 @@ body {
     display: inline-block;
     width: 269px;
     margin: 0;
+    transition: all .25s ease-in-out;
 }
 
+.logo:hover {
+    transform: translateY(-4px);
+}
 
-@media (max-width:420px) {
+@media (max-width:767px) {
     .navbar {
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
@@ -64,6 +68,9 @@ body {
         display: inline-block;
         width: 60px;
         margin: 0;
+    }
+    .collapse.show {
+        padding-top: 20px;
     }
 }
 
@@ -83,7 +90,14 @@ body {
     background-image: url('../img/la-poutine-week-jumbotron-banner-illustration-by-loogart.svg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center 100%;
+    background-position: center 40%;
+}
+
+.jumbotron-about {
+    background-image: url('../img/footer-section-illustration.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .jumbotron h2 {
@@ -164,6 +178,17 @@ body {
     color: #fff;
     background-color: #1bc36e;
     border-color: #1bc36e;
+}
+
+.section-text h3 {
+    color: var(--primary);
+    font-weight: bold;
+}
+
+summary {
+    color: #041F41;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 
