@@ -89,8 +89,8 @@ body {
 .img-jumbotron {
     background-image: url('../img/la-poutine-week-jumbotron-banner-illustration-by-loogart.svg');
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center 40%;
+    background-size: 169%;
+    background-position: center 30%;
 }
 
 .jumbotron-about {
