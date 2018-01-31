@@ -4,6 +4,16 @@
     --jumbotron-padding-y: 3rem;
     --jumbotron-margin-t: 4rem;
     --navbar-padding-top: 10px;
+    --primary: #228BD2;
+    --primary-light: #41adf5;
+}
+
+body {
+    background-color: var(--primary);
+}
+
+.bg-dark {
+    background-color: #041F41!important;
 }
 
 /*=========== NAV ==========*/
@@ -13,7 +23,7 @@
     display: inline-block;
     width: 100%;
     height: var(--navbar-padding-top);
-    background-color: #228BD2;
+    background-color: var(--primary);
     position: fixed;
     top: 0;
     left: 0;
@@ -23,18 +33,41 @@
     top: var(--navbar-padding-top);
     -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.21);
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.21);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .navbar-toggler {
     border: 0;
 }
 
+.logo {
+    display: inline-block;
+    width: 269px;
+    margin: 0;
+}
+
+
 @media (max-width:420px) {
+    .navbar {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
     li.nav-item,
     .dropdown-item {
         padding: .4rem;
     }
+    .logo {
+        display: none;
+    }
+    .logo-mobile {
+        display: inline-block;
+        width: 60px;
+        margin: 0;
+    }
 }
+
+
 
 /*=========== MAIN ==========*/
 
@@ -43,13 +76,45 @@
     padding-top: var(--jumbotron-padding-y);
     padding-bottom: var(--jumbotron-padding-y);
     margin-bottom: 0;
-    background-color: #fff;
+    background-color: #041F41;
 }
+
+.img-jumbotron {
+    background-image: url('../img/la-poutine-week-jumbotron-banner-illustration-by-loogart.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 100%;
+}
+
+.jumbotron h2 {
+    color: #F9D877;
+}
+
+@media (max-width: 420px) {
+    .jumbotron h2 {
+        font-size: 1.5rem;
+
+    }
+    .jumbotron h1 {
+        font-size: 2.5rem;
+        margin: 1.5rem auto;
+    }
+
+    .img-jumbotron {
+        background-image: url('../img/la-poutine-week-jumbotron-banner-illustration-by-loogart.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 40% 10px;
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+    }
+}
+
 
 @media (min-width: 768px) {
     .jumbotron {
         padding-top: calc(var(--jumbotron-padding-y) * 2);
-        padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+        padding-bottom: calc(var(--jumbotron-padding-y) * 1.5);
     }
 }
 
@@ -77,12 +142,66 @@
     box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
 }
 
+.btn {
+    border-radius: 5rem;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: var(--primary-light);
+    border-color: var(--primary-light);
+}
+
+.card .btn-primary:not(:disabled):not(.disabled):active,
+.card .btn-primary:not(:disabled):not(.disabled).active,
+.card .show > .btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #1bc36e;
+    border-color: #1bc36e;
+}
+
+
+/*=========== SPONSORS ==========*/
+
+.sponsors-section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-image: url('../img/partners-section-illustration.svg');
+    background-position: 140% 10%;
+    background-repeat: no-repeat;
+    background-size: 144%;
+}
+
 
 /*=========== FOOTER ==========*/
 
 footer {
     padding-top: 3rem;
     padding-bottom: 3rem;
+    background-image: url('../img/footer-section-illustration.svg');
+    background-position: 20% center;
+    background-repeat: no-repeat;
+    background-size: 169%;
+}
+
+footer hr {
+    border-color: rgba(255, 255, 255, .2);
+    border-style: dotted;
+}
+
+footer h5.h3 {
+    color: #F9D877;
+}
+
+footer a,
+footer a:hover {
+    color: #eee;
 }
 
 footer p {

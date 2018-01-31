@@ -18,12 +18,13 @@
 
 <body>
     <header>
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light py-3">
-            <a class="navbar-brand font-weight-bold" href="#">La Poutine Week</a>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            <a href="./" class="logo"><img src="img/logo-poutineweek-full.svg" class="img-fluid"></a>
+            <a href="./" class="logo-mobile"><img src="img/logo-poutineweek.svg" class="img-fluid"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item mx-2 dropdown">
@@ -65,6 +66,9 @@
                         </div>
                     </li>
                     <li class="nav-item mx-2">
+                        <a class="nav-link btn btn-primary btn-sm text-white" href="#"><i class="fa fa-user-circle"></i> Sign in</a>
+                    </li>
+                    <li class="nav-item mx-2">
                         <a class="nav-link" href="#">FR</a>
                     </li>
                 </ul>
@@ -74,19 +78,19 @@
 
     <main role="main">
         <!-- jumbotron -->
-        <section class="jumbotron text-left text-white bg-dark rounded-0">
+        <section class="jumbotron text-left text-white bg-dark rounded-0 img-jumbotron">
             <div class="container-fluid">
                 <div class="row justify-content-md-center">
-                    <div class="col-md-8">
+                    <div class="col-md-6">
                         <h2 class="h3">February 1-7</h2>
                         <h1 class="font-weight-bold display-3">La Poutine Week 2018</h1>
-                        <p class="h2">Where the best poutines in Canada take the stage!</p>
+                        <p class="h2 d-none my-4 d-sm-block">Where the best poutines in Canada take the stage!</p>
                         <p>
-                            <a href="#" class="btn btn-lg btn-primary my-2">Sign in</a>
+                            <a href="#" class="btn btn-lg btn-primary my-2"><i class="fa fa-lock"></i> Sign in</a>
                         </p>
                     </div>
-                    <div class="col-md-3">
-                        <img src="" class="img-fluid">
+                    <div class="col-md-4 d-none d-sm-block">
+                        <img src="./img/poutine-week-logo.svg" class="img-fluid">
                     </div>
                 </div>
 
@@ -122,7 +126,30 @@
                     <!-- card -->
                     <div class="col-sm-6 col-md-4">
                         <div class="card mb-4 box-shadow">
-                            <a href="#!" data-toggle="modal" data-target="#poutineInfo"><img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Poutine information"></a>
+                            <a href="#!" data-toggle="modal" data-target="#poutineInfo"><img class="card-img-top" src="./img/poutines/poutine-1.jpeg" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Poutine information"></a>
+                            <div class="card-body">
+                                <h3 class="font-weight-bold">Restaurant Name</h3>
+                                <h4>Poutine name</h4>
+                                <p class="card-text my-3"><a href="#!" target="_blank"><i class="fa fa-location-arrow"></i> 107 rue du Commandeur, Cantley QC, J8V 3T5</a></p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <button type="button" class="btn btn-md btn-primary btn-block" data-toggle="button" aria-pressed="false" autocomplete="off"><i class="fa fa-check-square"></i> Vote</button>
+                                </div>
+                            </div>
+                            <div class="card-footer text-center text-muted">
+                                <div class="d-flex justify-content-around">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fab fa-facebook-square"></i></button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fab fa-instagram"></i></button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fab fa-twitter"></i></button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fas fa-link"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card -->
+                    <div class="col-sm-6 col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <a href="#!" data-toggle="modal" data-target="#poutineInfo"><img class="card-img-top" src="./img/poutines/poutine-2.jpeg" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Poutine information"></a>
                             <div class="card-body">
                                 <h3 class="font-weight-bold">Restaurant Name</h3>
                                 <h4>Poutine name</h4>
@@ -146,7 +173,30 @@
                     <!-- card -->
                     <div class="col-sm-6 col-md-4">
                         <div class="card mb-4 box-shadow">
-                            <a href="#!" data-toggle="modal" data-target="#poutineInfo"><img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Poutine information"></a>
+                            <a href="#!" data-toggle="modal" data-target="#poutineInfo"><img class="card-img-top" src="./img/poutines/poutine-3.jpeg" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Poutine information"></a>
+                            <div class="card-body">
+                                <h3 class="font-weight-bold">Restaurant Name</h3>
+                                <h4>Poutine name</h4>
+                                <p class="card-text my-3"><a href="#!" target="_blank"><i class="fa fa-location-arrow"></i> 107 rue du Commandeur, Cantley QC, J8V 3T5</a></p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <button type="button" class="btn btn-md btn-primary btn-block" data-toggle="button" aria-pressed="false" autocomplete="off"><i class="fa fa-check-square"></i> Vote</button>
+                                </div>
+                            </div>
+                            <div class="card-footer text-center text-muted">
+                                <div class="d-flex justify-content-around">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fab fa-facebook-square"></i></button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fab fa-instagram"></i></button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fab fa-twitter"></i></button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fas fa-link"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card -->
+                    <div class="col-sm-6 col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <a href="#!" data-toggle="modal" data-target="#poutineInfo"><img class="card-img-top" src="./img/poutines/poutine-4.jpeg" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Poutine information"></a>
                             <div class="card-body">
                                 <h3 class="font-weight-bold">Restaurant Name</h3>
                                 <h4>Poutine name</h4>
@@ -170,30 +220,7 @@
                     <!-- card -->
                     <div class="col-sm-6 col-md-4">
                         <div class="card mb-4 box-shadow">
-                            <a href="#!" data-toggle="modal" data-target="#poutineInfo"><img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Poutine information"></a>
-                            <div class="card-body">
-                                <h3 class="font-weight-bold">Restaurant Name</h3>
-                                <h4>Poutine name</h4>
-                                <p class="card-text my-3"><a href="#!" target="_blank"><i class="fa fa-location-arrow"></i> 107 rue du Commandeur, Cantley QC, J8V 3T5</a></p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <button type="button" class="btn btn-md btn-primary btn-block" data-toggle="button" aria-pressed="false" autocomplete="off"><i class="fa fa-check-square"></i> Vote</button>
-                                </div>
-                            </div>
-                            <div class="card-footer text-center text-muted">
-                                <div class="d-flex justify-content-around">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fab fa-facebook-square"></i></button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fab fa-instagram"></i></button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fab fa-twitter"></i></button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fas fa-link"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- card -->
-                    <div class="col-sm-6 col-md-4">
-                        <div class="card mb-4 box-shadow">
-                            <a href="#!" data-toggle="modal" data-target="#poutineInfo"><img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Poutine information"></a>
+                            <a href="#!" data-toggle="modal" data-target="#poutineInfo"><img class="card-img-top" src="./img/poutines/poutine-5.jpeg" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Poutine information"></a>
                             <div class="card-body">
                                 <h3 class="font-weight-bold">Restaurant Name</h3>
                                 <h4>Poutine name</h4>
@@ -217,31 +244,7 @@
                     <!-- card -->
                     <div class="col-sm-6 col-md-4">
                         <div class="card mb-4 box-shadow">
-                            <a href="#!" data-toggle="modal" data-target="#poutineInfo"><img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Poutine information"></a>
-                            <div class="card-body">
-                                <h3 class="font-weight-bold">Restaurant Name</h3>
-                                <h4>Poutine name</h4>
-                                <p class="card-text my-3"><a href="#!" target="_blank"><i class="fa fa-location-arrow"></i> 107 rue du Commandeur, Cantley QC, J8V 3T5</a></p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <button type="button" class="btn btn-md btn-primary btn-block" data-toggle="button" aria-pressed="false" autocomplete="off"><i class="fa fa-check-square"></i> Vote</button>
-
-                                </div>
-                            </div>
-                            <div class="card-footer text-center text-muted">
-                                <div class="d-flex justify-content-around">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fab fa-facebook-square"></i></button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fab fa-instagram"></i></button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fab fa-twitter"></i></button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fas fa-link"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- card -->
-                    <div class="col-sm-6 col-md-4">
-                        <div class="card mb-4 box-shadow">
-                            <a href="#!" data-toggle="modal" data-target="#poutineInfo"><img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Poutine information"></a>
+                            <a href="#!" data-toggle="modal" data-target="#poutineInfo"><img class="card-img-top" src="./img/poutines/poutine-7.jpeg" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Poutine information"></a>
                             <div class="card-body">
                                 <h3 class="font-weight-bold">Restaurant Name</h3>
                                 <h4>Poutine name</h4>
@@ -260,22 +263,22 @@
                             </div>
                         </div>
                     </div>
-               
+
                 </div>
             </div>
         </section>
 
         <!-- sponsors -->
-        <section class="py-5 bg-light">
+        <section class="py-5 bg-light sponsors-section">
             <div class="container">
                 <h2 class="font-weight-bold display-4 mb-4">Sponsors</h2>
                 <p class="h4">Making La Poutine Week deliciouser!</p>
                 <div class="row d-flex align-items-center">
                     <div class="col-xs-6 col-sm-4 p-5">
-                        <a href="#!" target="_blank" class=""><img src="http://ng-peoplemover-dev.ca-central-1.elasticbeanstalk.com/assets/images/partners/kingsey-logo.png" class="img-fluid"></a>
+                        <a href="#!" target="_blank" class=""><img src="./img/kingsey-logo.png" class="img-fluid"></a>
                     </div>
                     <div class="col-xs-6 col-sm-4 p-5">
-                        <a href="#!" target="_blank" class=""><img src="http://ng-peoplemover-dev.ca-central-1.elasticbeanstalk.com/assets/images/partners/golo-logo.png" class="img-fluid"></a>
+                        <a href="#!" target="_blank" class=""><img src="./img/golo-logo.png" class="img-fluid"></a>
                     </div>
                 </div>
             </div>
@@ -291,7 +294,7 @@
                           <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <img class="img-fluid" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Poutine image">
+                    <img class="img-fluid"  src="./img/poutines/poutine-7.jpeg" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Poutine image">
                     <div class="modal-body">
                         <h3 class="font-weight-bold">Restaurant Name</h3>
                         <h4>Poutine name</h4>
@@ -311,18 +314,18 @@
     <footer class="bg-dark text-white">
         <div class="container">
             <div class="row">
-                <div class="col-sm-2"><img src="" class="img-fluid"></div>
+                <div class="col-sm-3 d-none d-sm-block"><img src="./img/poutine-week-logo.svg" class="img-fluid"></div>
                 <div class="col-sm-6">
-                    <h5 class="h3">What is La Poutine Week?</h5>
+                    <h5 class="h3 mb-4">What is La Poutine Week?</h5>
                     <p>Every year, from the 1st to 7th of February, restaurants from different cities across Canada make special poutines just for La Poutine Week. Poutine-lovers all over get a chance to discover these delicious creations and vote for their favorite ones on LaPoutineWeek.com</p>
                 </div>
-                <div class="col-sm-4">
-                    <h5 class="h3">Connect</h5>
+                <div class="col-sm-3">
+                    <h5 class="h3 mb-4">Connect</h5>
                     <ul class="list-unstyled">
-                        <li><i class="fab fa-facebook-square"></i> Like on Facebook</li>
-                        <li><i class="fab fa-instagram"></i> Like on Instagram</li>
-                        <li><i class="fab fa-twitter"></i> Follow us on Twitter</li>
-                        <li><i class="fas fa-envelope"></i> Email us</li>
+                        <li><a href="#!"><i class="fab fa-facebook-square"></i> Facebook</a></li>
+                        <li><a href="#!"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#!"><i class="fab fa-twitter"></i> Twitter</a></li>
+                        <li><a href="#!"><i class="fas fa-envelope"></i> Email</a></li>
                     </ul>
                 </div>
             </div>
