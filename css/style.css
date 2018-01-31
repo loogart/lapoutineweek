@@ -1,6 +1,7 @@
 :root {
     --jumbotron-padding-y: 3rem;
     --jumbotron-margin-t:4rem;
+    --navbar-padding-top:10px;
 }
 
 .jumbotron {
@@ -45,7 +46,19 @@ footer p {
 
 /* new styles by Chris Soueidan January 31, 2018*/
 
+.navbar-light::before {
+    content:" ";
+    display:inline-block;
+    width:100%;
+    height:var(--navbar-padding-top);
+    background-color: #228BD2;
+    position:fixed;
+    top:0;
+    left:0;
+}
+
 .navbar{
+    top:var(--navbar-padding-top);
     -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.21);
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.21);
 }
