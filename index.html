@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -9,224 +10,269 @@
 
     <title>La Poutine Week</title>
 
-    <!-- Bootstrap core CSS -->
     <link href="./css/bootstrap.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <script src="./fonts/svg-with-js/js/fontawesome-all.js"></script>
 
-    <!-- Custom styles for this template -->
-    <link href="./css/album.css" rel="stylesheet">
-  </head>
+</head>
 
-  <body>
-
+<body>
     <header>
-      <div class="collapse bg-dark" id="navbarHeader">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-8 col-md-7 py-4">
-              <h4 class="text-white">About</h4>
-              <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light py-3">
+            <a class="navbar-brand font-weight-bold" href="#">La Poutine Week</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item mx-2 dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select your city
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Montréal</a>
+                            <a class="dropdown-item" href="#">Québec</a>
+                            <a class="dropdown-item" href="#">Régions</a>
+                            <a class="dropdown-item" href="#">Ottawa</a>
+                            <a class="dropdown-item" href="#">Toronto</a>
+                            <a class="dropdown-item" href="#">Winnipeg</a>
+                            <a class="dropdown-item" href="#">Regina</a>
+                            <a class="dropdown-item" href="#">Edmonton</a>
+                            <a class="dropdown-item" href="#">Vancouver</a>
+                            <a class="dropdown-item" href="#">Montréal Suburbs</a>
+                            <a class="dropdown-item" href="#">International</a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item mx-2 active">
+                        <a class="nav-link" href="#">Top 10 Poutines<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item mx-2 dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Social media
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#"><i class="fab fa-facebook-square"></i> Like on Facebook</a>
+                            <a class="dropdown-item" href="#"><i class="fab fa-instagram"></i> Like on Instagram</a>
+                            <a class="dropdown-item" href="#"><i class="fab fa-twitter"></i> Follow us on Twitter</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"><i class="fas fa-envelope"></i> Email us</a>
+                        </div>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#">FR</a>
+                    </li>
+                </ul>
             </div>
-            <div class="col-sm-4 offset-md-1 py-4">
-              <h4 class="text-white">Contact</h4>
-              <ul class="list-unstyled">
-                <li><a href="#" class="text-white">Follow on Twitter</a></li>
-                <li><a href="#" class="text-white">Like on Facebook</a></li>
-                <li><a href="#" class="text-white">Email me</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="navbar navbar-dark bg-dark box-shadow">
-        <div class="container d-flex justify-content-between">
-          <a href="#" class="navbar-brand d-flex align-items-center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
-            <strong>La Poutine Week</strong>
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-      </div>
+        </nav>
     </header>
 
     <main role="main">
+        <!-- jumbotron -->
+        <section class="jumbotron text-left text-white bg-dark rounded-0">
+            <div class="container-fluid">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-8">
+                        <h2 class="h3">February 1-7</h2>
+                        <h1 class="font-weight-bold display-3">La Poutine Week 2018</h1>
+                        <p class="h2">Where the best poutines in Canada take the stage!</p>
+                        <p>
+                            <a href="#" class="btn btn-lg btn-primary my-2">Sign in</a>
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="" class="img-fluid">
+                    </div>
+                </div>
 
-      <section class="jumbotron text-center">
-        <div class="container">
-          <h1 class="jumbotron-heading">Album example</h1>
-          <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
-          <p>
-            <a href="#" class="btn btn-primary my-2">Main call to action</a>
-            <a href="#" class="btn btn-secondary my-2">Secondary action</a>
-          </p>
+            </div>
+        </section>
+
+        <!-- main content -->
+        <section class="py-5 bg-white">
+            <div class="container">
+
+                <h2 class="font-weight-bold display-4 mb-4">Poutines in Montreal</h2>
+
+                <!-- map container -->
+                <div class="pb-4">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2794.3131019201965!2d-75.76424854860326!3d45.544026678999415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce1ddfdb3aa7cd%3A0xea8f1c479a960389!2s107+Rue+du+Commandeur%2C+Cantley%2C+QC+J8V+3T5!5e0!3m2!1sen!2sca!4v1517427141881" width="100%" height="420" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+
+                <!-- segmented control for poutine filter -->
+                <div class="pb-4 text-center">
+                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <label class="btn btn-outline-primary active">
+                                <input type="radio" name="options" id="top10Poutines" autocomplete="off" checked> Top 10 poutines
+                            </label>
+                        <label class="btn btn-outline-primary">
+                                <input type="radio" name="options" id="allPoutines" autocomplete="off"> All poutines
+                            </label>
+                    </div>
+                </div>
+
+                <!-- deck of cards -->
+                <div class="row">
+
+                    <!-- card -->
+                    <div class="col-sm-6 col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <a href="#!" data-toggle="modal" data-target="#poutineInfo"><img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Poutine information"></a>
+                            <div class="card-body">
+                                <h3 class="font-weight-bold">Restaurant Name</h3>
+                                <h4>Poutine name</h4>
+                                <p class="card-text my-3"><a href="#!" target="_blank"><i class="fa fa-location-arrow"></i> 107 rue du Commandeur, Cantley QC, J8V 3T5</a></p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <button type="button" class="btn btn-md btn-primary btn-block" data-toggle="button" aria-pressed="false" autocomplete="off"><i class="fa fa-check-square"></i> Vote</button>
+
+                                </div>
+                            </div>
+                            <div class="card-footer text-center text-muted">
+                                <div class="d-flex justify-content-around">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fab fa-facebook-square"></i></button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fab fa-instagram"></i></button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fab fa-twitter"></i></button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fas fa-link"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card -->
+                    <div class="col-sm-6 col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <a href="#!" data-toggle="modal" data-target="#poutineInfo"><img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Poutine information"></a>
+                            <div class="card-body">
+                                <h3 class="font-weight-bold">Restaurant Name</h3>
+                                <h4>Poutine name</h4>
+                                <p class="card-text my-3"><a href="#!" target="_blank"><i class="fa fa-location-arrow"></i> 107 rue du Commandeur, Cantley QC, J8V 3T5</a></p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <button type="button" class="btn btn-md btn-primary btn-block" data-toggle="button" aria-pressed="false" autocomplete="off"><i class="fa fa-check-square"></i> Vote</button>
+
+                                </div>
+                            </div>
+                            <div class="card-footer text-center text-muted">
+                                <div class="d-flex justify-content-around">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fab fa-facebook-square"></i></button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fab fa-instagram"></i></button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fab fa-twitter"></i></button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fas fa-link"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card -->
+                    <div class="col-sm-6 col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <a href="#!" data-toggle="modal" data-target="#poutineInfo"><img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Poutine information"></a>
+                            <div class="card-body">
+                                <h3 class="font-weight-bold">Restaurant Name</h3>
+                                <h4>Poutine name</h4>
+                                <p class="card-text my-3"><a href="#!" target="_blank"><i class="fa fa-location-arrow"></i> 107 rue du Commandeur, Cantley QC, J8V 3T5</a></p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <button type="button" class="btn btn-md btn-primary btn-block" data-toggle="button" aria-pressed="false" autocomplete="off"><i class="fa fa-check-square"></i> Vote</button>
+                                </div>
+                            </div>
+                            <div class="card-footer text-center text-muted">
+                                <div class="d-flex justify-content-around">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fab fa-facebook-square"></i></button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fab fa-instagram"></i></button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fab fa-twitter"></i></button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fas fa-link"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- sponsors -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="font-weight-bold display-4 mb-4">Sponsors</h2>
+                <p class="h4">Making La Poutine Week deliciouser!</p>
+                <div class="row d-flex align-items-center">
+                    <div class="col-xs-6 col-sm-4 p-5">
+                        <a href="#!" target="_blank" class=""><img src="http://ng-peoplemover-dev.ca-central-1.elasticbeanstalk.com/assets/images/partners/kingsey-logo.png" class="img-fluid"></a>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 p-5">
+                        <a href="#!" target="_blank" class=""><img src="http://ng-peoplemover-dev.ca-central-1.elasticbeanstalk.com/assets/images/partners/golo-logo.png" class="img-fluid"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal -->
+        <div class="modal fade" id="poutineInfo" tabindex="-1" role="dialog" aria-labelledby="poutineInformation" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title font-weight-bold" id="exampleModalLabel">Poutine profile</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <img class="img-fluid" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Poutine image">
+                    <div class="modal-body">
+                        <h3 class="font-weight-bold">Restaurant Name</h3>
+                        <h4>Poutine name</h4>
+                        <h5 class="lead my-3"><a href="#!" target="_blank"><i class="fa fa-location-arrow"></i> 107 rue du Commandeur, Cantley QC, J8V 3T5</a></h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet saepe corrupti fugiat, alias, voluptatibus nisi minus pariatur! Animi, dicta, aspernatur ratione laboriosam maiores excepturi veniam omnis modi eos fugiat, laudantium!</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-lg btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-lg btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off"><i class="fa fa-check-square"></i> Vote</button>
+                    </div>
+                </div>
+            </div>
         </div>
-      </section>
-
-      <div class="album py-5 bg-light">
-        <div class="container">
-
-          <div class="row">
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
     </main>
 
-    <footer class="text-muted">
-      <div class="container">
-        <p class="float-right">
-          <a href="#">Back to top</a>
-        </p>
-        <p>Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-        <p>New to Bootstrap? <a href="../../">Visit the homepage</a> or read our <a href="../../getting-started/">getting started guide</a>.</p>
-      </div>
+    <footer class="bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2"><img src="" class="img-fluid"></div>
+                <div class="col-sm-6">
+                    <h5 class="h3">What is La Poutine Week?</h5>
+                    <p>Every year, from the 1st to 7th of February, restaurants from different cities across Canada make special poutines just for La Poutine Week. Poutine-lovers all over get a chance to discover these delicious creations and vote for their favorite ones on LaPoutineWeek.com</p>
+                </div>
+                <div class="col-sm-4">
+                    <h5 class="h3">Connect</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fab fa-facebook-square"></i> Like on Facebook</li>
+                        <li><i class="fab fa-instagram"></i> Like on Instagram</li>
+                        <li><i class="fab fa-twitter"></i> Follow us on Twitter</li>
+                        <li><i class="fas fa-envelope"></i> Email us</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="float-right">
+                <a href="#">Back to top</a>
+            </p>
+            <p>&copy; 2018 La Poutine Week by <a href="https://peoplemover.tech" target="_blank">People Mover Technologies Inc.</a> | <a href="#!" target="_blank">Privacy Notice</a></p>
+            <h6 class="my-4">Made with <i class="fas fa-heart"></i> by <a href="#!" target="_blank">Matt</a> and <a href="http://loogart.com" target="_blank">Loogart</a></h6>
+        </div>
     </footer>
 
-    <!-- Bootstrap core JavaScript
+    <!-- JavaScript
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="./js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script>
+        window.jQuery || document.write('<script src="./js/vendor/jquery-slim.min.js"><\/script>')
+
+    </script>
     <script src="js/vendor/popper.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/vendor/holder.min.js"></script>
-  </body>
+</body>
+
 </html>
