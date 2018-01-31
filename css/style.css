@@ -172,9 +172,10 @@ body {
     border-color: var(--primary-light);
 }
 
+.btn-vote.btn-primary:not(:disabled):not(.disabled):active,
+.btn-vote.btn-primary:not(:disabled):not(.disabled).active,
 .card .btn-primary:not(:disabled):not(.disabled):active,
-.card .btn-primary:not(:disabled):not(.disabled).active,
-.card .show > .btn-primary.dropdown-toggle {
+.card .btn-primary:not(:disabled):not(.disabled).active{
     color: #fff;
     background-color: #1bc36e;
     border-color: #1bc36e;
