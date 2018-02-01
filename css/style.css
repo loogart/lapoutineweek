@@ -45,10 +45,12 @@ body {
     display: inline-block;
     width: 269px;
     margin: 0;
+    -webkit-transition: all .25s ease-in-out;
     transition: all .25s ease-in-out;
 }
 
 .logo:hover {
+    -webkit-transform: translateY(-4px);
     transform: translateY(-4px);
 }
 
@@ -145,14 +147,17 @@ body {
 }
 
 .card {
+    -webkit-transition: all .25s ease-in-out;
     transition: all .25s ease-in-out;
 }
 
 .card:hover {
+    -webkit-transform: translateY(-5px);
     transform: translateY(-5px);
 }
 
 .box-shadow {
+    -webkit-box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
     box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
 }
 
@@ -196,8 +201,8 @@ summary {
 /*=========== SPONSORS ==========*/
 
 .sponsors-section {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     background-image: url('../img/partners-section-illustration.svg');
     background-position: 140% 10%;
     background-repeat: no-repeat;
