@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles-poutine.css">
+
+    <title>La Poutine Week | 2019</title>
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="./img/favicon.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="La Poutine Week">
+    <link rel="apple-touch-icon-precomposed" href="./img/favicon.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="./img/favicon.png">
+    <meta name="msapplication-TileColor" content="#009ADE">
+    <link rel="shortcut icon" href="./img/favicon.png">
+    <link rel="mask-icon" href="./img/icons/safari-pinned-tab.svg" color="#009ADE">
+    <meta name="theme-color" content="#009ADE">
+    <style>
+
+    </style>
+</head>
+
+
+<body>
+    <!-- pre nav -->
+    <nav class="pre-nav">
+        <div class="container d-flex">
+            <div class="pre-nav__left mr-auto">
+                <a href="#signUp"><i class="fa fa-edit"></i> Sign up</a>
+
+            </div>
+            <div class="pre-nav__right ml-auto">
+                <div class="d-none d-md-inline-block">
+                    <a href="https://www.facebook.com/LaPoutineWeek/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://www.instagram.com/lapoutineweek/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/lapoutineweek/" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+                <a href="#!" data-toggle="modal" data-target="#signIn"><i class="fa fa-lock"></i> Sign in</a>
+                <a href="#!" class="language-toggler">FR</a>
+            </div>
+        </div>
+        <div class="modal modal__select-city fade" id="selectCity" tabindex="-1" role="dialog" aria-labelledby="selectCity" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <img src="./img/logo-poutineweek-full.svg">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h2>Canadian Cities</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html#burgerList">Montreal</a></li>
+                            <li><a href="index.html#burgerList">Toronto</a></li>
+                            <li><a href="index.html#burgerList">Ottawa</a></li>
+                            <li><a href="index.html#burgerList">Quebec</a></li>
+                            <li><a href="index.html#burgerList">Winnipeg</a></li>
+                            <li><a href="index.html#burgerList">Saskatoon</a></li>
+                            <li><a href="index.html#burgerList">Calgary</a></li>
+                            <li><a href="index.html#burgerList">Edmonton</a></li>
+                            <li><a href="index.html#burgerList">Vancouver</a></li>
+                            <li><a href="index.html#burgerList">Victoria</a></li>
+                            <li><a href="index.html#burgerList">Halifax</a></li>
+                            <li><a href="index.html#burgerList">Kenora</a></li>
+                        </ul>
+                        <h2>Regions</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html#burgerList">Outaouais</a></li>
+                            <li><a href="index.html#burgerList">Rive-Sud/Laval</a></li>
+                            <li><a href="index.html#burgerList">Quebec Regions</a></li>
+                        </ul>
+                        <h2>Outside Canada</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="haiti.html">CAP</a></li>
+                            <li><a href="haiti.html">Port-au-Prince</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+            <a class="navbar-brand" href="./"><img src="./img/logo-poutineweek.svg"><span class="brand-title d-none d-md-inline-block">La Poutine Week</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html"><i class="fas fa-info-circle d-inline-block d-md-none"></i> About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./winners.html"><i class="fas fa-medal d-inline-block d-md-none"></i> 2018 Winners</a>
+                    </li>
+                    <li class="nav-item d-inline-block d-md-none">
+                        <a class="nav-link" href="https://www.facebook.com/Lapoutineweek/" target="_blank"><i class="fab fa-facebook-square"></i> Facebook</a>
+                    </li>
+                    <li class="nav-item d-inline-block d-md-none">
+                        <a class="nav-link" href="https://www.instagram.com/lapoutineweek/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+                    </li>
+                    <li class="nav-item d-inline-block d-md-none">
+                        <a class="nav-link" href="https://twitter.com/lapoutineweek/" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <main>
+        <!-- jumbotron section -->
+        <div class="supadupa-jumbotron">
+            <div class="cta-jumbotron text-white d-flex justify-content-start align-items-center p-3">
+                <div class="container">
+                    <div class="d-flex flex-column cta-jumbotron__content">
+                        <div class="intro-text mb-auto flex-grow-1">
+                            <p class="super-title mb-0">February 1-7</p>
+                            <h1 class="main-title font-weight-bold">La Poutine Week</h1>
+                            <p class="tagline d-none d-md-inline-block">Celebrating the best poutines in the World!</p>
+                            <p><a href="#signUp" class="btn btn-lg d-none d-lg-inline-block"><i class="fas fa-edit"></i> Sign up</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="scene">
+                <div class="layer" data-depth="0.2">
+                    <div class="bg"></div>
+                </div>
+                <div class="layer" data-depth="0.7">
+                    <img class="burger" src="./img/logo-poutineweek.svg">
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- Sign up -->
+        <section class="sign-up" id="signUp">
+            <div class="container">
+                <div class="col-sm-8 mx-auto">
+                    <h2 class="mb-3">Sign your restaurant up!</h2>
+                    <p>La Poutine Week started 7 years ago in Montreal. The festival now boasts over 300,000 participants in all Canadian cities and internationally.</p>
+                    <p>La Poutine Week is a 1-week long poutine festival from the 1st to the 7th of February 2019. If you think your restaurant has got what it takes to partake, register your magical poutine dish using the form below.</p>
+                    <form class="my-4">
+                        <div class="form-group">
+                            <label for="inputAddress">Restaurant name</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="Restaurant name">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress">Your full name</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="First and last names">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputEmail4">Email</label>
+                                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputPassword4">Password</label>
+                                <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress">Billing Address</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 rue de la Meilleure Poutine">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-5">
+                                <label for="inputCity">City</label>
+                                <input type="text" class="form-control" id="inputCity" placeholder="City name">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputState">Province</label>
+                                <select id="inputState" class="form-control">
+                                    <option selected>Choose...</option>
+                                    <option>Québec</option>
+                                    <option>Ontario</option>
+                                    <option>British Columbia</option>
+                                    <option>Albert</option>
+                                    <option>Saskatchewan</option>
+                                    <option>Manitoba</option>
+                                    <option>New Brunswick</option>
+                                    <option>Nova Scotia</option>
+                                    <option>Newfoundland and Labrador</option>
+                                    <option>Prince-Edward-Island</option>
+                                    <option>N/A</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label for="inputZip">Postal Code</label>
+                                <input type="text" class="form-control" id="inputZip" placeholder="A1A 1A1">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Additional notes</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Comments, ideas, questions..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    I agree to People Mover Technology's <a href="#!" target="_blank">Terms and Conditions</a>.
+                                </label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block"><i class="fas fa-lock"></i> Sign up</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Sign in -->
+    <div class="modal modal__sign-in fade" id="signIn" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Sign in to your account</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="jumbotron-siginin">
+                    <img class="logo-signin" src="./img/logo-poutineweek.svg">
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+                        <p class="mt-2">Don't have an account yet? <a href="index.html#signUp"> Sign up</a>.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="supafooter">
+        <div class="container">
+            <div class="d-flex flex-wrap flex-md-nowrap ">
+                <div class="p-3">
+                    <img class="footer-logo" src="./img/logo-poutineweek.svg">
+                </div>
+                <div class="p-3">
+                    <h4>What is La Poutine Week?</h4>
+                    <p>Every year, from the 1st to 7th of February, restaurants from different cities across Canada make special poutines just for La Poutine Week. Poutine-lovers all over get a chance to discover these delicious creations and vote for their favorite ones on LePoutineWeek.com</p>
+                </div>
+                <div class="p-3">
+                    <h4>Connect</h4>
+                    <ul class="list-unstyled footer-social">
+                        <li>
+                            <a href="https://www.facebook.com/Lapoutineweek/" target="_blank">
+                                <i class="fab fa-facebook-square"></i> Facebook</a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/lapoutineweek/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/lapoutineweek/" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="d-flex justify-content-between">
+                <small>
+                    <p>© 2019 La Poutine Week | <a href="https://peoplemover.tech/" target="_blank">People Mover Technologies Inc.</a> | <a href="#!">Privacy</a></p>
+                    <p>Designed with <i class="fas fa-heart"></i> and <i class="fas fa-coffee"></i> by <a href="https://loogart.com" target="_blank">Loogart</a></p>
+                </small>
+                <p><a href="#" class="btn btn-outline-light rounded"><i class="fas fa-chevron-up"></i> Back to top</a></p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/parallax.min.js"></script>
+    <script src="./js/scripts.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxEirwPY5lQXNNXuY9lzjQIwGJlWby7Nw&callback=initMap" async defer></script>
+
+</body>
+
+</html>

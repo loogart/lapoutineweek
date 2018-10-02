@@ -1,0 +1,134 @@
+/*=== poutine homepage colors ==*/
+.pre-nav::before {
+    background: -webkit-gradient(linear, left top, right top, from(#009ADE), to(#00c4de));
+    background: linear-gradient(to right, #009ADE, #00c4de);
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.pre-nav a:hover {
+    color: #009ADE;
+}
+
+.navbar-light .navbar-nav .show > .nav-link,
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .nav-link.active {
+    color: #009ADE;
+}
+
+.super-title {
+    color: #F9D877;
+}
+
+.bg {
+    background: url('../img/la-poutine-week-jumbotron-banner-illustration-by-loogart.svg') no-repeat 50% 50%;
+    background-color: #011E41;
+    background-size: cover;
+    position: relative;
+    width: 110%;
+    left: -5%;
+    top: -5%;
+    height: 720px;
+}
+
+.cta-jumbotron__content .btn {
+    background-color: #009ADE;
+}
+
+.alert.burger-alert {
+    background: #009ADE;
+}
+
+section.sign-up {
+    margin: 3rem 0;
+    background-color: #fff;
+}
+
+label {
+    font-weight: bold;
+}
+
+.modal__sign-in .modal-header {
+    background: -webkit-gradient(linear, left top, right top, from(#009ADE), to(#00c4de));
+    background: linear-gradient(to right, #009ADE, #00c4de);
+    color: #fff;
+    border-bottom: 0;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.jumbotron-siginin {
+    background-image: url('../img/la-poutine-week-jumbotron-banner-illustration-by-loogart.svg');
+    background-repeat: no-repeat;
+    background-size: 250%;
+    background-position: center;
+    height: 250px;
+    width: 100%;
+}
+
+
+
+.about h2::after {
+    content: "";
+    display: block;
+    margin-top: 25px;
+    width: 50px;
+    height: 4px;
+    background-color: #009ADE;
+}
+
+.about .faq-item {
+    border-left: 6px solid #009ADE;
+    padding-left: 24px;
+}
+
+
+.about h3 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    color: #009ADE;
+}
+
+.about a {
+    color: #009ADE;
+    text-decoration: none;
+}
+
+footer.supafooter {
+    background: -webkit-gradient(linear, left top, right top, from(#011E41), to(#11415a));
+    background: linear-gradient(to right, #011E41, #11415a);
+}
+
+.burger {
+    width: 50vw;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    max-height: 320px;
+}
+
+.winners-jumbotron {
+    background: -webkit-gradient(linear, left top, right top, from(#009ADE), to(#00c4de));
+    background: linear-gradient(to right, #009ADE, #00c4de);
+    min-height: 69px;
+    width: 100%;
+}
+
+@media(max-width:767px) {
+    .bg {
+        background-size: cover;
+        position: relative;
+        width: 120%;
+        left: -10%;
+        top: -10%;
+        height: 80vh;
+    }
+
+    .burger {
+        width: 70vw;
+        position: absolute;
+        left: 17%;
+        top: 40%;
+    }
+}

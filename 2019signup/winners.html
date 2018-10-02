@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles-poutine.css">
+
+    <title>Winners | 2018</title>
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="./img/favicon.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Le Burger Week">
+    <link rel="apple-touch-icon-precomposed" href="./img/favicon.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="./img/favicon.png">
+    <meta name="msapplication-TileColor" content="#009ADE">
+    <link rel="shortcut icon" href="./img/favicon.png">
+    <link rel="mask-icon" href="./img/icons/safari-pinned-tab.svg" color="#009ADE">
+    <meta name="theme-color" content="#009ADE">
+</head>
+
+<body>
+    <!-- pre nav -->
+    <nav class="pre-nav">
+        <div class="container d-flex">
+            <div class="pre-nav__left mr-auto">
+                <a href="index.html#signUp"><i class="fa fa-edit"></i> Sign up</a>
+            </div>
+            <div class="pre-nav__right ml-auto">
+                <div class="d-none d-md-inline-block">
+                    <a href="https://www.facebook.com/LaPoutineWeek/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://www.instagram.com/lapoutineweek/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/lapoutineweek/" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+                <a href="#!" data-toggle="modal" data-target="#signIn"><i class="fa fa-lock"></i> Sign in</a>
+                <a href="#!" class="language-toggler">FR</a>
+            </div>
+        </div>
+        <div class="modal modal__select-city fade" id="selectCity" tabindex="-1" role="dialog" aria-labelledby="selectCity" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <img src="./img/logo-poutineweek-full.svg">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h2>Canadian Cities</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html#burgerList">Montreal</a></li>
+                            <li><a href="index.html#burgerList">Toronto</a></li>
+                            <li><a href="index.html#burgerList">Ottawa</a></li>
+                            <li><a href="index.html#burgerList">Quebec</a></li>
+                            <li><a href="index.html#burgerList">Winnipeg</a></li>
+                            <li><a href="index.html#burgerList">Saskatoon</a></li>
+                            <li><a href="index.html#burgerList">Calgary</a></li>
+                            <li><a href="index.html#burgerList">Edmonton</a></li>
+                            <li><a href="index.html#burgerList">Vancouver</a></li>
+                            <li><a href="index.html#burgerList">Victoria</a></li>
+                            <li><a href="index.html#burgerList">Halifax</a></li>
+                            <li><a href="index.html#burgerList">Kenora</a></li>
+                        </ul>
+                        <h2>Regions</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html#burgerList">Outaouais</a></li>
+                            <li><a href="index.html#burgerList">Rive-Sud/Laval</a></li>
+                            <li><a href="index.html#burgerList">Quebec Regions</a></li>
+                        </ul>
+                        <h2>Outside Canada</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="haiti.html">CAP</a></li>
+                            <li><a href="haiti.html">Port-au-Prince</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+            <a class="navbar-brand" href="./"><img src="./img/logo-poutineweek.svg"><span class="brand-title d-none d-md-inline-block">La Poutine Week</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html"><i class="fas fa-info-circle d-inline-block d-md-none"></i> About</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./winners.html"><i class="fas fa-medal d-inline-block d-md-none"></i> 2018 Winners</a>
+                    </li>
+                    <li class="nav-item d-inline-block d-md-none">
+                        <a class="nav-link" href="https://www.facebook.com/Lapoutineweek/" target="_blank"><i class="fab fa-facebook-square"></i> Facebook</a>
+                    </li>
+                    <li class="nav-item d-inline-block d-md-none">
+                        <a class="nav-link" href="https://www.instagram.com/lapoutineweek/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+                    </li>
+                    <li class="nav-item d-inline-block d-md-none">
+                        <a class="nav-link" href="https://twitter.com/lapoutineweek/" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    
+    <main>
+        
+        <!-- winners jumbotron section -->
+        <div class="winners-jumbotron p-4 d-flex flex-column justify-content-center align-items-center text-center">
+           <div class="container-fluid">
+                <p class="h4 super-title m-3"><i class="fas fa-trophy"></i> 2018 Winners</p>
+                <h1 class="font-weight-bold text-light">La Poutine Week</h1>
+            </div>
+        </div>
+        
+        <!-- mobile menu scroll -->
+        <div class="scrollmenu d-block d-md-none">
+            <a href="#montreal">Montreal</a>
+            <a href="#toronto">Toronto - Ontario</a>
+            <a href="#ottawa">Gatineau/Ottawa</a>
+            <a href="#quebec">Quebec</a>
+            <a href="#winnipeg">Winnipeg &amp; Kenora</a>
+            <a href="#saskatoon">Saskatoon</a>
+            <a href="#regina">Regina</a>
+            <a href="#calgary">Calgary</a>
+            <a href="#edmonton">Edmonton</a>
+            <a href="#vancouver">Vancouver</a>
+            <a href="#laval">Rive-Sud/Laval</a>
+            <a href="#quebec-regions">Quebec Regions</a>
+            <a href="#cap">CAP</a>
+            <a href="#pap">Port-Au-Prince</a>
+        </div>
+        
+        <!-- Winner List -->
+        <section class="burger-list winners-list">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 d-none d-md-block">
+
+                        <div class="list-group list-group-flush list-winners-sticky">
+                            <a href="#montreal" class="list-group-item list-group-item-action">Montreal</a>
+                            <a href="#toronto" class="list-group-item list-group-item-action">Toronto - Ontario</a>
+                            <a href="#ottawa" class="list-group-item list-group-item-action">Gatineau/Ottawa</a>
+                            <a href="#quebec" class="list-group-item list-group-item-action">Quebec</a>
+                            <a href="#winnipeg" class="list-group-item list-group-item-action">Winnipeg &amp; Kenora</a>
+                            <a href="#saskatoon" class="list-group-item list-group-item-action">Saskatoon</a>
+                            <a href="#regina" class="list-group-item list-group-item-action">Regina</a>
+                            <a href="#calgary" class="list-group-item list-group-item-action">Calgary</a>
+                            <a href="#edmonton" class="list-group-item list-group-item-action">Edmonton</a>
+                            <a href="#vancouver" class="list-group-item list-group-item-action">Vancouver</a>
+                            <a href="#laval" class="list-group-item list-group-item-action">Rive-Sud/Laval</a>
+                            <a href="#quebec-regions" class="list-group-item list-group-item-action">Quebec Regions</a>
+                            <a href="#cap" class="list-group-item list-group-item-action">CAP</a>
+                            <a href="#pap" class="list-group-item list-group-item-action">Port-Au-Prince</a>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="row">
+
+                            <!-- City #1 -->
+                            <div class="col-12">
+                                <h2 id="montreal">Montreal's Winners</h2>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="card mb-4">
+                                    <a href="burger.html">
+                                        <img class="card-img-top" src="./img/mtl/poutine-1.jpeg" alt="Burger name from restaurant">
+                                        <div class="winner-tag">
+                                            <i class="fas fa-medal"></i> Most Popular Burger
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="card-location"><i class="fas fa-map-marker-alt"></i> 0.6 km away</p>
+                                            <h3 class="card-title">Ultra long Restaurant Name</h3>
+                                            <p class="card-text">Burger Name that is ultra long like why u do dis bro</p>
+                                            <a class="card-action" href="burger.html"><i class="fas fa-arrow-right"></i> View burger</a>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="card mb-4">
+                                    <a href="burger.html">
+                                        <img class="card-img-top" src="./img/mtl/poutine-2.jpeg" alt="Burger name from restaurant">
+                                        <div class="winner-tag winner-tag__judges">
+                                            <i class="fas fa-gavel"></i> Judges' Choice
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="card-location"><i class="fas fa-map-marker-alt"></i> 5.6 km away</p>
+                                            <h3 class="card-title">Restaurant Name</h3>
+                                            <p class="card-text">Burger Name</p>
+                                            <a class="card-action" href="burger.html"><i class="fas fa-arrow-right"></i> View burger</a>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="card mb-4">
+                                    <a href="burger.html">
+                                        <img class="card-img-top" src="./img/mtl/poutine-3.jpeg" alt="Burger name from restaurant">
+                                        <div class="winner-tag winner-tag__best-looking">
+                                            <i class="fas fa-kiss-wink-heart"></i> Best Looking Burger
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="card-location"><i class="fas fa-map-marker-alt"></i> 5.6 km away</p>
+                                            <h3 class="card-title">Restaurant Name</h3>
+                                            <p class="card-text">Burger Name</p>
+                                            <a class="card-action" href="burger.html"><i class="fas fa-arrow-right"></i> View burger</a>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="card mb-4">
+                                    <a href="burger.html">
+                                        <img class="card-img-top" src="./img/mtl/poutine-4.jpeg" alt="Burger name from restaurant">
+                                        <div class="winner-tag winner-tag__healthy">
+                                            <i class="fas fa-heart"></i> Healthiest Burger
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="card-location"><i class="fas fa-map-marker-alt"></i> 8.7 km away</p>
+                                            <h3 class="card-title">Ultra long Restaurant Name</h3>
+                                            <p class="card-text">Burger Name that is ultra long like why u do dis bro</p>
+                                            <a class="card-action" href="burger.html"><i class="fas fa-arrow-right"></i> View burger</a>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- City #2 -->
+                            <div class="col-12 mt-3">
+                                <h2 id="toronto">Toronto's Winners</h2>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="card mb-4">
+                                    <a href="burger.html">
+                                        <img class="card-img-top" src="./img/mtl/poutine-5.jpeg" alt="Burger name from restaurant">
+                                        <div class="winner-tag">
+                                            <i class="fas fa-medal"></i> Most Popular Burger
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="card-location"><i class="fas fa-map-marker-alt"></i> 0.6 km away</p>
+                                            <h3 class="card-title">Ultra long Restaurant Name</h3>
+                                            <p class="card-text">Burger Name that is ultra long like why u do dis bro</p>
+                                            <a class="card-action" href="burger.html"><i class="fas fa-arrow-right"></i> View burger</a>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="card mb-4">
+                                    <a href="burger.html">
+                                        <img class="card-img-top" src="./img/mtl/poutine-6.jpeg" alt="Burger name from restaurant">
+                                        <div class="winner-tag winner-tag__judges">
+                                            <i class="fas fa-gavel"></i> Judges' Choice
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="card-location"><i class="fas fa-map-marker-alt"></i> 5.6 km away</p>
+                                            <h3 class="card-title">Restaurant Name</h3>
+                                            <p class="card-text">Burger Name</p>
+                                            <a class="card-action" href="burger.html"><i class="fas fa-arrow-right"></i> View burger</a>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="card mb-4">
+                                    <a href="burger.html">
+                                        <img class="card-img-top" src="./img/mtl/poutine-6.jpeg" alt="Burger name from restaurant">
+                                        <div class="winner-tag winner-tag__best-looking">
+                                            <i class="fas fa-kiss-wink-heart"></i> Best Looking Burger
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="card-location"><i class="fas fa-map-marker-alt"></i> 5.6 km away</p>
+                                            <h3 class="card-title">Restaurant Name</h3>
+                                            <p class="card-text">Burger Name</p>
+                                            <a class="card-action" href="burger.html"><i class="fas fa-arrow-right"></i> View burger</a>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="card mb-4">
+                                    <a href="burger.html">
+                                        <img class="card-img-top" src="./img/mtl/poutine-7.jpeg" alt="Burger name from restaurant">
+                                        <div class="winner-tag winner-tag__healthy">
+                                            <i class="fas fa-heart"></i> Healthiest Burger
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="card-location"><i class="fas fa-map-marker-alt"></i> 8.7 km away</p>
+                                            <h3 class="card-title">Ultra long Restaurant Name</h3>
+                                            <p class="card-text">Burger Name that is ultra long like why u do dis bro</p>
+                                            <a class="card-action" href="burger.html"><i class="fas fa-arrow-right"></i> View burger</a>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- City #3 -->
+                            <div class="col-12 mt-3">
+                                <h2 id="ottawa">Ottawa's Winners</h2>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="card mb-4">
+                                    <a href="burger.html">
+                                        <img class="card-img-top" src="./img/mtl/poutine-1.jpeg" alt="Burger name from restaurant">
+                                        <div class="winner-tag">
+                                            <i class="fas fa-medal"></i> Most Popular Burger
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="card-location"><i class="fas fa-map-marker-alt"></i> 0.6 km away</p>
+                                            <h3 class="card-title">Ultra long Restaurant Name</h3>
+                                            <p class="card-text">Burger Name that is ultra long like why u do dis bro</p>
+                                            <a class="card-action" href="burger.html"><i class="fas fa-arrow-right"></i> View burger</a>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="card mb-4">
+                                    <a href="burger.html">
+                                        <img class="card-img-top" src="./img/mtl/poutine-2.jpeg" alt="Burger name from restaurant">
+                                        <div class="winner-tag winner-tag__judges">
+                                            <i class="fas fa-gavel"></i> Judges' Choice
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="card-location"><i class="fas fa-map-marker-alt"></i> 5.6 km away</p>
+                                            <h3 class="card-title">Restaurant Name</h3>
+                                            <p class="card-text">Burger Name</p>
+                                            <a class="card-action" href="burger.html"><i class="fas fa-arrow-right"></i> View burger</a>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="card mb-4">
+                                    <a href="burger.html">
+                                        <img class="card-img-top" src="./img/mtl/poutine-3.jpeg" alt="Burger name from restaurant">
+                                        <div class="winner-tag winner-tag__best-looking">
+                                            <i class="fas fa-kiss-wink-heart"></i> Best Looking Burger
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="card-location"><i class="fas fa-map-marker-alt"></i> 5.6 km away</p>
+                                            <h3 class="card-title">Restaurant Name</h3>
+                                            <p class="card-text">Burger Name</p>
+                                            <a class="card-action" href="burger.html"><i class="fas fa-arrow-right"></i> View burger</a>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="card mb-4">
+                                    <a href="burger.html">
+                                        <img class="card-img-top" src="./img/mtl/poutine-4.jpeg" alt="Burger name from restaurant">
+                                        <div class="winner-tag winner-tag__healthy">
+                                            <i class="fas fa-heart"></i> Healthiest Burger
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="card-location"><i class="fas fa-map-marker-alt"></i> 8.7 km away</p>
+                                            <h3 class="card-title">Ultra long Restaurant Name</h3>
+                                            <p class="card-text">Burger Name that is ultra long like why u do dis bro</p>
+                                            <a class="card-action" href="burger.html"><i class="fas fa-arrow-right"></i> View burger</a>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                             <!-- City #4 -->
+                            <div class="col-12 mt-3">
+                                <h2 id="quebec">Quebec's Winners</h2>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="card mb-4">
+                                    <a href="burger.html">
+                                        <img class="card-img-top" src="./img/mtl/poutine-1.jpeg" alt="Burger name from restaurant">
+                                        <div class="winner-tag">
+                                            <i class="fas fa-medal"></i> Most Popular Burger
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="card-location"><i class="fas fa-map-marker-alt"></i> 0.6 km away</p>
+                                            <h3 class="card-title">Ultra long Restaurant Name</h3>
+                                            <p class="card-text">Burger Name that is ultra long like why u do dis bro</p>
+                                            <a class="card-action" href="burger.html"><i class="fas fa-arrow-right"></i> View burger</a>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="card mb-4">
+                                    <a href="burger.html">
+                                        <img class="card-img-top" src="./img/mtl/poutine-2.jpeg" alt="Burger name from restaurant">
+                                        <div class="winner-tag winner-tag__judges">
+                                            <i class="fas fa-gavel"></i> Judges' Choice
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="card-location"><i class="fas fa-map-marker-alt"></i> 5.6 km away</p>
+                                            <h3 class="card-title">Restaurant Name</h3>
+                                            <p class="card-text">Burger Name</p>
+                                            <a class="card-action" href="burger.html"><i class="fas fa-arrow-right"></i> View burger</a>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="card mb-4">
+                                    <a href="burger.html">
+                                        <img class="card-img-top" src="./img/mtl/poutine-3.jpeg" alt="Burger name from restaurant">
+                                        <div class="winner-tag winner-tag__best-looking">
+                                            <i class="fas fa-kiss-wink-heart"></i> Best Looking Burger
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="card-location"><i class="fas fa-map-marker-alt"></i> 5.6 km away</p>
+                                            <h3 class="card-title">Restaurant Name</h3>
+                                            <p class="card-text">Burger Name</p>
+                                            <a class="card-action" href="burger.html"><i class="fas fa-arrow-right"></i> View burger</a>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="card mb-4">
+                                    <a href="burger.html">
+                                        <img class="card-img-top" src="./img/mtl/poutine-4.jpeg" alt="Burger name from restaurant">
+                                        <div class="winner-tag winner-tag__healthy">
+                                            <i class="fas fa-heart"></i> Healthiest Burger
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="card-location"><i class="fas fa-map-marker-alt"></i> 8.7 km away</p>
+                                            <h3 class="card-title">Ultra long Restaurant Name</h3>
+                                            <p class="card-text">Burger Name that is ultra long like why u do dis bro</p>
+                                            <a class="card-action" href="burger.html"><i class="fas fa-arrow-right"></i> View burger</a>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- Sign in -->
+    <div class="modal modal__sign-in fade" id="signIn" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Sign in to your account</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="jumbotron-siginin">
+                    <img class="logo-signin" src="./img/logo-poutineweek.svg">
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+                        <p class="mt-2">Don't have an account yet? <a href="index.html#signUp"> Sign up</a>.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="supafooter">
+        <div class="container">
+            <div class="d-flex flex-wrap flex-md-nowrap ">
+                <div class="p-3">
+                    <img class="footer-logo" src="./img/logo-poutineweek.svg">
+                </div>
+                <div class="p-3">
+                    <h4>What is La Poutine Week?</h4>
+                    <p>Every year, from the 1st to 7th of February, restaurants from different cities across Canada make special poutines just for La Poutine Week. Poutine-lovers all over get a chance to discover these delicious creations and vote for their favorite ones on LePoutineWeek.com</p>
+                </div>
+                <div class="p-3">
+                    <h4>Connect</h4>
+                    <ul class="list-unstyled footer-social">
+                        <li>
+                            <a href="https://www.facebook.com/Lapoutineweek/" target="_blank">
+                                <i class="fab fa-facebook-square"></i> Facebook</a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/lapoutineweek/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/lapoutineweek/" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="d-flex justify-content-between">
+                <small>
+                    <p>© 2019 La Poutine Week | <a href="https://peoplemover.tech/" target="_blank">People Mover Technologies Inc.</a> | <a href="#!">Privacy</a></p>
+                    <p>Designed with <i class="fas fa-heart"></i> and <i class="fas fa-coffee"></i> by <a href="https://loogart.com" target="_blank">Loogart</a></p>
+                </small>
+                <p><a href="#" class="btn btn-outline-light rounded"><i class="fas fa-chevron-up"></i> Back to top</a></p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/parallax.min.js"></script>
+    <script src="./js/scripts.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxEirwPY5lQXNNXuY9lzjQIwGJlWby7Nw&callback=initMap" async defer></script>
+
+</body>
+
+</html>
