@@ -40,8 +40,9 @@
 }
 
 section.sign-up {
-    margin: 3rem 0;
-    background-color: #fff;
+    padding: 3rem 0;
+    background-color: #f8f8f8;
+    ;
 }
 
 label {
@@ -131,4 +132,78 @@ footer.supafooter {
         left: 17%;
         top: 40%;
     }
+}
+
+/* November 2018 styles */
+
+.burger-list {
+    margin: 0 0;
+    padding: 3rem 0;
+    background-color: #fff;
+}
+
+.burger-list h3.card-title {
+    color: #0088D5;
+
+}
+
+.burger-list a.card-action {
+    color: #0088D5;
+}
+
+.winner-tag {
+    background: -webkit-gradient(linear, left top, right top, from(#009ADE), to(#00c4de));
+    background: linear-gradient(to right, #009ADE, #00c4de);
+    color: #fff;
+
+}
+
+    {
+    border-color: transparent;
+    border-color: none;
+    border-bottom: 4px solid #ddd;
+}
+
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+    color: #333;
+    font-weight: bold;
+    background-color: #fff;
+    border-color: transparent;
+    border-bottom: 4px solid #0088D5;
+    border-top-left-radius: 0rem;
+    border-top-right-radius: 0rem;
+}
+
+.nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-top-left-radius: 0rem;
+    border-top-right-radius: 0rem;
+    color: #777;
+}
+
+.nav-tabs .nav-link:hover {
+    border-color: transparent;
+    border-color: none;
+    border-bottom: 4px solid #ddd;
+}
+
+.nav-tabs .nav-link:focus {
+    border-bottom: 4px solid #0088D5;
+}
+
+.burger-list h2 span {
+    background: -webkit-linear-gradient(45deg, #00c4de, #0088D5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.burger-list .card {
+    border-radius: 0.25rem;
+}
+
+.burger-list .card-img-top {
+    border-radius: 0.25rem 0.25rem 0 0;
+    height: 160px;
 }
