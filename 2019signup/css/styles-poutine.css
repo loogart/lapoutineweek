@@ -186,7 +186,7 @@ footer.supafooter {
 .nav-tabs .nav-link:hover {
     border-color: transparent;
     border-color: none;
-    border-bottom: 4px solid #ddd;
+    border-bottom: 4px solid #0088D5;
 }
 
 .nav-tabs .nav-link:focus {
