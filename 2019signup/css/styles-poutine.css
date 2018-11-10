@@ -183,13 +183,10 @@ footer.supafooter {
     color: #777;
 }
 
-.nav-tabs .nav-link:hover {
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-link:focus {
     border-color: transparent;
     border-color: none;
-    border-bottom: 4px solid #0088D5;
-}
-
-.nav-tabs .nav-link:focus {
     border-bottom: 4px solid #0088D5;
 }
 
