@@ -193,6 +193,21 @@ footer.supafooter {
     border-bottom: 4px solid #0088D5;
 }
 
+@media(max-width:767px) {
+    ul.nav.nav-tabs.scrollmenu{
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        display: block;
+    }
+
+    ul.nav.nav-tabs.scrollmenu  li.nav-item {
+        display: inline-block;
+        text-align: center;
+        text-decoration: none;
+    }
+}
+
 .burger-list h2 span {
     background: -webkit-linear-gradient(45deg, #00c4de, #0088D5 100%);
     -webkit-background-clip: text;
