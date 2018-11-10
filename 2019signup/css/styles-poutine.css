@@ -190,7 +190,7 @@ footer.supafooter {
     border-bottom: 4px solid #0088D5;
 }
 
-@media(max-width:767px) {
+
     ul.nav.nav-tabs.scrollmenu {
         overflow-x: auto;
         overflow-y: hidden;
@@ -204,7 +204,6 @@ footer.supafooter {
         display: inline-block;
         text-align: center;
         text-decoration: none;
-    }
 }
 
 .burger-list h2 span {
