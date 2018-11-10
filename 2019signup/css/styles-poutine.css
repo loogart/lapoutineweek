@@ -194,14 +194,16 @@ footer.supafooter {
 }
 
 @media(max-width:767px) {
-    ul.nav.nav-tabs.scrollmenu{
+    ul.nav.nav-tabs.scrollmenu {
         overflow-x: auto;
         overflow-y: hidden;
         white-space: nowrap;
         display: block;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-
     }
 
-    ul.nav.nav-tabs.scrollmenu  li.nav-item {
+    ul.nav.nav-tabs.scrollmenu li.nav-item {
         display: inline-block;
         text-align: center;
         text-decoration: none;
