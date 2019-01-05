@@ -15,6 +15,9 @@ $(document).ready(function () {
             $('input.flexdatalist').val('');
         }
     });
+    $("#searchResults").click(function () {
+        window.location.href = "results.html";
+    });
 
     // Parallax effect
     var rellax = new Rellax('.rellax');

@@ -68,7 +68,10 @@ $theme-colors: ("primary":$blue, "secondary":$red, "navy-blue":#082345, "navy-bl
     top: 0;
     left: 0;
     height: 100vh;
-    background: $gradient-navy;
+    background: url(../img/artwork_original.svg), $gradient-navy;
+    background-repeat: no-repeat, no-repeat;
+    background-position: 50% 160%, 50% 50%;
+    background-size: 140%;
     z-index: 2;
 
     @-webkit-keyframes menuAppear {
@@ -91,10 +94,10 @@ $theme-colors: ("primary":$blue, "secondary":$red, "navy-blue":#082345, "navy-bl
         }
     }
 
-    -webkit-animation: menuAppear 0.3s;
-    -moz-animation: menuAppear 0.3s;
-    -o-animation: menuAppear 0.3s;
-    animation: menuAppear 0.3s;
+    -webkit-animation: menuAppear 0.4s;
+    -moz-animation: menuAppear 0.4s;
+    -o-animation: menuAppear 0.4s;
+    animation: menuAppear 0.4s;
 
     > a {
         margin-top: 1.3rem;
@@ -156,7 +159,12 @@ $theme-colors: ("primary":$blue, "secondary":$red, "navy-blue":#082345, "navy-bl
         -o-animation: closeAppear 0.3s ease-out;
         animation: closeAppear 0.3s ease-out;
     }
-
+   .custom-select{
+        background-color: transparent;
+        color:white;
+        background: none;
+        border: 2px solid #ced4da;
+    }
 }
 
 .logo {

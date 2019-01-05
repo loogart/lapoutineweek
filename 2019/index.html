@@ -55,6 +55,32 @@
                     <a href="#!">Winners</a>
                     <a href="#!">Sign in</a>
                     <a href="#!">FR</a>
+                    <div class="input-group mt-3 d-flex d-md-none">
+                        <select class="custom-select" id="selectCity">
+                            <option selected>Select city...</option>
+                            <optgroup label="Canadian Cities">
+                                <option value="1">Calgary</option>
+                                <option value="2">Edmonton</option>
+                                <option value="3">Montreal</option>
+                                <option value="4">Ottawa</option>
+                                <option value="5">Regina</option>
+                                <option value="6">Saskatoon</option>
+                                <option value="7">Toronto</option>
+                                <option value="8">Vancouver</option>
+                                <option value="7">Victoria</option>
+                                <option value="9">Winnipeg</option>
+                            </optgroup>
+                            <optgroup label="Regions">
+                                <option value="10">International</option>
+                                <option value="11">Ontario</option>
+                                <option value="12">Washington</option>
+                                <option value="13">Régions du Québec</option>
+                                <option value="15">Rive Nord</option>
+                                <option value="16">Rive Sud</option>
+                            </optgroup>
+
+                        </select>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -92,7 +118,7 @@
                         <option value="S10">69 rue Poutineuse, Montreal QC, H8M 6M9</option>
                     </datalist>
 
-                    <button class="btn btn-lg btn-secondary" type="button">Search</button>
+                    <button class="btn btn-lg btn-secondary" type="button" id="searchResults">Search</button>
                 </div>
             </div>
             <img class="supatron-artwork rellax" src="./img/artwork_original.svg">
