@@ -29,12 +29,13 @@ $(document).ready(function () {
     $("#closeMenu").click(function () {
         $(".menu").toggleClass("d-none menu-open");
     });
+
     $(window).on('resize', function () {
-        if ($(window).width() > 768) {
-            $(".menu").removeClass("d-none menu-open");
-        } else {
-            $(".menu").addClass("menu-open");
+        var win = $(this); //this = window
+        if (win.width() > 768) { 
+            $(".menu").removeClass("menu-open").addClass("d-none");
         }
     });
+
 
 });
