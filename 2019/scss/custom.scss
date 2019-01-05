@@ -20,6 +20,8 @@ $theme-colors: ("primary":$blue, "secondary":$red, "navy-blue":#082345, "navy-bl
 // Bootstrap and its default variables
 @import "../bootstrap/scss/bootstrap";
 
+// navigation styles
+
 .nvg {
     padding: 0.25rem 0;
     position: fixed;
@@ -55,7 +57,6 @@ $theme-colors: ("primary":$blue, "secondary":$red, "navy-blue":#082345, "navy-bl
         }
     }
 }
-
 
 .menu-open {
     position: absolute;
@@ -207,6 +208,7 @@ $theme-colors: ("primary":$blue, "secondary":$red, "navy-blue":#082345, "navy-bl
     background: $gradient-navy;
 }
 
+// supatron styles
 
 .supatron {
     display: flex;
@@ -221,7 +223,8 @@ $theme-colors: ("primary":$blue, "secondary":$red, "navy-blue":#082345, "navy-bl
     overflow: hidden;
 
     @media (max-width: 767px) {
-        padding: 6rem 0;
+        padding: $spacer*4 0;
+        min-height: 69vh;
     }
 
     .container {
@@ -264,6 +267,8 @@ $theme-colors: ("primary":$blue, "secondary":$red, "navy-blue":#082345, "navy-bl
         }
     }
 }
+
+// address input field
 
 .input__address {
     display: flex;
@@ -311,6 +316,8 @@ $theme-colors: ("primary":$blue, "secondary":$red, "navy-blue":#082345, "navy-bl
     color: #fff;
     cursor: pointer;
 }
+
+// footer styles
 
 footer {
     background-color: $navy-blue;
@@ -362,6 +369,8 @@ footer {
     }
 }
 
+// section common styles
+
 section {
     padding: $spacer*2.5 0;
 
@@ -384,6 +393,7 @@ section.intro {
     @media(max-width: 767px) {
         padding: $spacer*2.5 0;
         background-position: 50% 100%;
+        background-size: 150vw;
     }
 
 
@@ -456,6 +466,6 @@ section.winners {
 section.sponsors {
     background-color: #DBEAF1;
     .logo-sponsor {
-        width: 200px;
+        max-width: 150px;
     }
 }

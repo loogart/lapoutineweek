@@ -7846,7 +7846,8 @@ a.text-navy-blue-light:hover, a.text-navy-blue-light:focus {
   overflow: hidden; }
   @media (max-width: 767px) {
     .supatron {
-      padding: 6rem 0; } }
+      padding: 4rem 0;
+      min-height: 69vh; } }
   .supatron .container {
     z-index: 1;
     max-width: 820px; }
@@ -7953,7 +7954,8 @@ section.intro {
   @media (max-width: 767px) {
     section.intro {
       padding: 2.5rem 0;
-      background-position: 50% 100%; } }
+      background-position: 50% 100%;
+      background-size: 150vw; } }
   section.intro .title-holder {
     padding: 0 0.5rem;
     border-left: 6px solid #009BDE; }
@@ -7998,6 +8000,6 @@ section.winners ul.nav.nav-tabs.scrollmenu li.nav-item {
 section.sponsors {
   background-color: #DBEAF1; }
   section.sponsors .logo-sponsor {
-    width: 200px; }
+    max-width: 150px; }
 
 /*# sourceMappingURL=custom.css.map */
