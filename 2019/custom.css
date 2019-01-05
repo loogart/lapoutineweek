@@ -7780,9 +7780,9 @@ a.text-navy-blue-light:hover, a.text-navy-blue-light:focus {
     animation: linksAppear 0.4s ease-out; }
 @-webkit-keyframes linksAppear {
   0% {
-    opacity: 0.5; }
+    transform: translateY(10px); }
   100% {
-    opacity: 1; } }
+    transform: translateY(0); } }
 @keyframes linksAppear {
   0% {
     transform: translateY(10px); }
@@ -7808,8 +7808,21 @@ a.text-navy-blue-light:hover, a.text-navy-blue-light:focus {
     background-color: transparent;
     color: white;
     background: none;
-    border: 2px solid #ced4da; }
-
+    border: 2px solid #ced4da;
+    -webkit-animation: selectAppear 0.4s ease-out;
+    -moz-animation: selectAppear 0.4s ease-out;
+    -o-animation: selectAppear 0.4s ease-out;
+    animation: selectAppear 0.4s ease-out; }
+@-webkit-keyframes selectAppear {
+  0% {
+    transform: translateY(20px); }
+  100% {
+    transform: translateY(0); } }
+@keyframes selectAppear {
+  0% {
+    transform: translateY(20px); }
+  100% {
+    transform: translateY(0); } }
 .logo {
   display: inline-block;
   height: 60px; }
@@ -7895,5 +7908,33 @@ a.text-navy-blue-light:hover, a.text-navy-blue-light:focus {
   background: #009BDE;
   color: #fff;
   cursor: pointer; }
+
+footer {
+  background-color: #082345;
+  padding: 2rem 1rem; }
+  footer .logo__footer {
+    width: 90px; }
+  footer ul {
+    width: 15%; }
+    @media (max-width: 767px) {
+      footer ul {
+        width: 50%; } }
+  footer li h5 {
+    color: #009BDE;
+    font-size: 0.9rem;
+    margin-bottom: 1rem; }
+  footer li a {
+    color: white;
+    text-decoration: none !important; }
+    footer li a:hover {
+      color: #ced4da; }
+  footer hr {
+    border: 0.5px dotted #777; }
+  footer small {
+    color: #ccc; }
+    footer small a {
+      color: #ccc; }
+      footer small a:hover {
+        color: #FFDD68; }
 
 /*# sourceMappingURL=custom.css.map */

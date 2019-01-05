@@ -107,11 +107,11 @@ $theme-colors: ("primary":$blue, "secondary":$red, "navy-blue":#082345, "navy-bl
 
         @-webkit-keyframes linksAppear {
             0% {
-                opacity: 0.5;
+                transform: translateY(10px);
             }
 
             100% {
-                opacity: 1;
+                transform: translateY(0);
             }
         }
 
@@ -159,11 +159,37 @@ $theme-colors: ("primary":$blue, "secondary":$red, "navy-blue":#082345, "navy-bl
         -o-animation: closeAppear 0.3s ease-out;
         animation: closeAppear 0.3s ease-out;
     }
-   .custom-select{
+
+    .custom-select {
         background-color: transparent;
-        color:white;
+        color: white;
         background: none;
         border: 2px solid #ced4da;
+
+        @-webkit-keyframes selectAppear {
+            0% {
+                transform: translateY(20px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes selectAppear {
+            0% {
+                transform: translateY(20px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        -webkit-animation: selectAppear 0.4s ease-out;
+        -moz-animation: selectAppear 0.4s ease-out;
+        -o-animation: selectAppear 0.4s ease-out;
+        animation: selectAppear 0.4s ease-out;
     }
 }
 
@@ -284,4 +310,52 @@ $theme-colors: ("primary":$blue, "secondary":$red, "navy-blue":#082345, "navy-bl
     background: $blue;
     color: #fff;
     cursor: pointer;
+}
+
+footer {
+    background-color: $navy-blue;
+    padding: 2rem 1rem;
+
+    .logo__footer {
+        width: 90px;
+    }
+
+    ul {
+        width: 15%;
+
+        @media(max-width: 767px) {
+            width: 50%;
+        }
+    }
+
+    li {
+        h5 {
+            color: $blue;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        a {
+            color: white;
+            text-decoration: none !important;
+
+            &:hover {
+                color: $gray-400;
+            }
+        }
+    }
+
+    hr {
+        border: 0.5px dotted #777;
+    }
+
+    small {
+        color: #ccc;
+        a {
+            color: #ccc;
+            &:hover{
+                color:$yellow;
+            }
+        }
+    }
 }
