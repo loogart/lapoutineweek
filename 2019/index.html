@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./plugins/jquery.flexdatalist.css">
     <link rel="stylesheet" href="./custom.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-LRlmVvLKVApDVGuspQFnRQJjkv0P7/YFrw84YYQtmYG4nK8c+M+NlmYDCv0rKWpG" crossorigin="anonymous">
 
@@ -41,8 +42,15 @@
                 <a href="./">
                     <h1 class="sr-only">La Poutine Week</h1><img class="logo" src="./img/logotype.svg" alt="La Poutine Week logo">
                 </a>
-                <a href="#!" class="d-block d-md-none"><i class="far fa-bars"></i> <span class="sr-only">Menu</span></a>
+                <a href="#!" class="d-block d-md-none" id="openMenu"><i class="far fa-bars"></i> <span class="sr-only">Menu</span></a>
+
                 <div class="menu d-none d-md-block">
+                    <div class="d-flex justify-content-between align-items-center w-100">
+                        <a href="./" class="d-block d-md-none">
+                            <img class="logo" src="./img/logotype.svg" alt="La Poutine Week logo">
+                        </a>
+                        <a href="#!" class="d-block d-md-none" id="closeMenu"><i class="far fa-times"></i> <span class="sr-only">Close Menu</span></a>
+                    </div>
                     <a href="#!" class="active">About</a>
                     <a href="#!">Winners</a>
                     <a href="#!">Sign in</a>
@@ -53,22 +61,43 @@
     </header>
 
     <main>
-        <div class="supatron">
+        <section class="supatron">
             <div class="container">
                 <h2>February 1-7</h2>
                 <h3>Celebrating the best Poutines in the World.</h3>
                 <div class="input__address">
-                    <div class="input-group mb-3 mb-md-0">
-                        <input type="text" class="form-control" placeholder="Type your address" aria-label="User address" aria-describedby="button-addon2">
+
+                    <div class="input-group input-group-lg mb-3 mb-md-0 mr-md-3 shadow-lg">
+
+                        <input type="text" class="flexdatalist form-control" placeholder="Type your address" aria-label="User address" aria-describedby="user-address" data-min-length="1" list="adresses" name="adresses">
+
                         <div class="input-group-append">
-                            <button class="btn btn-light" type="button" id="find-location"><i class="far fa-location-arrow" aria-hidden></i><span class="sr-only">Find my location</span></button>
+                            <button class="btn btn-light" type="button" id="target"><i class="far fa-location-arrow" aria-hidden></i><span class="sr-only">Find my location</span></button>
                         </div>
+
                     </div>
-                    <button class="btn btn-secondary" type="button">Search</button>
+
+                    <datalist id="adresses">
+                        <option value="1">123 rue Poutine, Montreal QC, H4N 1N5</option>
+                        <option value="2">124 rue Poutineaux, Montreal QC, H4N 2H7</option>
+                        <option value="3">140 rue Poutineaux, Montreal QC, H4N 2H7</option>
+                        <option value="4">169 rue Poutine Ouest, Montreal QC, H4N 2H7</option>
+                        <option value="5">221 rue Putine, Montreal QC, H4N 2H7</option>
+                        <option value="6">225 boulevard Poutine Ouest, Montreal QC, H7V 3H8</option>
+                        <option value="5">240-A boulevard Poutine Ouest, Montreal QC, H9M 4B6</option>
+                        <option value="6">269 cercle Poutine, Montreal QC H2P 4B9</option>
+                        <option value="7">369 avenue Loogart, Montreal QC, H4N 1B8</option>
+                        <option value="8">396 rue Loogarine, Montreal QC, H4N 2M9</option>
+                        <option value="9">444 boul Marcel-Laurin, Montreal QC, H5N 4H9</option>
+                        <option value="S10">69 rue Poutineuse, Montreal QC, H8M 6M9</option>
+                    </datalist>
+
+                    <button class="btn btn-lg btn-secondary" type="button">Search</button>
                 </div>
             </div>
-            <img class="supatron-artwork" src="./img/artwork_original.svg">
-        </div>
+            <img class="supatron-artwork rellax" src="./img/artwork_original.svg">
+        </section>
+        <section style="height:1000px;"></section>
 
     </main>
 
@@ -78,7 +107,9 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="./scripts.js"></script>
+    <script src="./plugins/rellax.min.js"></script>
+    <script src="./plugins/jquery.flexdatalist.min.js"></script>
+    <script src="./plugins/scripts.js"></script>
 </body>
 
 </html>

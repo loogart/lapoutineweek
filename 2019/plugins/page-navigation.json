@@ -1,0 +1,26 @@
+[
+	{
+		"text": "Home",
+		"website-link": "http://easyautocomplete.com/"
+	},
+	{
+		"text": "Guide",
+		"website-link": "http://easyautocomplete.com/guide"
+	},
+	{
+		"text": "Themes",
+		"website-link": "http://easyautocomplete.com/themes"
+	},
+	{
+		"text": "Examples",
+		"website-link": "http://easyautocomplete.com/examples"
+	},
+	{
+		"text": "Download",
+		"website-link": "http://easyautocomplete.com/download"
+	},
+	{
+		"text": "Github",
+		"website-link": "https://github.com/pawelczak/EasyAutocomplete"
+	}
+]

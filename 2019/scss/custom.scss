@@ -22,6 +22,12 @@ $theme-colors: ("primary":$blue, "secondary":$red, "navy-blue":#082345, "navy-bl
 
 .nvg {
     padding: 0.25rem 0;
+    position: fixed;
+    display: block;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
 
     a {
         color: white;
@@ -35,14 +41,122 @@ $theme-colors: ("primary":$blue, "secondary":$red, "navy-blue":#082345, "navy-bl
     }
 
     .menu {
+
         a {
             &:not(:last-child) {
                 margin-right: 20px;
             }
+
+            @media(max-width:767px) {
+                &:not(:last-child) {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+
+
+.menu-open {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: 0.25rem 15px;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background: $gradient-navy;
+    z-index: 2;
+
+    @-webkit-keyframes menuAppear {
+        0% {
+            opacity: 0.5;
         }
 
-        @media(max-width:767px) {}
+        100% {
+            opacity: 1;
+        }
     }
+
+    @keyframes menuAppear {
+        0% {
+            opacity: 0.5;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    -webkit-animation: menuAppear 0.3s;
+    -moz-animation: menuAppear 0.3s;
+    -o-animation: menuAppear 0.3s;
+    animation: menuAppear 0.3s;
+
+    > a {
+        margin-top: 1.3rem;
+        font-size: $h4-font-size;
+        font-weight: $font-weight-bold;
+        font-size: 1.5rem;
+
+        @-webkit-keyframes linksAppear {
+            0% {
+                opacity: 0.5;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes linksAppear {
+            0% {
+                transform: translateY(10px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        -webkit-animation: linksAppear 0.4s ease-out;
+        -moz-animation: linksAppear 0.4s ease-out;
+        -o-animation: linksAppear 0.4s ease-out;
+        animation: linksAppear 0.4s ease-out;
+    }
+
+    i.fa-times {
+        font-size: 1.5rem;
+
+        @-webkit-keyframes closeAppear {
+            0% {
+                opacity: 0.5;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes closeAppear {
+            0% {
+                transform: translateX(50px);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        -webkit-animation: closeAppear 0.3s ease-out;
+        -moz-animation: closeAppear 0.3s ease-out;
+        -o-animation: closeAppear 0.3s ease-out;
+        animation: closeAppear 0.3s ease-out;
+    }
+
 }
 
 .logo {
@@ -59,6 +173,7 @@ $theme-colors: ("primary":$blue, "secondary":$red, "navy-blue":#082345, "navy-bl
     background: $gradient-navy;
 }
 
+
 .supatron {
     display: flex;
     text-align: center;
@@ -67,16 +182,17 @@ $theme-colors: ("primary":$blue, "secondary":$red, "navy-blue":#082345, "navy-bl
     justify-content: center;
     min-height: 40vh;
     background: $gradient-navy;
-    padding: 10rem;
+    padding: 12rem 8rem;
     position: relative;
     overflow: hidden;
 
     @media (max-width: 767px) {
-        padding: 5rem 0;
+        padding: 6rem 0;
     }
 
     .container {
         z-index: 1;
+        max-width: 820px;
     }
 
     h2 {
@@ -105,25 +221,59 @@ $theme-colors: ("primary":$blue, "secondary":$red, "navy-blue":#082345, "navy-bl
         object-fit: cover;
         object-position: 100% 0%;
         width: 110%;
-        height: 320px;
+        height: 310px;
 
         @media(max-width: 767px) {
             object-position: 100% 0%;
             width: 120%;
-            height: 120px
+            height: 160px
         }
-
-        ;
     }
-
-
 }
 
 .input__address {
     display: flex;
+    width: 100%;
 
     @media (max-width: 767px) {
         flex-direction: column;
     }
 
+    .input-group > .form-control:not(:first-child) {
+        border-top-left-radius: 0.3rem;
+        border-bottom-left-radius: 0.3rem;
+    }
+
+    .btn-light {
+        background-color: white;
+        border-color: transparent;
+    }
+
+    i {
+        color: $blue;
+    }
+
+    .form-control {
+        border: 0;
+    }
+
+    .form-control:focus {
+        color: #495057;
+        background-color: #fff;
+        border-color: $blue;
+        outline: 1;
+        box-shadow: 0 0 0 0.15rem rgba(0, 155, 222, 1);
+    }
+
+}
+
+.flexdatalist-results {
+    margin-top: 0.1rem;
+    border-radius: 0.3rem !important;
+}
+
+.flexdatalist-results li.active {
+    background: $blue;
+    color: #fff;
+    cursor: pointer;
 }
