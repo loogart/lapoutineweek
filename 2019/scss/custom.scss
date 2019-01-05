@@ -351,11 +351,111 @@ footer {
 
     small {
         color: #ccc;
+
         a {
             color: #ccc;
-            &:hover{
-                color:$yellow;
+
+            &:hover {
+                color: $yellow;
             }
         }
+    }
+}
+
+section {
+    padding: $spacer*2.5 0;
+
+    h2 {
+        font-size: $font-size-base*2.5;
+        font-weight: 900;
+    }
+}
+
+// intro section
+
+section.intro {
+    padding: $spacer*6 0;
+    background-color: white;
+    background-image: url('../img/artwork_what-is.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 120%;
+
+    @media(max-width: 767px) {
+        padding: $spacer*2.5 0;
+        background-position: 50% 100%;
+    }
+
+
+    .title-holder {
+        padding: 0 $spacer*0.5;
+        border-left: 6px solid $blue;
+
+        .title-holder-inner {
+            border-left: 6px solid $yellow;
+            padding-left: $spacer*1.25;
+        }
+
+    }
+
+
+
+    p.lead {
+        margin: $spacer*1.5 auto;
+        font-weight: $font-weight-bold;
+    }
+}
+
+// winners section
+section.winners {
+
+    .nav-tabs .nav-link.active,
+    .nav-tabs .nav-item.show .nav-link {
+        color: #333;
+        font-weight: bold;
+        background-color: #fff;
+        border-color: transparent;
+        border-bottom: 4px solid #0088D5;
+        border-top-left-radius: 0rem;
+        border-top-right-radius: 0rem;
+    }
+
+    .nav-tabs .nav-link {
+        border: 1px solid transparent;
+        border-top-left-radius: 0rem;
+        border-top-right-radius: 0rem;
+        color: #777;
+    }
+
+    .nav-tabs .nav-link:hover,
+    .nav-tabs .nav-link:focus {
+        border-color: transparent;
+        border-color: none;
+        border-bottom: 4px solid #0088D5;
+    }
+
+
+    ul.nav.nav-tabs.scrollmenu {
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        display: block;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-
+    }
+
+    ul.nav.nav-tabs.scrollmenu li.nav-item {
+        display: inline-block;
+        text-align: center;
+        text-decoration: none;
+    }
+
+}
+
+// sponsors section 
+section.sponsors {
+    background-color: #DBEAF1;
+    .logo-sponsor {
+        width: 200px;
     }
 }

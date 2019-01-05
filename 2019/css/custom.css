@@ -7937,4 +7937,67 @@ footer {
       footer small a:hover {
         color: #FFDD68; }
 
+section {
+  padding: 2.5rem 0; }
+  section h2 {
+    font-size: 2.5rem;
+    font-weight: 900; }
+
+section.intro {
+  padding: 6rem 0;
+  background-color: white;
+  background-image: url("../img/artwork_what-is.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 120%; }
+  @media (max-width: 767px) {
+    section.intro {
+      padding: 2.5rem 0;
+      background-position: 50% 100%; } }
+  section.intro .title-holder {
+    padding: 0 0.5rem;
+    border-left: 6px solid #009BDE; }
+    section.intro .title-holder .title-holder-inner {
+      border-left: 6px solid #FFDD68;
+      padding-left: 1.25rem; }
+  section.intro p.lead {
+    margin: 1.5rem auto;
+    font-weight: 700; }
+
+section.winners .nav-tabs .nav-link.active,
+section.winners .nav-tabs .nav-item.show .nav-link {
+  color: #333;
+  font-weight: bold;
+  background-color: #fff;
+  border-color: transparent;
+  border-bottom: 4px solid #0088D5;
+  border-top-left-radius: 0rem;
+  border-top-right-radius: 0rem; }
+section.winners .nav-tabs .nav-link {
+  border: 1px solid transparent;
+  border-top-left-radius: 0rem;
+  border-top-right-radius: 0rem;
+  color: #777; }
+section.winners .nav-tabs .nav-link:hover,
+section.winners .nav-tabs .nav-link:focus {
+  border-color: transparent;
+  border-color: none;
+  border-bottom: 4px solid #0088D5; }
+section.winners ul.nav.nav-tabs.scrollmenu {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  display: block;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-; }
+section.winners ul.nav.nav-tabs.scrollmenu li.nav-item {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none; }
+
+section.sponsors {
+  background-color: #DBEAF1; }
+  section.sponsors .logo-sponsor {
+    width: 200px; }
+
 /*# sourceMappingURL=custom.css.map */
