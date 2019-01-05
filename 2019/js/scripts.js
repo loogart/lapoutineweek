@@ -29,6 +29,12 @@ $(document).ready(function () {
     $("#closeMenu").click(function () {
         $(".menu").toggleClass("d-none menu-open");
     });
-
+    $(window).on('resize', function () {
+        if ($(window).width() > 768) {
+            $(".menu").removeClass("d-none menu-open");
+        } else {
+            $(".menu").addClass("menu-open");
+        }
+    });
 
 });

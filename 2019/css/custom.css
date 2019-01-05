@@ -7759,6 +7759,9 @@ a.text-navy-blue-light:hover, a.text-navy-blue-light:focus {
   -moz-animation: menuAppear 0.4s;
   -o-animation: menuAppear 0.4s;
   animation: menuAppear 0.4s; }
+  @media (min-width: 576px) and (max-width: 767px) {
+    .menu-open {
+      background: none, linear-gradient(90deg, #082345 0%, #13497b 100%); } }
 @-webkit-keyframes menuAppear {
   0% {
     opacity: 0.5; }
@@ -8001,5 +8004,31 @@ section.sponsors {
   background-color: #f8f8f8; }
   section.sponsors .logo-sponsor {
     max-width: 150px; }
+
+.custom-select-2 {
+  border: 2px solid #fff;
+  width: 115px;
+  border-radius: 4px;
+  overflow: hidden;
+  display: inline-block;
+  margin-bottom: -0.5rem;
+  margin-right: 15px; }
+
+.custom-select-2 select {
+  padding: 0 0.5rem;
+  width: 100%;
+  font-size: 0.9rem;
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+  color: #fff;
+  background-image: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url(...); }
+
+.custom-select-2 select:focus {
+  outline: none; }
 
 /*# sourceMappingURL=custom.css.map */

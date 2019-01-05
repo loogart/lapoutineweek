@@ -75,6 +75,10 @@ $theme-colors: ("primary":$blue, "secondary":$red, "navy-blue":#082345, "navy-bl
     background-size: 140%;
     z-index: 2;
 
+    @media (min-width:576px) and (max-width:767px) {
+        background: none, $gradient-navy;
+    }
+
     @-webkit-keyframes menuAppear {
         0% {
             opacity: 0.5;
@@ -465,7 +469,41 @@ section.winners {
 // sponsors section 
 section.sponsors {
     background-color: #f8f8f8;
+
     .logo-sponsor {
         max-width: 150px;
     }
 }
+
+// custom select 2
+
+.custom-select-2 {
+    border: 2px solid #fff;
+    width: 115px;
+    border-radius: 4px;
+    overflow: hidden;
+    display: inline-block;
+    margin-bottom: -0.5rem;
+    margin-right: 15px;
+}
+
+.custom-select-2 select {
+    padding: 0 0.5rem;
+    width: 100%;
+    font-size: 0.9rem;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    color: #fff;
+    background-image: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url(...);
+}
+
+.custom-select-2 select:focus {
+    outline: none;
+}
+
+@media(max-width:767px) {}
