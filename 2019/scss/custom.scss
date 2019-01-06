@@ -10,7 +10,9 @@ $navy-blue:#082345;
 $navy-blue-light:#13497B;
 $red:#EA4A34;
 $gradient-navy: linear-gradient(90deg, rgba(8, 35, 69, 1) 0%, rgba(19, 73, 123, 1) 100%);
-
+$gradient-blue: linear-gradient(90deg, #009BDE 0%, #55ccff 100%);
+$gradient-yellow: linear-gradient(90deg, #FFDD68 0%, #eb9f46 100%);
+$gradient-red: linear-gradient(90deg, #EA4A34 0%, #f87967 100%);
 
 // Modify maps
 $colors: ("blue":#009BDE, "yellow":#FFDD68, "red":#EA4A34, "navy-blue":#082345, "navy-blue-light":#13497B, "navy-gradient":$gradient-navy);
@@ -357,7 +359,7 @@ section {
 // intro section
 
 section.intro {
-    padding: $spacer*6 0;
+    padding: $spacer*8 0;
     background-color: white;
     background-image: url('../img/artwork_what-is.jpg');
     background-size: cover;
@@ -513,4 +515,100 @@ section.sponsors {
         }
     }
 
+}
+
+// card design
+.crds {
+    a {
+        text-decoration: none;
+    }
+}
+
+.crd {
+    margin-bottom: $spacer*1.5;
+    transition: all 0.5s ease 0s, opacity 1.25s cubic-bezier(0.5, 0, 0, 1) 0s, transform 1.25s cubic-bezier(0.5, 0, 0, 1) 0s;
+
+    &:hover {
+        box-shadow: 2px 8px 20px 0 rgba(119, 120, 121, 0.25);
+    }
+
+    border-radius: 0.3rem;
+    border:1px solid #f2f2f2;
+
+    img {
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+        border-top-left-radius: 0.3rem;
+        border-top-right-radius: 0.3rem;
+    }
+
+    .prize {
+        padding: $spacer*0.25 $spacer*0.7;
+        background-color: $blue;
+        color: white;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        font-size: $spacer*0.86;
+    }
+
+    .prize__1 {
+        background-color: goldenrod;
+    }
+
+    .prize__2 {
+        background-color: forestgreen;
+    }
+
+    .prize__3 {
+        background-color: $red;
+    }
+
+    .prize__4 {
+        background-color: $yellow;
+        color:$navy-blue;
+        font-weight: $font-weight-bold;
+    }
+
+    .crd-body {
+        display: flex;
+        flex-direction: column;
+        padding: $spacer*0.7;
+
+        h3,
+        h4,
+        p {
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+        }
+
+        h3 {
+            color: $navy-blue;
+            font-size: $font-size-base*1.15;
+            font-weight: $font-weight-bolder;
+        }
+
+        h4 {
+            color: $blue;
+            font-size: $font-size-base*1;
+            font-weight: $font-weight-bolder;
+        }
+
+        .crd-row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            p.small {
+                color: lightslategrey;
+                margin-top: $spacer*0.5;
+                margin-bottom: 0;
+                max-width: 80%;
+            }
+        }
+    }
 }

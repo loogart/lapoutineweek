@@ -18,21 +18,25 @@ $(document).ready(function () {
     $("#searchResults").click(function () {
         window.location.href = "results.html";
     });
+    $('select').on('change', function (e) {
+        setTimeout(function () {
+            window.location.href = "results.html";
+        }, 500);
+    });
 
     // Parallax effect
     var rellax = new Rellax('.rellax');
 
-    // open mobile menu
+    // mobile menu
     $("#openMenu").click(function () {
         $(".menu").toggleClass("d-none menu-open");
     });
     $("#closeMenu").click(function () {
         $(".menu").toggleClass("d-none menu-open");
     });
-
     $(window).on('resize', function () {
         var win = $(this); //this = window
-        if (win.width() > 768) { 
+        if (win.width() > 768) {
             $(".menu").removeClass("menu-open").addClass("d-none");
         }
     });
