@@ -7807,25 +7807,6 @@ a.text-navy-blue-light:hover, a.text-navy-blue-light:focus {
     transform: translateX(50px); }
   100% {
     transform: translateX(0); } }
-  .menu-open .custom-select {
-    background-color: transparent;
-    color: white;
-    background: none;
-    border: 2px solid #ced4da;
-    -webkit-animation: selectAppear 0.4s ease-out;
-    -moz-animation: selectAppear 0.4s ease-out;
-    -o-animation: selectAppear 0.4s ease-out;
-    animation: selectAppear 0.4s ease-out; }
-@-webkit-keyframes selectAppear {
-  0% {
-    transform: translateY(20px); }
-  100% {
-    transform: translateY(0); } }
-@keyframes selectAppear {
-  0% {
-    transform: translateY(20px); }
-  100% {
-    transform: translateY(0); } }
 .logo {
   display: inline-block;
   height: 60px; }
@@ -8013,22 +7994,43 @@ section.sponsors {
   display: inline-block;
   margin-bottom: -0.5rem;
   margin-right: 15px; }
-
-.custom-select-2 select {
-  padding: 0 0.5rem;
-  width: 100%;
-  font-size: 0.9rem;
-  border: none;
-  box-shadow: none;
-  background-color: transparent;
-  color: #fff;
-  background-image: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background-image: url(...); }
-
-.custom-select-2 select:focus {
-  outline: none; }
+  @media (max-width: 767px) {
+    .custom-select-2 {
+      width: 50%;
+      margin: 1.5rem auto 0.5rem;
+      -webkit-animation: selectAppear 0.4s ease-out;
+      -moz-animation: selectAppear 0.4s ease-out;
+      -o-animation: selectAppear 0.4s ease-out;
+      animation: selectAppear 0.4s ease-out; }
+    @-webkit-keyframes selectAppear {
+      0% {
+        transform: translateY(20px); }
+      100% {
+        transform: translateY(0); } }
+    @keyframes selectAppear {
+      0% {
+        transform: translateY(20px); }
+      100% {
+        transform: translateY(0); } } }
+  .custom-select-2 select {
+    padding: 0 0.5rem;
+    width: 100%;
+    font-size: 0.9rem;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    color: #fff;
+    background-image: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url(...); }
+    .custom-select-2 select select:focus {
+      outline: none; }
+    @media (max-width: 767px) {
+      .custom-select-2 select {
+        padding: 0.25rem 1.25rem;
+        width: 100%;
+        font-size: 1.2rem; } }
 
 /*# sourceMappingURL=custom.css.map */
