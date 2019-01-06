@@ -568,7 +568,7 @@ section.sponsors {
 
     .prize__4 {
         background-color: $yellow;
-        color:$navy-blue;
+        color: $navy-blue;
         font-weight: $font-weight-bold;
     }
 
@@ -611,4 +611,18 @@ section.sponsors {
             }
         }
     }
+}
+
+.btn-facebook {
+color: #fff;
+background-color: #3b5998;
+border-color: rgba(0,0,0,.2);
+}
+
+.btn-facebook.focus,
+.btn-facebook:focus,
+.btn-facebook:hover {
+    color: #fff;
+    background-color: #2d4373;
+    border-color: rgba(0, 0, 0, .2);
 }

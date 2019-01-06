@@ -77,12 +77,36 @@
                         </select>
                     </div>
                     <a href="#!">About</a>
-                    <a href="#!"><i class="far fa-user-alt"></i> Sign in</a>
+                    <a href="#!" data-toggle="modal" data-target="#signInModal"><i class="far fa-user-alt"></i> Log in</a>
                     <a href="#!">Français</a>
                 </div>
             </div>
         </nav>
+        
+        <!-- Log in Modal -->
+        <div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title font-weight-bolder" id="exampleModalCenterTitle"><i class="far fa-check-circle text-primary"></i> Ready to vote?</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Log in to Facebook to vote for your favourite Poutine.</p>
+                        <button type="button" class="btn btn-block btn-facebook" data-dismiss="modal"><i class="fab fa-facebook"></i> Log in using Facebook</button>
+                    </div>
+                    <div class="modal-footer justify-content-start">
+                        <a href="#!" class="text-dark">Restaurant owner? Log in here.</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     </header>
+
+
 
     <main>
         <section class="supatron">
@@ -179,14 +203,14 @@
 
                     <!-- Add a new tab item here for another city -->
                 </ul>
-                <!-- winners from each city -->                
+                <!-- winners from each city -->
                 <div class="tab-content" id="myTabContent">
 
                     <!-- city #1 -->
                     <div class="tab-pane fade show active" id="montreal" role="tabpanel" aria-labelledby="home-tab">
                         <section class="crds">
                             <div class="row">
-                                <div class="col-12 col-sm-6 col-lg-8">
+                                <div class="col-12 col-sm-6 col-lg-4">
                                     <a href="./product.html">
                                         <div class="crd">
                                             <img class="" src="./img/photos/poutine-4.jpeg" alt="Image of Amazing Poutine" />
@@ -194,8 +218,8 @@
                                                 Name of the Prize
                                             </div>
                                             <div class="crd-body">
-                                                <h3>Restaurant Name super long</h3>
-                                                <h4>Poutine Name</h4>
+                                                <h3>Le Gras Dur</h3>
+                                                <h4>Sea Food Poutine Teddy Roaster</h4>
                                                 <div class="crd-row">
                                                     <p class="small">$18 - Vegan, Beets, gourmet</p>
                                                     <p class="small">1.6 km</p>
@@ -212,8 +236,8 @@
                                                 Name of the Prize 1
                                             </div>
                                             <div class="crd-body">
-                                                <h3>Restaurant Name super long</h3>
-                                                <h4>Poutine Name</h4>
+                                                <h3>Les Rôtisseries Piri Piri</h3>
+                                                <h4>THE ULTIMATE POUTINE</h4>
                                                 <div class="crd-row">
                                                     <p class="small">$14 - Ground Beef, Extra Cheese, gourmet</p>
                                                     <p class="small">10.4 km</p>
@@ -230,8 +254,8 @@
                                                 Name of the Prize
                                             </div>
                                             <div class="crd-body">
-                                                <h3>Restaurant Name super long</h3>
-                                                <h4>Poutine Name</h4>
+                                                <h3> Le Smoking BBQ</h3>
+                                                <h4>The Lucky Luke</h4>
                                                 <div class="crd-row">
                                                     <p class="small">$16 - Chicken, Fries, Cheese Curds</p>
                                                     <p class="small">22.3 km</p>
@@ -248,8 +272,8 @@
                                                 Name of the Prize 3
                                             </div>
                                             <div class="crd-body">
-                                                <h3>Restaurant Name super long</h3>
-                                                <h4>Poutine Name</h4>
+                                                <h3>Taboo Cuisine Rebelle</h3>
+                                                <h4>Zombie Poutine</h4>
                                                 <div class="crd-row">
                                                     <p class="small">$20 - Vegan, Glutten-free, love</p>
                                                     <p class="small">30.8 km</p>
@@ -266,11 +290,29 @@
                                                 Name of the Prize 4
                                             </div>
                                             <div class="crd-body">
-                                                <h3>Restaurant Name super long</h3>
+                                                <h3>Restaurant Name</h3>
                                                 <h4>Poutine Name</h4>
                                                 <div class="crd-row">
                                                     <p class="small">$12 - Cheese, fries, bacon, jalapenos</p>
                                                     <p class="small">42.0 km</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-4">
+                                    <a href="./product.html">
+                                        <div class="crd">
+                                            <img class="" src="./img/photos/poutine-10.jpg" alt="Image of Amazing Poutine" />
+                                            <div class="prize">
+                                                Honorable Mention
+                                            </div>
+                                            <div class="crd-body">
+                                                <h3>Franchise Name</h3>
+                                                <h4>Poutine Name</h4>
+                                                <div class="crd-row">
+                                                    <p class="small">$15.60 - Cheese, fries, bacon, jalapenos</p>
+                                                    <p class="small">Multiple</p>
                                                 </div>
                                             </div>
                                         </div>
