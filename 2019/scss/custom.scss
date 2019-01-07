@@ -28,7 +28,7 @@ $theme-colors: ("primary":$blue, "secondary":$red, "navy-blue":#082345, "navy-bl
     padding: 0.25rem 0;
     position: fixed;
     display: block;
-    z-index: 2;
+    z-index: 4;
     top: 0;
     left: 0;
     width: 100%;
@@ -285,6 +285,8 @@ $theme-colors: ("primary":$blue, "secondary":$red, "navy-blue":#082345, "navy-bl
 .flexdatalist-results {
     margin-top: 0.1rem;
     border-radius: 0.3rem !important;
+    border: 1px solid #ccc;
+    border-color: rgb(206, 206, 206) !important;
 }
 
 .flexdatalist-results li.active {
@@ -447,9 +449,117 @@ section.sponsors {
     }
 }
 
+// results filters
+div.filter-1 {
+    margin-top: 68px;
+    padding-top: $spacer*0.5;
+    padding-bottom: $spacer*0.5;
+    border-bottom: 1px solid #e5e5e5;
+
+    @media(max-width: 767px) {
+        margin-top: 52px;
+        padding-top: $spacer*0.3;
+        padding-top: $spacer*0.3;
+    }
+
+    p.location {
+        margin-bottom: 0 !important;
+        color: $navy-blue;
+        text-decoration: none;
+        font-size: $spacer;
+        font-weight: $font-weight-base*1.5;
+    }
+
+    a.location {
+        margin-top: $spacer*0.25;
+        padding-bottom: 0;
+        text-decoration: none;
+        color: grey;
+
+        &:hover {
+            color: rgba(1, 1, 1, 0.3);
+        }
+    }
+
+    input {
+        border: 0;
+
+        @media(max-width: 767px) {
+            border: 1px solid #e5e5e5;
+        }
+    }
+
+    .btn-light {
+        background-color: white;
+        border-color: transparent;
+        border: 0px solid #ccc;
+        border-left: 0;
+        color: $blue;
+
+        @media(max-width: 767px) {
+            border: 1px solid #e5e5e5;
+            border-left: 0;
+        }
+    }
+}
+
+div.filter-2 {
+    padding-top: $spacer*0.75;
+    padding-bottom: $spacer*0.75;
+    border-bottom: 1px solid #e5e5e5;
+
+    p {
+        font-weight: $font-weight-base*1.5;
+        font-size: $font-size-base*1.69;
+        margin-bottom: 0;
+
+        @media(max-width: 767px) {
+            font-size: $font-size-base*1.15;
+            margin-bottom: 0;
+        }
+    }
+
+    .ingredients {
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        display: block;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-;
+
+        .btn-group-toggle > .btn {
+            margin-right: 0.5rem;
+            flex-wrap: nowrap;
+            cursor: pointer;
+        }
+
+        .btn-group-toggle > .btn input[type="radio"] {
+            position: fixed;
+        }
+    }
+}
+
+div.filter-3 {
+    padding-top: $spacer*0.7;
+    padding-bottom: $spacer*0.7;
+    border-bottom: 1px solid #e5e5e5;
+
+    p {
+        margin-bottom: 0 !important;
+        color: $navy-blue;
+        text-decoration: none;
+        font-size: $spacer;
+        font-weight: $font-weight-base*1.5;
+    }
+}
+
+// results section
+section.results {
+    background-color: #f2f2f2;
+    padding:$spacer 0;
+}
 
 // custom select 2
-
 .custom-select-2 {
     border: 2px solid #fff;
     width: 115px;
@@ -527,6 +637,7 @@ section.sponsors {
 .crd {
     margin-bottom: $spacer*1.5;
     transition: all 0.5s ease 0s, opacity 1.25s cubic-bezier(0.5, 0, 0, 1) 0s, transform 1.25s cubic-bezier(0.5, 0, 0, 1) 0s;
+    background-color: white;
 
     &:hover {
         box-shadow: 2px 8px 20px 0 rgba(119, 120, 121, 0.25);
@@ -575,7 +686,7 @@ section.sponsors {
     .crd-body {
         display: flex;
         flex-direction: column;
-        padding: $spacer*0.7;
+        padding: $spacer*0.8;
 
         h3,
         h4,
@@ -614,9 +725,9 @@ section.sponsors {
 }
 
 .btn-facebook {
-color: #fff;
-background-color: #3b5998;
-border-color: rgba(0,0,0,.2);
+    color: #fff;
+    background-color: #3b5998;
+    border-color: rgba(0, 0, 0, .2);
 }
 
 .btn-facebook.focus,

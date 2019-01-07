@@ -7,7 +7,7 @@ $(document).ready(function () {
     // index.html location javascript popup simulation
     $("#target").click(function () {
         if (confirm("La Poutine Week would like to use your location.")) {
-            $('input.flexdatalist').val('69 rue de la Poutine, Montreal QC, H4N 1B2').delay(1200);
+            $('input.flexdatalist').val('69 rue de la Poutine, Montreal QC, H4N 1B2');
             setTimeout(function () {
                 window.location.href = "results.html";
             }, 750);
@@ -22,6 +22,13 @@ $(document).ready(function () {
         setTimeout(function () {
             window.location.href = "results.html";
         }, 500);
+    });
+    $("#target-2").click(function () {
+        if (confirm("La Poutine Week would like to use your location.")) {
+            $('input.flexdatalist').val('69 rue de la Poutine, Montreal QC, H4N 1B2');
+        } else {
+            $('input.flexdatalist').val('');
+        }
     });
 
     // Parallax effect
@@ -39,6 +46,11 @@ $(document).ready(function () {
         if (win.width() > 768) {
             $(".menu").removeClass("menu-open").addClass("d-none");
         }
+    });
+
+    // input
+    $("input").focus(function () {
+      $(".map-view").toggleClass("map-view d-none");
     });
 
 

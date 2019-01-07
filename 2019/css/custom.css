@@ -7724,7 +7724,7 @@ a.text-navy-blue-light:hover, a.text-navy-blue-light:focus {
   padding: 0.25rem 0;
   position: fixed;
   display: block;
-  z-index: 2;
+  z-index: 4;
   top: 0;
   left: 0;
   width: 100%; }
@@ -7887,7 +7887,9 @@ a.text-navy-blue-light:hover, a.text-navy-blue-light:focus {
 
 .flexdatalist-results {
   margin-top: 0.1rem;
-  border-radius: 0.3rem !important; }
+  border-radius: 0.3rem !important;
+  border: 1px solid #ccc;
+  border-color: #cecece !important; }
 
 .flexdatalist-results li.active {
   background: #009BDE;
@@ -7986,6 +7988,86 @@ section.sponsors {
   section.sponsors .logo-sponsor {
     max-width: 150px; }
 
+div.filter-1 {
+  margin-top: 68px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e5e5e5; }
+  @media (max-width: 767px) {
+    div.filter-1 {
+      margin-top: 52px;
+      padding-top: 0.3rem;
+      padding-top: 0.3rem; } }
+  div.filter-1 p.location {
+    margin-bottom: 0 !important;
+    color: #082345;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600; }
+  div.filter-1 a.location {
+    margin-top: 0.25rem;
+    padding-bottom: 0;
+    text-decoration: none;
+    color: grey; }
+    div.filter-1 a.location:hover {
+      color: rgba(1, 1, 1, 0.3); }
+  div.filter-1 input {
+    border: 0; }
+    @media (max-width: 767px) {
+      div.filter-1 input {
+        border: 1px solid #e5e5e5; } }
+  div.filter-1 .btn-light {
+    background-color: white;
+    border-color: transparent;
+    border: 0px solid #ccc;
+    border-left: 0;
+    color: #009BDE; }
+    @media (max-width: 767px) {
+      div.filter-1 .btn-light {
+        border: 1px solid #e5e5e5;
+        border-left: 0; } }
+
+div.filter-2 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #e5e5e5; }
+  div.filter-2 p {
+    font-weight: 600;
+    font-size: 1.69rem;
+    margin-bottom: 0; }
+    @media (max-width: 767px) {
+      div.filter-2 p {
+        font-size: 1.15rem;
+        margin-bottom: 0; } }
+  div.filter-2 .ingredients {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    display: block;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-; }
+    div.filter-2 .ingredients .btn-group-toggle > .btn {
+      margin-right: 0.5rem;
+      flex-wrap: nowrap;
+      cursor: pointer; }
+    div.filter-2 .ingredients .btn-group-toggle > .btn input[type="radio"] {
+      position: fixed; }
+
+div.filter-3 {
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  border-bottom: 1px solid #e5e5e5; }
+  div.filter-3 p {
+    margin-bottom: 0 !important;
+    color: #082345;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600; }
+
+section.results {
+  background-color: #f2f2f2;
+  padding: 1rem 0; }
+
 .custom-select-2 {
   border: 2px solid #fff;
   width: 115px;
@@ -8039,6 +8121,7 @@ section.sponsors {
 .crd {
   margin-bottom: 1.5rem;
   transition: all 0.5s ease 0s, opacity 1.25s cubic-bezier(0.5, 0, 0, 1) 0s, transform 1.25s cubic-bezier(0.5, 0, 0, 1) 0s;
+  background-color: white;
   border-radius: 0.3rem;
   border: 1px solid #f2f2f2; }
   .crd:hover {
@@ -8071,7 +8154,7 @@ section.sponsors {
   .crd .crd-body {
     display: flex;
     flex-direction: column;
-    padding: 0.7rem; }
+    padding: 0.8rem; }
     .crd .crd-body h3,
     .crd .crd-body h4,
     .crd .crd-body p {

@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./css/jquery.flexdatalist.css">
+    <link rel="stylesheet" href="./css/custom.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-LRlmVvLKVApDVGuspQFnRQJjkv0P7/YFrw84YYQtmYG4nK8c+M+NlmYDCv0rKWpG" crossorigin="anonymous">
+
+    <title>Results | La Poutine Week</title>
+
+    <meta name="description" content="La Poutine Week: 1-7 février 2019" />
+    <meta property="og:title" content="La Poutine Week: 1-7 février 2019" />
+    <meta property="og:description" content="La Poutine Week: 1-7 février 2019" />
+    <meta property="og:url" content="https://loogart.github.io/lapoutineweek/2019signup/img/favicon.png" />
+    <meta property="og:image" content="https://loogart.github.io/lapoutineweek/2019signup/img/favicon.png" />
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="./img/favicon.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="La Poutine Week">
+    <link rel="apple-touch-icon-precomposed" href="./img/favicon.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="./img/favicon.png">
+    <meta name="msapplication-TileColor" content="#50E3C2">
+    <link rel="shortcut icon" href="./img/favicon.png">
+    <link rel="mask-icon" href="./img/icons/safari-pinned-tab.svg" color="#082345">
+    <meta name="theme-color" content="#082345">
+</head>
+
+<body>
+    <header>
+        <nav class="nvg bg-navy-gradient">
+            <div class="container-fluid d-flex justify-content-between align-items-center">
+                <a href="./">
+                    <h1 class="sr-only">La Poutine Week</h1><img class="logo" src="./img/logotype.svg" alt="La Poutine Week logo">
+                </a>
+                <a href="#!" class="d-block d-md-none" id="openMenu"><i class="far fa-bars"></i> <span class="sr-only">Menu</span></a>
+
+                <div class="menu d-none d-md-block">
+                    <div class="d-flex justify-content-between align-items-center w-100">
+                        <a href="./" class="d-block d-md-none">
+                            <img class="logo" src="./img/logotype.svg" alt="La Poutine Week logo">
+                        </a>
+                        <a href="#!" class="d-block d-md-none" id="closeMenu"><i class="far fa-times"></i> <span class="sr-only">Close Menu</span></a>
+                    </div>
+                    <div class="custom-select-2 d-flex d-md-inline-block">
+                        <select>
+                            <option selected>Select city</option>
+                            <optgroup label="Canadian Cities">
+                                <option value="1">Calgary</option>
+                                <option value="2">Edmonton</option>
+                                <option value="3">Montreal</option>
+                                <option value="4">Ottawa</option>
+                                <option value="5">Regina</option>
+                                <option value="6">Saskatoon</option>
+                                <option value="7">Toronto</option>
+                                <option value="8">Vancouver</option>
+                                <option value="7">Victoria</option>
+                                <option value="9">Winnipeg</option>
+                            </optgroup>
+                            <optgroup label="Regions">
+                                <option value="10">International</option>
+                                <option value="11">Ontario</option>
+                                <option value="12">Washington</option>
+                                <option value="13">Régions du Québec</option>
+                                <option value="15">Rive Nord</option>
+                                <option value="16">Rive Sud</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <a href="#!">About</a>
+                    <a href="#!" data-toggle="modal" data-target="#signInModal"><i class="far fa-user-alt"></i> Log in</a>
+                    <a href="#!">Français</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Log in Modal -->
+        <div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title font-weight-bolder" id="exampleModalCenterTitle"><i class="far fa-check-circle text-primary"></i> Ready to vote?</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Log in to Facebook to vote for your favourite Poutine.</p>
+                        <button type="button" class="btn btn-block btn-facebook" data-dismiss="modal"><i class="fab fa-facebook"></i> Log in using Facebook</button>
+                    </div>
+                    <div class="modal-footer justify-content-start">
+                        <a href="#!" class="text-dark">Restaurant owner? Log in here.</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="filter-1">
+            <div class="container d-flex justify-content-start align-items-center">
+                <p class="location mr-3 d-none d-md-block">Location</p>
+                <div class="d-flex flex-column flex-md-row justify-content-md-between w-100">
+
+                    <div class="input-group mr-3 order-1 order-md-0 mt-2 mt-md-0 flex-grow-1">
+                        <input type="text" class="flexdatalist form-control" placeholder="Type your address" aria-label="User address" aria-describedby="user-address" data-min-length="1" list="adresses" name="adresses">
+                        <div class="input-group-append">
+                            <button class="btn btn-light" type="button" id="target-2"><i class="far fa-location-arrow" aria-hidden></i><span class="sr-only">Find my location</span></button>
+                        </div>
+                        <datalist id="adresses">
+                            <option value="1">123 rue Poutine, Montreal QC, H4N 1N5</option>
+                            <option value="2">124 rue Poutineaux, Montreal QC, H4N 2H7</option>
+                            <option value="3">140 rue Poutineaux, Montreal QC, H4N 2H7</option>
+                            <option value="4">169 rue Poutine Ouest, Montreal QC, H4N 2H7</option>
+                            <option value="5">221 rue Putine, Montreal QC, H4N 2H7</option>
+                            <option value="6">225 boulevard Poutine Ouest, Montreal QC, H7V 3H8</option>
+                            <option value="5">240-A boulevard Poutine Ouest, Montreal QC, H9M 4B6</option>
+                            <option value="6">269 cercle Poutine, Montreal QC H2P 4B9</option>
+                            <option value="7">369 avenue Loogart, Montreal QC, H4N 1B8</option>
+                            <option value="8">396 rue Loogarine, Montreal QC, H4N 2M9</option>
+                            <option value="9">444 boul Marcel-Laurin, Montreal QC, H5N 4H9</option>
+                            <option value="S10">69 rue Poutineuse, Montreal QC, H8M 6M9</option>
+                        </datalist>
+                    </div>
+
+                    <ul class="nav nav-pills d-flex flex-nowrap text-center" id="pills-tab" role="tablist">
+                        <li class="nav-item flex-grow-1">
+                            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#list-view" role="tab" aria-controls="pills-home" aria-selected="true">List</a>
+                        </li>
+                        <li class="nav-item flex-grow-1">
+                            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#map-view" role="tab" aria-controls="pills-profile" aria-selected="false">Map</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <div class="filter-2">
+            <div class="container d-flex flex-column">
+                <p>What's in my Poutine?</p>
+                <div class="ingredients my-2">
+
+                    <div class="btn-group-toggle" data-toggle="buttons">
+                        <label class="btn btn-outline-primary active">
+                            <input type="radio" name="options" id="option1" autocomplete="off" checked> All
+                        </label>
+                        <label class="btn btn-outline-primary">
+                            <input type="radio" name="options" id="option2" autocomplete="off"> Vegan
+                        </label>
+                        <label class="btn btn-outline-primary">
+                            <input type="radio" name="options" id="option3" autocomplete="off"> Glutten-free
+                        </label>
+                        <label class="btn btn-outline-primary">
+                            <input type="radio" name="options" id="option4" autocomplete="off"> Mushroom
+                        </label>
+                        <label class="btn btn-outline-primary">
+                            <input type="radio" name="options" id="option5" autocomplete="off"> Beef
+                        </label>
+                        <label class="btn btn-outline-primary">
+                            <input type="radio" name="options" id="option6" autocomplete="off"> Chicken
+                        </label>
+                        <label class="btn btn-outline-primary">
+                            <input type="radio" name="options" id="option7" autocomplete="off"> Gourmet
+                        </label>
+                        <label class="btn btn-outline-primary">
+                            <input type="radio" name="options" id="option8" autocomplete="off"> Sea Food
+                        </label>
+                        <label class="btn btn-outline-primary">
+                            <input type="radio" name="options" id="option9" autocomplete="off"> Delivered by GOLO
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="filter-3">
+            <div class="container d-flex justify-content-between justify-content-md-start align-items-center">
+                <p class="mr-3 d-inline-block d-md-none">Budget</p>
+                <p class="mr-3 d-none d-md-inline-block">My budget for this poutine</p>
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-outline-primary active">
+                        <input type="radio" name="options" id="option1" autocomplete="off" checked> $
+                    </label>
+                    <label class="btn btn-outline-primary">
+                        <input type="radio" name="options" id="option2" autocomplete="off"> $$
+                    </label>
+                    <label class="btn btn-outline-primary">
+                        <input type="radio" name="options" id="option3" autocomplete="off"> $$$
+                    </label>
+                    <label class="btn btn-outline-primary">
+                        <input type="radio" name="options" id="option4" autocomplete="off"> Baller
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <section class="results">
+            <div class="container">
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="list-view" role="tabpanel" aria-labelledby="pills-home-tab">
+                        <section class="crds">
+                            <div class="row">
+                                <div class="col-12 col-sm-6 col-lg-4">
+                                    <a href="./product.html">
+                                        <div class="crd">
+                                            <img class="" src="./img/photos/poutine-4.jpeg" alt="Image of Amazing Poutine" />
+                                            <div class="crd-body">
+                                                <h3>Le Gras Dur</h3>
+                                                <h4>Sea Food Poutine Teddy Roaster</h4>
+                                                <div class="crd-row">
+                                                    <p class="small">$18 - Vegan, Beets, gourmet</p>
+                                                    <p class="small">1.6 km</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-4">
+                                    <a href="./product.html">
+                                        <div class="crd">
+                                            <img class="" src="./img/photos/poutine-5.jpeg" alt="Image of Amazing Poutine" />
+                                            <div class="crd-body">
+                                                <h3>Les Rôtisseries Piri Piri</h3>
+                                                <h4>THE ULTIMATE POUTINE</h4>
+                                                <div class="crd-row">
+                                                    <p class="small">$14 - Ground Beef, Extra Cheese, gourmet</p>
+                                                    <p class="small">10.4 km</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-4">
+                                    <a href="./product.html">
+                                        <div class="crd">
+                                            <img class="" src="./img/photos/poutine-7.jpeg" alt="Image of Amazing Poutine" />
+                                            <div class="crd-body">
+                                                <h3> Le Smoking BBQ</h3>
+                                                <h4>The Lucky Luke</h4>
+                                                <div class="crd-row">
+                                                    <p class="small">$16 - Chicken, Fries, Cheese Curds</p>
+                                                    <p class="small">22.3 km</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-4">
+                                    <a href="./product.html">
+                                        <div class="crd">
+                                            <img class="" src="./img/photos/poutine-8.jpeg" alt="Image of Amazing Poutine" />
+                                            <div class="crd-body">
+                                                <h3>Taboo Cuisine Rebelle</h3>
+                                                <h4>Zombie Poutine</h4>
+                                                <div class="crd-row">
+                                                    <p class="small">$20 - Vegan, Glutten-free, love</p>
+                                                    <p class="small">30.8 km</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-4">
+                                    <a href="./product.html">
+                                        <div class="crd">
+                                            <img class="" src="./img/photos/poutine-9.jpg" alt="Image of Amazing Poutine" />
+                                            <div class="crd-body">
+                                                <h3>Restaurant Name</h3>
+                                                <h4>Poutine Name</h4>
+                                                <div class="crd-row">
+                                                    <p class="small">$12 - Cheese, fries, bacon, jalapenos</p>
+                                                    <p class="small">42.0 km</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-4">
+                                    <a href="./product.html">
+                                        <div class="crd">
+                                            <img class="" src="./img/photos/poutine-10.jpg" alt="Image of Amazing Poutine" />
+                                            <div class="crd-body">
+                                                <h3>Franchise Name</h3>
+                                                <h4>Poutine Name</h4>
+                                                <div class="crd-row">
+                                                    <p class="small">$15.60 - Cheese, fries, bacon, jalapenos</p>
+                                                    <p class="small">Multiple</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="tab-pane fade" id="map-view" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        View 2
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container-fluid d-flex flex-wrap justify-content-between align-items-start">
+            <a href="./"><img class="logo__footer d-none d-md-block" src="./img/logo.svg"></a>
+            <ul class="list-unstyled">
+                <li>
+                    <h5>Cities</h5>
+                </li>
+                <li><a href="./results.html">Calgary</a></li>
+                <li><a href="./results.html">Edmonton</a></li>
+                <li><a href="./results.html">Montreal</a></li>
+                <li><a href="./results.html">Ottawa</a></li>
+                <li><a href="./results.html">Regina</a></li>
+                <li><a href="./results.html">Saskatoon</a></li>
+                <li><a href="./results.html">Toronto</a></li>
+                <li><a href="./results.html">Vancouver</a></li>
+                <li><a href="./results.html">Victoria</a></li>
+            </ul>
+            <ul class="list-unstyled">
+                <li>
+                    <h5>Regions</h5>
+                </li>
+                <li><a href="./results.html">Washington</a></li>
+                <li><a href="./results.html">International</a></li>
+                <li><a href="./results.html">Ontario</a></li>
+                <li><a href="./results.html">Rive Nord</a></li>
+                <li><a href="./results.html">Rive Sud</a></li>
+            </ul>
+            <ul class="list-unstyled">
+                <li>
+                    <h5>Support</h5>
+                </li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./faq.html">FAQ</a></li>
+                <li><a href="./terms.html">Terms</a></li>
+                <li><a href="./privacy.html">Privacy</a></li>
+                <li><a href="#!">Français</a></li>
+            </ul>
+            <ul class="list-unstyled">
+                <li>
+                    <h5>Follow us</h5>
+                </li>
+                <li><a href="https://www.facebook.com/LaPoutineWeek/" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+                <li><a href="https://www.instagram.com/lapoutineweek/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+                <li><a href="https://twitter.com/lapoutineweek/" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+            </ul>
+            <div class="w-100">
+
+                <div class="container-fluid">
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <small>© 2019 La Poutine Week | <a href="https://peoplemover.tech" target="_blank">People Mover Technologies Inc.</a> </small>
+                        </div>
+                        <div class="col-md-6 d-flex justify-content-start justify-content-md-end">
+                            <small>Designed with <i class="fas fa-heart"></i> and <i class="fas fa-coffee"></i> by <a href="https://loogart.com/" target="_blank">Loogart</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/rellax.min.js"></script>
+    <script src="./js/jquery.flexdatalist.min.js"></script>
+    <script src="./js/scripts.js"></script>
+</body>
+
+</html>
