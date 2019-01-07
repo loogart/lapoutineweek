@@ -31,9 +31,6 @@ $(document).ready(function () {
         }
     });
 
-    // Parallax effect
-    var rellax = new Rellax('.rellax');
-
     // mobile menu
     $("#openMenu").click(function () {
         $(".menu").toggleClass("d-none menu-open");
@@ -48,10 +45,7 @@ $(document).ready(function () {
         }
     });
 
-    // input
-    $("input").focus(function () {
-      $(".map-view").toggleClass("map-view d-none");
-    });
-
-
 });
+
+// Parallax effect
+var rellax = new Rellax('.rellax');
