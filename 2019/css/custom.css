@@ -7997,7 +7997,8 @@ div.filter-1 {
     div.filter-1 {
       margin-top: 52px;
       padding-top: 0.3rem;
-      padding-top: 0.3rem; } }
+      padding-top: 0.3rem;
+      border-bottom: 0; } }
   div.filter-1 p.location {
     margin-bottom: 0 !important;
     color: #082345;
@@ -8065,7 +8066,7 @@ div.filter-3 {
     font-weight: 600; }
 
 section.results {
-  background-color: #f2f2f2;
+  background-color: #f8f8f8;
   padding: 1rem 0; }
 
 .custom-select-2 {

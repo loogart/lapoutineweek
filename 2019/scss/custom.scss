@@ -460,6 +460,7 @@ div.filter-1 {
         margin-top: 52px;
         padding-top: $spacer*0.3;
         padding-top: $spacer*0.3;
+        border-bottom: 0;
     }
 
     p.location {
@@ -555,7 +556,7 @@ div.filter-3 {
 
 // results section
 section.results {
-    background-color: #f2f2f2;
+    background-color: #f8f8f8;
     padding:$spacer 0;
 }
 
