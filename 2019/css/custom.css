@@ -8130,6 +8130,10 @@ ol.breadcrumb {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
   max-width: 69vw; }
+  @media (max-width: 767px) {
+    .content {
+      padding-top: 1rem;
+      max-width: 100%; } }
   .content h3 {
     margin: 1.5rem auto;
     font-size: 1.2rem;

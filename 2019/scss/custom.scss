@@ -656,14 +656,20 @@ ol.breadcrumb {
 }
 
 // content
-.content{
+.content {
     margin-top: 68px;
-    padding-top:$spacer*2.5;
-    padding-bottom:$spacer*2.5;
-    max-width:69vw;
-    h3{
-        margin:$spacer*1.5 auto;
-        font-size:$font-size-base*1.2;
+    padding-top: $spacer*2.5;
+    padding-bottom: $spacer*2.5;
+    max-width: 69vw;
+
+    @media(max-width: 767px) {
+        padding-top: $spacer;
+        max-width: 100%;
+    }
+
+    h3 {
+        margin: $spacer*1.5 auto;
+        font-size: $font-size-base*1.2;
         font-weight: bold;
     }
 }
