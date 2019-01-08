@@ -455,6 +455,7 @@ div.filter-1 {
     padding-top: $spacer*0.5;
     padding-bottom: $spacer*0.5;
     border-bottom: 1px solid #e5e5e5;
+    background-color: white;
 
     @media(max-width: 767px) {
         margin-top: 52px;
@@ -508,6 +509,7 @@ div.filter-2 {
     padding-top: $spacer*0.75;
     padding-bottom: $spacer*0.75;
     border-bottom: 1px solid #e5e5e5;
+    background-color: white;
 
     p {
         font-weight: $font-weight-base*1.5;
@@ -521,15 +523,16 @@ div.filter-2 {
     }
 
     .ingredients {
-        overflow-x: auto;
-        overflow-y: hidden;
-        white-space: nowrap;
-        display: block;
-        -webkit-overflow-scrolling: touch;
-        -ms-overflow-style: -ms-autohiding-;
+//        overflow-x: auto;
+//        overflow-y: hidden;
+//        white-space: nowrap;
+//        display: block;
+//        -webkit-overflow-scrolling: touch;
+//        -ms-overflow-style: -ms-autohiding-;
 
         .btn-group-toggle > .btn {
             margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
             flex-wrap: nowrap;
             cursor: pointer;
         }
@@ -544,6 +547,7 @@ div.filter-3 {
     padding-top: $spacer*0.7;
     padding-bottom: $spacer*0.7;
     border-bottom: 1px solid #e5e5e5;
+    background-color: white;
 
     p {
         margin-bottom: 0 !important;
@@ -557,7 +561,7 @@ div.filter-3 {
 // results section
 section.results {
     background-color: #f8f8f8;
-    padding:$spacer 0;
+    padding: 0;
 }
 
 // custom select 2
@@ -607,7 +611,7 @@ section.results {
         font-size: 0.9rem;
         border: none;
         box-shadow: none;
-        background-color: transparent;
+        background-color: $navy-blue-light;
         color: #fff;
         background-image: none;
         -webkit-appearance: none;
@@ -737,4 +741,56 @@ section.results {
     color: #fff;
     background-color: #2d4373;
     border-color: rgba(0, 0, 0, .2);
+}
+
+#map {
+    height: calc(100vh - 125px);
+    width: 100%;
+
+    img {
+        width: 269px;
+        height: 190px;
+        object-fit: cover;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+
+        @media (max-width: 767px) {
+            width: 100%;
+            height: 120px;
+        }
+    }
+
+    .crd {
+        border: 0 !important;
+        margin-bottom: 0 !important;
+        margin: auto;
+
+        a {
+            text-decoration: none !important;
+        }
+
+        .crd-body {
+            padding: 0 !important;
+            .crd-row{
+                padding-bottom:$spacer*0.5;
+            }
+        }
+
+        h3,
+        h4 {
+            font-weight: $font-weight-base*2;
+        }
+
+        p {
+            color: lightslategrey;
+            font-weight: bolder;
+            margin-top: $spacer*0.5;
+            margin-bottom: 0;
+            max-width: 80%;
+        }
+
+        &:hover {
+            box-shadow: none !important;
+        }
+    }
 }

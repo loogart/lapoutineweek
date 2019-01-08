@@ -7992,7 +7992,8 @@ div.filter-1 {
   margin-top: 68px;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  border-bottom: 1px solid #e5e5e5; }
+  border-bottom: 1px solid #e5e5e5;
+  background-color: white; }
   @media (max-width: 767px) {
     div.filter-1 {
       margin-top: 52px;
@@ -8031,7 +8032,8 @@ div.filter-1 {
 div.filter-2 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-  border-bottom: 1px solid #e5e5e5; }
+  border-bottom: 1px solid #e5e5e5;
+  background-color: white; }
   div.filter-2 p {
     font-weight: 600;
     font-size: 1.69rem;
@@ -8040,24 +8042,19 @@ div.filter-2 {
       div.filter-2 p {
         font-size: 1.15rem;
         margin-bottom: 0; } }
-  div.filter-2 .ingredients {
-    overflow-x: auto;
-    overflow-y: hidden;
-    white-space: nowrap;
-    display: block;
-    -webkit-overflow-scrolling: touch;
-    -ms-overflow-style: -ms-autohiding-; }
-    div.filter-2 .ingredients .btn-group-toggle > .btn {
-      margin-right: 0.5rem;
-      flex-wrap: nowrap;
-      cursor: pointer; }
-    div.filter-2 .ingredients .btn-group-toggle > .btn input[type="radio"] {
-      position: fixed; }
+  div.filter-2 .ingredients .btn-group-toggle > .btn {
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    flex-wrap: nowrap;
+    cursor: pointer; }
+  div.filter-2 .ingredients .btn-group-toggle > .btn input[type="radio"] {
+    position: fixed; }
 
 div.filter-3 {
   padding-top: 0.7rem;
   padding-bottom: 0.7rem;
-  border-bottom: 1px solid #e5e5e5; }
+  border-bottom: 1px solid #e5e5e5;
+  background-color: white; }
   div.filter-3 p {
     margin-bottom: 0 !important;
     color: #082345;
@@ -8067,7 +8064,7 @@ div.filter-3 {
 
 section.results {
   background-color: #f8f8f8;
-  padding: 1rem 0; }
+  padding: 0; }
 
 .custom-select-2 {
   border: 2px solid #fff;
@@ -8101,7 +8098,7 @@ section.results {
     font-size: 0.9rem;
     border: none;
     box-shadow: none;
-    background-color: transparent;
+    background-color: #13497B;
     color: #fff;
     background-image: none;
     -webkit-appearance: none;
@@ -8192,5 +8189,40 @@ section.results {
   color: #fff;
   background-color: #2d4373;
   border-color: rgba(0, 0, 0, 0.2); }
+
+#map {
+  height: calc(100vh - 125px);
+  width: 100%; }
+  #map img {
+    width: 269px;
+    height: 190px;
+    object-fit: cover;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0; }
+    @media (max-width: 767px) {
+      #map img {
+        width: 100%;
+        height: 120px; } }
+  #map .crd {
+    border: 0 !important;
+    margin-bottom: 0 !important;
+    margin: auto; }
+    #map .crd a {
+      text-decoration: none !important; }
+    #map .crd .crd-body {
+      padding: 0 !important; }
+      #map .crd .crd-body .crd-row {
+        padding-bottom: 0.5rem; }
+    #map .crd h3,
+    #map .crd h4 {
+      font-weight: 800; }
+    #map .crd p {
+      color: lightslategrey;
+      font-weight: bolder;
+      margin-top: 0.5rem;
+      margin-bottom: 0;
+      max-width: 80%; }
+    #map .crd:hover {
+      box-shadow: none !important; }
 
 /*# sourceMappingURL=custom.css.map */
