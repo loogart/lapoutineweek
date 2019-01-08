@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/custom.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-LRlmVvLKVApDVGuspQFnRQJjkv0P7/YFrw84YYQtmYG4nK8c+M+NlmYDCv0rKWpG" crossorigin="anonymous">
 
-    <title>Restaurant Name | La Poutine Week</title>
+    <title>About | La Poutine Week</title>
 
     <meta name="description" content="La Poutine Week: 1-7 février 2019" />
     <meta property="og:title" content="La Poutine Week: 1-7 février 2019" />
@@ -76,7 +76,7 @@
                             </optgroup>
                         </select>
                     </div>
-                    <a href="./about.html">About</a>
+                    <a href="./about.html" class="active">About</a>
                     <a href="#!" data-toggle="modal" data-target="#signInModal"><i class="far fa-user-alt"></i> Log in</a>
                     <a href="#!">Français</a>
                 </div>
@@ -107,71 +107,35 @@
     </header>
 
     <main>
-        <div class="container product">
-
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="./results.html"><i class="far fa-chevron-left"></i> Back to all Poutines</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Restaurant Name</li>
-                </ol>
-            </nav>
-            <img class="img-product shadow-lg mb-5" src="./img/photos/poutine-4.jpeg" alt="Poutine Name and restaurant">
-            <div class="d-flex justify-content-between">
-                <h2>Le Gras Dur</h2>
-                <h2><sup>$</sup>22.50</h2>
-            </div>
-            <h3>Poutine Name</h3>
-            <p class="description mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas illum quam eos ipsa facilis dignissimos ea officia omnis. Ad molestias tempora velit ullam quisquam voluptas alias placeat quo debitis harum.</p>
-            <ul class="list-inline mt-4">
-                <li class="list-inline-item"><a href="#!" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
-                <li class="list-inline-item"><a href="#!" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
-                <li class="list-inline-item"><a href="#!" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
-            </ul>
-            <table class="table table-hover mt-5">
-                <thead>
-                    <tr>
-                        <th scope="col"> Location</th>
-                        <th scope="col"><i class="fas fa-map-marker-alt"></i> Address</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">Resto Ste-Catherine</th>
-                        <td><a class="burger-address" href="https://goo.gl/maps/R8Eo3GSv5Yw" target="_blank">1124 Ste-Catherine Ouest, Montreal, QC H4N 7A1</a></td>
-
-                    </tr>
-                    <tr>
-                        <th scope="row">Resto Labrosse</th>
-                        <td><a class="burger-address" href="https://goo.gl/maps/R8Eo3GSv5Yw" target="_blank"> 56 boulevard Labrosse, Montreal, QC H5K 1F8</a></td>
-
-                    </tr>
-                    <tr>
-                        <th scope="row">Resto Saint-Laurent</th>
-                        <td><a class="burger-address" href="https://goo.gl/maps/R8Eo3GSv5Yw" target="_blank">3360-A rue Poutine, Ville Saint-Laurent, QC H4N 1B7</a></td>
-
-                    </tr>
-                </tbody>
-            </table>
-
-               <button type="button" class="btn btn-lg btn-secondary btn-vote shadow my-4" data-toggle="modal" data-target=".bd-example-modal-sm" id="voteButton" >
-               
-               
-                <i class="far fa-check-circle"></i> Vote for this Restaurant
-            </button>
-
-            <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-                <div class="modal-dialog  modal-dialog-centered modal-sm">
-                    <div class="modal-content p-4 text-center">
-                        <p class="mb-0 font-weight-bolder"><i class="fas fa-check-circle text-success"></i> Vote confirmed!</p>
+        <div class="container content">
+                <h2 class="font-weight-bolder mb-4">About La Poutine Week®</h2>
+                <h3>Where the best poutines in Canada take the stage!</h3>
+                <p>Every year, from the 1st to 7th of February, restaurants in different cities across Canada and the United States make a special poutine just for La Poutine Week®. Poutine-lovers from all over get a chance to discover these delicious creations and vote for their favorite ones on LaPoutineWeek.com</p>
+                <p>La Poutine Week® allows participants to discover new venues, while providing the opportunity to taste poutine creations they never would have originally. It also allows for restaurants to showcase their best, while increasing their sales and popularity.</p>
+                <div class="row py-4">
+                    <div class="col-sm-6">
+                        <img src="./img/photos/photo-naeem.jpg" class="img-fluid" alt="Cofounder Na'eem Adam">
+                    </div>
+                    <div class="col-sm-6">
+                        <img src="./img/photos/photo-thierry.jpg" class="img-fluid" alt="Cofounder Thierry Rassam">
                     </div>
                 </div>
+                <h3>Co-founders</h3>
+                <p>Na’eem Adam and Thierry Rassam are the co-founders and creators of La Poutine Week®. Their mission is to find creative ways to increase sales for restaurant owners while offering something delicious to cities all over the world. Na’eem and Thierry also co-founded and run Le Burger Week®. More info <a href="https://peoplemover.tech/en/about/" target="_blank">here</a>.</p>
+                <h3 id="faq">FAQ</h3>
+                <p>
+                    <details class="mb-2">
+                        <summary><strong>How do I vote for my favourite poutines?</strong></summary>
+                        <p>Voting is an important part of La Poutine Week®. You can vote for any poutine you wish. It’s fairly simple. You just have to click the “Vote” button on the restaurant profile page and follow the instructions. For this, you do need to be signed up to La Poutine Week®. At the end of the week, winners are announced on the website based on your votes.</p>
+                    </details>
+                    <details class="mb-2">
+                        <summary><strong>How do I register my restaurant for La Poutine Week® or Le Burger Week®?</strong></summary>
+                        <p>For La Poutine Week® 2018 it might be too late already, but please send Maria an email at team@peoplemovertech.com. For Le Burger Week® 2018 in September, you can also send us an email at <a href="mailto:team@peoplemovertech.com">team@peoplemovertech.com</a>.</p>
+                    </details>
+                </p>
+                <h3>More info</h3>
+                <p>If you have any PR or general requests, please send an email to <a href="mailto:team@peoplemovertech.com">team@peoplemovertech.com</a>.</p>
             </div>
-
-            <div class="map-product">
-                <div id="map"></div>
-            </div>
-        </div>
-
     </main>
 
     <footer>
@@ -207,7 +171,6 @@
                 </li>
                 <li><a href="./about.html">About</a></li>
                 <li><a href="./about.html#faq">FAQ</a></li>
-                <li><a href="./terms.html">Terms</a></li>
                 <li><a href="./privacy.html">Privacy</a></li>
                 <li><a href="#!">Français</a></li>
             </ul>

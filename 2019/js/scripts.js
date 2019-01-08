@@ -44,6 +44,14 @@ $(document).ready(function () {
             $(".menu").removeClass("menu-open").addClass("d-none");
         }
     });
+    
+    // vote button
+    $("#voteButton").click(function(){
+        $(this).text(function(i, v){
+		   return v === 'Thank you for your vote.' ? 'Vote for this Restaurant' : 'Thank you for your vote.'
+		});
+        $(".btn-vote").toggleClass("btn-secondary btn-success")
+    });
 
 });
 
@@ -56,17 +64,25 @@ function initMap() {
         zoom: 17,
         center: new google.maps.LatLng(45.5035, -73.5685),
         //map customization styles
-        styles: [{"featureType":"administrative.country","elementType":"geometry","stylers":[{"visibility":"simplified"},{"hue":"#ff0000"}]}]
+        styles: [{
+            "featureType": "administrative.country",
+            "elementType": "geometry",
+            "stylers": [{
+                "visibility": "simplified"
+            }, {
+                "hue": "#ff0000"
+            }]
+        }]
     });
     // custom Le Burger Week icon for Maps
-//    var image = './img/poutine-marker.svg';
-    
+    //    var image = './img/poutine-marker.svg';
+
     var image = {
-    url: "./img/poutine-marker.svg", // url
-    scaledSize: new google.maps.Size(69, 69), // scaled size
-    origin: new google.maps.Point(0,0), // origin
-    anchor: new google.maps.Point(0, 0) // anchor
-};
+        url: "./img/poutine-marker.svg", // url
+        scaledSize: new google.maps.Size(69, 69), // scaled size
+        origin: new google.maps.Point(0, 0), // origin
+        anchor: new google.maps.Point(0, 0) // anchor
+    };
 
     // Example of my location
     var marker = new google.maps.Marker({
@@ -88,22 +104,22 @@ function initMap() {
         icon: image,
         title: 'Restaurant 1'
     });
-    
+
     var contentString1 =
         '<div id="content" class="crd map-popup d-flex align-items-center">' +
-            '<div id="siteNotice">' +
-            '</div>' +
-            '<a class="font-weight-bold" href="./product.html">' +
-                '<div class="crd-body">' +
-                    '<img class="pb-2" src="./img/photos/poutine-4.jpeg">' +
-                    '<h3>Restaurant Name</h3>' +
-                    '<h4>The Poutine Name</h4>' +
-                    '<div class="crd-row">' +
-                        '<p>$18 - Vegan, Beets, gourmet</p>' +
-                        '<p>1.6 km</p>' +
-                    '</div>' +
-                '</div>' +
-            '</a>' +
+        '<div id="siteNotice">' +
+        '</div>' +
+        '<a class="font-weight-bold" href="./product.html">' +
+        '<div class="crd-body">' +
+        '<img class="pb-2" src="./img/photos/poutine-4.jpeg">' +
+        '<h3>Restaurant Name</h3>' +
+        '<h4>The Poutine Name</h4>' +
+        '<div class="crd-row">' +
+        '<p>$18 - Vegan, Beets, gourmet</p>' +
+        '<p>1.6 km</p>' +
+        '</div>' +
+        '</div>' +
+        '</a>' +
         '</div>';
 
     var infowindow1 = new google.maps.InfoWindow({
@@ -125,19 +141,19 @@ function initMap() {
     });
     var contentString2 =
         '<div id="content" class="crd map-popup d-flex align-items-center">' +
-            '<div id="siteNotice">' +
-            '</div>' +
-            '<a class="font-weight-bold" href="./product.html">' +
-                '<div class="crd-body">' +
-                    '<img class="pb-2" src="./img/photos/poutine-5.jpeg">' +
-                    '<h3>Restaurant Name</h3>' +
-                    '<h4>The Poutine Name</h4>' +
-                    '<div class="crd-row">' +
-                        '<p>$18 - Vegan, Beets, gourmet</p>' +
-                        '<p>1.6 km</p>' +
-                    '</div>' +
-                '</div>' +
-            '</a>' +
+        '<div id="siteNotice">' +
+        '</div>' +
+        '<a class="font-weight-bold" href="./product.html">' +
+        '<div class="crd-body">' +
+        '<img class="pb-2" src="./img/photos/poutine-5.jpeg">' +
+        '<h3>Restaurant Name</h3>' +
+        '<h4>The Poutine Name</h4>' +
+        '<div class="crd-row">' +
+        '<p>$18 - Vegan, Beets, gourmet</p>' +
+        '<p>1.6 km</p>' +
+        '</div>' +
+        '</div>' +
+        '</a>' +
         '</div>';
 
     var infowindow2 = new google.maps.InfoWindow({
@@ -155,23 +171,23 @@ function initMap() {
         },
         map: map,
         icon: image,
-         title: 'Restaurant 3'
+        title: 'Restaurant 3'
     });
     var contentString3 =
         '<div id="content" class="crd map-popup d-flex align-items-center">' +
-            '<div id="siteNotice">' +
-            '</div>' +
-            '<a class="font-weight-bold" href="./product.html">' +
-                '<div class="crd-body">' +
-                    '<img class="pb-2" src="./img/photos/poutine-7.jpeg">' +
-                    '<h3>Restaurant Name</h3>' +
-                    '<h4>The Poutine Name</h4>' +
-                    '<div class="crd-row">' +
-                        '<p>$14 - Vegan, Beets, gourmet</p>' +
-                        '<p>1.6 km</p>' +
-                    '</div>' +
-                '</div>' +
-            '</a>' +
+        '<div id="siteNotice">' +
+        '</div>' +
+        '<a class="font-weight-bold" href="./product.html">' +
+        '<div class="crd-body">' +
+        '<img class="pb-2" src="./img/photos/poutine-7.jpeg">' +
+        '<h3>Restaurant Name</h3>' +
+        '<h4>The Poutine Name</h4>' +
+        '<div class="crd-row">' +
+        '<p>$14 - Vegan, Beets, gourmet</p>' +
+        '<p>1.6 km</p>' +
+        '</div>' +
+        '</div>' +
+        '</a>' +
         '</div>';
 
     var infowindow3 = new google.maps.InfoWindow({
@@ -189,23 +205,23 @@ function initMap() {
         },
         map: map,
         icon: image,
-         title: 'Restaurant 4'
+        title: 'Restaurant 4'
     });
     var contentString4 =
         '<div id="content" class="crd map-popup d-flex align-items-center">' +
-            '<div id="siteNotice">' +
-            '</div>' +
-            '<a class="font-weight-bold" href="./product.html">' +
-                '<div class="crd-body">' +
-                    '<img class="pb-2" src="./img/photos/poutine-9.jpg">' +
-                    '<h3>Restaurant Name</h3>' +
-                    '<h4>The Poutine Name</h4>' +
-                    '<div class="crd-row">' +
-                        '<p>$14 - Vegan, Beets, gourmet</p>' +
-                        '<p>1.6 km</p>' +
-                    '</div>' +
-                '</div>' +
-            '</a>' +
+        '<div id="siteNotice">' +
+        '</div>' +
+        '<a class="font-weight-bold" href="./product.html">' +
+        '<div class="crd-body">' +
+        '<img class="pb-2" src="./img/photos/poutine-9.jpg">' +
+        '<h3>Restaurant Name</h3>' +
+        '<h4>The Poutine Name</h4>' +
+        '<div class="crd-row">' +
+        '<p>$14 - Vegan, Beets, gourmet</p>' +
+        '<p>1.6 km</p>' +
+        '</div>' +
+        '</div>' +
+        '</a>' +
         '</div>';
 
     var infowindow4 = new google.maps.InfoWindow({

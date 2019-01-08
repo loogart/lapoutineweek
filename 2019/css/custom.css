@@ -4168,8 +4168,8 @@ a.close.disabled {
   margin: 0.5rem;
   pointer-events: none; }
   .modal.fade .modal-dialog {
-    transition: transform 0.3s ease-out;
-    transform: translate(0, -50px); }
+    transition: transform 0.1s ease-out;
+    transform: scale(0.8); }
     @media screen and (prefers-reduced-motion: reduce) {
       .modal.fade .modal-dialog {
         transition: none; } }
@@ -8066,6 +8066,75 @@ section.results {
   background-color: #f8f8f8;
   padding: 0; }
 
+ol.breadcrumb {
+  margin-top: 68px;
+  background-color: white;
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 0; }
+  @media (max-width: 767px) {
+    ol.breadcrumb {
+      margin-top: 52px; } }
+
+.product {
+  width: 69vw;
+  margin: auto;
+  padding-bottom: 2.5rem; }
+  @media (max-width: 767px) {
+    .product {
+      width: 100vw; } }
+  .product .img-product {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    -webkit-animation: selectAppear 1s cubic-bezier(0.5, 0, 0, 1) 0s;
+    -moz-animation: selectAppear 1s cubic-bezier(0.5, 0, 0, 1) 0s;
+    -o-animation: selectAppear 1s cubic-bezier(0.5, 0, 0, 1) 0s;
+    animation: selectAppear 1s cubic-bezier(0.5, 0, 0, 1) 0s; }
+@-webkit-keyframes selectAppear {
+  0% {
+    transform: translateY(20px);
+    opacity: 0.8; }
+  100% {
+    transform: translateY(0);
+    opacity: 1; } }
+@keyframes selectAppear {
+  0% {
+    transform: translateY(20px);
+    opacity: 0.8; }
+  100% {
+    transform: translateY(0);
+    opacity: 1; } }
+    @media (max-width: 767px) {
+      .product .img-product {
+        height: 40vh; } }
+  .product h2 {
+    font-weight: 900;
+    color: #082345; }
+    @media (max-width: 767px) {
+      .product h2 {
+        font-size: 1.5rem; } }
+  .product h3 {
+    font-weight: 700;
+    color: #009BDE; }
+    @media (max-width: 767px) {
+      .product h3 {
+        font-size: 1.3rem; } }
+  .product ul.list-inline {
+    margin-bottom: 0; }
+  .product .list-inline a {
+    color: #082345; }
+
+.content {
+  margin-top: 68px;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  max-width: 69vw; }
+  .content h3 {
+    margin: 1.5rem auto;
+    font-size: 1.2rem;
+    font-weight: bold; }
+
 .custom-select-2 {
   border: 2px solid #fff;
   width: 115px;
@@ -8224,5 +8293,9 @@ section.results {
       max-width: 80%; }
     #map .crd:hover {
       box-shadow: none !important; }
+
+.map-product #map {
+  height: 300px;
+  margin: 2rem auto; }
 
 /*# sourceMappingURL=custom.css.map */
