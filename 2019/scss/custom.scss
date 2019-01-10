@@ -9,6 +9,8 @@ $yellow:#FFDD68;
 $navy-blue:#082345;
 $navy-blue-light:#13497B;
 $red:#EA4A34;
+$blue-golo:#22095F;
+$orange-golo: #EA784A;
 $gradient-navy: linear-gradient(90deg, rgba(8, 35, 69, 1) 0%, rgba(19, 73, 123, 1) 100%);
 $gradient-blue: linear-gradient(90deg, #009BDE 0%, #55ccff 100%);
 $gradient-yellow: linear-gradient(90deg, #FFDD68 0%, #eb9f46 100%);
@@ -18,9 +20,13 @@ $modal-transition: transform .1s ease-out;
 
 
 // Modify maps
-$colors: ("blue":#009BDE, "yellow":#FFDD68, "red":#EA4A34, "navy-blue":#082345, "navy-blue-light":#13497B, "navy-gradient":$gradient-navy);
+$colors: ("blue":#009BDE, "yellow":#FFDD68, "red":#EA4A34, "navy-blue":#082345, "navy-blue-light":#13497B, "navy-gradient":$gradient-navy, "blue-golo":blue-golo, "orange-golo": orange-golo);
 
-$theme-colors: ("primary":$blue, "secondary":$red, "navy-blue":#082345, "navy-blue-light":#13497B);
+$theme-colors: ("primary":$blue, "secondary":$red, "navy-blue":#082345, "navy-blue-light":#13497B, "blue-golo":#22095F);
+
+$alert-bg-level: 1;
+$alert-border-level: 1;
+$alert-color-level: -10;
 
 // Bootstrap and its default variables
 @import "../bootstrap/scss/bootstrap";
@@ -61,7 +67,44 @@ $theme-colors: ("primary":$blue, "secondary":$red, "navy-blue":#082345, "navy-bl
             }
         }
     }
+
+    .alert {
+        margin-top: $spacer*-0.25;
+        margin-bottom: 0;
+        border-radius: 0;
+        text-align: center;
+        @media (max-width:576px){
+            position: fixed;
+            width:100%;
+            bottom:0;
+            left:0;
+            font-size: $font-size-base*0.75;
+        }
+
+        &.alert-blue-golo {
+            background-image: url('../img/hero-streets.svg');
+            background-size: 69%;
+            background-position: 80%;
+
+            .alert-logo {
+                height: 14px;
+                margin-top: -3px;
+                margin-right: $spacer*0.25;
+                margin-left: $spacer*0.25;
+            }
+            a {
+                &:hover {
+                    color: $orange-golo;
+                }
+            }
+        }
+    }
+
+
+
 }
+
+
 
 .menu-open {
     position: absolute;
