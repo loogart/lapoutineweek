@@ -73,17 +73,19 @@ $alert-color-level: -10;
         margin-bottom: 0;
         border-radius: 0;
         text-align: center;
-        @media (max-width:576px){
+
+        @media (max-width: 576px) {
             position: fixed;
-            width:100%;
-            bottom:0;
-            left:0;
-            font-size: $font-size-base*0.75;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            font-size: $font-size-base*0.8;
+            padding: $spacer 0;
         }
 
         &.alert-blue-golo {
             background-image: url('../img/hero-streets.svg');
-            background-size: 69%;
+            background-size: 80%;
             background-position: 80%;
 
             .alert-logo {
@@ -92,6 +94,7 @@ $alert-color-level: -10;
                 margin-right: $spacer*0.25;
                 margin-left: $spacer*0.25;
             }
+
             a {
                 &:hover {
                     color: $orange-golo;
@@ -240,12 +243,12 @@ $alert-color-level: -10;
     justify-content: center;
     min-height: 40vh;
     background: $gradient-navy;
-    padding: 12rem 8rem;
+    padding: $spacer*12 $spacer*8;
     position: relative;
     overflow: hidden;
 
     @media (max-width: 767px) {
-        padding: $spacer*4 0;
+        padding: $spacer*5 0;
         min-height: 69vh;
     }
 
@@ -267,6 +270,7 @@ $alert-color-level: -10;
         color: white;
         font-weight: $font-weight-bolder;
         font-size: $h1-font-size;
+        margin-bottom: $spacer*1.5;
 
         @media (max-width: 767px) {
             font-size: $font-size-base*1.5;
@@ -696,6 +700,15 @@ ol.breadcrumb {
     .list-inline a {
         color: $navy-blue;
     }
+
+    .logo-delivery {
+        height: 0.9rem;
+        margin-left: 0.25rem;
+    }
+
+    .logo-featured {
+        height: 2.5rem;
+    }
 }
 
 // content
@@ -796,13 +809,38 @@ ol.breadcrumb {
     margin-bottom: $spacer*1.5;
     transition: all 0.5s ease 0s, opacity 1.25s cubic-bezier(0.5, 0, 0, 1) 0s, transform 1.25s cubic-bezier(0.5, 0, 0, 1) 0s;
     background-color: white;
+    border-radius: 0.3rem;
+    border: 1px solid #f2f2f2;
 
     &:hover {
         box-shadow: 2px 8px 20px 0 rgba(119, 120, 121, 0.25);
     }
 
-    border-radius: 0.3rem;
-    border:1px solid #f2f2f2;
+
+    .badge {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        top: 5px;
+        left: 25px;
+        height: 40px;
+        z-index: 1;
+
+        .badge-golo {
+            width: 70px;
+            height: 25px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            object-fit: contain;
+            background-color: $blue-golo;
+        }
+
+        .badge-saputo {
+            width: 70px;
+            height: 40px;
+            object-fit: contain;
+        }
+    }
 
     img {
         width: 100%;
