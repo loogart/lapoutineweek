@@ -1,0 +1,132 @@
+// Import Google fonts
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:400,500,700|Alegreya:700,800&display=swap');
+
+
+// Required
+@import "../bootstrap/scss/functions";
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/mixins";
+
+
+// Re-define BS colors
+$blue: #009ADE;
+$yellow: #EDB458;
+$red: #CF3339;
+
+// Define new colors
+$brown:#7F5B49;
+$grey: #f2f2f2;
+
+// Map colors
+$colors: ("blue": #009ADE, "yellow":#EDB458, "green":#468B40, "red":#CF3339, "brown":$brown, "grey":$grey);
+
+//Map theme-colors
+$theme-colors: ("primary": $blue, "warning":$yellow, "danger":$red, "dark":$black, "light":$grey);
+
+// customize theme
+$body-bg: white;
+$body-color: $black;
+$font-family-sans-serif: 'Alegreya Sans',
+sans-serif;
+$headings-font-family:'Alegreya',
+serif;
+$input-font-family: 'Alegreya Sans',
+sans-serif;
+$font-family-base: $input-font-family;
+$headings-color: $black;
+$headings-font-weight: 700;
+$input-placeholder-color: lighten($black, 15%);
+$input-focus-color: $black;
+$input-focus-bg:$grey;
+$input-focus-border-color:$blue;
+$link-color: darken($blue, 10%);
+$link-hover-color:darken($link-color, 15%);
+$component-active-bg: $blue;
+$custom-control-indicator-checked-bg: $blue;
+$custom-control-indicator-active-bg:$blue;
+$custom-control-indicator-checked-border-color:$blue;
+$navbar-light-color: $black;
+$navbar-light-hover-color:$blue;
+$navbar-light-active-color:$blue;
+$navbar-light-toggler-border-color: transparent;
+$navbar-nav-link-padding-x: 1rem;
+$dropdown-link-active-bg: $blue;
+$card-border-width:1px;
+$card-border-color:#e5e5e5;
+$btn-padding-x:1.5rem;
+$btn-padding-x-lg:2.25rem;
+$pagination-color:$blue;
+$pagination-hover-color:darken($pagination-color, 10%);
+$pagination-active-bg: $blue;
+$pagination-active-border-color:$blue;
+$btn-font-size-lg: $input-btn-font-size-lg*.8;
+$btn-padding-x-lg: $spacer;
+$nav-pills-link-active-color: white;
+$nav-pills-link-active-bg: $blue;
+
+$jumbotron-bg:white;
+$btn-border-width:3px;
+$btn-font-weight:bold;
+
+// Bootstrap
+@import "../bootstrap/scss/bootstrap.scss";
+
+
+body {}
+
+// Typography
+h1 {
+    font-size: $display3-size;
+
+    .super-title {
+        color: $blue;
+        font-size: $h2-font-size;
+        display: block;
+    }
+
+    @include media-breakpoint-down(sm) {
+        .super-title {
+            font-size: $h4-font-size;
+        }
+
+        font-size: $h1-font-size;
+    }
+}
+
+h2 {
+    font-size: $font-size-base * 1.25;
+}
+
+h3 {
+    font-size: $font-size-base * 2.25;
+}
+
+h5 {
+    color: $blue;
+}
+
+.logo {
+    width: 240px;
+
+    @include media-breakpoint-down(sm) {
+        width: 180px;
+
+    }
+}
+
+p.lead{
+    @include media-breakpoint-down(sm) {
+        font-size: $spacer;
+    }
+}
+
+// custom
+footer {
+    a {
+        color: white;
+
+        &:hover {
+            color: darken(white, 15%);
+        }
+    }
+}
