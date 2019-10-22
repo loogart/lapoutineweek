@@ -46,31 +46,66 @@ $btn-padding-x:1.5rem;
 $btn-padding-x-lg:2.25rem;
 $link-color: darken($blue, 10%);
 $link-hover-color:darken($link-color, 15%);
-
-//un-used 
-$input-placeholder-color: lighten($black, 15%);
-$input-focus-color: $black;
+$input-border-color:$black;
+$input-border-width:3px;
+$input-placeholder-color: lighten($black, 50%);
 $input-focus-bg:$grey;
+$input-focus-color: $black;
 $input-focus-border-color:$blue;
-$component-active-bg: $blue;
-$custom-control-indicator-checked-bg: $blue;
-$custom-control-indicator-active-bg:$blue;
-$custom-control-indicator-checked-border-color:$blue;
-$dropdown-link-active-bg: $blue;
-$card-border-width:1px;
-$card-border-color:#e5e5e5;
-$pagination-color:$blue;
-$pagination-hover-color:darken($pagination-color, 10%);
-$pagination-active-bg: $blue;
-$pagination-active-border-color:$blue;
-$btn-font-size-lg: $input-btn-font-size-lg*.8;
-$btn-padding-x-lg: $spacer;
-$nav-pills-link-active-color: white;
-$nav-pills-link-active-bg: $blue;
+$input-color:$black;
+$dropdown-border-width:0;
 
 
 // Bootstrap
 @import "../bootstrap/scss/bootstrap.scss";
+
+body {
+    animation: fadein 1s;
+    -moz-animation: fadein 1s;
+    -webkit-animation: fadein 1s;
+    -o-animation: fadein 1s
+}
+
+
+@keyframes fadein {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@-moz-keyframes fadein {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@-o-keyframes fadein {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
 
 
 // Typography
@@ -87,6 +122,12 @@ h2 {
 
     @include media-breakpoint-down(sm) {
         font-size: $h2-font-size;
+    }
+}
+
+form {
+    label {
+        color: $blue;
     }
 }
 
@@ -130,6 +171,11 @@ section {
     padding-bottom: $spacer*5;
     overflow: hidden;
     position: relative;
+
+    @include media-breakpoint-down(sm) {
+        padding-top: $spacer*2;
+        padding-bottom: $spacer*2;
+    }
 }
 
 section.saputo-box {
@@ -234,6 +280,7 @@ section.features {
 
     @include media-breakpoint-down(sm) {
         text-align: center;
+        border: none;
     }
 
     .img-feature-1 {
@@ -262,15 +309,104 @@ section.spotlight {
     }
 }
 
-section.cta{
-    background-color:white;
+section.cta {
+    background-color: white;
     text-align: center;
-    .img-cta{
-        max-width:100%;
-        max-height:280px;
+
+    .img-cta {
+        max-width: 100%;
+        max-height: 280px;
     }
-    
+
 }
+
+section.register {
+    background-color: white;
+    text-align: center;
+
+    h1 {
+        font-size: $display4-size;
+
+        @include media-breakpoint-down(sm) {
+            font-size: $h2-font-size;
+        }
+    }
+
+    img {
+        position: absolute;
+    }
+
+    .img-register-1 {
+        max-width: 140px;
+        left: 10%;
+
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
+    }
+
+    .img-register-2 {
+        max-width: 169px;
+        right: 10%;
+
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
+    }
+
+    .img-register-3 {
+        max-width: 220px;
+        left: 5%;
+
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
+    }
+}
+
+section.generic {
+    h1 {
+        font-size: $display4-size;
+
+        @include media-breakpoint-down(sm) {
+            font-size: $h2-font-size;
+        }
+    }
+
+    .img-thank-you-1 {
+        width: 100%;
+
+        @include media-breakpoint-down(md) {
+            width: 60%;
+        }
+    }
+
+    .img-thank-you-2 {
+        width: 35%;
+
+        @include media-breakpoint-down(md) {
+            width: 25%;
+        }
+    }
+
+    .faq-item {
+        margin-bottom: 3rem;
+        margin-top:3rem;
+    }
+
+    .img-faq-1 {
+        width: 160px;
+    }
+
+    .img-faq-2 {
+        width: 130px;
+    }
+
+    .img-faq-3 {
+        width: 200px;
+    }
+}
+
 
 footer {
     a {
