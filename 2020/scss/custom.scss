@@ -1,7 +1,6 @@
 // Import Google fonts
 @import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:400,500,700|Alegreya:700,800&display=swap');
 
-
 // Required
 @import "../bootstrap/scss/functions";
 @import "../bootstrap/scss/variables";
@@ -35,26 +34,31 @@ sans-serif;
 $font-family-base: $input-font-family;
 $headings-color: $black;
 $headings-font-weight: 700;
-$input-placeholder-color: lighten($black, 15%);
-$input-focus-color: $black;
-$input-focus-bg:$grey;
-$input-focus-border-color:$blue;
-$link-color: darken($blue, 10%);
-$link-hover-color:darken($link-color, 15%);
-$component-active-bg: $blue;
-$custom-control-indicator-checked-bg: $blue;
-$custom-control-indicator-active-bg:$blue;
-$custom-control-indicator-checked-border-color:$blue;
 $navbar-light-color: $black;
 $navbar-light-hover-color:$blue;
 $navbar-light-active-color:$blue;
 $navbar-light-toggler-border-color: transparent;
 $navbar-nav-link-padding-x: 1rem;
+$jumbotron-bg:white;
+$btn-border-width:3px;
+$btn-font-weight:bold;
+$btn-padding-x:1.5rem;
+$btn-padding-x-lg:2.25rem;
+$link-color: darken($blue, 10%);
+$link-hover-color:darken($link-color, 15%);
+
+//un-used 
+$input-placeholder-color: lighten($black, 15%);
+$input-focus-color: $black;
+$input-focus-bg:$grey;
+$input-focus-border-color:$blue;
+$component-active-bg: $blue;
+$custom-control-indicator-checked-bg: $blue;
+$custom-control-indicator-active-bg:$blue;
+$custom-control-indicator-checked-border-color:$blue;
 $dropdown-link-active-bg: $blue;
 $card-border-width:1px;
 $card-border-color:#e5e5e5;
-$btn-padding-x:1.5rem;
-$btn-padding-x-lg:2.25rem;
 $pagination-color:$blue;
 $pagination-hover-color:darken($pagination-color, 10%);
 $pagination-active-bg: $blue;
@@ -64,37 +68,37 @@ $btn-padding-x-lg: $spacer;
 $nav-pills-link-active-color: white;
 $nav-pills-link-active-bg: $blue;
 
-$jumbotron-bg:white;
-$btn-border-width:3px;
-$btn-font-weight:bold;
 
 // Bootstrap
 @import "../bootstrap/scss/bootstrap.scss";
 
 
-body {}
-
 // Typography
 h1 {
     font-size: $display3-size;
 
-    .super-title {
-        color: $blue;
-        font-size: $h2-font-size;
-        display: block;
-    }
-
     @include media-breakpoint-down(sm) {
-        .super-title {
-            font-size: $h4-font-size;
-        }
-
         font-size: $h1-font-size;
     }
 }
 
 h2 {
-    font-size: $font-size-base * 1.25;
+    font-size: $display4-size;
+
+    @include media-breakpoint-down(sm) {
+        font-size: $h2-font-size;
+    }
+}
+
+.super-title {
+    color: $blue;
+    font-size: $h2-font-size;
+    display: block;
+
+    @include media-breakpoint-down(sm) {
+        font-size: $h5-font-size;
+
+    }
 }
 
 h3 {
@@ -114,13 +118,160 @@ h5 {
     }
 }
 
-p.lead{
+p.lead {
     @include media-breakpoint-down(sm) {
         font-size: $spacer;
     }
 }
 
-// custom
+section {
+    min-height: 50vh;
+    padding-top: $spacer*5;
+    padding-bottom: $spacer*5;
+    overflow: hidden;
+    position: relative;
+}
+
+section.saputo-box {
+    background-color: $blue;
+
+    @include media-breakpoint-down(lg) {
+        min-height: 20vh;
+    }
+
+    .wrapper-saputo-box {
+        position: relative;
+
+        img {
+            position: absolute;
+            width: 800px;
+            left: -69%;
+            top: -200px;
+
+            @include media-breakpoint-down(lg) {
+                position: static;
+                width: 100%;
+                margin-left: $spacer*-2;
+            }
+        }
+    }
+
+    .logo-saputo {
+        width: 91px;
+        margin-bottom: $spacer;
+    }
+}
+
+section.winners {
+    background-color: $grey;
+    border: 20px solid white;
+    text-align: center;
+    padding-bottom: 0;
+
+    @include media-breakpoint-down(sm) {
+        border: none;
+    }
+
+    .artwork-winners-1 {
+        position: absolute;
+        max-width: 120px;
+        left: 0;
+        top: 25px;
+
+        @include media-breakpoint-down(sm) {
+            max-width: 90px;
+            left: -10px;
+            top: 21px;
+        }
+    }
+
+    .artwork-winners-2 {
+        position: absolute;
+        max-width: 200px;
+        right: 0;
+        top: 45px;
+
+        @include media-breakpoint-down(sm) {
+            display: none;
+        }
+    }
+
+    .img-winner {
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 50%;
+
+        @include media-breakpoint-down(sm) {
+            width: 90px;
+            height: 90px;
+        }
+    }
+}
+
+section.marketing {
+    background-color: white;
+    text-align: center;
+
+    .img-marketing {
+        width: 100%;
+        max-width: 320px;
+
+        @include media-breakpoint-down(sm) {
+            max-width: 269px;
+        }
+    }
+
+    .artwork-poutine {
+        max-width: 100px;
+        max-height: 80px;
+    }
+}
+
+section.features {
+    background-color: $grey;
+    border: 20px solid white;
+
+    @include media-breakpoint-down(sm) {
+        text-align: center;
+    }
+
+    .img-feature-1 {
+        max-width: 300px;
+        max-height: 300px;
+    }
+
+    .img-feature-2 {
+        max-width: 269px;
+        max-height: 269px;
+    }
+}
+
+section.spotlight {
+    background-color: black;
+    text-align: center;
+
+    h2,
+    p {
+        color: white;
+    }
+
+    .img-spotlight {
+        max-width: 300px;
+        max-height: 300px;
+    }
+}
+
+section.cta{
+    background-color:white;
+    text-align: center;
+    .img-cta{
+        max-width:100%;
+        max-height:280px;
+    }
+    
+}
+
 footer {
     a {
         color: white;

@@ -21,32 +21,147 @@
     <meta name="theme-color" content="#009ADE">
     <link rel="stylesheet" href="./css/custom.css">
     <link rel="stylesheet" href="./css/aos.css" />
+    <link rel="stylesheet" href="./css/animate.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="import" href="./html/head.html">
-    <title>Le Poutine Week</title>
+    <title>La Poutine Week</title>
     <meta name="description" content="La Poutine Week is an annual week-long Canadian festival where you celebrate and vote for the most amazing poutine creations.">
 </head>
 
-
 <body>
-    <div id="enHeader" data-aos="slide-down" data-aos-duration="500" class="sticky-top"></div>
+    <div id="enHeader" data-aos="slide-down" data-aos-duration="500" data-aos-once="true" class="sticky-top"></div>
+
     <main>
+
         <section class="jumbotron" id="hero">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-lg-7">
                         <h1><span class="super-title">February 1-7</span>Three ingredients.<br>Infinite options.</h1>
                         <p class="lead">Every year, between February 1-7, restaurants from different cities across Canada make special poutines just for La Poutine Week. Poutine-lovers all over get a chance to discover these delicious creations and vote for their favorite ones.</p>
-                        <a class="btn btn-outline-dark my-2 my-sm-0 shadow" href="#" role="button">Register now</a>
+                        <a class="btn btn-outline-dark my-3 my-sm-0 shadow" href="./register.html" role="button">Register now</a>
                     </div>
                     <div class="col-12 col-lg-5 d-flex justify-content-center align-items-center">
-                        <img src="./img/artwork/jumbotron-girl-loving-poutine.png" class="w-50" alt="illustration of girl loving a poutine by Loogart" data-aos="fade-right" data-aos-duration="1000">
-                        <img src="./img/artwork/jumbotron-guy-simba-poutine.png" class="w-50" alt="illustration of guy holding a poutine up by Loogart" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="250">
+                        <div class="w-50" data-aos="fade-right" data-aos-duration="1000">
+                            <img src="./img/artwork/jumbotron-girl-loving-poutine.png" class="img-fluid animated infinite headShake delay-1s slow" alt="illustration of girl loving a poutine by Loogart">
+                        </div>
+                        <div class="w-50" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="250">
+                            <img src="./img/artwork/jumbotron-guy-simba-poutine.png" class="img-fluid animated infinite wobble delay-2s slower" alt="illustration of guy holding a poutine up by Loogart">
+                        </div>
                     </div>
                 </div>
 
             </div>
         </section>
+
+        <section class="saputo-box" id="saputoBox">
+            <div class="container d-lg-flex align-items-lg-center">
+                <div class="col-12 col-lg-6 align-self-center">
+                    <div class="wrapper-saputo-box" data-aos="fade-right" data-aos-duration="2000">
+                        <img src="./img/artwork/saputo-box.png" class="" alt="Saputo Box">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 align-self-end">
+                    <img class="logo-saputo" src="./img/logo-saputo.svg" alt="Saputo logo">
+                    <h2 class="text-white"><span class="super-title text-white">New for 2020</span>Your Poutine Week Kit.</h2>
+                    <p class="text-white">The best poutine is made with Saputo cheese – this year we’re challenging you to make the cheesiest poutine in town! Register before December 1st and receive a free Poutine Week Kit with delicious cheese samples for inspiration.</p>
+                    <a class="btn btn-outline-light my-3 my-sm-0 shadow" href="./register.html" role="button">Accept challenge</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="winners" id="enWinners"></section>
+
+        <section class="marketing" id="marketingStats">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-8 mx-auto">
+                        <img class="img-marketing mb-5" src="./img/artwork/date-poutine.png" alt="Illustration of a date between boy and girl having poutine by Loogart" data-aos="fade-up" data-aos-duration="1500">
+                        <h2><span class="super-title">Taste Buds and Businesses.</span>We create opportunity.</h2>
+                        <p>La Poutine Week® allows participants to discover new venues, while providing the opportunity to taste burger creations they never would have originally. It also allows for restaurants to showcase their best, while increasing their sales and popularity. We take care of the marketing heavy-lifting, you focus on burger creation and your customers.</p>
+                        <div class="row mt-5">
+                            <div class="col" data-aos="fade-in">
+                                <img class="artwork-poutine" src="./img/artwork/poutine-black.png" alt="">
+                                <p class="h1 font-weight-bold text-primary">350K</p>
+                                <p>Yearly<br>participants</p>
+                            </div>
+                            <div class="col" data-aos="fade-in" data-aos-delay="250">
+                                <img class="artwork-poutine" src="./img/artwork/poutine-box.png" alt="">
+                                <p class="h1 font-weight-bold text-primary">400</p>
+                                <p>Restaurants<br>across Canada</p>
+                            </div>
+                            <div class="col" data-aos="fade-in" data-aos-delay="500">
+                                <img class="artwork-poutine" src="./img/artwork/poutine-brand.png" alt="">
+                                <p class="h1 font-weight-bold text-primary">$105K</p>
+                                <p>Raised forcharity<br>since 2018</p>
+                            </div>
+                        </div>
+                        <p class="mt-4"><a class="btn btn-outline-dark my-3 my-sm-0 shadow" href="./register.html" role="button">Boost your sales</a></p>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="features" id="featurettes">
+            <div class="container">
+                <div class="row d-flex justify-content-center align-items-center mb-5">
+                    <div class="col-12 col-md-6">
+                        <h2><span class="super-title">From East to West. To World.</span>Poutines nationwide.</h2>
+                        <p>With an ever-growing network and customer base, La Poutine Week has become a nationwide tradition across Canada.</p>
+                    </div>
+                    <div class="col-12 col-md-3" data-aos="fade-left">
+                        <img class="img-feature-1 animated infinite tada delay-1s slower" src="./img/artwork/your-location.png" alt="illustration of chef serving poutine to pug behind buildings by Loogart">
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div class="col-12 col-md-6 order-md-2">
+                        <h2><span class="super-title">One week. New business.</span>Exponential growth.</h2>
+                        <p>One week with La Poutine Week’s marketing vehicle can help put your restaurant on the map and make it a local staple.</p>
+                    </div>
+                    <div class="col-12 col-md-3 order-md-1" data-aos="fade-right">
+                        <img class="img-feature-2 animated infinite shake delay-1s slower" src="./img/artwork/chef-balancing-poutines.png" alt="illustration of chef balancing two poutines in his hand and on his foot by Loogart">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="spotlight" id="spotlight">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-7 mx-auto">
+                        <div data-aos="fade-left">
+                            <img class="img-spotlight mb-4 artwork-winners-2 animated infinite bounce slower" src="./img/artwork/server-bringing-poutine_white.png" alt="Illustration of server bringing poutine in one arm by Loogart">
+                        </div>
+                        <h2><span class="super-title">2020 Spotlight.</span>Wait for your poutine.</h2>
+                        <p>For this edition of La Poutine Week, we’re putting the spotlight on the people who bring the poutine to your table, the waiters and waitresses of Canada! This year, the restaurant who gets the most votes will choose its most enthusiastic La Poutine Week waiter or waitress as the winner of a 250$ prize awarded by Saputo, one winner per region. Now that’s giving a tip!</p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta" id="ctaJoin">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-7 mx-auto">
+                        <div data-aos="fade-in" data-aos-duration="1000">
+                            <img src="./img/artwork/chef-and-poutine-fans.png" alt="" class="img-cta mb-4 animated infinite pulse slower mb-4">
+                        </div>
+                        <h2><span class="super-title">Calling all restaurants.</span>Join the movement.</h2>
+                        <p>Restaurants have seen their amazing numbers ever thanks to their participation in La Poutine Week. With a saturated social media market, La Poutine Week has become a key vehicle for restaurant owners to build momentum around their brand.</p>
+                        <p class="mt-4"><a class="btn btn-outline-dark my-3 my-sm-0 shadow" href="./register.html" role="button">Join us</a></p>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+
 
     </main>
 
@@ -56,6 +171,4 @@
     <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="./js/aos.js"></script>
     <script src="./js/scripts.js"></script>
-</body>
-
-</html>
+</body></html>

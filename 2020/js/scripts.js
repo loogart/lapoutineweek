@@ -3,6 +3,8 @@ AOS.init();
 $(function () {
     $("#enHeader").load("./html/en_header.html");
     $("#enFooter").load("./html/en_footer.html");
+    $("#enWinners").load("./html/en_winners.html");
+    
     $("#frHeader").load("../html/fr_header.html");
     $("#frFooter").load("../html/fr_footer.html");
 });

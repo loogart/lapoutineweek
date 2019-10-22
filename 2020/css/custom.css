@@ -9683,22 +9683,30 @@ h3 {
 h1 {
   font-size: 4.5rem;
 }
-h1 .super-title {
+@media (max-width: 767.98px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+@media (max-width: 767.98px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+.super-title {
   color: #009ADE;
   font-size: 2rem;
   display: block;
 }
 @media (max-width: 767.98px) {
-  h1 {
-    font-size: 2.5rem;
+  .super-title {
+    font-size: 1.25rem;
   }
-  h1 .super-title {
-    font-size: 1.5rem;
-  }
-}
-
-h2 {
-  font-size: 1.25rem;
 }
 
 h3 {
@@ -9722,6 +9730,149 @@ h5 {
   p.lead {
     font-size: 1rem;
   }
+}
+
+section {
+  min-height: 50vh;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  overflow: hidden;
+  position: relative;
+}
+
+section.saputo-box {
+  background-color: #009ADE;
+}
+@media (max-width: 1199.98px) {
+  section.saputo-box {
+    min-height: 20vh;
+  }
+}
+section.saputo-box .wrapper-saputo-box {
+  position: relative;
+}
+section.saputo-box .wrapper-saputo-box img {
+  position: absolute;
+  width: 800px;
+  left: -69%;
+  top: -200px;
+}
+@media (max-width: 1199.98px) {
+  section.saputo-box .wrapper-saputo-box img {
+    position: static;
+    width: 100%;
+    margin-left: -2rem;
+  }
+}
+section.saputo-box .logo-saputo {
+  width: 91px;
+  margin-bottom: 1rem;
+}
+
+section.winners {
+  background-color: #f2f2f2;
+  border: 20px solid white;
+  text-align: center;
+  padding-bottom: 0;
+}
+@media (max-width: 767.98px) {
+  section.winners {
+    border: none;
+  }
+}
+section.winners .artwork-winners-1 {
+  position: absolute;
+  max-width: 120px;
+  left: 0;
+  top: 25px;
+}
+@media (max-width: 767.98px) {
+  section.winners .artwork-winners-1 {
+    max-width: 90px;
+    left: -10px;
+    top: 21px;
+  }
+}
+section.winners .artwork-winners-2 {
+  position: absolute;
+  max-width: 200px;
+  right: 0;
+  top: 45px;
+}
+@media (max-width: 767.98px) {
+  section.winners .artwork-winners-2 {
+    display: none;
+  }
+}
+section.winners .img-winner {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+@media (max-width: 767.98px) {
+  section.winners .img-winner {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+section.marketing {
+  background-color: white;
+  text-align: center;
+}
+section.marketing .img-marketing {
+  width: 100%;
+  max-width: 320px;
+}
+@media (max-width: 767.98px) {
+  section.marketing .img-marketing {
+    max-width: 269px;
+  }
+}
+section.marketing .artwork-poutine {
+  max-width: 100px;
+  max-height: 80px;
+}
+
+section.features {
+  background-color: #f2f2f2;
+  border: 20px solid white;
+}
+@media (max-width: 767.98px) {
+  section.features {
+    text-align: center;
+  }
+}
+section.features .img-feature-1 {
+  max-width: 300px;
+  max-height: 300px;
+}
+section.features .img-feature-2 {
+  max-width: 269px;
+  max-height: 269px;
+}
+
+section.spotlight {
+  background-color: black;
+  text-align: center;
+}
+section.spotlight h2,
+section.spotlight p {
+  color: white;
+}
+section.spotlight .img-spotlight {
+  max-width: 300px;
+  max-height: 300px;
+}
+
+section.cta {
+  background-color: white;
+  text-align: center;
+}
+section.cta .img-cta {
+  max-width: 100%;
+  max-height: 280px;
 }
 
 footer a {
