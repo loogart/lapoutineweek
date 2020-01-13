@@ -38,7 +38,7 @@ $navbar-light-color: $black;
 $navbar-light-hover-color:$blue;
 $navbar-light-active-color:$blue;
 $navbar-light-toggler-border-color: transparent;
-$navbar-nav-link-padding-x: 1rem;
+$navbar-nav-link-padding-x: 1.5rem;
 $jumbotron-bg:white;
 $btn-border-width:3px;
 $btn-font-weight:bold;
@@ -63,7 +63,7 @@ body {
     animation: fadein 1s;
     -moz-animation: fadein 1s;
     -webkit-animation: fadein 1s;
-    -o-animation: fadein 1s
+    -o-animation: fadein 1s;
 }
 
 
@@ -151,7 +151,7 @@ h5 {
 }
 
 .logo {
-    width: 240px;
+    width: 220px;
 
     @include media-breakpoint-down(sm) {
         width: 180px;
@@ -391,7 +391,7 @@ section.generic {
 
     .faq-item {
         margin-bottom: 3rem;
-        margin-top:3rem;
+        margin-top: 3rem;
     }
 
     .img-faq-1 {
@@ -409,11 +409,96 @@ section.generic {
 
 
 footer {
+    h5 {
+        font-size: $font-size-base*1.1;
+        margin-bottom: $spacer*1.25;
+    }
+
+    li:not(.list-inline-item) {
+        margin-bottom: $spacer*.69;
+    }
+
     a {
         color: white;
 
         &:hover {
             color: darken(white, 15%);
+        }
+    }
+}
+
+// new css 2020
+
+.mobile-nav {
+    @include media-breakpoint-up(md) {
+        display: none;
+    }
+
+    a {
+        color: $black;
+        margin-left: $spacer;
+        text-decoration: none;
+
+        &:hover {
+            color: $blue;
+        }
+    }
+}
+
+.mobile-nav-open{
+    position: relative;
+    width:100%;
+    background-color: white;
+    height:100vh;
+    z-index:1;
+    padding:3rem 0;
+    text-align: center;
+    li{
+        margin-top:$spacer*1.25;
+    }
+    a{
+        color:black;
+        font-size:$font-size-base*1.25;   
+    }
+}
+
+.search-mobile{
+    position: relative;
+    width:100%;
+    background-color: #E8EAED;
+    min-height:10vh;
+    z-index:1;
+    padding:1rem 0 .5rem;
+}
+
+.search-desktop{
+    position: absolute;
+    background-color:white;
+    right:15px;top:15px;
+    width:60%;
+}
+
+
+.scrollable{
+    overflow-y: scroll;
+}
+
+.non-scrollable{
+    overflow-y: hidden;
+}
+
+.desktop-nav {
+    @include media-breakpoint-down(sm) {
+        display: none;
+    }
+
+    a {
+        color: $black;
+        margin-left: 2*$spacer;
+        text-decoration: none;
+
+        &:hover {
+            color: $blue;
         }
     }
 }
