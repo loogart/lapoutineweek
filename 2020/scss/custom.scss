@@ -445,50 +445,36 @@ footer {
     }
 }
 
-.mobile-nav-open{
+.mobile-nav-open {
     position: relative;
-    width:100%;
+    width: 100%;
     background-color: white;
-    height:100vh;
-    z-index:1;
-    padding:3rem 0;
+    height: 100vh;
+    z-index: 1;
+    padding: 3rem 0;
     text-align: center;
-    li{
-        margin-top:$spacer*1.25;
+
+    li {
+        margin-top: $spacer*1.25;
     }
-    a{
-        color:black;
-        font-size:$font-size-base*1.25;   
+
+    a {
+        color: black;
+        font-size: $font-size-base*1.25;
     }
 }
 
-.search-mobile{
+.search-mobile {
     position: relative;
-    width:100%;
+    width: 100%;
     background-color: #E8EAED;
-    min-height:10vh;
-    z-index:1;
-    padding:1rem 0 .5rem;
-}
-
-.search-desktop{
-    position: absolute;
-    background-color:white;
-    right:15px;top:15px;
-    width:60%;
-}
-
-
-.scrollable{
-    overflow-y: scroll;
-}
-
-.non-scrollable{
-    overflow-y: hidden;
+    min-height: 10vh;
+    z-index: 1;
+    padding: 1rem 0 .5rem;
 }
 
 .desktop-nav {
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
         display: none;
     }
 
@@ -501,4 +487,70 @@ footer {
             color: $blue;
         }
     }
+
+    .search-desktop {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        width: 60%;
+
+        @include media-breakpoint-down(sm) {
+            display: block;
+
+            top: 0;
+            width: 100%;
+        }
+    }
+}
+
+
+
+.autocomplete-desktop {
+    display: inline-block;
+    width: 100%;
+    min-height: 10vh;
+    background-color: white;
+    border-radius: 2px;
+    padding: 0;
+    box-shadow: $box-shadow;
+    margin-top: $spacer*.25;
+    margin-left: 3px;
+
+    ul {
+        margin-bottom: 0;
+    }
+
+    li {
+        a {
+            display: block;
+            padding: .8*$spacer $spacer;
+            margin-left: 0;
+
+            &:hover {
+                background-color: rgba(0, 0, 0, .1);
+                color: black;
+            }
+        }
+    }
+}
+
+// general UI 
+.scrim {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .4);
+    z-index: 1;
+}
+
+
+.scrollable {
+    overflow-y: scroll;
+}
+
+.non-scrollable {
+    overflow-y: hidden;
 }

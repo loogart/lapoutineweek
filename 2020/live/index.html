@@ -7,17 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
-    <link rel="icon" sizes="192x192" href=".../img/favicon.png">
+    <link rel="icon" sizes="192x192" href="../img/favicon.png">
     <!-- Add to homescreen for Safari on iOS -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="La Poutine Week">
-    <link rel="apple-touch-icon-precomposed" href=".../img/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="../img/favicon.png">
     <!-- Tile icon for Win8 (144x144 + tile color) -->
-    <meta name="msapplication-TileImage" content=".../img/favicon.png">
+    <meta name="msapplication-TileImage" content="../img/favicon.png">
     <meta name="msapplication-TileColor" content="#009ADE">
-    <link rel="shortcut icon" href=".../img/favicon.png">
-    <link rel="mask-icon" href=".../img/icons/safari-pinned-tab.svg" color="#F9AF48">
+    <link rel="shortcut icon" href="../img/favicon.png">
+    <link rel="mask-icon" href="../img/icons/safari-pinned-tab.svg" color="#F9AF48">
     <meta name="theme-color" content="#009ADE">
     <link rel="stylesheet" href="../css/custom.css">
     <link rel="stylesheet" href="../css/aos.css" />
@@ -29,8 +29,8 @@
 </head>
 
 <body>
-    <!--    <div id="enHeaderLive" data-aos="slide-down" data-aos-duration="500" data-aos-once="true" class="sticky-top">-->
-    <div data-aos="slide-down" data-aos-duration="500" data-aos-once="true" class="sticky-top">
+    <!--    <div id="enHeaderLive" data-aos="slide-down" data-aos-duration="250" data-aos-once="true" class="sticky-top">-->
+    <div data-aos="slide-down" data-aos-duration="250" data-aos-once="true" class="sticky-top">
         <!-- lang toggler -->
         <div class="alert alert-dark alert-dismissible fade show mb-0 rounded-0 border-0 text-white" style="background:#333;" role="alert">
             <div class="container">
@@ -44,39 +44,56 @@
         <nav class="navbar navbar-light shadow-sm bg-white">
             <div class="container">
                 <a href="./"><img src="../img/logo-full-web-en.svg" alt="La Poutine Week logo" class="logo"></a>
+                <!-- mobile nav buttons-->
                 <div class="mobile-nav mt-2">
+                    <a href="#!" class="d-inline-block switch-2"><i class="fas fa-search"></i></a>
                     <a href="#!" class="switch-1"><i class="fas fa-bars"></i></a>
-                    <a href="#!" class="switch-2"><i class="fas fa-search"></i></a>
                 </div>
+                <!-- desktop nav links -->
                 <div class="desktop-nav">
-                    <a href="#!" class="switch-3"><i class="fas fa-search"></i>&nbsp;Restaurants</a>
-                    <a href="./select-city.html">Change City</a>
-                    <a href="./about.html">About</a>
-                    <a href="./contact.html">Contact</a>
-                    <a href="./login.html">Login</a>
+                    <div class="desktop-nav-items d-block">
+                        <a href="#!" class="switch-3"><i class="fas fa-search"></i>&nbsp;Restaurants</a>
+                        <a href="./select-city.html">Change City</a>
+                        <a href="./about.html">About</a>
+                        <a href="./contact.html">Contact</a>
+                        <a href="./login.html">Login</a>
+                    </div>
                     <div class="search-desktop d-none">
                         <form>
                             <div class="form-row align-items-center">
-                                <div class="col-1">
-                                    <button type="button" class="btn switch-3"><i class="fas fa-times"></i></button>
-                                </div>
                                 <div class="col-8">
-                                    <label for="searchInput2" class="sr-only">Search restaurants</label>
-                                    <input type="text" class="form-control" id="searchInput2" aria-describedby="searchInput" placeholder="Restaurant names" autofocus>
+                                    <label for="searchInputDesktop" class="sr-only">Search restaurants</label>
+                                    <input type="text" class="form-control" id="searchInputDesktop" aria-describedby="searchInput" placeholder="Restaurant names" autofocus>
                                 </div>
                                 <div class="col-3">
-                                    <button type="button" class="btn btn-primary border-0">Search</button>
+                                    <button type="button" class="btn btn-primary btn-block border-0">Search</button>
                                 </div>
-
+                                <div class="col-1">
+                                    <button type="button" class="btn px-0 switch-3"><i class="fas fa-times"></i></button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-8">
+                                    <!-- autocomplete results-->
+                                    <div class="autocomplete-desktop">
+                                        <ul class="list-unstyled">
+                                            <li><a href="">Paul et Line</a></li>
+                                            <li><a href="">Paulette et Ginette</a></li>
+                                            <li><a href="">Paulo et Suzanne</a></li>
+                                            <li><a href="">No results found.</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </form>
+
                     </div>
                 </div>
 
             </div>
         </nav>
         <!-- mobile menu -->
-        <nav class="mobile-nav-open d-none">
+        <nav class="mobile-nav-open d-none d-md-none">
             <div class="container">
                 <h2>Menu</h2>
                 <ul class="list-unstyled">
@@ -89,32 +106,33 @@
                 </ul>
             </div>
         </nav>
-        <!-- search bar -->
-        <div class="search-mobile d-none">
+        <!-- mobile search bar -->
+        <div class="search-mobile d-none d-md-none">
             <div class="container">
-                <div class="form-group">
-                    <label for="searchInput"><b>Search restaurants</b></label>
-                    <input type="text" class="form-control" id="searchInput" aria-describedby="searchInput" placeholder="Restaurant names">
-                    <button type="button" class="btn btn-primary mt-3">Search</button>
-                </div>
+                <form>
+                    <div class="form-group">
+                        <label for="searchInput"><b>Search restaurants</b></label>
+                        <input type="text" class="form-control" id="searchInput" aria-describedby="searchInput" placeholder="Restaurant names">
+                        <button type="button" class="btn btn-primary mt-3">Search</button>
+                    </div>
+                </form>
             </div>
         </div>
-
     </div>
 
 
     <main>
-
+        <div class="scrim d-none"></div>
         <section class="jumbotron" id="hero">
             <div class="container">
                 <div class="row d-flex justify-content-center align-items-center">
                     <div class="col-12 col-md-7 col-lg-8">
                         <h1 class="font-weight-bold"><span class="super-title">February 1-7</span>Poutine Week is <u>live</u>.</h1>
                         <p class="lead">Find poutines in your area, go taste them and vote for your favourite one.</p>
-                        <a class="btn btn-dark my-3 my-sm-0 shadow" href="./register.html" role="button"><i class="fas fa-map-marker-alt mr-2"></i>Select your location</a>
+                        <a class="btn btn-dark my-3 my-sm-0 shadow" href="./<select-city></select-city>.html" role="button"><i class="fas fa-map-marker-alt mr-2"></i>Select your location</a>
                     </div>
                     <div class="col-12 col-md-5 col-lg-4">
-                        <div data-aos="fade-in" data-aos-duration="1000">
+                        <div class="d-flex justify-content-center" data-aos="fade-in" data-aos-duration="1000">
                             <img src="../img/artwork/your-location.png" class="img-fluid mt-3 mt-md-0" alt="illustration of La Poutine Week by Loogart" style="max-width:280px">
                         </div>
                     </div>
@@ -124,7 +142,7 @@
         </section>
     </main>
 
-    <!--    <div id="enFooterLive"></div>-->
+    <!--<div id="enFooterLive"></div>-->
     <footer class="pt-5 pb-3 bg-dark">
         <div class="container">
             <div class="row">
