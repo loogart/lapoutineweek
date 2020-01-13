@@ -430,7 +430,7 @@ footer {
 // new css 2020
 
 .mobile-nav {
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
         display: none;
     }
 
@@ -455,12 +455,17 @@ footer {
     text-align: center;
 
     li {
-        margin-top: $spacer*1.25;
+        margin-top: $spacer*1.5;
     }
 
     a {
         color: black;
-        font-size: $font-size-base*1.25;
+        font-size: $font-size-base*1.5;
+        font-weight: bold;
+
+        &.active {
+            color: $blue;
+        }
     }
 }
 
@@ -486,6 +491,10 @@ footer {
         &:hover {
             color: $blue;
         }
+
+        &.active {
+            color: $blue;
+        }
     }
 
     .search-desktop {
@@ -493,13 +502,6 @@ footer {
         right: 15px;
         top: 15px;
         width: 60%;
-
-        @include media-breakpoint-down(sm) {
-            display: block;
-
-            top: 0;
-            width: 100%;
-        }
     }
 }
 
@@ -525,6 +527,36 @@ footer {
             display: block;
             padding: .8*$spacer $spacer;
             margin-left: 0;
+
+            &:hover {
+                background-color: rgba(0, 0, 0, .1);
+                color: black;
+            }
+        }
+    }
+}
+
+.autocomplete-mobile {
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    min-height: 10vh;
+    left: 0;
+    right: 0;
+    background-color: white;
+    box-shadow: $box-shadow;
+
+    ul {
+        margin-bottom: 0;
+    }
+
+    li {
+        a {
+            display: block;
+            padding: .8*$spacer $spacer;
+            margin-left: 0;
+            color: black;
+            text-decoration: none;
 
             &:hover {
                 background-color: rgba(0, 0, 0, .1);

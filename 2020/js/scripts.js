@@ -10,11 +10,12 @@ $(function () {
 });
 
 //registration fee
-
 $('select.region').on('change', function () {
     $(".price").html(this.value);
 });
 
+
+//navigation ui
 $('.switch-1').click(function(){
     $('.mobile-nav-open').toggleClass("d-none d-block");
     $('.switch-2').toggleClass("d-inline-block d-none");
