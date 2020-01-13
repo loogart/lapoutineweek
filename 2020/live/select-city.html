@@ -31,6 +31,7 @@
 <body>
     <div data-aos="slide-down" data-aos-duration="250" data-aos-once="true" class="sticky-top">
         <!-- lang toggler -->
+        <!--
         <div class="alert alert-dark alert-dismissible fade show mb-0 rounded-0 border-0 text-white" style="background:#333;" role="alert">
             <div class="container">
                 Changer la langue en <a href="#!" class="text-white">français</a>.
@@ -39,6 +40,7 @@
                 </button>
             </div>
         </div>
+-->
         <!-- main nav -->
         <nav class="navbar navbar-light shadow-sm bg-white">
             <div class="container">
@@ -52,7 +54,7 @@
                 <div class="desktop-nav">
                     <div class="desktop-nav-items d-block">
                         <a href="#!" class="switch-3"><i class="fas fa-search"></i>&nbsp;Restaurants</a>
-                        <a href="./select-city.html">Change City</a>
+                        <a class="active" href="./select-city.html">Change City</a>
                         <a href="./about.html">About</a>
                         <a href="./contact.html">Contact</a>
                         <a href="./login.html">Login</a>
@@ -96,7 +98,7 @@
             <div class="container">
                 <h2 class="sr-only">Menu</h2>
                 <ul class="list-unstyled">
-                    <li><a href="./select-city.html">Change City</a></li>
+                    <li><a class="active" href="./select-city.html">Change City</a></li>
                     <li><a href="./login.html">Login</a></li>
                     <li><a href="./about.html">About</a></li>
                     <li><a href="./contact.html">Contact</a></li>
@@ -134,15 +136,50 @@
     <main>
         <section class="jumbotron" id="hero">
             <div class="container">
-                <div class="row d-flex justify-content-center align-items-center">
-                    <div class="col-12 col-md-7 col-lg-8">
-                        <h1 class="font-weight-bold"><span class="super-title">February 1-7</span>Poutine Week is <u>live</u>.</h1>
-                        <p class="lead">Find poutines in your area, go taste them and vote for your favourite one.</p>
-                        <a class="btn btn-dark my-3 my-sm-0 shadow" href="./<select-city></select-city>.html" role="button"><i class="fas fa-map-marker-alt mr-2"></i>Select your location</a>
+                <div class="row">
+                    <div class="col-12 col-lg-7">
+                        <h1 class="display-4">Select your location.</h1>
+                        <div class="location-list">
+                            <ul class="list-unstyled">
+                                <li><a href="./results.html">Montréal</a></li>
+                                <li><a href="./results.html">Winnipeg</a></li>
+                                <li><a href="./results.html">Vancouver</a></li>
+                                <li><a href="./results.html">Edmonton</a></li>
+                                <li><a href="./results.html">Calgary</a></li>
+                                <li><a href="./results.html">Regina</a></li>
+                            </ul>
+                            <ul class="list-unstyled">
+                                <li><a href="./results.html">Saskatoon</a></li>
+                                <li><a href="./results.html">Toronto</a></li>
+                                <li><a href="./results.html">Ottawa/Gatineau</a></li>
+                                <li><a href="./results.html">Laval</a></li>
+                                <li><a href="./results.html">Montérégie</a></li>
+                                <li><a href="./results.html">Centre du Québec</a></li>
+                            </ul>
+                            <ul class="list-unstyled">
+                                <li><a href="./results.html">Lanaudière</a></li>
+                                <li><a href="./results.html">Mauricie</a></li>
+                                <li><a href="./results.html">Chaudières-Appalaches</a></li>
+                                <li><a href="./results.html">Bas St-Laurent</a></li>
+                                <li><a href="./results.html">Estrie</a></li>
+                                <li><a href="./results.html">Saguenay</a></li>
+                            </ul>
+                            <ul class="list-unstyled">
+                                <li><a href="./results.html">Côte-Nord</a></li>
+                                <li><a href="./results.html">Laurentides</a></li>
+                                <li><a href="./results.html">Abitibi</a></li>
+                                <li><a href="./results.html">International</a></li>
+                                <li><a href="./results.html">Québec</a></li>
+                            </ul>
+                        </div>
+                        <a class="btn btn-outline-dark my-3 my-sm-0 shadow" href="./results.html" role="button"><i class="fas fa-map-marker-alt mr-2"></i> Closest to you</a>
                     </div>
-                    <div class="col-12 col-md-5 col-lg-4">
-                        <div class="" data-aos="fade-in" data-aos-duration="1000">
-                            <img src="../img/artwork/your-location.png" class="img-fluid mt-3 mt-md-0" alt="illustration of La Poutine Week by Loogart" style="max-width:280px">
+                    <div class="col-12 col-lg-5 d-flex justify-content-center align-items-center">
+                        <div class="w-50" data-aos="fade-right" data-aos-duration="1000">
+                            <img src="../img/artwork/lady-double-poutine-dress.png" class="img-fluid" alt="illustration of a lady holding two poutines by Loogart">
+                        </div>
+                        <div class="w-50" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="250">
+                            <img src="../img/artwork/man-1.png" class="img-fluid" alt="illustration of guy holding a poutine up by Loogart">
                         </div>
                     </div>
                 </div>
@@ -238,4 +275,6 @@
     <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../js/aos.js"></script>
     <script src="../js/scripts.js"></script>
-</body></html>
+</body>
+
+</html>

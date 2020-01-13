@@ -7611,12 +7611,6 @@ a.text-dark:hover, a.text-dark:focus {
   .table .thead-dark th {
     color: inherit;
     border-color: #dee2e6; } }
-body {
-  animation: fadein 1s;
-  -moz-animation: fadein 1s;
-  -webkit-animation: fadein 1s;
-  -o-animation: fadein 1s; }
-
 @keyframes fadein {
   from {
     opacity: 0; }
@@ -7944,6 +7938,24 @@ footer a {
     .autocomplete-mobile li a:hover {
       background-color: rgba(0, 0, 0, 0.1);
       color: black; }
+
+.location-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 1.5rem; }
+  @media (max-width: 991.98px) {
+    .location-list ul {
+      width: 50%;
+      margin-bottom: 0; } }
+  .location-list ul li {
+    margin-bottom: 0.69rem; }
+    .location-list ul li a {
+      color: #000;
+      text-decoration: underline;
+      font-size: 1.25rem; }
+      .location-list ul li a:hover {
+        color: #009ADE; }
 
 .scrim {
   position: fixed;

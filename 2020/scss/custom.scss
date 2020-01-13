@@ -60,10 +60,10 @@ $dropdown-border-width:0;
 @import "../bootstrap/scss/bootstrap.scss";
 
 body {
-    animation: fadein 1s;
-    -moz-animation: fadein 1s;
-    -webkit-animation: fadein 1s;
-    -o-animation: fadein 1s;
+    //    animation: fadein 1s;
+    //    -moz-animation: fadein 1s;
+    //    -webkit-animation: fadein 1s;
+    //    -o-animation: fadein 1s;
 }
 
 
@@ -561,6 +561,34 @@ footer {
             &:hover {
                 background-color: rgba(0, 0, 0, .1);
                 color: black;
+            }
+        }
+    }
+}
+
+.location-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 1.5*$spacer;
+
+    ul {
+        @include media-breakpoint-down(md) {
+            width: 50%;
+            margin-bottom:0;
+        }
+
+        li {
+            margin-bottom: .69*$spacer;
+
+            a {
+                color: $black;
+                text-decoration: underline;
+                font-size: $font-size-base*1.25;
+
+                &:hover {
+                    color: $blue;
+                }
             }
         }
     }
