@@ -16,26 +16,28 @@ $('select.region').on('change', function () {
 
 
 //navigation ui
-$('.switch-1').click(function(){
+$('.switch-1').click(function () {
     $('.mobile-nav-open').toggleClass("d-none d-block");
     $('.switch-2').toggleClass("d-inline-block d-none");
     $('body').toggleClass("scrollable non-scrollable");
 });
 
-$('.switch-2').click(function(){
+$('.switch-2').click(function () {
     $('.search-mobile').toggleClass("d-none d-block");
+    $('.scrim').toggleClass("d-none d-block");
     $("#searchInput").focus();
 });
 
-$('.switch-3').click(function(){
+$('.switch-3').click(function () {
     $('.search-desktop').toggleClass("d-none d-block");
     $('.scrim').toggleClass("d-none d-block");
     $('.desktop-nav-items').toggleClass("d-block d-none");
     $("#searchInputDesktop").focus();
 });
 
-$('.scrim').click(function(){
+$('.scrim').click(function () {
     $(this).toggleClass("d-none d-block");
     $('.search-desktop').toggleClass("d-none d-block");
     $('.desktop-nav-items').toggleClass("d-block d-none");
+    $('.search-mobile').toggleClass("d-block d-none");
 });
