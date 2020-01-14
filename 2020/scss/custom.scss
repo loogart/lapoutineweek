@@ -54,6 +54,13 @@ $input-focus-color: $black;
 $input-focus-border-color:$blue;
 $input-color:$black;
 $dropdown-border-width:0;
+$nav-pills-link-active-color:$blue;
+$nav-pills-link-active-bg: transparent;
+$nav-link-padding-y: 0;
+$nav-link-padding-x: .5*$spacer;
+$modal-fade-transform: translate(0, 69px) scale(.69);
+$modal-transition: transform .15s ease-out;
+$modal-scale-transform: scale(1.02);
 
 
 // Bootstrap
@@ -575,7 +582,7 @@ footer {
     ul {
         @include media-breakpoint-down(md) {
             width: 50%;
-            margin-bottom:0;
+            margin-bottom: 0;
         }
 
         li {
@@ -594,6 +601,228 @@ footer {
     }
 }
 
+.sub-navbar {
+    padding: $spacer;
+    box-shadow: $box-shadow-sm;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 67px;
+    z-index: 1;
+    background-color: white;
+
+    @include media-breakpoint-down(sm) {
+        position: sticky;
+        position: -webkit-sticky;
+        top: 58px;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    a {
+        color: black;
+        text-decoration: underline;
+        font-weight: 600;
+
+        &:hover {
+            color: $blue;
+        }
+    }
+}
+.mobile-filter-button{
+    a{
+        &:hover{
+            color:white;
+        }
+    text-decoration: none;
+    }
+}
+
+.ui-view {
+    p {
+        margin: 0;
+        font-size: 1.1*$spacer;
+
+        a {
+            color: black;
+            text-decoration: underline;
+            font-weight: 600;
+
+            &:hover {
+                color: $blue;
+            }
+        }
+    }
+
+    .nav-pills {
+        a {
+            color: black;
+
+            &.active {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.results {
+
+    .filter-box {
+        background-color: $light;
+        padding: 1.5*$spacer;
+        position: sticky;
+        position: -webkit-sticky;
+        top: 150px;
+
+        @include media-breakpoint-down(sm) {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 2000;
+            width: 69%;
+            box-shadow: $box-shadow;
+        }
+
+        ul {
+            li {
+                a {
+                    color: black;
+
+                    &:hover,
+                    &.active {
+                        color: $blue;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.icard-list {
+    position: relative;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.icard {
+    display: flex;
+    flex-direction: column;
+    transition: all .25s ease-in-out;
+
+    @include media-breakpoint-down(sm) {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    &:hover .icard-img {
+        box-shadow: $box-shadow;
+    }
+
+}
+
+.icard-img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 160px;
+    border-radius: 4px;
+    transition: all .25s ease-in-out;
+
+    @include media-breakpoint-down(sm) {
+        width: 80px;
+        height: 60px;
+    }
+
+}
+
+.icard-content {
+    display: block;
+    padding: $spacer 0;
+
+
+    h3 {
+        @include media-breakpoint-up(sm) {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        font-size: $spacer;
+        color: $blue;
+    }
+
+    h4,
+    p {
+        color: black;
+
+        @include media-breakpoint-up(sm) {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+
+    h4 {
+        @include media-breakpoint-down(sm) {
+            font-size: 1.25*$spacer;
+            margin-bottom: 0;
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        flex-grow: 1;
+        padding: $spacer;
+    }
+}
+
+.icard-footer {
+    display: flex;
+    justify-content: space-between;
+
+    p {
+        margin-bottom: 0;
+    }
+}
+
+#map {
+    width: 100%;
+    height: calc(100vh - 244px);
+
+    a {
+        text-decoration: none;
+    }
+
+    .card {
+        margin-bottom: 0;
+        border: none;
+        max-width: 320px;
+
+        img {
+            border-radius: 6px;
+        }
+
+        h3 {
+            font-size: $spacer;
+            color: $blue;
+        }
+
+        h4 {}
+
+        &:hover {
+            background: $light;
+        }
+
+        p {
+            color: black;
+            font-weight: 600;
+        }
+    }
+}
+
 // general UI 
 .scrim {
     position: fixed;
@@ -603,7 +832,7 @@ footer {
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, .4);
-    z-index: 1;
+    z-index: 3;
 }
 
 
@@ -613,4 +842,65 @@ footer {
 
 .non-scrollable {
     overflow-y: hidden;
+}
+
+.preview-modal {
+    .product-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: $spacer;
+    }
+    .product-description{
+        margin-bottom:$spacer;
+    }
+    .modal-close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 240px;
+
+    }
+
+    h3 {
+        font-size: $font-size-base*1.25;
+        color: $blue;
+    }
+
+    h4 {
+        font-size: $font-size-base*1.69;
+    }
+    h5{
+        font-family: $input-font-family;
+        color:black;
+    }
+
+    .modal-footer {
+        justify-content: space-between;
+    }
+
+}
+
+.toast-holder{
+    position: fixed;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:69px;
+    background-color: transparent;
+    z-index:1;
+    bottom:15px;
+    .toast{
+        background-color: black;
+        color:white;
+        width:500px;
+
+    }
+        
 }
