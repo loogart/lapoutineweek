@@ -630,12 +630,14 @@ footer {
         }
     }
 }
-.mobile-filter-button{
-    a{
-        &:hover{
-            color:white;
+
+.mobile-filter-button {
+    a {
+        &:hover {
+            color: white;
         }
-    text-decoration: none;
+
+        text-decoration: none;
     }
 }
 
@@ -712,10 +714,12 @@ footer {
     display: flex;
     flex-direction: column;
     transition: all .25s ease-in-out;
+    margin-bottom:$spacer;
 
     @include media-breakpoint-down(sm) {
         flex-direction: row;
         align-items: center;
+         margin-bottom:$spacer*.25;
     }
 
     &:hover .icard-img {
@@ -788,6 +792,7 @@ footer {
     }
 }
 
+
 #map {
     width: 100%;
     height: calc(100vh - 244px);
@@ -845,22 +850,24 @@ footer {
 }
 
 .preview-modal {
-    .product-header{
+    .product-header {
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
         margin-bottom: $spacer;
     }
-    .product-description{
-        margin-bottom:$spacer;
+
+    .product-description {
+        margin-bottom: $spacer;
     }
+
     .modal-close {
         position: absolute;
         right: 15px;
         top: 15px;
     }
 
-    img {
+    img.preview-modal {
         object-fit: cover;
         width: 100%;
         height: 240px;
@@ -875,32 +882,114 @@ footer {
     h4 {
         font-size: $font-size-base*1.69;
     }
-    h5{
+
+    h5 {
         font-family: $input-font-family;
-        color:black;
+        color: black;
     }
 
     .modal-footer {
         justify-content: space-between;
     }
-
 }
 
-.toast-holder{
+.product {
+    padding: 3*$spacer 0 6*$spacer;
+
+    @include media-breakpoint-down(sm) {
+        padding: 1.5*$spacer 0;
+    }
+
+    .product-description {
+        margin-bottom: $spacer;
+    }
+
+    h3 {
+        font-size: $font-size-base*1.5;
+        color: $blue;
+    }
+
+    h4 {
+        font-size: $font-size-base*3;
+    }
+
+    h5 {
+        font-family: $input-font-family;
+        color: black;
+    }
+}
+
+.toast-holder {
     position: fixed;
-    width:100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height:69px;
     background-color: transparent;
-    z-index:1;
-    bottom:15px;
-    .toast{
-        background-color: black;
-        color:white;
-        width:500px;
+    bottom: 15px;
+    z-index: 2;
 
+    &.toast-holder-69 {
+        bottom: 69px;
     }
-        
+
+}
+
+.toast {
+    background-color: black;
+    color: white;
+    width: 500px;
+}
+
+.message-modal {
+    .modal-close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+
+    @include media-breakpoint-down(sm) {
+        img {
+            max-width: 240px;
+        }
+    }
+
+}
+
+.product-hours {
+
+    th:first-child,
+    td:first-child {
+        width: 10%;
+    }
+}
+
+.product-social,
+.product-planweek {
+    li {
+        margin-bottom: $spacer*.5;
+    }
+}
+
+.product-actions {
+    position: fixed;
+    padding: $spacer*.5;
+    background-color: white;
+    box-shadow: $box-shadow;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+    .btn {
+        @include media-breakpoint-down(sm) {
+            padding-left: $spacer*.5;
+            padding-right: $spacer*.5;
+        }
+    }
+
+}
+.account{
+    padding:3*$spacer 0;
 }

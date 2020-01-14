@@ -39,6 +39,11 @@ $('.switch-4').click(function () {
     $('.scrim').toggleClass("d-none d-block");
 });
 
+
+$('.switch-5').click(function () {
+    $(this).parent().parent().parent().parent().addClass("d-none");
+});
+
 $('.scrim').click(function () {
     $(this).toggleClass("d-none d-block");
     $('.search-desktop').toggleClass("d-none d-block");

@@ -8209,11 +8209,13 @@ footer a {
 .icard {
   display: flex;
   flex-direction: column;
-  transition: all .25s ease-in-out; }
+  transition: all .25s ease-in-out;
+  margin-bottom: 1rem; }
   @media (max-width: 767.98px) {
     .icard {
       flex-direction: row;
-      align-items: center; } }
+      align-items: center;
+      margin-bottom: 0.25rem; } }
   .icard:hover .icard-img {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); }
 
@@ -8311,7 +8313,7 @@ footer a {
   position: absolute;
   right: 15px;
   top: 15px; }
-.preview-modal img {
+.preview-modal img.preview-modal {
   object-fit: cover;
   width: 100%;
   height: 240px; }
@@ -8326,19 +8328,71 @@ footer a {
 .preview-modal .modal-footer {
   justify-content: space-between; }
 
+.product {
+  padding: 3rem 0 6rem; }
+  @media (max-width: 767.98px) {
+    .product {
+      padding: 1.5rem 0; } }
+  .product .product-description {
+    margin-bottom: 1rem; }
+  .product h3 {
+    font-size: 1.5rem;
+    color: #009ADE; }
+  .product h4 {
+    font-size: 3rem; }
+  .product h5 {
+    font-family: "Alegreya Sans", sans-serif;
+    color: black; }
+
 .toast-holder {
   position: fixed;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 69px;
   background-color: transparent;
-  z-index: 1;
-  bottom: 15px; }
-  .toast-holder .toast {
-    background-color: black;
-    color: white;
-    width: 500px; }
+  bottom: 15px;
+  z-index: 2; }
+  .toast-holder.toast-holder-69 {
+    bottom: 69px; }
+
+.toast {
+  background-color: black;
+  color: white;
+  width: 500px; }
+
+.message-modal .modal-close {
+  position: absolute;
+  right: 15px;
+  top: 15px; }
+@media (max-width: 767.98px) {
+  .message-modal img {
+    max-width: 240px; } }
+
+.product-hours th:first-child,
+.product-hours td:first-child {
+  width: 10%; }
+
+.product-social li,
+.product-planweek li {
+  margin-bottom: 0.5rem; }
+
+.product-actions {
+  position: fixed;
+  padding: 0.5rem;
+  background-color: white;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1; }
+  @media (max-width: 767.98px) {
+    .product-actions .btn {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem; } }
+
+.account {
+  padding: 3rem 0; }
 
 /*# sourceMappingURL=custom.css.map */
