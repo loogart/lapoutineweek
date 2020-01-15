@@ -8332,7 +8332,7 @@ footer a {
   padding: 3rem 0 6rem; }
   @media (max-width: 767.98px) {
     .product {
-      padding: 1.5rem 0; } }
+      padding: 1.5rem 0 5rem; } }
   .product .product-description {
     margin-bottom: 1rem; }
   .product h3 {

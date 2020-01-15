@@ -897,7 +897,7 @@ footer {
     padding: 3*$spacer 0 6*$spacer;
 
     @include media-breakpoint-down(sm) {
-        padding: 1.5*$spacer 0;
+        padding: 1.5*$spacer 0 5*$spacer;
     }
 
     .product-description {
