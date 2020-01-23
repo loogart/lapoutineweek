@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="../img/favicon.png">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="La Poutine Week">
+    <link rel="apple-touch-icon-precomposed" href="../img/favicon.png">
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="../img/favicon.png">
+    <meta name="msapplication-TileColor" content="#009ADE">
+    <link rel="shortcut icon" href="../../img/favicon.png">
+    <link rel="mask-icon" href="../../img/icons/safari-pinned-tab.svg" color="#F9AF48">
+    <meta name="theme-color" content="#009ADE">
+    <link rel="stylesheet" href="../../css/custom.css">
+    <link rel="stylesheet" href="../../css/aos.css" />
+    <link rel="stylesheet" href="../../ss/animate.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>Nom de poutine | La semaine de La Poutine</title>
+    <meta name="description" content="La Poutine Week is an annual week-long Canadian festival where you celebrate and vote for the most amazing poutine creations.">
+</head>
+
+<body>
+    <div class="sticky-top">
+
+        <!-- main nav -->
+        <nav class="navbar navbar-light shadow-sm bg-white">
+            <div class="container">
+                <a href="./"><img src="../../img/logo-full-web-fr.svg" alt="La Poutine Week logo" class="logo"></a>
+                <!-- mobile nav buttons-->
+                <div class="mobile-nav mt-2">
+                    <a href="#!" class="d-inline-block switch-2"><i class="fas fa-search"></i></a>
+                    <a href="#!" class="switch-1"><i class="fas fa-bars"></i></a>
+                </div>
+                <!-- desktop nav links -->
+                <div class="desktop-nav">
+                    <div class="desktop-nav-items d-block">
+                        <a href="#!" class="switch-3"><i class="fas fa-search"></i>&nbsp;Restaurants</a>
+                        <a href="./select-city.html">Changer de ville</a>
+                        <a class="active" href="./about.html">À propos</a>
+                        <a href="./contact.html">Contacter</a>
+                        <a href="./login.html">Connexion</a>
+                    </div>
+                    <div class="search-desktop d-none">
+                        <form>
+                            <div class="form-row align-items-center">
+                                <div class="col-8">
+                                    <label for="searchInputDesktop" class="sr-only">Recherchez les restos</label>
+                                    <input type="text" class="form-control" id="searchInputDesktop" aria-describedby="searchInput" placeholder="Nom de restos" autofocus>
+                                </div>
+                                <div class="col-3">
+                                    <button type="button" class="btn btn-primary btn-block border-0" onclick="location.href='./results.html';">Rechercher</button>
+                                </div>
+                                <div class="col-1">
+                                    <button type="button" class="btn px-0 switch-3"><i class="fas fa-times"></i></button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-8">
+                                    <!-- autocomplete results-->
+                                    <div class="autocomplete-desktop">
+                                        <ul class="list-unstyled">
+                                            <li><a href="./results.html">Paul et Line</a></li>
+                                            <li><a href="./results.html">Paulette et Ginette</a></li>
+                                            <li><a href="./results.html">Paulo et Suzanne</a></li>
+                                            <li><a href="./results.html">No results found.</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+        <!-- mobile menu -->
+        <nav class="mobile-nav-open d-none d-lg-none">
+            <div class="container">
+                <h2 class="sr-only">Menu</h2>
+                <ul class="list-unstyled">
+                    <li><a href="./select-city.html">Changer de ville</a></li>
+                    <li><a class="active" href="./about.html">À propos</a></li>
+                    <li><a href="./contact.html">Contacter</a></li>
+                    <li><a href="#!">English</a></li>
+                    <li><a href="./login.html" role="button" class="btn btn-light btn-sm"><i class="fas fa-user-circle mr-1"></i> Login</a></li>
+                    <li class="mt-5"><a href="#!" class="switch-1 text-secondary"><i class="fas fa-times"></i>&nbsp;Fermer</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- mobile search bar -->
+        <div class="search-mobile d-none d-lg-none">
+            <div class="container">
+                <form>
+                    <div class="form-group">
+                        <label for="searchInput"><b>Recherchez les restos</b></label>
+                        <input type="text" class="form-control" id="searchInput" aria-describedby="searchInput" placeholder="Restaurant names">
+                        <div class="d-flex justify-content-between">
+                            <button type="button" class="btn btn-primary mt-3" onclick="location.href='./results.html';">Rechercher</button>
+                            <button type="button" class="btn mt-3 px-0 switch-2"><i class="fas fa-times"></i></button>
+                        </div>
+                    </div>
+                </form>
+                <!-- mobile search results -->
+                <div class="autocomplete-mobile">
+                    <ul class="list-unstyled">
+                        <li><a href="./results.html">Paul et Line</a></li>
+                        <li><a href="./results.html">Paulette et Ginette</a></li>
+                        <li><a href="./results.html">Paulo et Suzanne</a></li>
+                        <li><a href="./results.html">No results found.</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="scrim d-none"></div>
+
+<main>
+    <div class="sub-navbar">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="results-number">
+                <p><a href="./results.html" class="text-decoration-none"><i class="fas fa-chevron-left mr-2"></i>&nbsp;Retour aux résultats</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="product">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="../../img/photos/poutine-generic.jpg" class="img-fluid rounded mb-4 shadow" alt="">
+                </div>
+                <div class="col-md-6 pl-md-5">
+                    <div class="product-header">
+                        <div class="header-left">
+                            <h3>Restaurant name</h3>
+                            <h4>Poutine Name</h4>
+                        </div>
+                        <div class="header-right">
+                            <p class="h3">16 $</p>
+                        </div>
+                    </div>
+                    <div class="product-description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, autem voluptates perferendis nobis reprehenderit accusantium iure laudantium officia at, ullam aut! Eos tempora voluptas alias commodi, atque, minima provident illo.
+                    </div>
+                    <div class="product-address">
+                        <h5>Adresse</h5>
+                        <p><a href="#!" target="_blank">1124 Sainte-Catherine Ouest, Montreal QC H4N 7A1</a></p>
+                    </div>
+                    <div class="product-hours w-75">
+                        <h5>Heures d'ouverture</h5>
+                        <table class="table table-sm table-borderless">
+                            <thead class="sr-only">
+                                <tr>
+                                    <th>Day</th>
+                                    <th>Hours</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Saturday</td>
+                                    <td>1 pm-11 pm</td>
+                                </tr>
+                                <tr>
+                                    <td>Sunday</td>
+                                    <td>4 pm-11 pm</td>
+                                </tr>
+                                <tr>
+                                    <td>Monday</td>
+                                    <td>11 am-11 pm</td>
+                                </tr>
+                                <tr>
+                                    <td>Tuesday</td>
+                                    <td>11 am-11 pm</td>
+                                </tr>
+                                <tr>
+                                    <td>Wednesday</td>
+                                    <td>11 am-11 pm</td>
+                                </tr>
+                                <tr>
+                                    <td>Thursday</td>
+                                    <td>11 am-11 pm</td>
+                                </tr>
+                                <tr>
+                                    <td>Friday</td>
+                                    <td>11 am-3 am</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="d-flex justify-content-start">
+                        <div class="product-social mr-5">
+                            <h5>Réseaux sociaux</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#!" target="_blank"><i class="fab fa-facebook"></i>&nbsp;Facebook</a></li>
+                                <li><a href="#!" target="_blank"><i class="fab fa-instagram"></i>&nbsp;Instagram</a></li>
+                                <li><a href="#!" target="_blank"><i class="fab fa-twitter"></i>&nbsp;Twitter</a></li>
+                            </ul>
+                        </div>
+                        <div class="product-planweek">
+                            <h5>Planifier votre semaine</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#!" target="_blank"><i class="fas fa-clock"></i>&nbsp;Reservation app</a></li>
+                                <li><a href="#!" target="_blank"><i class="fas fa-calendar-plus"></i>&nbsp;Add to calendar</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- actions -->
+                    <div class="product-actions">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6 ml-auto d-flex justify-content-between justify-content-md-center">
+                                    <button type="button" class="btn btn-light" data-dismiss="modal" id="saveLater"><i class="fas fa-bookmark mr-1"></i>&nbsp;Sauvegarder</button>
+                                    <a href="#!" role="button" class="btn btn-primary ml-md-3" data-toggle="modal" data-target="#votedPopup"><i class="fas fa-check-circle mr-1"></i> Enregister votre vote</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Message modal Voted -->
+    <div class="message-modal modal fade" id="votedPopup" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-md-5"><img src="../../img/artwork/vote-poutine.png" class="img-fluid" alt=""></div>
+                            <div class="col-md-7">
+                                <h3 class="h1"><i class="fas fa-check text-success"></i><br>Merci de voter !</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button type="button" class="btn btn-outline-dark btn-sm" data-dismiss="modal"></i>&nbsp;<i class="fas fa-times"></i> Close this window</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TOAST -->
+    <div class="toast-holder toast-holder-69">
+        <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-delay="2000">
+            <div class="toast-header sr-only">
+                <strong class="mr-auto">La Poutine Week</strong>
+                <small>Just now</small>
+                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="toast-body d-flex justify-content-between">
+                <span><i class="fas fa-check text-success"></i>&nbsp;Sauvegardé.</span>
+                <a class="text-white" href="./login.html">Voir votre liste.</a>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../../js/aos.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxEirwPY5lQXNNXuY9lzjQIwGJlWby7Nw&callback=initMap" async defer></script>
+<script src="../../js/scripts.js"></script>
+<script>
+    $(document).ready(function() {
+        $("#saveLater").click(function() {
+            $('.toast').toast('show');
+        });
+    });
+
+</script>
+
+</html>

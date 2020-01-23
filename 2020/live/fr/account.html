@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="../img/favicon.png">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="La Poutine Week">
+    <link rel="apple-touch-icon-precomposed" href="../img/favicon.png">
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="../img/favicon.png">
+    <meta name="msapplication-TileColor" content="#009ADE">
+    <link rel="shortcut icon" href="../../img/favicon.png">
+    <link rel="mask-icon" href="../../img/icons/safari-pinned-tab.svg" color="#F9AF48">
+    <meta name="theme-color" content="#009ADE">
+    <link rel="stylesheet" href="../../css/custom.css">
+    <link rel="stylesheet" href="../../css/aos.css" />
+    <link rel="stylesheet" href="../../ss/animate.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>Mon compte | La semaine de La Poutine</title>
+    <meta name="description" content="La Poutine Week is an annual week-long Canadian festival where you celebrate and vote for the most amazing poutine creations.">
+</head>
+
+<body>
+    <div class="sticky-top">
+        <!-- main nav -->
+        <nav class="navbar navbar-light shadow-sm bg-white">
+            <div class="container">
+                <a href="./"><img src="../../img/logo-full-web-fr.svg" alt="La Poutine Week logo" class="logo"></a>
+                <!-- mobile nav buttons-->
+                <div class="mobile-nav mt-2">
+                    <a href="#!" class="d-inline-block switch-2"><i class="fas fa-search"></i></a>
+                    <a href="#!" class="switch-1"><i class="fas fa-bars"></i></a>
+                </div>
+                <!-- desktop nav links -->
+                <div class="desktop-nav">
+                    <div class="desktop-nav-items d-block">
+                        <a href="#!" class="switch-3"><i class="fas fa-search"></i>&nbsp;Restaurants</a>
+                        <a href="./select-city.html">Changer de ville</a>
+                        <a class="active" href="./about.html">À propos</a>
+                        <a href="./contact.html">Contacter</a>
+                        <a href="./login.html">Connexion</a>
+                    </div>
+                    <div class="search-desktop d-none">
+                        <form>
+                            <div class="form-row align-items-center">
+                                <div class="col-8">
+                                    <label for="searchInputDesktop" class="sr-only">Recherchez les restos</label>
+                                    <input type="text" class="form-control" id="searchInputDesktop" aria-describedby="searchInput" placeholder="Nom de restos" autofocus>
+                                </div>
+                                <div class="col-3">
+                                    <button type="button" class="btn btn-primary btn-block border-0" onclick="location.href='./results.html';">Rechercher</button>
+                                </div>
+                                <div class="col-1">
+                                    <button type="button" class="btn px-0 switch-3"><i class="fas fa-times"></i></button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-8">
+                                    <!-- autocomplete results-->
+                                    <div class="autocomplete-desktop">
+                                        <ul class="list-unstyled">
+                                            <li><a href="./results.html">Paul et Line</a></li>
+                                            <li><a href="./results.html">Paulette et Ginette</a></li>
+                                            <li><a href="./results.html">Paulo et Suzanne</a></li>
+                                            <li><a href="./results.html">No results found.</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+        <!-- mobile menu -->
+        <nav class="mobile-nav-open d-none d-lg-none">
+            <div class="container">
+                <h2 class="sr-only">Menu</h2>
+                <ul class="list-unstyled">
+                    <li><a href="./select-city.html">Changer de ville</a></li>
+                    <li><a class="active" href="./about.html">À propos</a></li>
+                    <li><a href="./contact.html">Contacter</a></li>
+                    <li><a href="#!">English</a></li>
+                    <li><a href="./login.html" role="button" class="btn btn-light btn-sm"><i class="fas fa-user-circle mr-1"></i> Login</a></li>
+                    <li class="mt-5"><a href="#!" class="switch-1 text-secondary"><i class="fas fa-times"></i>&nbsp;Fermer</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- mobile search bar -->
+        <div class="search-mobile d-none d-lg-none">
+            <div class="container">
+                <form>
+                    <div class="form-group">
+                        <label for="searchInput"><b>Recherchez les restos</b></label>
+                        <input type="text" class="form-control" id="searchInput" aria-describedby="searchInput" placeholder="Restaurant names">
+                        <div class="d-flex justify-content-between">
+                            <button type="button" class="btn btn-primary mt-3" onclick="location.href='./results.html';">Rechercher</button>
+                            <button type="button" class="btn mt-3 px-0 switch-2"><i class="fas fa-times"></i></button>
+                        </div>
+                    </div>
+                </form>
+                <!-- mobile search results -->
+                <div class="autocomplete-mobile">
+                    <ul class="list-unstyled">
+                        <li><a href="./results.html">Paul et Line</a></li>
+                        <li><a href="./results.html">Paulette et Ginette</a></li>
+                        <li><a href="./results.html">Paulo et Suzanne</a></li>
+                        <li><a href="./results.html">No results found.</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="scrim d-none"></div>
+
+<main>
+    <main>
+        <div class="sub-navbar">
+            <div class="container d-flex justify-content-between align-items-center">
+                <div class="results-number">
+                    <h2 class="h5 m-0"><i class="fas fa-user-circle mr-2"></i>&nbsp;Compte de Thierry</h2>
+                </div>
+            </div>
+        </div>
+        <div class="account">
+            <div class="container">
+                <div class="icard-list">
+                    <h2 class="h3 mb-3 pb-4 border-bottom">Saved for later</h2>
+                    <div class="row mt-4">
+                        <!-- card item -->
+                        <div class="col-md-6 col-md-4 col-lg-3">
+                            <div class="icard">
+                                <img src="../../img/photos/poutine-generic.jpg" alt="" class="icard-img">
+                                <div class="icard-content">
+                                    <h3>Restaurant Name</h3>
+                                    <h4>Poutine Name</h4>
+                                    <div class="icard-footer mt-3">
+                                        <button type="button" class="btn btn-light btn-sm switch-5" data-dismiss="modal"><i class="fas fa-times mr-1"></i>&nbsp;Supprimer</button>
+                                        <a href="./product.html" role="button" class="btn btn-dark btn-sm"><i class="fas fa-arrow-right mr-1"></i> Voir</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card item -->
+                        <div class="col-md-6 col-md-4 col-lg-3">
+                            <div class="icard">
+                                <img src="../../img/photos/poutine7.jpg" alt="" class="icard-img">
+                                <div class="icard-content">
+                                    <h3>Restaurant Name</h3>
+                                    <h4>Poutine Name</h4>
+                                    <div class="icard-footer mt-3">
+                                        <button type="button" class="btn btn-light btn-sm switch-5" data-dismiss="modal"><i class="fas fa-times mr-1"></i>&nbsp;Supprimer</button>
+                                        <a href="./product.html" role="button" class="btn btn-dark btn-sm"><i class="fas fa-arrow-right mr-1"></i> Voir</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card item -->
+                        <div class="col-md-6 col-md-4 col-lg-3">
+                            <div class="icard">
+                                <img src="../../img/photos/poutine3.jpg" alt="" class="icard-img">
+                                <div class="icard-content">
+                                    <h3>Restaurant Name</h3>
+                                    <h4>Poutine Name</h4>
+                                    <div class="icard-footer mt-3">
+                                        <button type="button" class="btn btn-light btn-sm switch-5" data-dismiss="modal"><i class="fas fa-times mr-1"></i>&nbsp;Supprimer</button>
+                                        <a href="./product.html" role="button" class="btn btn-dark btn-sm"><i class="fas fa-arrow-right mr-1"></i> Voir</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card item -->
+                        <div class="col-md-6 col-md-4 col-lg-3">
+                            <div class="icard">
+                                <img src="../../img/photos/poutine4.jpg" alt="" class="icard-img">
+                                <div class="icard-content">
+                                    <h3>Restaurant Name</h3>
+                                    <h4>Poutine Name</h4>
+                                    <div class="icard-footer mt-3">
+                                        <button type="button" class="btn btn-light btn-sm switch-5" data-dismiss="modal"><i class="fas fa-times mr-1"></i>&nbsp;Supprimer</button>
+                                        <a href="./product.html" role="button" class="btn btn-dark btn-sm"><i class="fas fa-arrow-right mr-1"></i> Voir</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card item -->
+                        <div class="col-md-6 col-md-4 col-lg-3">
+                            <div class="icard">
+                                <img src="../../img/photos/poutine-generic.jpg" alt="" class="icard-img">
+                                <div class="icard-content">
+                                    <h3>Restaurant Name</h3>
+                                    <h4>Poutine Name</h4>
+                                    <div class="icard-footer mt-3">
+                                        <button type="button" class="btn btn-light btn-sm switch-5" data-dismiss="modal"><i class="fas fa-times mr-1"></i>&nbsp;Supprimer</button>
+                                        <a href="./product.html" role="button" class="btn btn-dark btn-sm"><i class="fas fa-arrow-right mr-1"></i> Voir</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card item -->
+                        <div class="col-md-6 col-md-4 col-lg-3">
+                            <div class="icard">
+                                <img src="../../img/photos/poutine5.jpg" alt="" class="icard-img">
+                                <div class="icard-content">
+                                    <h3>Restaurant Name</h3>
+                                    <h4>Poutine Name</h4>
+                                    <div class="icard-footer mt-3">
+                                        <button type="button" class="btn btn-light btn-sm switch-5" data-dismiss="modal"><i class="fas fa-times mr-1"></i>&nbsp;Supprimer</button>
+                                        <a href="./product.html" role="button" class="btn btn-dark btn-sm"><i class="fas fa-arrow-right mr-1"></i> Voir</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- browse more poutines -->
+                        <div class="col-md-6 p-5 overflow-hidden">
+                            <div class="text-center">
+                                <h3>Sauvegarder vos poutines</h3>
+                                <p class="mt-4 mb-0">
+                                    <a href="./results.html" role="button" class="btn btn-outline-dark btn-sm"><i class="fas fa-search mr-1"></i> Parcourir toutes les poutines</a>
+                                </p>
+                                <div class="d-flex justify-content-center align-items-end mx-auto">
+                                    <img src="../../img/artwork/poutine-box.png" alt="" style="width:120px">
+                                    <img src="../../img/artwork/poutine-brand.png" alt="" style="width:95px">
+                                    <img src="../../img/artwork/poutine-black.png" alt="" style="width:120px">
+                                    <img src="../../img/artwork/poutine-2-forks.png" alt="" style="width:120px">
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- TOAST -->
+        <div class="toast-holder">
+            <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-delay="2000">
+                <div class="toast-header sr-only">
+                    <strong class="mr-auto">Semaine de la Poutine</strong>
+                    <small>Just now</small>
+                    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="toast-body d-flex justify-content-between">
+                    <span><i class="fas fa-times text-success"></i>&nbsp;Supprimé de votre liste.</span>
+                    <a class="text-white" href="#!">Undo.</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="pt-5 pb-3 bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md">
+                    <img src="../../img/logo-footer-en.svg" style="max-width:86px" class="mb-4" alt="">
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Compagnie</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a href="./about.html">À propos</a></li>
+                        <li><a href="./#saputoBox">Le kit Poutine</a></li>
+                        <li><a href="./#spotlight">En vedette</a></li>
+                        <li><a href="http://saputofoodservice.ca" target="_blank">Saputo</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Restaurants</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a href="./login.html">Connexion</a></li>
+                        <li><a href="./register.html">Enregistrement</a></li>
+                        <li><a href="./faq.html">FAQ pour les entreprises</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Langue et Région</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a href="#!">English</a></li>
+                        <li><a href="./register.html">Changer de ville</a></li>
+                        <li><a href="./faq.html">Politique de confidentialité</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Contact</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a href="https://facebook.com/lapoutineweek" target="_blank"><i class="fab fa-facebook-square"></i>&nbsp;Facebook</a></li>
+                        <li><a href="https://instagram.com/lapoutineweek" target="_blank"><i class="fab fa-instagram"></i>&nbsp;Instagram</a></li>
+                        <li><a href="https://twitter.com/lapoutineweek" target="_blank"><i class="fab fa-twitter"></i>&nbsp;Twitter</a></li>
+                        <li><a href="mailto:team@peoplemovertech.com"><i class="fas fa-envelope"></i>&nbsp;Email</a></li>
+
+                    </ul>
+                </div>
+                <!-- new html for cities -->
+                <div class="col-12 mt-4">
+                    <small>
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <p class="text-white mb-0">Villes : </p>
+                            </li>
+                            <li class="list-inline-item"><a href="./register.html">Montréal</a></li>
+                            <li class="list-inline-item"><a href="./register.html">Winnipeg</a></li>
+                            <li class="list-inline-item"><a href="./register.html">Vancouver</a></li>
+                            <li class="list-inline-item"><a href="./register.html">Edmonton</a></li>
+                            <li class="list-inline-item"><a href="./register.html">Calgary</a></li>
+                            <li class="list-inline-item"><a href="./register.html">Regina</a></li>
+                            <li class="list-inline-item"><a href="./register.html">Saskatoon</a></li>
+                            <li class="list-inline-item"><a href="./register.html">Toronto</a></li>
+                            <li class="list-inline-item"><a href="./register.html">Ottawa/Gatineau</a></li>
+                            <li class="list-inline-item"><a href="./register.html">Laval</a></li>
+                            <li class="list-inline-item"><a href="./register.html">Montérégie</a></li>
+                            <li class="list-inline-item"><a href="./register.html">Centre du Québec</a></li>
+                            <li class="list-inline-item"><a href="./register.html">Lanaudière</a></li>
+                            <li class="list-inline-item"><a href="./register.html">Mauricie</a></li>
+                            <li class="list-inline-item"><a href="./register.html">Chaudière Appalaches</a></li>
+                            <li class="list-inline-item"><a href="./register.html">Bas St-Laurent</a></li>
+                            <li class="list-inline-item"><a href="./register.html">Estrie</a></li>
+                            <li class="list-inline-item"><a href="./register.html">Saguenay</a></li>
+                            <li class="list-inline-item"><a href="./register.html">Côte-Nord</a></li>
+                            <li class="list-inline-item"><a href="./register.html">Laurentides</a></li>
+                            <li class="list-inline-item"><a href="./register.html">Abitibi</a></li>
+                            <li class="list-inline-item"><a href="./register.html">International</a></li>
+                            <li class="list-inline-item"><a href="./register.html">Québec</a></li>
+                        </ul>
+                    </small>
+                </div>
+                <div class="col-12 mt-4 d-flex justify-content-between">
+                    <small class="d-block mb-3 text-white">© 2020 La Poutine Week | <a href="https://peoplemover.tech" target="_blank">People Mover Technologies Inc.</a></small>
+                    <small class="d-block mb-3 text-white">Créé avec  <i class="fas fa-heart" aria-hidden="true" title="love"></i> du <i class="fas fa-coffee" aria-hidden="true" title="caffeine"></i> par <a href="https://loogart.com" target="_blank">Loogart</a></small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/aos.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxEirwPY5lQXNNXuY9lzjQIwGJlWby7Nw&callback=initMap" async defer></script>
+    <script src="../../js/scripts.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".switch-5").click(function() {
+                $('.toast').toast('show');
+            });
+        });
+    </script>
+
+</html>
