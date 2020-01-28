@@ -8244,10 +8244,43 @@ footer a {
       left: 40px;
       text-align: left;
       background-color: transparent; } }
-  .red-banner.red-banner__quick-preview {
-    border-radius: 0;
-    position: relative;
-    top: 0; }
+
+.red-banner__quick-preview {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 12px;
+  background-color: #E1202C;
+  border-radius: 0;
+  color: white;
+  padding: 0.3rem;
+  font-size: 0.8rem;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+  .red-banner__quick-preview img {
+    width: 40px;
+    margin-left: 2px; }
+
+.red-banner__product {
+  position: relative;
+  width: 100%;
+  min-height: 12px;
+  background-color: #E1202C;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  color: white;
+  padding: 0.3rem;
+  font-size: 0.8rem;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+  .red-banner__product img {
+    width: 40px;
+    margin-left: 2px; }
 
 .icard-img {
   display: block;

@@ -754,17 +754,53 @@ footer {
 
     @include media-breakpoint-down(sm) {
         top: 12px;
-        left:40px;
+        left: 40px;
         text-align: left;
         background-color: transparent;
     }
-    &.red-banner__quick-preview{
-        border-radius: 0;
-        position: relative;
-        top:0;
-        
+}
+
+.red-banner__quick-preview {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 12px;
+    background-color: #E1202C;
+    border-radius: 0;
+    color: white;
+    padding: .3*$spacer;
+    font-size: $font-size-base*.8;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    img {
+        width: 40px;
+        margin-left: 2px;
     }
-    
+}
+
+.red-banner__product {
+    position: relative;
+    width: 100%;
+    min-height: 12px;
+    background-color: #E1202C;
+    margin-bottom:$spacer;
+    border-radius: 4px;
+    color: white;
+    padding: .3*$spacer;
+    font-size: $font-size-base*.8;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    img {
+        width: 40px;
+        margin-left: 2px;
+    }
 }
 
 .icard-img {
