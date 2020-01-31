@@ -967,6 +967,11 @@ footer {
 
     .modal-footer {
         justify-content: space-between;
+        @include media-breakpoint-down(sm) {
+            .btn{
+                width:100%;
+            }
+        }
     }
 }
 

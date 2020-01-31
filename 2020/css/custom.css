@@ -10691,6 +10691,11 @@ footer a:hover {
 .preview-modal .modal-footer {
   justify-content: space-between;
 }
+@media (max-width: 767.98px) {
+  .preview-modal .modal-footer .btn {
+    width: 100%;
+  }
+}
 
 .product {
   padding: 3rem 0 6rem;
