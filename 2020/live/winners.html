@@ -1,0 +1,690 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="../img/favicon.png">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="La Poutine Week">
+    <link rel="apple-touch-icon-precomposed" href="../img/favicon.png">
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="../img/favicon.png">
+    <meta name="msapplication-TileColor" content="#009ADE">
+    <link rel="shortcut icon" href="../img/favicon.png">
+    <link rel="mask-icon" href="../img/icons/safari-pinned-tab.svg" color="#F9AF48">
+    <meta name="theme-color" content="#009ADE">
+    <link rel="stylesheet" href="../css/custom.css">
+    <link rel="stylesheet" href="../css/aos.css" />
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>Results | La Poutine Week</title>
+    <meta name="description" content="La Poutine Week is an annual week-long Canadian festival where you celebrate and vote for the most amazing poutine creations.">
+</head>
+
+<div class="sticky-top">
+    <!-- lang toggler -->
+    <!--
+        <div class="alert alert-dark alert-dismissible fade show mb-0 rounded-0 border-0 text-white" style="background:#333;" role="alert">
+            <div class="container">
+                Changer la langue en <a href="#!" class="text-white">français</a>.
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+-->
+    <!-- main nav -->
+    <nav class="navbar navbar-light shadow-sm bg-white">
+        <div class="container">
+            <a href="./index-winners.html"><img src="../img/logo-full-web-en.svg" alt="La Poutine Week logo" class="logo"></a>
+            <!-- mobile nav buttons-->
+            <div class="mobile-nav mt-2">
+                <a href="#!" class="d-inline-block switch-2"><i class="fas fa-search"></i></a>
+                <a href="#!" class="switch-1"><i class="fas fa-bars"></i></a>
+            </div>
+            <!-- desktop nav links -->
+            <div class="desktop-nav">
+                <div class="desktop-nav-items d-block">
+                    <a class="active" href="./winners.html">2020 Winners</a>
+                    <a href="#!" class="switch-3"><i class="fas fa-search"></i>&nbsp;Restaurants</a>
+                    <a href="./select-city.html">Change City</a>
+                    <a href="./about.html">About</a>
+                    <a href="./contact.html">Contact</a>
+                    <a href="./login.html">Login</a>
+                </div>
+                <div class="search-desktop d-none">
+                    <form>
+                        <div class="form-row align-items-center">
+                            <div class="col-8">
+                                <label for="searchInputDesktop" class="sr-only">Search restaurants</label>
+                                <input type="text" class="form-control" id="searchInputDesktop" aria-describedby="searchInput" placeholder="Restaurant names" autofocus>
+                            </div>
+                            <div class="col-3">
+                                <button type="button" class="btn btn-primary btn-block border-0" onclick="location.href='./results.html';">Search</button>
+                            </div>
+                            <div class="col-1">
+                                <button type="button" class="btn px-0 switch-3"><i class="fas fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-8">
+                                <!-- autocomplete results-->
+                                <div class="autocomplete-desktop">
+                                    <ul class="list-unstyled">
+                                        <li><a href="./results.html">Paul et Line</a></li>
+                                        <li><a href="./results.html">Paulette et Ginette</a></li>
+                                        <li><a href="./results.html">Paulo et Suzanne</a></li>
+                                        <li><a href="./results.html">No results found.</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <!-- mobile menu -->
+    <nav class="mobile-nav-open d-none d-lg-none">
+        <div class="container">
+            <h2 class="sr-only">Menu</h2>
+            <ul class="list-unstyled">
+                <li><a href="./select-city.html">Change City</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="#!">Français</a></li>
+                <li><a href="./login.html" role="button" class="btn btn-light btn-sm"><i class="fas fa-user-circle mr-1"></i> Login</a></li>
+                <li class="mt-5"><a href="#!" class="switch-1 text-secondary"><i class="fas fa-times"></i>&nbsp;Close</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- mobile search bar -->
+    <div class="search-mobile d-none d-lg-none">
+        <div class="container">
+            <form>
+                <div class="form-group">
+                    <label for="searchInput"><b>Search restaurants</b></label>
+                    <input type="text" class="form-control" id="searchInput" aria-describedby="searchInput" placeholder="Restaurant names">
+                    <div class="d-flex justify-content-between">
+                        <button type="button" class="btn btn-primary mt-3" onclick="location.href='./results.html';">Search</button>
+                        <button type="button" class="btn mt-3 px-0 switch-2"><i class="fas fa-times"></i></button>
+                    </div>
+                </div>
+            </form>
+            <!-- mobile search results -->
+            <div class="autocomplete-mobile">
+                <ul class="list-unstyled">
+                    <li><a href="./results.html">Paul et Line</a></li>
+                    <li><a href="./results.html">Paulette et Ginette</a></li>
+                    <li><a href="./results.html">Paulo et Suzanne</a></li>
+                    <li><a href="./results.html">No results found.</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<div class="scrim d-none"></div>
+
+<main>
+    <section class="winners bg-white">
+        <img src="../img/artwork/banner-wide.png" class="d-none d-md-block img-fluid mx-auto mb-4" alt="">
+        <img src="../img/artwork/poutine-2-forks.png" style="width:120px;" class="d-block d-md-none mx-auto" alt="">
+
+
+        <div class="container mb-3">
+            <h1 class="mt-5"><span class="super-title">La Poutine Week</span>2020 Winners</h1>
+
+            <!-- section Québec-->
+            <h2 class="h3 my-5">Québec Regions&nbsp;<span class="badge badge-pill badge-primary"><i class="fa fa-check"></i>&nbsp;Public's choice</span></h2>
+            <div class="row">
+                <div class="winner-wrapper col-12 col-md-6 col-lg-4 text-left d-flex align-items-center mb-5" data-aos="fade-up">
+                    <img src="https://s3.ca-central-1.amazonaws.com/peoplemover/poutine-2020/61/1580417075507.png" class="img-winner mr-3" alt="photo of poutine a Poutine Portugaise">
+                    <div class="d-flex flex-column">
+                        <p class="winner-title small mb-0">Montréal, QC</p>
+                        <p class="winner-resto h4">Piri Piri Masson</p>
+                        <p class="winner-name h5 text-primary font-weight-bold">La Poutine Portugaise</p>
+                    </div>
+                </div>
+                <div class="winner-wrapper col-12 col-md-6 col-lg-4 text-left d-flex align-items-center mb-5" data-aos="fade-up">
+                    <img src="https://s3.ca-central-1.amazonaws.com/peoplemover/poutine-2020/254/1579658814407.png" class="img-winner mr-3" alt="photo of poutine La Chorizo Piri piri">
+                    <div class="d-flex flex-column">
+                        <p class="winner-title small mb-0">Laval, QC</p>
+                        <p class="winner-resto h4">New York Fries - CF Carrefour Laval</p>
+                        <p class="winner-name h5 text-primary font-weight-bold">La Chorizo Piri-Piri</p>
+                    </div>
+                </div>
+                <div class="winner-wrapper col-12 col-md-6 col-lg-4 text-left d-flex align-items-center mb-5" data-aos="fade-up">
+                    <img src="https://s3.ca-central-1.amazonaws.com/peoplemover/poutine-2020/238/1579720462555.png" class="img-winner mr-3" alt="photo of poutine Belgo Double Cochon épicée fringante">
+                    <div class="d-flex flex-column">
+                        <p class="winner-title small mb-0">Montérégie, QC</p>
+                        <p class="winner-resto h4">Resto Belgo</p>
+                        <p class="winner-name h5 text-primary font-weight-bold">Belgo Double Cochon épicée fringante</p>
+                    </div>
+                </div>
+                <div class="winner-wrapper col-12 col-md-6 col-lg-4 text-left d-flex align-items-center mb-5" data-aos="fade-up">
+                    <img src="https://s3.ca-central-1.amazonaws.com/peoplemover/poutine-2020/179/1579632454654.png" class="img-winner mr-3" alt="photo of poutine 1">
+                    <div class="d-flex flex-column">
+                        <p class="winner-title small mb-0">Centre du Québec, QC</p>
+                        <p class="winner-resto h4">Complexe Évasion</p>
+                        <p class="winner-name h5 text-primary font-weight-bold">Poutine au porc effiloché et sa sauce au foie gras</p>
+                    </div>
+                </div>
+                <div class="winner-wrapper col-12 col-md-6 col-lg-4 text-left d-flex align-items-center mb-5" data-aos="fade-up">
+                    <img src="https://s3.ca-central-1.amazonaws.com/peoplemover/poutine-2020/287/1579874060766.png" class="img-winner mr-3" alt="Poutine: Poutine Magma">
+                    <div class="d-flex flex-column">
+                        <p class="winner-title small mb-0">Lanaudière, QC</p>
+                        <p class="winner-resto h4">TABOO Cuisine Rebelle - L'Assomption</p>
+                        <p class="winner-name h5 text-primary font-weight-bold">Poutine Magma</p>
+                    </div>
+                </div>
+                <div class="winner-wrapper col-12 col-md-6 col-lg-4 text-left d-flex align-items-center mb-5" data-aos="fade-up">
+                    <img src="https://s3.ca-central-1.amazonaws.com/peoplemover/poutine-2020/144/1579888685888.png" class="img-winner mr-3" alt="Poutine: Cornichonne 2.0">
+                    <div class="d-flex flex-column">
+                        <p class="winner-title small mb-0">Mauricie, QC</p>
+                        <p class="winner-resto h4">Shaker Trois-Rivières</p>
+                        <p class="winner-name h5 text-primary font-weight-bold">Cornichonne 2.0</p>
+                    </div>
+                </div>
+                <div class="winner-wrapper col-12 col-md-6 col-lg-4 text-left d-flex align-items-center mb-5" data-aos="fade-up">
+                    <img src="https://s3.ca-central-1.amazonaws.com/peoplemover/poutine-2020/217/1579527189458.png" class="img-winner mr-3" alt="photo of poutine 1">
+                    <div class="d-flex flex-column">
+                        <p class="winner-title small mb-0">Chaudière Appalaches, QC</p>
+                        <p class="winner-resto h4">Boucherie La Bouchée Double</p>
+                        <p class="winner-name h5 text-primary font-weight-bold">La bouche pleine</p>
+                    </div>
+                </div>
+                <div class="winner-wrapper col-12 col-md-6 col-lg-4 text-left d-flex align-items-center mb-5" data-aos="fade-up">
+                    <img src="https://s3.ca-central-1.amazonaws.com/peoplemover/poutine-2020/166/1579623306245.png" class="img-winner mr-3" alt="Poutine: La Guerrière">
+                    <div class="d-flex flex-column">
+                        <p class="winner-title small mb-0">Bas St-Laurent, QC</p>
+                        <p class="winner-resto h4">La Cage - Bas St-Laurent</p>
+                        <p class="winner-name h5 text-primary font-weight-bold">La Guerrière</p>
+                    </div>
+                </div>
+                <div class="winner-wrapper col-12 col-md-6 col-lg-4 text-left d-flex align-items-center mb-5" data-aos="fade-up">
+                    <img src="https://s3.ca-central-1.amazonaws.com/peoplemover/poutine-2020/144/1579888685888.png" class="img-winner mr-3" alt="Poutine: Cornichonne 2.0">
+                    <div class="d-flex flex-column">
+                        <p class="winner-title small mb-0">Estrie, QC</p>
+                        <p class="winner-resto h4">Shaker Sherbrooke</p>
+                        <p class="winner-name h5 text-primary font-weight-bold">Cornichonne 2.0</p>
+                    </div>
+                </div>
+                <div class="winner-wrapper col-12 col-md-6 col-lg-4 text-left d-flex align-items-center mb-5" data-aos="fade-up">
+                    <img src="https://s3.ca-central-1.amazonaws.com/peoplemover/poutine-2020/273/1579617063259.png" class="img-winner mr-3" alt="Poutine: La ferme & la mer">
+                    <div class="d-flex flex-column">
+                        <p class="winner-title small mb-0">Saguenay/Côte Nord, QC</p>
+                        <p class="winner-resto h4">Bistro Café Summum</p>
+                        <p class="winner-name h5 text-primary font-weight-bold">La ferme & la mer</p>
+                    </div>
+                </div>
+                <div class="winner-wrapper col-12 col-md-6 col-lg-4 text-left d-flex align-items-center mb-5" data-aos="fade-up">
+                    <img src="https://s3.ca-central-1.amazonaws.com/peoplemover/poutine-2020/166/1579623306245.png" class="img-winner mr-3" alt="Poutine: La Guerrière">
+                    <div class="d-flex flex-column">
+                        <p class="winner-title small mb-0">Laurentides/Abitibi, QC</p>
+                        <p class="winner-resto h4">La Cage</p>
+                        <p class="winner-name h5 text-primary font-weight-bold">La Guerrière</p>
+                    </div>
+                </div>
+
+                <div class="winner-wrapper col-12 col-md-6 col-lg-4 text-left d-flex align-items-center mb-5" data-aos="fade-up">
+                    <img src="https://s3.ca-central-1.amazonaws.com/peoplemover/poutine-2020/113/1579886878517.png" class="img-winner mr-3" alt="Poutine: La Guedaille de Sainte-Thérèse-de-Gaspé">
+                    <div class="d-flex flex-column">
+                        <p class="winner-title small mb-0">Québec, QC&nbsp;</p>
+                        <p class="winner-resto h4">La Gaspésienne 51</p>
+                        <p class="winner-name h5 text-primary font-weight-bold">La Guedaille de Sainte-Thérèse-de-Gaspé</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- section  ROC -->
+            <h2 class="h3 my-5">Rest of Canada&nbsp;<span class="badge badge-pill badge-primary"><i class="fa fa-check"></i>&nbsp;Public's choice</span></h2>
+            <div class="row">
+                <div class="winner-wrapper col-12 col-md-6 col-lg-4 text-left d-flex align-items-center mb-5" data-aos="fade-up">
+                    <img src="https://s3.ca-central-1.amazonaws.com/peoplemover/poutine-2020/278/1579310892969.png" class="img-winner mr-3" alt="Poutine: Perogy Poutine">
+                    <div class="d-flex flex-column">
+                        <p class="winner-title small mb-0">Edmonton, AB</p>
+                        <p class="winner-resto h4">1st RnD West Edmonton Mall</p>
+                        <p class="winner-name h5 text-primary font-weight-bold">Perogy Poutine</p>
+                    </div>
+                </div>
+                <div class="winner-wrapper col-12 col-md-6 col-lg-4 text-left d-flex align-items-center mb-5" data-aos="fade-up">
+                    <img src="https://s3.ca-central-1.amazonaws.com/peoplemover/poutine-2020/71/1579218272210.png" class="img-winner mr-3" alt="Poutine: Sunny D Hot Honey Mac & Cheese">
+                    <div class="d-flex flex-column">
+                        <p class="winner-title small mb-0">Calgary, AB</p>
+                        <p class="winner-resto h4">Leopold's Tavern Calgary Beltline</p>
+                        <p class="winner-name h5 text-primary font-weight-bold">Sunny D Hot Honey Mac & Cheese</p>
+                    </div>
+                </div>
+                <div class="winner-wrapper col-12 col-md-6 col-lg-4 text-left d-flex align-items-center mb-5" data-aos="fade-up">
+                    <img src="https://s3.ca-central-1.amazonaws.com/peoplemover/poutine-2020/31/1579733262526.png" class="img-winner mr-3" alt="Poutine: Three cheese, chorizo and madeira poutine">
+                    <div class="d-flex flex-column">
+                        <p class="winner-title small mb-0">Vancouver, BC</p>
+                        <p class="winner-resto h4">Moxie's Grill & Bar - Davie</p>
+                        <p class="winner-name h5 text-primary font-weight-bold">Three cheese, chorizo and madeira poutine</p>
+                    </div>
+                </div>
+                <div class="winner-wrapper col-12 col-md-6 col-lg-4 text-left d-flex align-items-center mb-5" data-aos="fade-up">
+                    <img src="https://s3.ca-central-1.amazonaws.com/peoplemover/poutine-2020/71/1579218272210.png" class="img-winner mr-3" alt="Poutine: Sunny D Hot Honey Mac & Cheese">
+                    <div class="d-flex flex-column">
+                        <p class="winner-title small mb-0">Saskatoon/Regina, SK</p>
+                        <p class="winner-resto h4">Leopold's Tavern Rosewood</p>
+                        <p class="winner-name h5 text-primary font-weight-bold">Sunny D Hot Honey Mac & Cheese</p>
+                    </div>
+                </div>
+                <div class="winner-wrapper col-12 col-md-6 col-lg-4 text-left d-flex align-items-center mb-5" data-aos="fade-up">
+                    <img src="https://s3.ca-central-1.amazonaws.com/peoplemover/poutine-2020/71/1579218272210.png" class="img-winner mr-3" alt="Poutine: Sunny D Hot Honey Mac & Cheese">
+                    <div class="d-flex flex-column">
+                        <p class="winner-title small mb-0">Saskatoon/Regina, SK</p>
+                        <p class="winner-resto h4">Leopold’s Tavern - OG</p>
+                        <p class="winner-name h5 text-primary font-weight-bold">Sunny D Hot Honey Mac & Cheese</p>
+                    </div>
+                </div>
+                <div class="winner-wrapper col-12 col-md-6 col-lg-4 text-left d-flex align-items-center mb-5" data-aos="fade-up">
+                    <img src="https://s3.ca-central-1.amazonaws.com/peoplemover/poutine-2020/269/1579525307436.png" class="img-winner mr-3" alt="Poutine: Gangnam Style Poutine">
+                    <div class="d-flex flex-column">
+                        <p class="winner-title small mb-0">Toronto, ON</p>
+                        <p class="winner-resto h4">Mukbang on Wheels Food Truck</p>
+                        <p class="winner-name h5 text-primary font-weight-bold">Gangnam Style Poutine</p>
+                    </div>
+                </div>
+                <div class="winner-wrapper col-12 col-md-6 col-lg-4 text-left d-flex align-items-center mb-5" data-aos="fade-up">
+                    <img src="https://s3.ca-central-1.amazonaws.com/peoplemover/poutine-2020/221/1580588823761.png" class="img-winner mr-3" alt="Poutine: Poutine des iles">
+                    <div class="d-flex flex-column">
+                        <p class="winner-title small mb-0">Ottawa/Gatineau, ON/QC</p>
+                        <p class="winner-resto h4">Micro-Brasserie le Gainsbourg</p>
+                        <p class="winner-name h5 text-primary font-weight-bold">Poutine des îles</p>
+                    </div>
+                </div>
+                <div class="winner-wrapper col-12 col-md-6 col-lg-4 text-left d-flex align-items-center mb-5" data-aos="fade-up">
+                    <img src="https://s3.ca-central-1.amazonaws.com/peoplemover/poutine-2020/39/1580315580709.png" class="img-winner mr-3" alt="Poutine:La Trappeur">
+                    <div class="d-flex flex-column">
+                        <p class="winner-title small mb-0">Paris, France (International)</p>
+                        <p class="winner-resto h4">Maison de la Poutine</p>
+                        <p class="winner-name h5 text-primary font-weight-bold">La Trappeur</p>
+                    </div>
+                </div>
+                <div class="winner-wrapper col-12 col-md-6 col-lg-4 text-left d-flex align-items-center mb-5" data-aos="fade-up">
+                    <img src="https://s3.ca-central-1.amazonaws.com/peoplemover/poutine-2020/50/1579145130515.png" class="img-winner mr-3" alt="Poutine: Guinness Tenderloin Poutine">
+                    <div class="d-flex flex-column">
+                        <p class="winner-title small mb-0">Winnipeg, MB</p>
+                        <p class="winner-resto h4">Fionn MacCool's Crossroads</p>
+                        <p class="winner-name h5 text-primary font-weight-bold">Guinness Tenderloin Poutine</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- section Montreal Top 5-->
+            <h2 class="h3 my-5">Montréal, QC&nbsp;<span class="badge badge-pill badge-warning"><i class="fas fa-medal"></i>&nbsp;Top 5</span></h2>
+            <div class="row">
+                <div class="winner-wrapper col-12 col-md-6 col-lg-4 text-left d-flex align-items-center mb-5" data-aos="fade-up">
+                    <img src="https://s3.ca-central-1.amazonaws.com/peoplemover/poutine-2020/61/1580417075507.png" class="img-winner mr-3" alt="photo of poutine Poutine Portugaise">
+                    <div class="d-flex flex-column">
+                        <p class="winner-title small mb-0">Montréal, QC</p>
+                        <p class="winner-resto h4">Piri Piri Masson</p>
+                        <p class="winner-name h5 text-primary font-weight-bold">La Poutine Portugaise</p>
+                        <p><span class="badge badge-pill badge-primary"><i class="fa fa-check"></i>&nbsp;Public's choice</span></p>
+
+                    </div>
+                </div>
+                <div class="winner-wrapper col-12 col-md-6 col-lg-4 text-left d-flex align-items-center mb-5" data-aos="fade-up">
+                    <img src="https://s3.ca-central-1.amazonaws.com/peoplemover/poutine-2020/290/1579532723905.png" class="img-winner mr-3" alt="photo of poutine La Gaspésienne">
+                    <div class="d-flex flex-column">
+                        <p class="winner-title small mb-0">Montréal, QC</p>
+                        <p class="winner-resto h4">La Gaspésie Bistro Gourmand</p>
+                        <p class="winner-name h5 text-primary font-weight-bold">La Gaspésienne</p>
+                    </div>
+                </div>
+                <div class="winner-wrapper col-12 col-md-6 col-lg-4 text-left d-flex align-items-center mb-5" data-aos="fade-up">
+                    <img src="https://s3.ca-central-1.amazonaws.com/peoplemover/poutine-2020/227/1579531834247.png" class="img-winner mr-3" alt="Poutine: Poutine Bimbimbap">
+                    <div class="d-flex flex-column">
+                        <p class="winner-title small mb-0">Montréal, QC</p>
+                        <p class="winner-resto h4">La Bêtise Rosemont</p>
+                        <p class="winner-name h5 text-primary font-weight-bold">Poutine Bimbimbap</p>
+                    </div>
+                </div>
+                <div class="winner-wrapper col-12 col-md-6 col-lg-4 text-left d-flex align-items-center mb-5" data-aos="fade-up">
+                    <img src="https://s3.ca-central-1.amazonaws.com/peoplemover/poutine-2020/20/1579098312124.png" class="img-winner mr-3" alt="Poutine: Poutine Philly Bombe Atomique  Édition 40e anniversaire">
+                    <div class="d-flex flex-column">
+                        <p class="winner-title small mb-0">Montréal, QC</p>
+                        <p class="winner-resto h4">Paulo et Suzanne</p>
+                        <p class="winner-name h5 text-primary font-weight-bold">Philly Bombe Atomique  Édition 40e anniversaire</p>
+                    </div>
+                </div>
+                <div class="winner-wrapper col-12 col-md-6 col-lg-4 text-left d-flex align-items-center mb-5" data-aos="fade-up">
+                    <img src="https://s3.ca-central-1.amazonaws.com/peoplemover/poutine-2020/246/1579532391584.png" class="img-winner mr-3" alt="Poutine: Poutine La Snobinarde">
+                    <div class="d-flex flex-column">
+                        <p class="winner-title small mb-0">Montréal, QC</p>
+                        <p class="winner-resto h4">Le Gras Dur</p>
+                        <p class="winner-name h5 text-primary font-weight-bold">La Snobinarde</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- section Quebec Top 5-->
+            <h2 class="h3 my-5">Québec, QC&nbsp;<span class="badge badge-pill badge-warning"><i class="fas fa-medal"></i>&nbsp;Top 5</span></h2>
+            <div class="row">
+                <div class="winner-wrapper col-12 col-md-6 col-lg-4 text-left d-flex align-items-center mb-5" data-aos="fade-up">
+                    <img src="https://s3.ca-central-1.amazonaws.com/peoplemover/poutine-2020/113/1579886878517.png" class="img-winner mr-3" alt="Poutine: La Guedaille de Sainte-Thérèse-de-Gaspé">
+                    <div class="d-flex flex-column">
+                        <p class="winner-title small mb-0">Québec, QC&nbsp;</p>
+                        <p class="winner-resto h4">La Gaspésienne 51</p>
+                        <p class="winner-name h5 text-primary font-weight-bold">La Guedaille de Sainte-Thérèse-de-Gaspé</p>
+                        <p><span class="badge badge-pill badge-primary"><i class="fa fa-check"></i>&nbsp;Public's choice</span></p>
+                    </div>
+                </div>
+                <div class="winner-wrapper col-12 col-md-6 col-lg-4 text-left d-flex align-items-center mb-5" data-aos="fade-up">
+                    <img src="https://s3.ca-central-1.amazonaws.com/peoplemover/poutine-2020/120/1580047778732.png" class="img-winner mr-3" alt="Poutine: La Guedaille de Sainte-Thérèse-de-Gaspé">
+                    <div class="d-flex flex-column">
+                        <p class="winner-title small mb-0">Québec, QC</p>
+                        <p class="winner-resto h4">Le Dijon</p>
+                        <p class="winner-name h5 text-primary font-weight-bold">L’hommage au Colonel</p>
+                    </div>
+                </div>
+                <div class="winner-wrapper col-12 col-md-6 col-lg-4 text-left d-flex align-items-center mb-5" data-aos="fade-up">
+                    <img src="https://s3.ca-central-1.amazonaws.com/peoplemover/poutine-2020/144/1579888685888.png" class="img-winner mr-3" alt="Poutine: Cornichonne 2.0">
+                    <div class="d-flex flex-column">
+                        <p class="winner-title small mb-0">Québec, QC</p>
+                        <p class="winner-resto h4">Shaker Québec</p>
+                        <p class="winner-name h5 text-primary font-weight-bold">Cornichonne 2.0</p>
+                    </div>
+                </div>
+                <div class="winner-wrapper col-12 col-md-6 col-lg-4 text-left d-flex align-items-center mb-5" data-aos="fade-up">
+                    <img src="https://s3.ca-central-1.amazonaws.com/peoplemover/poutine-2020/204/1579797655088.png" class="img-winner mr-3" alt="Poutine: La Normande">
+                    <div class="d-flex flex-column">
+                        <p class="winner-title small mb-0">Québec, QC</p>
+                        <p class="winner-resto h4">Les 3 Brasseurs</p>
+                        <p class="winner-name h5 text-primary font-weight-bold">La Normande</p>
+                    </div>
+                </div>
+                <div class="winner-wrapper col-12 col-md-6 col-lg-4 text-left d-flex align-items-center mb-5" data-aos="fade-up">
+                    <img src="https://s3.ca-central-1.amazonaws.com/peoplemover/poutine-2020/96/1580050041760.png" class="img-winner mr-3" alt="Poutine: La super Mario pout.">
+                    <div class="d-flex flex-column">
+                        <p class="winner-title small mb-0">Québec, QC</p>
+                        <p class="winner-resto h4">Diner Saint-Sauveur</p>
+                        <p class="winner-name h5 text-primary font-weight-bold">La super Mario pout.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- section Winnipeg Top 5 -->
+            <h2 class="h3 my-5">Winnipeg, MB&nbsp;<span class="badge badge-pill badge-warning"><i class="fas fa-medal"></i>&nbsp;Top 5</span></h2>
+            <div class="row">
+                <div class="winner-wrapper col-12 col-md-6 col-lg-4 text-left d-flex align-items-center mb-5" data-aos="fade-up">
+                    <img src="https://s3.ca-central-1.amazonaws.com/peoplemover/poutine-2020/50/1579145130515.png" class="img-winner mr-3" alt="Poutine: Guinness Tenderloin Poutine">
+                    <div class="d-flex flex-column">
+                        <p class="winner-title small mb-0">Winnipeg, MB</p>
+                        <p class="winner-resto h4">Fionn MacCool's Crossroads</p>
+                        <p class="winner-name h5 text-primary font-weight-bold">Guinness Tenderloin Poutine</p>
+                        <p><span class="badge badge-pill badge-primary"><i class="fa fa-check"></i>&nbsp;Public's choice</span></p>
+
+                    </div>
+                </div>
+                <div class="winner-wrapper col-12 col-md-6 col-lg-4 text-left d-flex align-items-center mb-5" data-aos="fade-up">
+                    <img src="https://s3.ca-central-1.amazonaws.com/peoplemover/poutine-2020/2/1579748293841.png" class="img-winner mr-3" alt="Poutine: Thanksgiving Give-Back Poutine!">
+                    <div class="d-flex flex-column">
+                        <p class="winner-title small mb-0">Winnipeg, MB</p>
+                        <p class="winner-resto h4">St-James Burger & Chip Co.</p>
+                        <p class="winner-name h5 text-primary font-weight-bold">Thanksgiving Give-Back Poutine!</p>
+                    </div>
+                </div>
+                <div class="winner-wrapper col-12 col-md-6 col-lg-4 text-left d-flex align-items-center mb-5" data-aos="fade-up">
+                    <img src="https://s3.ca-central-1.amazonaws.com/peoplemover/poutine-2020/46/1579613325877.png" class="img-winner mr-3" alt="Poutine: Country Fried Chicken and Waffle Poutine">
+                    <div class="d-flex flex-column">
+                        <p class="winner-title small mb-0">Winnipeg, MB</p>
+                        <p class="winner-resto h4">Junction 59 Roadhouse</p>
+                        <p class="winner-name h5 text-primary font-weight-bold">Country Fried Chicken and Waffle Poutine</p>
+                    </div>
+                </div>
+                <div class="winner-wrapper col-12 col-md-6 col-lg-4 text-left d-flex align-items-center mb-5" data-aos="fade-up">
+                    <img src="https://s3.ca-central-1.amazonaws.com/peoplemover/poutine-2020/5/1579724184351.png" class="img-winner mr-3" alt="Poutine: Hella Bonita !">
+                    <div class="d-flex flex-column">
+                        <p class="winner-title small mb-0">Winnipeg, MB</p>
+                        <p class="winner-resto h4">Brazen Hall Kitchen & Brewry</p>
+                        <p class="winner-name h5 text-primary font-weight-bold">Hella Bonita !</p>
+                    </div>
+                </div>
+                <div class="winner-wrapper col-12 col-md-6 col-lg-4 text-left d-flex align-items-center mb-5" data-aos="fade-up">
+                    <img src="https://s3.ca-central-1.amazonaws.com/peoplemover/poutine-2020/13/1579612671237.png" class="img-winner mr-3" alt="Poutine: Golden Boy Poutine">
+                    <div class="d-flex flex-column">
+                        <p class="winner-title small mb-0">Winnipeg, MB</p>
+                        <p class="winner-resto h4">Pony Corral Nairn</p>
+                        <p class="winner-name h5 text-primary font-weight-bold">Golden Boy Poutine</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- section Saputo Winners Quebec -->
+            <h2 class="h3 my-5">Québec Regions&nbsp;<span class="badge badge-pill badge-danger"><i class="fas fa-heart"></i>&nbsp;Saputo's Choice</span></h2>
+            <div class="row">
+                <div class="winner-wrapper col-12 col-md-6 col-lg-4 text-left d-flex align-items-center mb-5" data-aos="fade-up">
+                    <img src="https://s3.ca-central-1.amazonaws.com/peoplemover/poutine-2020/249/1579719048247.png" class="img-winner mr-3" alt="Poutine: Dirty Dogs St-Laurent">
+                    <div class="d-flex flex-column">
+                        <p class="winner-title small mb-0">Montréal, QC</p>
+                        <p class="winner-resto h4">Dirty Dogs St-Laurent</p>
+                        <p class="winner-name h5 text-primary font-weight-bold">The Mac Mountain</p>
+                    </div>
+                </div>
+                <div class="winner-wrapper col-12 col-md-6 col-lg-4 text-left d-flex align-items-center mb-5" data-aos="fade-up">
+                    <img src="https://s3.ca-central-1.amazonaws.com/peoplemover/poutine-2020/311/1580232462496.png" class="img-winner mr-3" alt="Poutine: LAMB Poutine">
+                    <div class="d-flex flex-column">
+                        <p class="winner-title small mb-0">Laval, QC</p>
+                        <p class="winner-resto h4">Allons Burger ! </p>
+                        <p class="winner-name h5 text-primary font-weight-bold">LAMB Poutine</p>
+                    </div>
+                </div>
+                <div class="winner-wrapper col-12 col-md-6 col-lg-4 text-left d-flex align-items-center mb-5" data-aos="fade-up">
+                    <img src="https://s3.ca-central-1.amazonaws.com/peoplemover/poutine-2020/287/1579874060766.png" class="img-winner mr-3" alt="Poutine: Magma Poutine">
+                    <div class="d-flex flex-column">
+                        <p class="winner-title small mb-0">Lanaudière, QC</p>
+                        <p class="winner-resto h4">TABOO Cuisine Rebelle - L'Assomption </p>
+                        <p class="winner-name h5 text-primary font-weight-bold">Magma Poutine</p>
+                    </div>
+                </div>
+                <div class="winner-wrapper col-12 col-md-6 col-lg-4 text-left d-flex align-items-center mb-5" data-aos="fade-up">
+                    <img src="https://s3.ca-central-1.amazonaws.com/peoplemover/poutine-2020/58/1580501374785.png" class="img-winner mr-3" alt="Poutine: Rockie">
+                    <div class="d-flex flex-column">
+                        <p class="winner-title small mb-0">Estrie, QC</p>
+                        <p class="winner-resto h4">Les Enfants Terribles - Magog</p>
+                        <p class="winner-name h5 text-primary font-weight-bold">Rockie</p>
+                    </div>
+                </div>
+                <div class="winner-wrapper col-12 col-md-6 col-lg-4 text-left d-flex align-items-center mb-5" data-aos="fade-up">
+                    <img src="https://s3.ca-central-1.amazonaws.com/peoplemover/poutine-2020/131/1580049892366.png" class="img-winner mr-3" alt="Poutine: Rockie">
+                    <div class="d-flex flex-column">
+                        <p class="winner-title small mb-0">Québec, QC</p>
+                        <p class="winner-resto h4">Patates plus!</p>
+                        <p class="winner-name h5 text-primary font-weight-bold">Fiesta mexicaine
+                        </p>
+                    </div>
+                </div>
+                <div class="winner-wrapper col-12 col-md-6 col-lg-4 text-left d-flex align-items-center mb-5" data-aos="fade-up">
+                    <img src="https://s3.ca-central-1.amazonaws.com/peoplemover/poutine-2020/252/1579622214968.png" class="img-winner mr-3" alt="Poutine: La Volcanique">
+                    <div class="d-flex flex-column">
+                        <p class="winner-title small mb-0">Montérégie, QC</p>
+                        <p class="winner-resto h4">Bâton Rouge Vaudreuil</p>
+                        <p class="winner-name h5 text-primary font-weight-bold">La Volcanique
+                        </p>
+                    </div>
+                </div>
+                <div class="winner-wrapper col-12 col-md-6 col-lg-4 text-left d-flex align-items-center mb-5" data-aos="fade-up">
+                    <img src="https://s3.ca-central-1.amazonaws.com/peoplemover/poutine-2020/193/1579540928256.png" class="img-winner mr-3" alt="Poutine: La Chichou">
+                    <div class="d-flex flex-column">
+                        <p class="winner-title small mb-0">Chaudière-Appalaches, QC</p>
+                        <p class="winner-resto h4">Casse-croûte chez Line</p>
+                        <p class="winner-name h5 text-primary font-weight-bold">La Chichou
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- section Saputo Winners ROC -->
+            <h2 class="h3 my-5">Rest of Canada&nbsp;<span class="badge badge-pill badge-danger"><i class="fas fa-heart"></i>&nbsp;Saputo's Choice</span></h2>
+            <div class="row">
+                <div class="winner-wrapper col-12 col-md-6 col-lg-4 text-left d-flex align-items-center mb-5" data-aos="fade-up">
+                    <img src="https://s3.ca-central-1.amazonaws.com/peoplemover/poutine-2020/5/1579724184351.png" class="img-winner mr-3" alt="Poutine: Hella Bonita !">
+                    <div class="d-flex flex-column">
+                        <p class="winner-title small mb-0">Winnipeg, MB</p>
+                        <p class="winner-resto h4">Brazen Hall Kitchen & Brewry</p>
+                        <p class="winner-name h5 text-primary font-weight-bold">Hella Bonita !</p>
+                    </div>
+                </div>
+                <div class="winner-wrapper col-12 col-md-6 col-lg-4 text-left d-flex align-items-center mb-5" data-aos="fade-up">
+                    <img src="https://s3.ca-central-1.amazonaws.com/peoplemover/poutine-2020/240/1579793353682.png" class="img-winner mr-3" alt="Poutine: Oil Barrel Poutine">
+                    <div class="d-flex flex-column">
+                        <p class="winner-title small mb-0">Edmonton, AB</p>
+                        <p class="winner-resto h4">Goldies Chicken Plus Pizza</p>
+                        <p class="winner-name h5 text-primary font-weight-bold">Oil Barrel Poutine</p>
+                    </div>
+                </div>
+                <div class="winner-wrapper col-12 col-md-6 col-lg-4 text-left d-flex align-items-center mb-5" data-aos="fade-up">
+                    <img src="https://s3.ca-central-1.amazonaws.com/peoplemover/poutine-2020/80/1579632867069.png" class="img-winner mr-3" alt="Poutine: Poutine Breakfast">
+                    <div class="d-flex flex-column">
+                        <p class="winner-title small mb-0">Calgary, AB</p>
+                        <p class="winner-resto h4">Universe Restaurant</p>
+                        <p class="winner-name h5 text-primary font-weight-bold">Poutine Breakfast</p>
+                    </div>
+                </div>
+                <div class="winner-wrapper col-12 col-md-6 col-lg-4 text-left d-flex align-items-center mb-5" data-aos="fade-up">
+                    <img src="https://s3.ca-central-1.amazonaws.com/peoplemover/poutine-2020/209/1579311520203.png" class="img-winner mr-3" alt="Poutine: King Cole Duck">
+                    <div class="d-flex flex-column">
+                        <p class="winner-title small mb-0">Toronto, ON</p>
+                        <p class="winner-resto h4">Draco Restaurant</p>
+                        <p class="winner-name h5 text-primary font-weight-bold">King Cole Duck</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- section Montreal jury -->
+            <h2 class="h3 my-5">Montréal&nbsp;<span class="badge badge-pill badge-success"><i class="fas fa-gavel"></i>&nbsp;Judges' Choice</span></h2>
+            <div class="row d-flex justify-content-center">
+                <div class="winner-wrapper col-12 col-md-6 col-lg-4 text-left d-flex align-items-center mb-5" data-aos="fade-up">
+                    <img src="https://s3.ca-central-1.amazonaws.com/peoplemover/poutine-2020/227/1579531834247.png" class="img-winner mr-3" alt="Poutine: Poutine Bimbimbap">
+                    <div class="d-flex flex-column">
+                        <p class="winner-title small mb-0">Montréal, QC</p>
+                        <p class="winner-resto h4">La Bêtise Rosemont</p>
+                        <p class="winner-name h5 text-primary font-weight-bold">Poutine Bimbimbap</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+    </section>
+
+
+
+</main>
+
+
+
+<footer class="pt-5 pb-3 bg-dark">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md">
+                <img src="../img/logo-footer-en.svg" style="max-width:86px" class="mb-4" alt="">
+            </div>
+            <div class="col-6 col-md">
+                <h5>Company</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a href="./#marketingStats">About</a></li>
+                    <li><a href="./#saputoBox">Poutine Kit</a></li>
+                    <li><a href="./#spotlight">Spotlight</a></li>
+                    <li><a href="http://saputofoodservice.ca" target="_blank">Saputo</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Restaurants</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a href="./login.html">Login</a></li>
+                    <li><a href="./register.html">Register</a></li>
+                    <li><a href="./faq.html">Business FAQ</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Language and Region</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a href="#!">Français</a></li>
+                    <li><a href="./register.html">Change location</a></li>
+                    <li><a href="./faq.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Connect with us</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a href="https://facebook.com/lapoutineweek" target="_blank"><i class="fab fa-facebook-square"></i>&nbsp;Facebook</a></li>
+                    <li><a href="https://instagram.com/lapoutineweek" target="_blank"><i class="fab fa-instagram"></i>&nbsp;Instagram</a></li>
+                    <li><a href="https://twitter.com/lapoutineweek" target="_blank"><i class="fab fa-twitter"></i>&nbsp;Twitter</a></li>
+                    <li><a href="mailto:team@peoplemovertech.com"><i class="fas fa-envelope"></i>&nbsp;Email</a></li>
+
+                </ul>
+            </div>
+            <!-- new html for cities -->
+            <div class="col-12 mt-4">
+                <small>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <p class="text-white mb-0">Cities: </p>
+                        </li>
+                        <li class="list-inline-item"><a href="./register.html">Montréal</a></li>
+                        <li class="list-inline-item"><a href="./register.html">Winnipeg</a></li>
+                        <li class="list-inline-item"><a href="./register.html">Vancouver</a></li>
+                        <li class="list-inline-item"><a href="./register.html">Edmonton</a></li>
+                        <li class="list-inline-item"><a href="./register.html">Calgary</a></li>
+                        <li class="list-inline-item"><a href="./register.html">Regina</a></li>
+                        <li class="list-inline-item"><a href="./register.html">Saskatoon</a></li>
+                        <li class="list-inline-item"><a href="./register.html">Toronto</a></li>
+                        <li class="list-inline-item"><a href="./register.html">Ottawa/Gatineau</a></li>
+                        <li class="list-inline-item"><a href="./register.html">Laval</a></li>
+                        <li class="list-inline-item"><a href="./register.html">Montérégie</a></li>
+                        <li class="list-inline-item"><a href="./register.html">Centre du Québec</a></li>
+                        <li class="list-inline-item"><a href="./register.html">Lanaudière</a></li>
+                        <li class="list-inline-item"><a href="./register.html">Mauricie</a></li>
+                        <li class="list-inline-item"><a href="./register.html">Chaudière Appalaches</a></li>
+                        <li class="list-inline-item"><a href="./register.html">Bas St-Laurent</a></li>
+                        <li class="list-inline-item"><a href="./register.html">Estrie</a></li>
+                        <li class="list-inline-item"><a href="./register.html">Saguenay</a></li>
+                        <li class="list-inline-item"><a href="./register.html">Côte-Nord</a></li>
+                        <li class="list-inline-item"><a href="./register.html">Laurentides</a></li>
+                        <li class="list-inline-item"><a href="./register.html">Abitibi</a></li>
+                        <li class="list-inline-item"><a href="./register.html">International</a></li>
+                        <li class="list-inline-item"><a href="./register.html">Québec</a></li>
+                    </ul>
+                </small>
+            </div>
+            <div class="col-12 mt-4 d-flex justify-content-between">
+                <small class="d-block mb-3 text-white">© 2019 Le Burger Week | <a href="https://peoplemover.tech" target="_blank">People Mover Technologies Inc.</a></small>
+                <small class="d-block mb-3 text-white">Made with <i class="fas fa-heart" aria-hidden="true" title="love"></i> and <i class="fas fa-coffee" aria-hidden="true" title="caffeine"></i> by <a href="https://loogart.com" target="_blank">Loogart</a></small>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../js/aos.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxEirwPY5lQXNNXuY9lzjQIwGJlWby7Nw&callback=initMap" async defer></script>
+<script src="../js/scripts.js"></script>
+<script>
+    $(document).ready(function() {
+        $("#saveLater").click(function() {
+            $('.toast').toast('show');
+        });
+    });
+
+</script>
+
+</html>
