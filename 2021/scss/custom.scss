@@ -15,9 +15,10 @@ $beige:#fef2e2;
 $beige-light:#fdf7ef;
 $beige-dark:#655e54;
 $beige-line:#F2E9DC;
+$beige-input:#D3C8B8;
 
 // Map colors
-$colors: ("blue":$blue, "red":$red, "$beige":$beige, "beige-light":$beige-light, "beige-dark":$beige-dark, "beige-line":$beige-line);
+$colors: ("blue":$blue, "red":$red, "$beige":$beige, "beige-light":$beige-light, "beige-dark":$beige-dark, "beige-line":$beige-line, "beige-input":$beige-input);
 
 //Map theme-colors
 $theme-colors: ("primary": $blue, "danger":$red, "light":$beige-light, "dark":$beige-dark);
@@ -58,6 +59,25 @@ $custom-control-indicator-active-bg:$blue;
 $custom-control-indicator-checked-border-color:$blue;
 $input-focus-box-shadow:0 0 0 0.2rem rgba(0, 154, 222, 0.14);
 
+// customize forms
+$input-border-color: $beige-input;
+$input-bg: $beige-light;
+$input-border-width:2px;
+$input-padding-y: 20px;
+$input-border-radius: 8px;
+$input-color: black;
+$input-focus-border-color:$blue;
+$input-placeholder-color:$beige-input;
+
+// custom select
+$custom-select-bg: $beige-light;
+$custom-select-font-size-lg: $font-size-base;
+$custom-select-border-radius: 8px;
+$custom-select-border-width: 2px;
+$custom-select-border-color: $beige-input;
+$custom-select-height-lg:44px;
+$custom-select-color: black;
+
 $transition-collapse:height .15s ease-in-out;
 $text-muted:$beige-dark;
 
@@ -85,6 +105,10 @@ $dropdown-padding-y:0;
 
 // Bootstrap
 @import "../bootstrap/scss/bootstrap.scss";
+
+html {
+    scroll-behavior: smooth;
+}
 
 // Typography
 
@@ -134,9 +158,10 @@ h3 {}
 }
 
 // navbar styles
-.navbar-border-bottom{
+.navbar-border-bottom {
     border-bottom: 2px solid $beige-line;
 }
+
 .navbar-brand,
 .nav-link {
     font-weight: 500;
@@ -200,6 +225,16 @@ section {
         padding-top: 40px;
         padding-bottom: 40px;
     }
+}
+
+section.title {
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+
+section.content {
+    padding-top: 15px;
+    padding-bottom: 80px;
 }
 
 // homepage hero
@@ -274,6 +309,17 @@ section.with-box {
 
 }
 
+.section-box-mini {
+    background-color: $beige;
+    border: 2px solid $beige-line;
+    border-radius: 8px;
+    padding: 30px $spacer;
+    width: 100%;
+    text-align: center;
+    margin-top: $spacer;
+}
+
+
 .narrow-text {
     max-width: 600px;
     margin: $spacer*1.5 auto;
@@ -334,17 +380,98 @@ section.with-box {
     }
 }
 
+//winner section
+.winners-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.winner-item {
+    display: flex;
+    margin-bottom: 20px;
+    width: 45%;
+
+    @include media-breakpoint-down(sm) {
+        width: 100%;
+    }
+}
+
+.img-winner {
+    object-fit: cover;
+    width: 120px;
+    height: 80px;
+    border-radius: 12px;
+    background-color: $beige;
+}
+
+.faq-item {
+    margin-bottom: $spacer*3;
+}
+
+h2.faq {
+    font-weight: 600;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.faq-subtitle {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: $blue;
+}
+
+.check-terms {
+    margin-top: $spacer;
+    color: $beige-dark;
+    font-size: 11px;
+    padding-top: 4px;
+
+    a {
+        color: $beige-dark;
+    }
+}
+
+section.sign-up {
+    background-image: url(../img/artwork/delivery-shocked.png), url(../img/artwork/takeout-resto.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 2% 95%, 95% 0%;
+    background-size: 300px, 320px;
+
+    @include media-breakpoint-down(md) {
+        background-position: -15% 105%, 125% 0%;
+    }
+
+    @include media-breakpoint-down(sm) {
+        background-image: none;
+    }
+}
+
 footer {
     padding-top: 100px;
     padding-bottom: 120px;
     border-top: 3px solid $beige-line;
+    background-image: url('../img/artwork/pug.png');
+    background-size: 220px;
+    background-position: 94% 70%;
+    background-repeat: no-repeat;
 
-    h6{
-        margin-bottom:20px;
+    @include media-breakpoint-down(sm) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        background-size: 200px;
     }
-    .list-unstyled li{
+
+    h6 {
+        margin-bottom: 20px;
+    }
+
+    .list-unstyled li {
         margin-bottom: 12px;
     }
+
 }
 
 .logo-footer {
@@ -352,11 +479,12 @@ footer {
     margin-bottom: $spacer*1.25;
 }
 
-.text-subfooter{
+.text-subfooter {
     display: block;
-    margin-top:$spacer*3;
+    margin-top: $spacer*3;
     font-size: 10px;
-    a{
-        color:$beige-dark;
+
+    a {
+        color: $beige-dark;
     }
 }

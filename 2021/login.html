@@ -24,7 +24,7 @@
     <script src="https://kit.fontawesome.com/2d83ef6eb3.js" crossorigin="anonymous"></script>
 
     <!-- Primary Meta Tags -->
-    <title>La Poutine Week 2021</title>
+    <title>Login | La Poutine Week 2021</title>
     <meta name="title" content="La Poutine Week">
     <meta name="description" content="February 1-7, 2021. If your restaurant makes a superb poutine, sign up today!">
 
@@ -68,7 +68,7 @@
                         <a class="nav-link" href="./sign-up.html">Sign up</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./login.html">Login</a>
+                        <a class="nav-link active" href="./login.html">Login</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#!">Français</a>
@@ -81,88 +81,31 @@
         <a href="./"><img src="./img/logo/logo-en.svg" class="logo-header" alt=""></a>
     </div>
     <main>
-        <!-- Homepage hero -->
-        <section class="hero">
-            <div class="container text-center hero-content">
-                <h1 class="jumbo">Calling all Poutine Makers! <span class="subtitle">Happening from February 1-7</span> </h1>
-                <p>If your restaurant makes a superb poutine, sign up today!</p>
-                <a class="btn btn-primary btn-lg big-cta" href="./sign-up.html" role="button">Join us</a>
-            </div>
-            <div class="hero-img-wrapper" data-aos="fade-up" data-aos-duration="1000">
-                <img src="./img/artwork/hero-artwork.png" class="hero-img" alt="">
+        <section class="title">
+            <div class="container text-center">
+                <h1>Log in</h1>
             </div>
         </section>
-
-        <!-- Homepage to winners -->
-        <section class="with-box">
-            <div class="container text-center">
-                <div class="section-box section-box__winners" data-aos="fade-up" data-aos-duration="1000">
-                    <h2>Our Winners<span class="subtitle">A blast from the past</span></h2>
-                    <div class="narrow-text">
-                        <p>Every year, between February 1-7, restaurants from different cities across Canada make special poutines just for La Poutine Week. Poutine-lovers all over get a chance to discover these delicious creations and vote for their favorite ones.</p>
-                    </div>
-                    <a href="./winners-2020.html"><u>View past winners</u></a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Homepage stats -->
-        <section class="stats">
-            <div class="container text-center">
-                <div class="row">
-                    <div class="col-sm-9 mx-auto">
-                        <h2>Empowering the industy<span class="subtitle">Restaurants, servers and foodies</span></h2>
-                        <p>This year, we’re serving you. La Poutine Week allows participants to discover new venues, while proving the opportunity to taste unique poutines from all over! It also helps restaurants showcase their best, while increasing their sales and popularity.</p>
-                    </div>
-                </div>
-                <div class="grid-stats">
-                    <div class="stat" data-aos="zoom-in">
-                        <img class="img-stat" src="./img/artwork/woman-and-pug.png" alt="">
-                        <span class="d-block display-3 font-weight-bold">350K</span>
-                        <p>Yearly participants</p>
-                    </div>
-                    <div class="stat" data-aos="zoom-in">
-                        <img class="img-stat" src="./img/artwork/bird.png" alt="" style="width:140px;">
-                        <span class="d-block display-3 font-weight-bold">500</span>
-                        <p>Restaurants across Canada</p>
-                    </div>
-                    <div class="stat" data-aos="zoom-in">
-                        <img class="img-stat" src="./img/artwork/woman-running.png" alt="">
-                        <span class="d-block display-3 font-weight-bold">$250K</span>
-                        <p>Raised for charity since 2018</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- Homepage partners -->
-        <section class="with-box">
-            <div class="container text-center">
-                <div class="section-box" data-aos="fade-up" data-aos-duration="1000">
-                    <img class="img-partners" src="./img/artwork/pug-and-cat.png">
-                    <h2>La Poutine Week partners<span class="subtitle">This Is what squad goals are made of.</span></h2>
-                    <div class="narrow-text">
-                        <p>Saputo is La Poutine Week’s official partner.</p>
-                    </div>
-                    <img src="./img/logo/logo-saputo.svg" alt="" style="width:100px">
-                </div>
-            </div>
-        </section>
-
-
-        <!-- Homepage final cta -->
-        <section class="homepage-cta">
-            <div class="text-center">
-                <img class="img-cta" src="./img/artwork/cta-artwork.png" alt="" data-aos="zoom-out-down" data-aos-duration="1500">
-            </div>
-            <div class="container text-center">
-                <div class="row">
-                    <div class="col-sm-8 mx-auto">
-                        <h2>Calling all restaurants.<span class="subtitle">Poutines will always win!</span></h2>
-                        <p>We are feeling the consequences of this pandemic. One thing’s for sure, restaurant owners are resilient. We’re here to help you. La Poutine Week has become a key vehicle for restaurant owners to build momentum around their brand.</p>
-                        <a class="btn btn-primary btn-lg big-cta" href="./sign-up.html" role="button">Join us</a>
-                    </div>
+        <section class="content">
+            <div class="container">
+                <div class="mx-auto" style="max-width:360px">
+                    <form class="needs-validation" novalidate>
+                        <div class="form-group">
+                            <label for="inputEmail">Email</label>
+                            <input type="email" class="form-control" id="inputEmail" placeholder="" required>
+                            <div class="invalid-feedback">poutineer@lapoutineweek.com</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputName">Password</label>
+                            <input type="password" class="form-control" id="inputName" placeholder="" required>
+                            <div class="invalid-feedback">Poutine Aficionado</div>
+                        </div>
+                        <p class="my-5"><button type="submit" class="btn btn-primary btn-lg btn-block">Log in</button></p>
+                        <div class="d-block mt-3 text-center">
+                            <a href="#!">Forgot password?</a>
+                        </div>
+                        <img class="mt-5" src="./img/artwork/login-artwork.png" alt="" style="max-width:420px">
+                    </form>
                 </div>
             </div>
         </section>
