@@ -10333,18 +10333,43 @@ section.sign-up {
 }
 
 /* Leaderboard css */
-.box-well {
+.leaderboard-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 0.5rem;
   background-color: #fef2e2;
   border: 2px solid #F2E9DC;
   border-radius: 8px;
   padding: 1.5rem;
   width: 100%;
 }
+@media (max-width: 575.98px) {
+  .leaderboard-box {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+.leaderboard-top {
+  display: flex;
+  align-items: center;
+  width: auto;
+}
+@media (max-width: 767.98px) {
+  .leaderboard-top {
+    align-items: center;
+  }
+}
+
+.leaderboard-bottom {
+  justify-content: flex-start;
+}
 
 .leaderboard-number {
   font-size: 3rem;
   font-weight: 900;
-  width: 2rem;
+  width: 1.5rem;
 }
 @media (max-width: 767.98px) {
   .leaderboard-number {
@@ -10362,7 +10387,6 @@ section.sign-up {
 @media (max-width: 575.98px) {
   .leaderboard-photo {
     margin-bottom: 1rem;
-    width: 65%;
     height: 80px;
     object-fit: cover;
   }
