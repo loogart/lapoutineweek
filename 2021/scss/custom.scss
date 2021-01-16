@@ -157,6 +157,18 @@ h3 {}
         margin-top: $spacer;
         margin-bottom: $spacer;
     }
+    
+    &.top{
+        color:$blue;
+        font-weight: 700;
+        margin-bottom: $spacer/2;
+    }
+}
+
+p.lead{
+    @include media-breakpoint-down(sm) {
+        font-size: $font-size-base;
+    }
 }
 
 // navbar styles
@@ -511,6 +523,56 @@ section.sign-up {
     color:white;
 }
 
+
+/* Leaderboard css */
+.box-well{
+    background-color: $beige;
+    border: 2px solid $beige-line;
+    border-radius: 8px;
+    padding: $spacer*1.5;
+    width: 100%;
+}
+.leaderboard-number{
+    font-size: $font-size-base*3;
+    font-weight: 900;
+    width:$spacer*2;
+    @include media-breakpoint-down(sm) {
+        width:10%;
+    }
+}
+
+.leaderboard-photo{
+    background-color: $beige-dark;
+    width:100px;
+    margin-left:$spacer*1.5;
+    margin-right:$spacer*1.5;
+    border-radius: 8px;
+    @include media-breakpoint-down(xs) {
+        margin-bottom: $spacer;
+        width:65%;
+        height:80px;
+        object-fit: cover;
+        
+    }
+}
+
+.leaderboard-title{
+    display: block;
+    font-weight: bold;
+    font-size:$font-size-base*1.25;
+    line-height: 1.2;
+    margin-bottom: 5px;
+    @include media-breakpoint-down(sm) {
+    font-size:$font-size-base;
+    }
+}
+
+.leaderboard-info{
+    display: block;
+    font-size:$font-size-base*.8;
+    @include media-breakpoint-down(sm) {
+    }
+}
 
 footer {
     padding-top: 100px;
