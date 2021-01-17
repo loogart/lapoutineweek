@@ -324,14 +324,77 @@ section.with-box {
 }
 
 .section-box-mini {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: $beige;
     border: 2px solid $beige-line;
     border-radius: 8px;
     padding: 30px $spacer;
     width: 100%;
     text-align: center;
-    margin-top: $spacer;
+
+    &.saputo {
+        background-color: $red;
+        border: $red;
+        color: white;
+    }
+
+    &.skip {
+        background-color: $orange;
+        border: $red;
+        color: white;
+    }
 }
+
+.width-25 {
+    width: 24%;
+
+    @include media-breakpoint-down(sm) {
+        width: 100%;
+    }
+}
+
+.width-33 {
+    width: 33%;
+
+    @include media-breakpoint-down(sm) {
+        width: 100%;
+    }
+}
+
+.width-40 {
+    width: 39%;
+
+    @include media-breakpoint-down(sm) {
+        width: 100%;
+    }
+}
+
+.width-60 {
+    width: 59%;
+
+    @include media-breakpoint-down(sm) {
+        width: 100%;
+    }
+}
+
+.width-67 {
+    width: 66%;
+
+    @include media-breakpoint-down(sm) {
+        width: 100%;
+    }
+}
+
+.width-75 {
+    width: 74%;
+
+    @include media-breakpoint-down(sm) {
+        width: 100%;
+    }
+}
+
 
 
 .narrow-text {
@@ -538,7 +601,7 @@ section.sign-up {
     width: 100%;
 
     @include media-breakpoint-down(xs) {
-    align-items: flex-start;
+        align-items: flex-start;
         flex-direction: column;
     }
 }
@@ -561,7 +624,7 @@ section.sign-up {
 .leaderboard-number {
     font-size: $font-size-base*3;
     font-weight: 900;
-    width:$spacer*1.5;
+    width: $spacer*1.5;
 
     @include media-breakpoint-down(sm) {
         width: 10%;

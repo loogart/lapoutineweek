@@ -10129,13 +10129,79 @@ section.with-box {
 }
 
 .section-box-mini {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #fef2e2;
   border: 2px solid #F2E9DC;
   border-radius: 8px;
   padding: 30px 1rem;
   width: 100%;
   text-align: center;
-  margin-top: 1rem;
+}
+.section-box-mini.saputo {
+  background-color: #d0333a;
+  border: #d0333a;
+  color: white;
+}
+.section-box-mini.skip {
+  background-color: #fd7e14;
+  border: #d0333a;
+  color: white;
+}
+
+.width-25 {
+  width: 24%;
+}
+@media (max-width: 767.98px) {
+  .width-25 {
+    width: 100%;
+  }
+}
+
+.width-33 {
+  width: 33%;
+}
+@media (max-width: 767.98px) {
+  .width-33 {
+    width: 100%;
+  }
+}
+
+.width-40 {
+  width: 39%;
+}
+@media (max-width: 767.98px) {
+  .width-40 {
+    width: 100%;
+  }
+}
+
+.width-60 {
+  width: 59%;
+}
+@media (max-width: 767.98px) {
+  .width-60 {
+    width: 100%;
+  }
+}
+
+.width-67 {
+  width: 66%;
+}
+@media (max-width: 767.98px) {
+  .width-67 {
+    width: 100%;
+  }
+}
+
+.width-75 {
+  width: 74%;
+}
+@media (max-width: 767.98px) {
+  .width-75 {
+    width: 100%;
+  }
 }
 
 .narrow-text {
