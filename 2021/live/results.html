@@ -17,6 +17,7 @@
     <link rel="apple-touch-icon-precomposed" href="./img/favicon.png">
 
     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/flexselect.css">
     <link rel="stylesheet" href="../css/custom.css">
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
@@ -44,10 +45,10 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand" href="./">La Poutine Week</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler p-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fal fa-chevron-circle-down"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -77,17 +78,392 @@
             </div>
         </div>
     </nav>
-    
+
     <main>
-    
-    
+        <!-- filter -->
+        <nav class="nav-filter">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-2 col-md-1 col-lg-1">
+                        <a href="./"><img class="logo-filter" src="../img/logo/logo-en.svg" alt=""></a>
+                    </div>
+                    <div class="col-10 col-md-6 col-lg-3">
+                        <h1 class="sr-only">Poutine results</h1>
+                        <select class="flexselect form-control">
+                            <option value="" disabled selected>Search</option>
+                            <option value="1">Amazing Poutine Place</option>
+                            <option value="2">Arabian Nights</option>
+                            <option value="3">Blazing Balaszi</option>
+                            <option value="4">La Banquise</option>
+                            <option value="5">Benedict Pout</option>
+                            <option value="6">Behave Frieds</option>
+                            <option value="7">Cantley Fried Chicken</option>
+                            <option value="8">Harveys</option>
+                            <option value="9">JeePoutine Doan-Moi</option>
+                            <option value="10">Kentucky Fried Chicken</option>
+                            <option value="11">Loogart Poutines</option>
+                            <option value="12">Na'eem The Dream</option>
+                            <option value="13">Omnivore</option>
+                            <option value="14">Paulo et Suzanne</option>
+                            <option value="15">Stéphoutine Grondin</option>
+                            <option value="16">Thierry Mange Ici</option>
+                            <option value="17">Why so serious?</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-md-5 col-lg-4 py-2">
+                        <div class="row">
+                            <div class="col-6">
+                                <a href="" class="btn btn-block btn-outline-secondary text-dark" data-toggle="modal" data-target="#modalLocation"><i class="fas fa-map-marker-alt mr-2"></i>Location</a>
+                            </div>
+                            <div class="col-6">
+                                <a href="" class="btn btn-block btn-outline-secondary text-dark"><i class="far fa-sliders-v mr-2"></i> Filter</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-4 text-lg-right py-2">
+                        <span class="mr-2">Showing 69 burgers</span>
+                        <div class="custom-control custom-switch d-inline-block">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                            <label class="custom-control-label" for="customSwitch1">Map view</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- results -->
+        <section class="results">
+            <!-- results grid -->
+            <div class="results-grid">
+                <div class="container" id="resultsGrid">
+                    <div class="grid-items mt-5">
+                        <a href="#itemModal" data-toggle="modal" class="grid-item" target="_blank">
+                            <img src="./img/logo-saputo.svg" alt="" class="logo-saputo-grid">
+                            <img class="img-item" src="../img/poutines/public-regions-1579527189458.jpg" alt="">
+                            <span class="resto-name">Restaurant name A</span>
+                            <span class="item-name">Poutine Name 1</span>
+                            <div class="d-flex justify-content-between">
+                                <span class="price">$15.00</span>
+                                <span class="distance">6.0 km</span>
+                            </div>
+                        </a>
+                        <a href="#itemModal" data-toggle="modal" class="grid-item" target="_blank">
+                            <img class="img-item" src="../img/poutines/public-regions-1579617063259.jpg" alt="">
+                            <span class="resto-name">Restaurant name B</span>
+                            <span class="item-name">Ultra super long name for a Fun Poutine</span>
+                            <div class="d-flex justify-content-between">
+                                <span class="price">$23.00</span>
+                                <span class="distance">8.5 km</span>
+                            </div>
+                        </a>
+                        <a href="#itemModal" data-toggle="modal" class="grid-item" target="_blank">
+                            <img class="img-item" src="../img/poutines/public-regions-1579623306245.jpg" alt="">
+                            <span class="resto-name">Restaurant name that will never be shorter than C</span>
+                            <span class="item-name">This Poutine</span>
+                            <div class="d-flex justify-content-between">
+                                <span class="price">$21.00</span>
+                                <span class="distance">12.7 km</span>
+                            </div>
+                        </a>
+                        <a href="#itemModal" data-toggle="modal" class="grid-item" target="_blank">
+                            <img src="./img/logo-saputo.svg" alt="" class="logo-saputo-grid">
+                            <img class="img-item" src="../img/poutines/public-regions-1579632454654.jpg" alt="">
+                            <span class="resto-name">Restaurant name D</span>
+                            <span class="item-name">Poutine Name 4</span>
+                            <div class="d-flex justify-content-between">
+                                <span class="price">$14.00</span>
+                                <span class="distance">21.2 km</span>
+                            </div>
+                        </a>
+                        <a href="#itemModal" data-toggle="modal" class="grid-item" target="_blank">
+                            <img class="img-item" src="../img/artwork/placeholder.jpg" alt="">
+                            <span class="resto-name">Cook It</span>
+                            <span class="item-name">Poutine Name 5</span>
+                            <div class="d-flex justify-content-between">
+                                <span class="price"></span>
+                                <span class="distance">24.0 km</span>
+                            </div>
+                        </a>
+
+                        <a href="#itemModal" data-toggle="modal" class="grid-item" target="_blank">
+                            <img src="./img/logo-saputo.svg" alt="" class="logo-saputo-grid">
+                            <img class="img-item" src="../img/poutines/public-regions-1579720462555.jpg" alt="">
+                            <span class="resto-name">Restaurant name F</span>
+                            <span class="item-name">Poutine Name 6</span>
+                            <div class="d-flex justify-content-between">
+                                <span class="price">$37.00</span>
+                                <span class="distance">9.0 km</span>
+                            </div>
+                        </a>
+                        <a href="#itemModal" data-toggle="modal" class="grid-item" target="_blank">
+                            <img class="img-item" src="../img/artwork/placeholder.jpg" alt="">
+                            <span class="resto-name">Restaurant name G</span>
+                            <span class="item-name">Poutine Name 7</span>
+                            <div class="d-flex justify-content-between">
+                                <span class="price">$13.00</span>
+                                <span class="distance">8.5 km</span>
+                            </div>
+                        </a>
+                        <a href="#itemModal" data-toggle="modal" class="grid-item" target="_blank">
+                            <img class="img-item" src="../img/poutines/public-regions-1579886878517.jpg" alt="">
+                            <span class="resto-name">Poutine Name H</span>
+                            <span class="item-name">Poutine Name 8</span>
+                            <div class="d-flex justify-content-between">
+                                <span class="price">$22.50</span>
+                                <span class="distance">16.7 km</span>
+                            </div>
+                        </a>
+                        <a href="#itemModal" data-toggle="modal" class="grid-item" target="_blank">
+                            <img src="./img/logo-saputo.svg" alt="" class="logo-saputo-grid">
+                            <img class="img-item" src="../img/poutines/public-regions-1580417075507.jpg" alt="">
+                            <span class="resto-name">Cantley Fried Chicken</span>
+                            <span class="item-name">Loogart Poutine</span>
+                            <div class="d-flex justify-content-between">
+                                <span class="price">$21.00</span>
+                                <span class="distance">169.0 km</span>
+                            </div>
+                        </a>
+                        <a href="#itemModal" data-toggle="modal" class="grid-item" target="_blank">
+                            <img class="img-item" src="../img/poutines/public-regions-1579874060766.jpg" alt="">
+                            <span class="resto-name">Restaurant name J</span>
+                            <span class="item-name">Poutine Name 10</span>
+                            <div class="d-flex justify-content-between">
+                                <span class="price">$11.11</span>
+                                <span class="distance">14.0 km</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="text-center my-5">
+                        <a href="#!" class="btn btn-outline-dark"><i class="fal fa-plus"></i>&nbsp;Load more poutines</a>
+                    </div>
+
+                    <!-- footer graphics -->
+                    <div class=" d-none d-md-flex align-items-end justify-content-between mb-5">
+                        <img src="../img/artwork/takeout-resto.png" alt="" style="max-width:300px">
+                        <img src="../img/artwork/couple.png" alt="" style="max-width:300px">
+                    </div>
+
+                </div>
+            </div>
+            <!-- map view -->
+            <div class="results-map d-none" id="resultsMap">
+                <div id="map"></div>
+            </div>
+
+        </section>
+        
+        <!-- Modal Product -->
+        <div class="preview-modal modal fade" id="itemModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <div class="modal-header modal-resto sr-only">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+
+                    </div>
+                    <img class="modal-photo" src="./img/empty1.svg" alt="">
+                    <div class="modal-body">
+                        <h2 class="modal-resto">Resto name</h2>
+                        <div class="d-flex flex-column flex-md-row justify-content-between">
+                            <h3 class="modal-item">Poutine name</h3>
+                            <h3 class="modal-price">$$$</h3>
+                        </div>
+                        <p class="modal-description">It was all a dream, I used to read Word Up! magazine
+                            Salt-n-Pepa and Heavy D up in the limousine
+                            Hangin' pictures on my wall
+                            Every Saturday Rap Attack, Mr. Magic, Marley Marl
+                            I let my tape rock 'til my tape popped
+                            Smokin' weed in Bambu, sippin' on Private Stock.</p>
+                        <div class="saputo-badge">
+                            <a href="https://www.saputofoodservice.ca/" target="_blank"><img src="../img/logo/logo-saputo.svg" alt="" class="logo-saputo mr-3"></a><i>Made with Saputo Cheese</i>
+                        </div>
+                        <p class="mb-0 mt-4"><strong>Address</strong></p>
+                        <a href="#!" target="_blank">123 Burger Blvd, Montreal QC, H4N 7A1</a>
+                    </div>
+                    <div class="modal-footer justify-content-between">
+                        <a href="./restaurant.html" class="btn btn-outline-primary" role="button" aria-pressed="true"><i class="far fa-external-link mr-2"></i> View</a>
+                        <a href="https://www.skipthedishes.com" target="_blank" class="btn btn-skip">Delivered by<img src="../img/logo/logo-skip-en-white.svg" class="logo-in-button" alt="SKIP the Dishes"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modal Location -->
+        <div class="modal" id="modalLocation" tabindex="-1" aria-labelledby="modalLocation" aria-hidden="true">
+            <div class="modal-dialog  modal-dialog-scrollable modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="container">
+                            <h5 class="modal-title" id="exampleModalLabel">Select your location</h5>
+
+                        </div>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12 mb-4">
+                                    <a class="btn btn-primary" href="./results.html"><i class="fas fa-location-arrow mr-2"></i>Around me</a>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <details>
+                                        <summary><span class="font-weight-bold">British Columbia</span></summary>
+                                        <ul class="list-unstyled">
+                                            <li><a href="./results.html">Kelowna</a></li>
+                                            <li><a href="./results.html">Surrey</a></li>
+                                            <li><a href="./results.html">Vancouver</a></li>
+                                            <li><a href="./results.html">Victoria</a></li>
+                                        </ul>
+                                    </details>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <details>
+                                        <summary><span class="font-weight-bold">Alberta</span></summary>
+                                        <ul class="list-unstyled">
+                                            <li><a href="./results.html">Edmonton</a></li>
+                                            <li><a href="./results.html">Calgary</a></li>
+                                            <li><a href="./results.html">Banff</a></li>
+                                        </ul>
+                                    </details>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <details>
+                                        <summary><span class="font-weight-bold">Saskatchewan</span></summary>
+                                        <ul class="list-unstyled">
+                                            <li><a href="./results.html">Regina</a></li>
+                                            <li><a href="./results.html">Saskatoon</a></li>
+                                            <li><a href="./results.html">Prince Albert</a></li>
+                                        </ul>
+                                    </details>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <details>
+                                        <summary><span class="font-weight-bold">Manitoba</span></summary>
+                                        <ul class="list-unstyled">
+                                            <li><a href="./results.html">Winnipeg</a></li>
+                                            <li><a href="./results.html">Churchill</a></li>
+                                        </ul>
+                                    </details>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <details>
+                                        <summary><span class="font-weight-bold">Ontario</span></summary>
+                                        <ul class="list-unstyled">
+                                            <li><a href="./results.html">Toronto</a></li>
+                                            <li><a href="./results.html">Ottawa</a></li>
+                                        </ul>
+                                    </details>
+                                </div>
+
+
+                                <div class="col-md-6 col-lg-4">
+                                    <details>
+                                        <summary><span class="font-weight-bold">Quebec</span></summary>
+                                        <ul class="list-unstyled">
+                                            <li><a href="./results.html">Montreal</a></li>
+                                            <li><a href="./results.html">Quebec</a></li>
+                                            <li><a href="./results.html">Gatineau</a></li>
+                                        </ul>
+                                    </details>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <details>
+                                        <summary><span class="font-weight-bold">New Brunswick</span></summary>
+                                        <ul class="list-unstyled">
+                                            <li><a href="./results.html">Fredericton</a></li>
+                                            <li><a href="./results.html">Moncton</a></li>
+                                            <li><a href="./results.html">St-John</a></li>
+                                        </ul>
+                                    </details>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <details>
+                                        <summary><span class="font-weight-bold">Nova Scotia</span></summary>
+                                        <ul class="list-unstyled">
+                                            <li><a href="./results.html">Halifax</a></li>
+                                            <li><a href="./results.html">Sydney</a></li>
+                                        </ul>
+                                    </details>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <details>
+                                        <summary><span class="font-weight-bold">Prince Edward Island</span></summary>
+                                        <ul class="list-unstyled">
+                                            <li><a href="./results.html">Charlottetown</a></li>
+                                        </ul>
+                                    </details>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <details>
+                                        <summary><span class="font-weight-bold">Newfoundland</span></summary>
+                                        <ul class="list-unstyled">
+                                            <li><a href="./results.html">St. John's</a></li>
+                                        </ul>
+                                    </details>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <details>
+                                        <summary><span class="font-weight-bold">International</span></summary>
+                                        <ul class="list-unstyled">
+                                            <li><a href="./results.html">Abbotsford</a></li>
+                                            <li><a href="./results.html">Burnaby</a></li>
+                                            <li><a href="./results.html">Kelowna</a></li>
+                                            <li><a href="./results.html">Richmond</a></li>
+                                            <li><a href="./results.html">Surrey</a></li>
+                                            <li><a href="./results.html">Vancouver</a></li>
+                                            <li><a href="./results.html">Victoria</a></li>
+                                        </ul>
+                                    </details>
+                                </div>
+                            </div>
+                            <div class="d-md-flex justify-content-between align-items-end">
+                                <img class="d-none d-md-block" src="../img/artwork/pug-hat.png" alt="" style="max-width:120px">
+                                <img class="" src="../img/artwork/delivery-bicycle.png" alt="" style="max-width:210px">
+                                <img class="d-none d-lg-block" src="../img/artwork/mask-man.png" alt="" style="max-width:160px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Location -->
+        <div class="modal" id="modalLocation" tabindex="-1" aria-labelledby="modalLocation" aria-hidden="true">
+            <div class="modal-dialog  modal-dialog-scrollable modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="container">
+                            <h5 class="modal-title" id="exampleModalLabel">Select your location</h5>
+
+                        </div>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+
+                            <div class="d-md-flex justify-content-between align-items-end">
+                                <img class="d-none d-md-block" src="../img/artwork/pug-hat.png" alt="" style="max-width:120px">
+                                <img class="" src="../img/artwork/delivery-bicycle.png" alt="" style="max-width:210px">
+                                <img class="d-none d-md-block" src="../img/artwork/mask-man.png" alt="" style="max-width:160px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
-    
+
     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-lg-6 mr-auto mb-4">
-                    <img class="d-block logo-footer" src="./img/logo/logo-en.svg" alt="">
+                    <img class="d-block logo-footer" src="../img/logo/logo-en.svg" alt="">
                     <p class="small text-muted">Cities:&nbsp;Montréal&nbsp; Winnipeg&nbsp; Vancouver&nbsp; Edmonton&nbsp; Calgary&nbsp; Regina&nbsp; Saskatoon&nbsp; Toronto&nbsp; Ottawa/Gatineau&nbsp; Laval&nbsp; Montérégie&nbsp; Centre du Québec&nbsp; Lanaudière&nbsp; Mauricie&nbsp; Chaudière Appalaches&nbsp; Bas St-Laurent&nbsp; Estrie&nbsp; Saguenay&nbsp; Côte-Nord&nbsp; Laurentides&nbsp; Abitibi&nbsp; International&nbsp; Québec</p>
                 </div>
                 <div class="col-md-4 col-lg-2">
@@ -96,7 +472,7 @@
                         <li><a href="mailto:team@peoplemovertech.com">Email us</a></li>
                         <li><a href="mailto:naeem@peoplemovertech.com">Sponsorship</a></li>
                         <li><a href="./terms-and-privacy.html">Terms &amp; privacy</a></li>
-                        <li><a href="htts://leburgerweek.com" target="_blank">Le Burger Week</a></li>
+                        <li><a href="https://leburgerweek.com" target="_blank">Le Burger Week</a></li>
                         <li><a href="#!">Français</a></li>
                     </ul>
                 </div>
@@ -125,6 +501,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/liquidmetal.js"></script>
+    <script src="../js/jquery.flexselect.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxEirwPY5lQXNNXuY9lzjQIwGJlWby7Nw&callback=initMap" async defer></script>
     <script src="../js/scripts.js"></script>
-</body>
-</html>
+</body></html>

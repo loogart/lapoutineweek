@@ -6,22 +6,25 @@
 @import "../bootstrap/scss/variables";
 @import "../bootstrap/scss/mixins";
 
-// Re-define BS colors
-$blue:#009ade;
-$red: #d0333a;
-
 // Define new colors
 $beige:#fef2e2;
 $beige-light:#fdf7ef;
 $beige-dark:#655e54;
 $beige-line:#F2E9DC;
 $beige-input:#D3C8B8;
+$orange:#FF8000;
+
+// Re-define BS colors
+$blue:#009ade;
+$red: #d0333a;
+$secondary: $beige-input;
 
 // Map colors
-$colors: ("blue":$blue, "red":$red, "$beige":$beige, "beige-light":$beige-light, "beige-dark":$beige-dark, "beige-line":$beige-line, "beige-input":$beige-input);
+$colors: ("blue":$blue, "red":$red, "$beige":$beige, "beige-light":$beige-light, "beige-dark":$beige-dark, "beige-line":$beige-line, "beige-input":$beige-input, "orange":$orange);
 
 //Map theme-colors
-$theme-colors: ("primary": $blue, "danger":$red, "light":$beige-light, "dark":$beige-dark);
+$theme-colors: ("primary": $blue, "danger":$red, "light":$beige-light, "dark":$beige-dark, "secondary":$secondary);
+
 
 // customize theme
 $body-bg: $beige-light;
@@ -47,23 +50,26 @@ $navbar-light-active-color: $blue;
 // customize links
 $link-color: black;
 $link-hover-color: lighten($link-color, 15%);
-$btn-border-radius: 80px;
+$border-width:2px;
+$btn-border-radius: 8px;
 $btn-border-radius-lg: 120px;
 $btn-border-radius-sm: 60px;
 $btn-padding-y-lg: $spacer/2;
 $btn-padding-x-lg: $spacer*1.5;
+$btn-border-width:1px;
 
 // customize custom form inputs
 $custom-control-indicator-checked-bg: $blue;
 $custom-control-indicator-active-bg:$blue;
 $custom-control-indicator-checked-border-color:$blue;
 $input-focus-box-shadow:0 0 0 0.2rem rgba(0, 154, 222, 0.14);
+$custom-control-indicator-bg: $beige-light;
+$custom-control-indicator-border-color:$beige-input;
 
 // customize forms
 $input-border-color: $beige-input;
 $input-bg: $beige-light;
-$input-border-width:2px;
-$input-padding-y: 20px;
+$input-border-width:1px;
 $input-border-radius: 8px;
 $input-color: black;
 $input-focus-border-color:$blue;
@@ -173,7 +179,7 @@ p.lead {
 
 // navbar styles
 .navbar-border-bottom {
-    border-bottom: 2px solid $beige-line;
+    border-bottom: 1px solid $beige-line;
 }
 
 .navbar-brand,
@@ -255,6 +261,11 @@ section.content {
 section.hero {
     padding-top: 15px;
     padding-bottom: 80px !important;
+}
+
+section.results {
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .hero-content {
@@ -341,7 +352,7 @@ section.with-box {
     }
 
     &.skip {
-        background-color: $orange;
+        background-color: $blue;
         border: $red;
         color: white;
     }
@@ -469,7 +480,7 @@ section.with-box {
     }
 }
 
-//winner section
+// winner section
 .winners-grid {
     display: flex;
     justify-content: space-between;
@@ -665,10 +676,311 @@ section.sign-up {
     @include media-breakpoint-down(sm) {}
 }
 
+/* nav filter */
+.nav-filter {
+    padding-top: $spacer/2;
+    padding-bottom: $spacer/2;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 1;
+    background-color: $beige-light;
+    border-bottom: 1px solid $beige-line;
+}
+
+.logo-filter {
+    width: 50px;
+
+    @include media-breakpoint-down(sm) {
+        width: 40px
+    }
+
+}
+
+.flexselect_dropdown {
+    display: none;
+    position: absolute;
+    z-index: 999999;
+    margin: 0;
+    padding: 0;
+    border: 1px solid WindowFrame;
+    max-height: 200px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: Window;
+    color: WindowText;
+    text-align: left;
+    box-shadow: 0 6px 12px rgba(101, 94, 84, 0.19);
+    -webkit-box-shadow: 0 6px 12px rgba(101, 94, 84, 0.19);
+    border-radius: 8px;
+}
+
+.flexselect_dropdown ul {
+    width: 100%;
+    list-style-position: outside;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.flexselect_dropdown li {
+    margin: 0px;
+    padding: 15px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    font: Menu;
+    overflow: hidden;
+}
+
+.flexselect_dropdown li.disabled {
+    cursor: not-allowed;
+    color: GrayText;
+}
+
+.flexselect_selected {
+    background-color: $blue;
+    color: white;
+}
+
+/* grid results and map */
+#map {
+    width: 100%;
+    height: 100vh;
+}
+
+.grid-items {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+a.grid-item {
+    display: inline-block;
+    width: 20%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 40px;
+    text-decoration: none;
+    position: relative;
+
+    .img-item {
+        border-radius: 12px;
+        margin-bottom: 20px;
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        transition: .25s all ease-out;
+
+        @include media-breakpoint-down(xs) {
+            height: 200px;
+        }
+    }
+
+    .logo-saputo-grid {
+        display: inline-block;
+        position: absolute;
+        top: 16px;
+        left: 24px;
+        width: 50px;
+        z-index: 1;
+    }
+
+    &:hover .img-item {
+        opacity: .8;
+        transform: translateY(-5px);
+    }
+
+    .price,
+    .distance {
+        color: lighten($beige-dark, 20%);
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    @include media-breakpoint-down(lg) {
+        width: 25%;
+    }
+
+    @include media-breakpoint-down(md) {
+        width: 33%;
+    }
+
+    @include media-breakpoint-down(sm) {
+        width: 50%;
+    }
+
+    @include media-breakpoint-down(xs) {
+        width: 100%;
+    }
+
+    &.for-map {
+        width: 100%;
+        margin-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+
+
+.resto-name {
+    display: block;
+    color: $blue;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.item-name {
+    display: block;
+    color: black;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1.25;
+}
+
+.saputo-badge {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 15px;
+}
+
+.logo-saputo {
+    height: 40px;
+    margin: auto 3px;
+}
+
+.btn-skip {
+    background-color: $orange;
+    color: white;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: white;
+        background-color: #bf6000
+    }
+}
+
+.btn-dinetab {
+    background-color: black;
+    color: white;
+    &:hover,
+    &:focus,
+    &:active {
+        color: white;
+        background-color: #222;
+    }
+}
+
+.logo-in-button{
+    display: inline-block;
+    width:75px;
+    margin-left:5px;
+}
+.vote-box {
+    align-items: center;
+    background-color: $beige;
+    border: 2px solid $beige-line;
+    border-radius: 8px;
+    padding: 30px $spacer;
+    width: 100%;
+    text-align: center;
+
+    @include media-breakpoint-down(sm) {
+        position: fixed;
+        background-color: $beige-light;
+        border-radius: 0;
+        border-top: 2px solid $beige-line;
+        padding: 12px $spacer;
+        width: 100%;
+        min-height: 20px;
+        z-index: 1000;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+
+
+.img-map {
+    height: 120px;
+    max-width: 200px;
+    margin-bottom: 12px;
+    border-radius: 12px;
+}
+
+.preview-modal,
+.item {
+    .modal-content {
+        border-radius: 24px;
+    }
+
+    .modal-photo {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+
+    }
+
+    h2.modal-resto {
+        font-size: 20px;
+        color: $blue;
+        margin-bottom: 7px;
+    }
+
+    h3.modal-item,
+    h3.modal-price {
+        font-size: 28px;
+        color: $dark;
+        font-weight: bold;
+    }
+
+    .btn {
+        box-shadow: none;
+        border-radius: 12px;
+    }
+
+    .close {
+        width: 32px;
+        height: 32px;
+        top: 12px;
+        right: 12px;
+        z-index: 2000;
+        position: absolute;
+        background-color: white;
+        border-radius: 32px;
+    }
+
+    .logo-charity {
+        width: 140px;
+    }
+}
+
+details {
+    summary {
+        margin-bottom: $spacer;
+    }
+
+    ul {}
+
+    li {
+        margin-bottom: $spacer/2;
+    }
+}
+
+/* resto page */
+.img-item {
+    border-radius: $spacer*1.5;
+}
+
 footer {
     padding-top: 100px;
     padding-bottom: 120px;
-    border-top: 3px solid $beige-line;
+    border-top: 1px solid $beige-line;
     background-image: url('../img/artwork/pug.png');
     background-size: 220px;
     background-position: 94% 70%;
