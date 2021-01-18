@@ -8,13 +8,13 @@
 
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
-    <link rel="icon" sizes="192x192" href="./img/favicon.png">
+    <link rel="icon" sizes="192x192" href="../img/favicon.png">
 
     <!-- Add to homescreen for Safari on iOS -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="La Poutine Week">
-    <link rel="apple-touch-icon-precomposed" href="./img/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="../img/favicon.png">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../css/flexselect.css">
@@ -116,7 +116,7 @@
                                 <a href="" class="btn btn-block btn-outline-secondary text-dark" data-toggle="modal" data-target="#modalLocation"><i class="fas fa-map-marker-alt mr-2"></i>Location</a>
                             </div>
                             <div class="col-6">
-                                <a href="" class="btn btn-block btn-outline-secondary text-dark"><i class="far fa-sliders-v mr-2"></i> Filter</a>
+                                <a href="" class="btn btn-block btn-outline-secondary text-dark" data-toggle="modal" data-target="#modalFilter"><i class="far fa-sliders-v mr-2"></i> Filter</a>
                             </div>
                         </div>
                     </div>
@@ -138,7 +138,7 @@
                 <div class="container" id="resultsGrid">
                     <div class="grid-items mt-5">
                         <a href="#itemModal" data-toggle="modal" class="grid-item" target="_blank">
-                            <img src="./img/logo-saputo.svg" alt="" class="logo-saputo-grid">
+                            <img src="../img/logo/logo-saputo.svg" alt="" class="logo-saputo-grid">
                             <img class="img-item" src="../img/poutines/public-regions-1579527189458.jpg" alt="">
                             <span class="resto-name">Restaurant name A</span>
                             <span class="item-name">Poutine Name 1</span>
@@ -166,7 +166,6 @@
                             </div>
                         </a>
                         <a href="#itemModal" data-toggle="modal" class="grid-item" target="_blank">
-                            <img src="./img/logo-saputo.svg" alt="" class="logo-saputo-grid">
                             <img class="img-item" src="../img/poutines/public-regions-1579632454654.jpg" alt="">
                             <span class="resto-name">Restaurant name D</span>
                             <span class="item-name">Poutine Name 4</span>
@@ -176,6 +175,7 @@
                             </div>
                         </a>
                         <a href="#itemModal" data-toggle="modal" class="grid-item" target="_blank">
+                            <img src="../img/logo/logo-saputo.svg" alt="" class="logo-saputo-grid">
                             <img class="img-item" src="../img/artwork/placeholder.jpg" alt="">
                             <span class="resto-name">Cook It</span>
                             <span class="item-name">Poutine Name 5</span>
@@ -186,7 +186,6 @@
                         </a>
 
                         <a href="#itemModal" data-toggle="modal" class="grid-item" target="_blank">
-                            <img src="./img/logo-saputo.svg" alt="" class="logo-saputo-grid">
                             <img class="img-item" src="../img/poutines/public-regions-1579720462555.jpg" alt="">
                             <span class="resto-name">Restaurant name F</span>
                             <span class="item-name">Poutine Name 6</span>
@@ -214,7 +213,7 @@
                             </div>
                         </a>
                         <a href="#itemModal" data-toggle="modal" class="grid-item" target="_blank">
-                            <img src="./img/logo-saputo.svg" alt="" class="logo-saputo-grid">
+                            <img src="../img/logo/logo-saputo.svg" alt="" class="logo-saputo-grid">
                             <img class="img-item" src="../img/poutines/public-regions-1580417075507.jpg" alt="">
                             <span class="resto-name">Cantley Fried Chicken</span>
                             <span class="item-name">Loogart Poutine</span>
@@ -251,7 +250,7 @@
             </div>
 
         </section>
-        
+
         <!-- Modal Product -->
         <div class="preview-modal modal fade" id="itemModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
@@ -261,7 +260,6 @@
                     </button>
                     <div class="modal-header modal-resto sr-only">
                         <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-
                     </div>
                     <img class="modal-photo" src="./img/empty1.svg" alt="">
                     <div class="modal-body">
@@ -289,7 +287,7 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- Modal Location -->
         <div class="modal" id="modalLocation" tabindex="-1" aria-labelledby="modalLocation" aria-hidden="true">
             <div class="modal-dialog  modal-dialog-scrollable modal-lg">
@@ -297,7 +295,6 @@
                     <div class="modal-header">
                         <div class="container">
                             <h5 class="modal-title" id="exampleModalLabel">Select your location</h5>
-
                         </div>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <i class="fas fa-times"></i>
@@ -308,6 +305,8 @@
                             <div class="row">
                                 <div class="col-12 mb-4">
                                     <a class="btn btn-primary" href="./results.html"><i class="fas fa-location-arrow mr-2"></i>Around me</a>
+                                    <hr>
+
                                 </div>
                                 <div class="col-md-6 col-lg-4">
                                     <details>
@@ -432,26 +431,69 @@
         </div>
 
         <!-- Modal Location -->
-        <div class="modal" id="modalLocation" tabindex="-1" aria-labelledby="modalLocation" aria-hidden="true">
-            <div class="modal-dialog  modal-dialog-scrollable modal-lg">
+        <div class="modal" id="modalFilter" tabindex="-1" aria-labelledby="modalLocation" aria-hidden="true">
+            <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
                         <div class="container">
-                            <h5 class="modal-title" id="exampleModalLabel">Select your location</h5>
-
+                            <h5 class="modal-title" id="exampleModalLabel">Sort and filter</h5>
                         </div>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <i class="fas fa-times"></i>
                         </button>
                     </div>
                     <div class="modal-body">
-                        <div class="container-fluid">
-
-                            <div class="d-md-flex justify-content-between align-items-end">
-                                <img class="d-none d-md-block" src="../img/artwork/pug-hat.png" alt="" style="max-width:120px">
-                                <img class="" src="../img/artwork/delivery-bicycle.png" alt="" style="max-width:210px">
-                                <img class="d-none d-md-block" src="../img/artwork/mask-man.png" alt="" style="max-width:160px">
+                        <div class="container">
+                            <h6>Filters</h6>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="custom-control custom-checkbox mb-2">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                        <label class="custom-control-label" for="customCheck1">Sea Food</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox mb-2">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                        <label class="custom-control-label" for="customCheck2">Vegetarian</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox mb-2">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                        <label class="custom-control-label" for="customCheck3">Vegan</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox mb-2">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck4">
+                                        <label class="custom-control-label" for="customCheck4">Glutten-free</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="custom-control custom-checkbox mb-2">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck5">
+                                        <label class="custom-control-label" for="customCheck5">Saputo Cheese</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox mb-2">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck6">
+                                        <label class="custom-control-label" for="customCheck6">Delivered by SKIP</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox mb-2">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck6">
+                                        <label class="custom-control-label" for="customCheck6">Beef</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox mb-2">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck7">
+                                        <label class="custom-control-label" for="customCheck7">Chicken</label>
+                                    </div>
+                                </div>
                             </div>
+                            <hr>
+                            <h6>Sorting</h6>
+                            <select class="custom-select custom-select-lg">
+                                <option selected>Random</option>
+                                <option value="1">$&nbsp;Ascending</option>
+                                <option value="2">$&nbsp;Descending</option>
+                                <option value="3">A-Z</option>
+                                <option value="4">Z-A</option>
+                            </select>
+                            <hr>
+                            <a href="./results.html"><i class="far fa-trash-alt mr-2"></i>Reset filters</a>
                         </div>
                     </div>
                 </div>
@@ -505,4 +547,6 @@
     <script src="../js/jquery.flexselect.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxEirwPY5lQXNNXuY9lzjQIwGJlWby7Nw&callback=initMap" async defer></script>
     <script src="../js/scripts.js"></script>
-</body></html>
+</body>
+
+</html>
