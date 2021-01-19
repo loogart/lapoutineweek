@@ -435,6 +435,6 @@ $('#voteNow').click(function () {
         $(this).removeClass('btn-outline-danger').addClass('btn-primary').text("Rate  this poutine");
     } else {
         $('#modalVote1').modal('show');
-        $(this).removeClass('btn-primary').addClass('btn-outline-danger').text("Remove vote");
+        $(this).removeClass('btn-primary').addClass('btn-outline-danger').text("Remove rating");
     }
 });
