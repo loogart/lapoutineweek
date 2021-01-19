@@ -108,7 +108,7 @@
                         </div>
                         <div class="vote-box section-box-mini flex-column">
                             <span class="h5 font-weight-bold mb-3 d-none d-md-block">Tell us what you think</span>
-                            <div class="btn btn-primary btn-lg shadow" data-toggle="modal" data-target="#modalVote1"><i class="far fa-star mr-2"></i>Rate this poutine</div>
+                            <div class="btn btn-primary btn-lg shadow" id="voteNow"><i class="far fa-star mr-2"></i>Rate this poutine</div>
                         </div>
                     </div>
                     
@@ -136,14 +136,17 @@
                         <h4 class="mb-4">Order this poutine</h4>
                         <div class="row">
                             <div class="col-12 col-lg-7">
+                                <!-- SKIP button Large -->
                                 <div class="mb-4">
                                     <a href="https://www.skipthedishes.com" target="_blank" class="btn btn-lg btn-skip">Delivered by<img src="../img/logo/logo-skip-en-white.svg" class="logo-in-button" alt="SKIP the Dishes"></a>
                                 </div>
+                                <!-- dineTab button Large -->
                                 <div class="mb-4">
                                     <a href="https://dinetab.com" target="_blank" class="btn btn-lg btn-dinetab">Pay with<img src="../img/logo/logo-dinetab-reverse.svg" class="logo-in-button" alt="dineTab"></a>
                                 </div>
+                                <!-- Order generic button Large -->
                                 <div class="mb-4">
-                                    <a href="https://www.chefcookit.com/en/pricing" target="_blank" class="btn btn-dark"><i class="fas fa-sign-in mr-2"></i>Subscribe to Cook it</a>
+                                    <a href="https://www.chefcookit.com/en/pricing" target="_blank" class="btn btn-lg btn-warning"><i class="far fa-external-link mr-2"></i>Order now</a>
                                 </div>
                             </div>
                             <div class="col-12 col-md-5">
@@ -167,7 +170,8 @@
                                         <a href="https://loogart.com" class="mr-4" target="_blank"><i aria-hidden="true" class="fas fa-map-marker-alt" title="Restaurant address"></i></a>
                                     </div>
                                     <hr>
-                                    <a href="https://www.skipthedishes.com" target="_blank" class="btn btn-sm btn-skip">Delivered by<img src="../img/logo/logo-skip-en-white.svg" class="logo-in-button" alt="SKIP the Dishes"></a>
+                                    <a href="https://www.chefcookit.com/en/pricing" target="_blank" class="btn btn-sm btn-warning"><i class="far fa-external-link mr-2"></i>Order now</a>
+<!--                                    <a href="https://www.skipthedishes.com" target="_blank" class="btn btn-sm btn-skip">Delivered by<img src="../img/logo/logo-skip-en-white.svg" class="logo-in-button" alt="SKIP the Dishes"></a>-->
                                 </div>
                             </div>
                             <div class="col-lg-6">
@@ -204,6 +208,7 @@
                                 <img class="mt-4" src="../img/artwork/delivery-bicycle.png" alt="" style="max-width:250px">
                             </div>
                         </div>
+                        
                     </div>
                 </div>
             </div>
@@ -225,9 +230,9 @@
                     </div>
                     <div class="modal-body text-center">
                         <h3>What did you think?</h3> 
-                        <div class="d-flex justify-content-around align-items-center my-3">
-                            <a href="" class="btn-rate"><i class="far fa-tired fa-3x" Title=""></i><span class="d-block">Bad</span></a>
-                            <a href="" class="btn-rate"><i class="far fa-meh fa-3x" Title=""></i><span class="d-block">Meh</span></a>
+                        <div class="d-flex justify-content-around align-items-center my-4 mx-auto" style="max-width:300px">
+                            <a href="" class="btn-rate" data-toggle="modal" data-target="#modalVote2"><i class="far fa-tired fa-3x" Title=""></i><span class="d-block">Bad</span></a>
+                            <a href="" class="btn-rate" data-toggle="modal" data-target="#modalVote2"><i class="far fa-meh fa-3x" Title=""></i><span class="d-block" data-toggle="modal" data-target="#modalVote2">Meh</span></a>
                             <a href="" class="btn-rate"><i class="far fa-grin-stars fa-3x" Title=""></i><span class="d-block">Amazing</span></a>
                         </div>               
                     </div>                    
@@ -243,18 +248,37 @@
                         <i class="fas fa-times"></i>
                     </button>
                     <div class="modal-header modal-resto sr-only">
-                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Thank you for voting!</h5>
                     </div>
                     <div class="modal-photo-holder">
-                        <img src="../img/artwork/delivery-shocked.png" alt="" style="max-width:240px;">
+                        <img src="../img/artwork/date-night.png" alt="" style="max-width:240px;">
                     </div>
-                    <div class="modal-body text-center">
-                        <h3>What did you think?</h3> 
-                        <div class="d-flex justify-content-around align-items-center my-3">
-                            <a href="" class="btn-rate"><i class="far fa-tired fa-3x" Title=""></i><span class="d-block">Bad</span></a>
-                            <a href="" class="btn-rate"><i class="far fa-meh fa-3x" Title=""></i><span class="d-block">Meh</span></a>
-                            <a href="" class="btn-rate"><i class="far fa-grin-stars fa-3x" Title=""></i><span class="d-block">Amazing</span></a>
-                        </div>               
+                    <div class="modal-body text-center">  
+                        <img src="../img/logo/logo-harveys.svg" alt="" style="width:69px">                     
+                        <h3 class="my-3">Thanks for voting!</h3>
+                        <p>Harvey’s would like to thank you by offering you a deluxe poutine in regular format and a 20oz drink for only $6,49.</p>  <p>Valid only through our mobile app by entering the coupon code below.</p>                                       
+                        <div class="promocode">HAR042</div>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modal Vote Removed-->
+        <div class="preview-modal modal fade" id="modalUnvoted" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-sm">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <div class="modal-header modal-resto sr-only">
+                        <h5 class="modal-title" id="exampleModalLabel">You have remvoed your rating.</h5>
+                    </div>
+                    <div class="modal-photo-holder">
+                        <img src="../img/artwork/bird.png" alt="" style="max-width:169px;">
+                    </div>
+                    <div class="modal-body text-center">  
+                        <h3 class="my-3">Rating removed.</h3>
+                        <p>Your rating for this poutine has been removed.</p>   
                     </div>                    
                 </div>
             </div>

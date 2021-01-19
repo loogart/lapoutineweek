@@ -420,3 +420,21 @@ $(".grid-item").click(function () {
 
 // lightbox plugin
 lightGallery(document.getElementById('lightgallery'));
+
+// Vote 2 step
+$(function () {
+    $(".btn-rate").click(function () {
+        $('#modalVote1').modal('hide');
+    });
+});
+
+// toggle vote button look
+$('#voteNow').click(function () {
+    if ($(this).hasClass("btn-outline-danger")) {
+        $('#modalUnvoted').modal('show');
+        $(this).removeClass('btn-outline-danger').addClass('btn-primary').text("Rate  this poutine");
+    } else {
+        $('#modalVote1').modal('show');
+        $(this).removeClass('btn-primary').addClass('btn-outline-danger').text("Remove vote");
+    }
+});

@@ -607,7 +607,7 @@ section.sign-up {
 
 
 /* Leaderboard css */
-.leaderboard-box {
+a.leaderboard-box {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -617,10 +617,18 @@ section.sign-up {
     border-radius: 8px;
     padding: $spacer*1.5;
     width: 100%;
+    text-decoration: none;
+    transition: all .15s ease-out;
 
     @include media-breakpoint-down(xs) {
         align-items: flex-start;
         flex-direction: column;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+        transform: translateX(-10px);
     }
 }
 
@@ -997,6 +1005,8 @@ details {
 
 .btn-rate {
     transition: all .15s ease-out;
+    width: 33%;
+    text-align: center;
 
     &:hover,
     &:focus,
@@ -1006,6 +1016,14 @@ details {
         transform: scale(1.1);
         text-decoration: none;
     }
+}
+
+.promocode{
+    display: inline-block;
+    padding:$spacer/2 $spacer;
+    border:3px solid black;
+    font-weight: 500;
+    font-size: 24px;
 }
 
 footer {

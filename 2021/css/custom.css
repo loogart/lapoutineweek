@@ -8192,7 +8192,7 @@ section.sign-up {
   color: white; }
 
 /* Leaderboard css */
-.leaderboard-box {
+a.leaderboard-box {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -8201,11 +8201,15 @@ section.sign-up {
   border: 2px solid #F2E9DC;
   border-radius: 8px;
   padding: 1.5rem;
-  width: 100%; }
+  width: 100%;
+  text-decoration: none;
+  transition: all .15s ease-out; }
   @media (max-width: 575.98px) {
-    .leaderboard-box {
+    a.leaderboard-box {
       align-items: flex-start;
       flex-direction: column; } }
+  a.leaderboard-box:hover, a.leaderboard-box:focus, a.leaderboard-box:active {
+    transform: translateX(-10px); }
 
 .leaderboard-top {
   display: flex;
@@ -8496,12 +8500,21 @@ details li {
   border-radius: 1.5rem; }
 
 .btn-rate {
-  transition: all .15s ease-out; }
+  transition: all .15s ease-out;
+  width: 33%;
+  text-align: center; }
   .btn-rate:hover, .btn-rate:focus, .btn-rate:active,
   .btn-rate .active {
     color: #009ade;
     transform: scale(1.1);
     text-decoration: none; }
+
+.promocode {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 3px solid black;
+  font-weight: 500;
+  font-size: 24px; }
 
 footer {
   padding-top: 100px;
