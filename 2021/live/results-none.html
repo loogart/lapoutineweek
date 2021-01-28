@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="../img/favicon.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="La Poutine Week">
+    <link rel="apple-touch-icon-precomposed" href="../img/favicon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/flexselect.css">
+    <link rel="stylesheet" href="../css/custom.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/2d83ef6eb3.js" crossorigin="anonymous"></script>
+
+    <!-- Primary Meta Tags -->
+    <title>Find a poutine | La Poutine Week 2021</title>
+    <meta name="title" content="La Poutine Week">
+    <meta name="description" content="February 1-7, 2021. If your restaurant makes a superb poutine, sign up today!">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://loogart.github.io/lapoutineweek/2021">
+    <meta property="og:title" content="La Poutine Week 2021 | Presented by Saputo">
+    <meta property="og:description" content="February 1-7, 2021. If your restaurant makes a superb poutine, sign up today!">
+    <meta property="og:image" content="https://loogart.github.io/lapoutineweek/2021/img/artwork/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://loogart.github.io/lapoutineweek/2021">
+    <meta property="twitter:title" content="La Poutine Week 2021 | Presented by Saputo">
+    <meta property="twitter:description" content="February 1-7, 2021. If your restaurant makes a superb poutine, sign up today!">
+    <meta property="twitter:image" content="https://loogart.github.io/lapoutineweek/2021/img/artwork/og-image.jpg">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="./">La Poutine Week</a>
+            <button class="navbar-toggler p-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fal fa-chevron-circle-down"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./results.html"><i class="fas fa-search mr-2 text-primary"></i>Find a poutine</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Winners
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./winners-2020.html">2019</a>
+                            <a class="dropdown-item" href="./winners-2020.html">2020</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!">Français</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- filter -->
+        <nav class="nav-filter">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-2 col-md-1 col-lg-1">
+                        <a href="./"><img class="logo-filter" src="../img/logo/logo-en.svg" alt=""></a>
+                    </div>
+                    <div class="col-10 col-md-6 col-lg-3">
+                        <h1 class="sr-only">Poutine results</h1>
+                        <select class="flexselect form-control">
+                            <option value="" disabled selected>Search</option>
+                            <option value="1">Amazing Poutine Place</option>
+                            <option value="2">Arabian Nights</option>
+                            <option value="3">Blazing Balaszi</option>
+                            <option value="4">La Banquise</option>
+                            <option value="5">Benedict Pout</option>
+                            <option value="6">Behave Frieds</option>
+                            <option value="7">Cantley Fried Chicken</option>
+                            <option value="8">Harveys</option>
+                            <option value="9">JeePoutine Doan-Moi</option>
+                            <option value="10">Kentucky Fried Chicken</option>
+                            <option value="11">Loogart Poutines</option>
+                            <option value="12">Na'eem The Dream</option>
+                            <option value="13">Omnivore</option>
+                            <option value="14">Paulo et Suzanne</option>
+                            <option value="15">Stéphoutine Grondin</option>
+                            <option value="16">Thierry Mange Ici</option>
+                            <option value="17">Why so serious?</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-md-5 col-lg-4 py-2">
+                        <div class="d-flex">
+                            <div class="flex-fill">
+                                <a href="" class="btn btn-block btn-outline-secondary text-dark" data-toggle="modal" data-target="#modalLocation"><i class="fas fa-map-marker-alt mr-2"></i>Chaudiere-Appalaches</a>
+                            </div>
+                            <div class="flex-fill ml-3">
+                                <a href="" class="btn btn-block btn-outline-secondary text-dark" data-toggle="modal" data-target="#modalFilter"><i class="far fa-sliders-v mr-2"></i> Filter</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-4 text-lg-right py-2">
+                        <span class="mr-2">Showing 69 poutines</span>
+                        <div class="custom-control custom-switch d-inline-block">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                            <label class="custom-control-label" for="customSwitch1">Map view</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- results -->
+        <section class="results">
+            <div class="d-flex justify-content-center align-items-center p-5">
+                <div class="text-center">
+                    <img src="../img/artwork/mask-man.png" alt="" style="max-width:169px" class="mb-4">
+                    <h1 class="h3">Sorry, we couldn't find any results.</h1>
+                    <!-- Désolé, aucun résultat disponible. -->
+                    <p>Try changing or resetting your filters.</p>
+                    <!-- Modifiez ou réinitialisez vos filtres. -->
+                    <a class="btn btn-outline-dark mt-2" href="./results.html"><i class="far fa-redo mr-2"></i>Reset filters</a>     
+                    <!-- Réinitialiser les filtres -->           
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Modal Product -->
+        <div class="preview-modal modal fade" id="itemModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <div class="modal-header modal-resto sr-only">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    </div>
+                    <img class="modal-photo" src="./img/empty1.svg" alt="">
+                    <div class="modal-body">
+                        <h2 class="modal-resto">Resto name</h2>
+                        <div class="d-flex flex-column flex-md-row justify-content-between">
+                            <h3 class="modal-item">Poutine name</h3>
+                            <h3 class="modal-price">$$$</h3>
+                        </div>
+                        <p class="modal-description">It was all a dream, I used to read Word Up! magazine
+                            Salt-n-Pepa and Heavy D up in the limousine
+                            Hangin' pictures on my wall
+                            Every Saturday Rap Attack, Mr. Magic, Marley Marl
+                            I let my tape rock 'til my tape popped
+                            Smokin' weed in Bambu, sippin' on Private Stock.</p>
+                        <div class="saputo-badge">
+                            <a href="https://www.saputofoodservice.ca/" target="_blank"><img src="../img/logo/logo-saputo.svg" alt="" class="logo-saputo mr-3"></a><i>Made with Saputo Cheese</i>
+                        </div>
+                        <!--  <p class="mb-0 mt-4"><strong>Links</strong></p>
+                      <a href="#!" target="_blank">123 Burger Blvd, Montreal QC, H4N 7A1</a>-->
+                        <div class="d-flex justify-content-start my-3">
+                            <a href="https://loogart.com" class="mr-4" target="_blank"><i aria-hidden="true" class="fab fa-facebook fa-2x" title="Facebook Page"></i></a>
+                            <a href="https://loogart.com" class="mr-4" target="_blank"><i aria-hidden="true" class="fab fa-instagram fa-2x" title="Instagram Page"></i></a>
+                            <a href="https://loogart.com" class="mr-4" target="_blank"><i aria-hidden="true" class="fab fa-twitter fa-2x" title="Twitter Page"></i></a>
+                            <a href="https://loogart.com" class="mr-4" target="_blank"><i aria-hidden="true" class="far fa-link fa-2x" title="Website"></i></a>
+                            <a href="https://loogart.com" class="mr-4" target="_blank"><i aria-hidden="true" class="fas fa-map-marker-alt fa-2x" title="Restaurant address"></i></a>
+                        </div>
+                    </div>
+                    <div class="modal-footer justify-content-between">
+
+                        <!-- View Poutine -->
+                        <a href="./restaurant.html" class="btn btn-outline-primary" role="button" aria-pressed="true"><i class="far fa-external-link mr-2"></i> View</a>
+
+                        <!-- Order generic now button -->
+                        <a href="https://www.chefcookit.com/en/pricing" target="_blank" class="btn btn-warning"><i class="far fa-external-link mr-2"></i>Order now</a>
+
+                        <!-- SKIP buton -->
+                        <a href="https://www.skipthedishes.com" target="_blank" class="btn btn-skip">Delivered by<img src="../img/logo/logo-skip-en-white.svg" class="logo-in-button" alt="SKIP the Dishes"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Location -->
+        <div class="modal" id="modalLocation" tabindex="-1" aria-labelledby="modalLocation" aria-hidden="true">
+            <div class="modal-dialog  modal-dialog-scrollable modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="container">
+                            <h5 class="modal-title" id="exampleModalLabel">Select your location</h5>
+                        </div>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12 mb-4">
+                                    <a class="btn btn-primary" href="./results.html"><i class="fas fa-location-arrow mr-2"></i>Around me</a>
+                                    <hr>
+
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <details>
+                                        <summary><span class="font-weight-bold">British Columbia</span></summary>
+                                        <ul class="list-unstyled">
+                                            <li><a href="./results.html">Kelowna</a></li>
+                                            <li><a href="./results.html">Surrey</a></li>
+                                            <li><a href="./results.html">Vancouver</a></li>
+                                            <li><a href="./results.html">Victoria</a></li>
+                                        </ul>
+                                    </details>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <details>
+                                        <summary><span class="font-weight-bold">Alberta</span></summary>
+                                        <ul class="list-unstyled">
+                                            <li><a href="./results.html">Edmonton</a></li>
+                                            <li><a href="./results.html">Calgary</a></li>
+                                            <li><a href="./results.html">Banff</a></li>
+                                        </ul>
+                                    </details>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <details>
+                                        <summary><span class="font-weight-bold">Saskatchewan</span></summary>
+                                        <ul class="list-unstyled">
+                                            <li><a href="./results.html">Regina</a></li>
+                                            <li><a href="./results.html">Saskatoon</a></li>
+                                            <li><a href="./results.html">Prince Albert</a></li>
+                                        </ul>
+                                    </details>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <details>
+                                        <summary><span class="font-weight-bold">Manitoba</span></summary>
+                                        <ul class="list-unstyled">
+                                            <li><a href="./results.html">Winnipeg</a></li>
+                                            <li><a href="./results.html">Churchill</a></li>
+                                        </ul>
+                                    </details>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <details>
+                                        <summary><span class="font-weight-bold">Ontario</span></summary>
+                                        <ul class="list-unstyled">
+                                            <li><a href="./results.html">Toronto</a></li>
+                                            <li><a href="./results.html">Ottawa</a></li>
+                                        </ul>
+                                    </details>
+                                </div>
+
+
+                                <div class="col-md-6 col-lg-4">
+                                    <details>
+                                        <summary><span class="font-weight-bold">Quebec</span></summary>
+                                        <ul class="list-unstyled">
+                                            <li><a href="./results.html">Montreal</a></li>
+                                            <li><a href="./results.html">Quebec</a></li>
+                                            <li><a href="./results.html">Gatineau</a></li>
+                                        </ul>
+                                    </details>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <details>
+                                        <summary><span class="font-weight-bold">New Brunswick</span></summary>
+                                        <ul class="list-unstyled">
+                                            <li><a href="./results.html">Fredericton</a></li>
+                                            <li><a href="./results.html">Moncton</a></li>
+                                            <li><a href="./results.html">St-John</a></li>
+                                        </ul>
+                                    </details>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <details>
+                                        <summary><span class="font-weight-bold">Nova Scotia</span></summary>
+                                        <ul class="list-unstyled">
+                                            <li><a href="./results.html">Halifax</a></li>
+                                            <li><a href="./results.html">Sydney</a></li>
+                                        </ul>
+                                    </details>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <details>
+                                        <summary><span class="font-weight-bold">Prince Edward Island</span></summary>
+                                        <ul class="list-unstyled">
+                                            <li><a href="./results.html">Charlottetown</a></li>
+                                        </ul>
+                                    </details>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <details>
+                                        <summary><span class="font-weight-bold">Newfoundland</span></summary>
+                                        <ul class="list-unstyled">
+                                            <li><a href="./results.html">St. John's</a></li>
+                                        </ul>
+                                    </details>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <details>
+                                        <summary><span class="font-weight-bold">International</span></summary>
+                                        <ul class="list-unstyled">
+                                            <li><a href="./results.html">Abbotsford</a></li>
+                                            <li><a href="./results.html">Burnaby</a></li>
+                                            <li><a href="./results.html">Kelowna</a></li>
+                                            <li><a href="./results.html">Richmond</a></li>
+                                            <li><a href="./results.html">Surrey</a></li>
+                                            <li><a href="./results.html">Vancouver</a></li>
+                                            <li><a href="./results.html">Victoria</a></li>
+                                        </ul>
+                                    </details>
+                                </div>
+                            </div>
+                            <div class="d-md-flex justify-content-between align-items-end">
+                                <img class="d-none d-md-block" src="../img/artwork/pug-hat.png" alt="" style="max-width:120px">
+                                <img class="" src="../img/artwork/delivery-bicycle.png" alt="" style="max-width:210px">
+                                <img class="d-none d-lg-block" src="../img/artwork/mask-man.png" alt="" style="max-width:160px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Location -->
+        <div class="modal" id="modalFilter" tabindex="-1" aria-labelledby="modalLocation" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="container">
+                            <h5 class="modal-title" id="exampleModalLabel">Sort and filter</h5>
+                        </div>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <h6>Filters</h6>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="custom-control custom-checkbox mb-2">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                        <label class="custom-control-label" for="customCheck1">Sea Food</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox mb-2">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                        <label class="custom-control-label" for="customCheck2">Vegetarian</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox mb-2">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                        <label class="custom-control-label" for="customCheck3">Vegan</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox mb-2">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck4">
+                                        <label class="custom-control-label" for="customCheck4">Glutten-free</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="custom-control custom-checkbox mb-2">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck5">
+                                        <label class="custom-control-label" for="customCheck5"><img src="../img/logo/logo-saputo.svg" alt="Saputo" style="width:50px">&nbsp;Cheese</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox mb-2">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck6">
+                                        <label class="custom-control-label" for="customCheck6">Delivered by&nbsp;<img src="../img/logo/logo-skip-bi.svg" alt="SKIP The Dishes" style="width:60px"></label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox mb-2">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck6">
+                                        <label class="custom-control-label" for="customCheck6">Beef</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox mb-2">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck7">
+                                        <label class="custom-control-label" for="customCheck7">Chicken</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <h6>Sorting</h6>
+                            <select class="custom-select custom-select-lg">
+                                <option selected>Random</option>
+                                <option value="1">$&nbsp;Ascending</option>
+                                <option value="2">$&nbsp;Descending</option>
+                                <option value="3">A-Z</option>
+                                <option value="4">Z-A</option>
+                            </select>
+                            <hr>
+                            <a href="./results.html"><i class="far fa-trash-alt mr-2"></i>Reset filters</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-6 mr-auto mb-4">
+                    <img class="d-block logo-footer" src="../img/logo/logo-en.svg" alt="">
+                    <p class="small text-muted">Cities:&nbsp;Montréal&nbsp; Winnipeg&nbsp; Vancouver&nbsp; Edmonton&nbsp; Calgary&nbsp; Regina&nbsp; Saskatoon&nbsp; Toronto&nbsp; Ottawa/Gatineau&nbsp; Laval&nbsp; Montérégie&nbsp; Centre du Québec&nbsp; Lanaudière&nbsp; Mauricie&nbsp; Chaudière Appalaches&nbsp; Bas St-Laurent&nbsp; Estrie&nbsp; Saguenay&nbsp; Côte-Nord&nbsp; Laurentides&nbsp; Abitibi&nbsp; International&nbsp; Québec</p>
+                </div>
+                <div class="col-md-4 col-lg-2">
+                    <h6>Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="mailto:team@peoplemovertech.com">Email us</a></li>
+                        <li><a href="mailto:naeem@peoplemovertech.com">Sponsorship</a></li>
+                        <li><a href="./terms-and-privacy.html">Terms &amp; privacy</a></li>
+                        <li><a href="https://leburgerweek.com" target="_blank">Le Burger Week</a></li>
+                        <li><a href="#!">Français</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-lg-2">
+                    <h6>Restaurants</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="./login.html">Log in</a></li>
+                        <li><a href="./sign-up.html">Sign up</a></li>
+                        <li><a href="./faq.html">FAQ</a></li>
+                        <li><a href="./winners-2020.html">Winners</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-lg-2">
+                    <h6>Social media</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="https://facebook.com/lapoutineweek" target="_blank"><i class="fab fa-facebook mr-2"></i>Facebook</a></li>
+                        <li><a href="https://instagram.com/lapoutineweek" target="_blank"><i class="fab fa-instagram mr-2"></i>Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="col-12">
+                    <span class="text-subfooter text-muted">© 2020-2021 La Poutine Week&nbsp;|&nbsp; <a href="https://peoplemover.tech/" target="_blank">People Mover Technologies Inc.</a>&nbsp;|&nbsp; Designed with<i class="far fa-heart mx-1"></i>and<i class="far fa-coffee mx-1"></i> by <a href="https://loogart.com" target="_blank">Loogart</a></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/liquidmetal.js"></script>
+    <script src="../js/jquery.flexselect.js"></script>
+    <script src="../js/lightgallery.js"></script>
+    <script src="../js/lg-zoom.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxEirwPY5lQXNNXuY9lzjQIwGJlWby7Nw&callback=initMap" async defer></script>
+    <script src="../js/scripts.js"></script>
+</body></html>
