@@ -1,0 +1,109 @@
+//Load navbar and footer
+$(function(){
+  $("#navPout").load("./html/navbar.html");
+  $("#footPout").load("./html/footer.html");
+  $("#allModals").load("./html/modals.html");
+});
+
+window.onload = function() {
+    document.getElementById('navburger').className = 'sticky-top';
+};
+
+// Animate onto screen
+AOS.init();
+
+// validation
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+    'use strict';
+    window.addEventListener('load', function () {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function (form) {
+            form.addEventListener('submit', function (event) {
+                if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+            }, false);
+        });
+    }, false);
+})();
+
+// flex select
+$("select.flexselect").flexselect();
+
+// modal data mirror for prottotype
+$(".grid-item").click(function () {
+    var restoName = $(this).find(".resto-name").html();
+    var itemName = $(this).find(".item-name").html();
+    var itemPrice = $(this).find(".price").html();
+    var itemImage = $(this).find("img.img-item").attr("src");
+    $(".modal-resto").html(restoName);
+    $(".modal-burger").html(itemName);
+    $(".modal-price").html(itemPrice);
+    $('.modal-photo').attr('src', itemImage);
+});
+
+// lightbox plugin
+lightGallery(document.getElementById('lightgallery'));
+
+// Vote 2 step
+$(function () {
+    $(".btn-rate").click(function () {
+        $('#modalVote1').modal('hide');
+    });
+});
+
+// toggle vote button look
+$('#voteNow').click(function () {
+    if ($(this).hasClass("btn-outline-danger")) {
+        $('#modalUnvoted').modal('show');
+        $(this).removeClass('btn-outline-danger').addClass('btn-warning').text("⭐️ Rate burger");
+    } else {
+        $('#modalVote1').modal('show');
+        $(this).removeClass('btn-warning').addClass('btn-outline-danger').text("❌ Remove rating");
+    }
+});
+
+// toggle fave button
+$('.btn-fave').click(function () {
+    if ($(this).hasClass("text-danger")) {
+        $(this).removeClass('text-danger').addClass('text-light');
+        ($(this).children()).removeClass('fas').addClass('fal');
+        $('#elementRemoved').toast('show');
+        
+    } else {
+        $(this).removeClass('text-light').addClass('text-danger');
+        ($(this).children()).removeClass('fal').addClass('fas');
+        $('#elementSaved').toast('show');
+    }
+});
+
+// toggle fave button on account page
+$('.btn-fave-account').click(function () {
+    $(this).removeClass('text-danger').addClass('text-light');
+    ($(this).children()).removeClass('fas').addClass('fal');
+    $('#elementRemoved').toast('show');
+    $(this).parent().hide();
+    $(this).hide();
+});
+
+// toggle fave button on resto page
+$('.btn-fave-page').click(function () {
+    if ($(this).hasClass("btn-outline-danger")) {
+        $(this).removeClass('btn-outline-danger').addClass('btn-outline-dark').text("❤️ Save for later");
+        $('#elementRemoved').toast('show');
+        
+    } else {
+        $(this).removeClass('btn-outline-dark').addClass('btn-outline-danger').text("❌  Remove from Saved");
+        $('#elementSaved').toast('show');
+    }
+});
+
+// tooltip above save button on grid
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
