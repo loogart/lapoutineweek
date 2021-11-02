@@ -1,96 +1,64 @@
 // Import Google fonts
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,800;1,400;1,500;1,600;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600;1,700&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap');
 
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
 @import "../bootstrap/scss/functions";
 
 // 2. Include any default variable overrides here
+$blue:#1D9ADD;
+$yellow: #FF9400;
+$red:#E55635;
+$green: #289A56;
 
-// Define new colors
-$beige:#fef2e2;
-$beige-light:#fdf7ef;
-$beige-dark:#655e54;
-$beige-line:#F2E9DC;
-$beige-input:#D3C8B8;
+$beige: #FFE0AF;
+$brown:#A48D69;
 
-// Re-define BS colors
-$blue:#009ade;
-$red: #d0333a;
+$primary: $blue;
+$light:#D9E9F6;
+$info:white;
+$dark:#183643;
 
-$primary: #009ade;
-$secondary: $beige-input;
-$danger: #d0333a;
-$light: $beige-light;
+$body-bg: $light;
+$font-family-base:   'Nunito', sans-serif;
+$headings-font-family:'Playfair Display', serif;    
+$line-height-base: 1.25;
+$headings-font-weight: 900;
+$link-color: $dark;
+$text-muted:  lighten($dark,30%);
+$dropdown-bg:  $light;
+$dropdown-border-color: darken($light,5%);
+$dropdown-box-shadow:
+6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+100px 100px 80px rgba(0, 0, 0, 0.07)
+;
+$dropdown-link-hover-bg:   darken($light,10%);
 
-// customize theme
-$font-size-base: 1rem;
-$body-bg: $beige-light;
-$body-color: black;
-$font-family-sans-serif: 'Poppins',
-sans-serif;
-$headings-font-family:'Poppins',
-sans-serif;
-$input-font-family: 'Poppins',
-sans-serif;
-$font-family-base: $input-font-family;
 
-// customize navbar
-$navbar-brand-font-size:1rem;
-$navbar-nav-link-padding-x:1rem;
-$navbar-light-toggler-border-color: transparent;
-$navbar-light-color: rgba(black, .8);
+$navbar-light-color:   $dark;
 $navbar-light-hover-color: $blue;
 $navbar-light-active-color: $blue;
+$navbar-light-brand-color:  $dark;
+$navbar-light-brand-hover-color: $dark;
+$navbar-brand-font-size: 1rem;;
+$navbar-nav-link-padding-x: 1rem;
+$navbar-light-toggler-border-color:transparent;
 
-// customize dropdowns
-$dropdown-bg: $beige-light;
-$dropdown-border-color:darken($beige-light, 5%);
-$dropdown-link-color: black;
-$dropdown-link-hover-color: black;
-$dropdown-link-hover-bg: darken($beige, 5%);
-$dropdown-link-active-color: white;
-$dropdown-link-active-bg: $blue;
-$dropdown-link-disabled-color: darken($beige-light, 15%);
-$dropdown-item-padding-y: 1rem/1.25;
-$dropdown-item-padding-x: 1rem*1.25;
-$dropdown-padding-y:0;
-
-// customize links
-$link-color: black;
-$link-hover-color: lighten($link-color, 15%);
 $border-width:2px;
+$border-radius-lg: 24px;
 
-// customize forms
-$input-border-color: $beige-input;
-$input-bg: $beige-light;
-$input-border-width:1px;
-$input-border-radius: 8px;
-$input-color: black;
-$input-focus-border-color:$blue;
-$input-placeholder-color:$beige-input;
-
-
-
-// customize custom form inputs
-$custom-control-indicator-checked-bg: $blue;
-$custom-control-indicator-active-bg:$blue;
-$custom-control-indicator-checked-border-color:$blue;
-$input-focus-box-shadow:0 0 0 0.2rem rgba(0, 154, 222, 0.14);
-$custom-control-indicator-bg: $beige-light;
-$custom-control-indicator-border-color:$beige-input;
 
 // 3. Include remainder of required Bootstrap stylesheets
 @import "../bootstrap/scss/variables";
 @import "../bootstrap/scss/mixins";
 @import "../bootstrap/scss/root";
 
-// 4. Include any optional Bootstrap CSS as needed
 @import "../bootstrap/scss/bootstrap";
 
-// 6. Add additional custom code here
 
-h1, h2, h3, h4, h5, h6{
-    font-weight: 600;
+h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold!important;
 }
 
 .navbar{
@@ -110,123 +78,136 @@ h1, h2, h3, h4, h5, h6{
     box-shadow: 0 2.1px 5.3px rgba(101, 94, 84, 0.028), 0 7.1px 17.9px rgba(101, 94, 84, 0.042), 0 32px 80px rgba(101, 94, 84, 0.07);
 }
 
+.navbar-brand,.nav-link{
+    font-weight:700;
+}
 
-footer {
-    padding-top: 100px;
-    padding-bottom: 120px;
-    border-top: 1px solid $beige-line;
-    background-image: url('../img/artwork/pug.png');
-    background-size: 220px;
-    background-position: 94% 70%;
-    background-repeat: no-repeat;
+.stat{
+    font-weight: 900;
+    font-size: 4rem;
+}
 
+
+.bg-lighter{
+    background-color: lighten($light,5%);
+}
+
+
+.h-100{
+    height:100%;
+}
+
+.img-object-contain{
+    object-fit: contain;
+}
+
+
+// Hero section design and animation
+.hero{
+    background-image: url('../img/art/hero-street-city.png');
+    background-size: cover;
+    background-position: 50% 0;
+    background-repeat: repeat-x;
+    position: relative;
+
+    @include media-breakpoint-up(lg) {
+        background-size: contain;
+      }
+}
+
+.img-hero-1{
+    width:300px;
+    position: relative;
+    animation:image1 2s infinite ease-in-out; 
+    max-width:320px;   
+    @include media-breakpoint-down(lg) {
+        width:75%
+      }
+}
+@keyframes image1 {
+    0%   {top:0px;right:0}
+    50%  {top:20px; right:20px;}
+    100% {top:0px;right:0}
+}
+
+
+.img-hero-2{
+    position: absolute;
+    bottom:30%;
+    animation:image2 4s infinite ease-in-out; 
+    max-width:240px;   
     @include media-breakpoint-down(sm) {
-        padding-top: 60px;
-        padding-bottom: 60px;
-        background-size: 200px;
-    }
-
-    h6 {
-        margin-bottom: 20px;
-    }
-
-    .list-unstyled li {
-        margin-bottom: 12px;
-    }
-
-}
-
-.logo-footer {
-    width: 100px;
-    margin-bottom: $spacer*1.25;
-}
-
-.text-subfooter {
-    display: block;
-    margin-top: $spacer*3;
-    font-size: 10px;
-
-    a {
-        color: $beige-dark;
+        display: none;
     }
 }
+@keyframes image2 {
+    0%   {transform: rotate(0deg);left:50px;}
+    50%  {transform: rotate(5deg);left:100px;}
+    100% {transform: rotate(0deg);left:50px;}
+}
 
-// Resto dashboard
-.dashboard {
-    color: black !important;
-    font-family: Arial, Helvetica, sans-serif;
-
-    .card {
-        border-color: black;
-        ;
+.img-hero-3{
+    position: absolute;
+    bottom:48%;
+    animation:image3 8s linear infinite;
+    max-width:240px;   
+    @include media-breakpoint-down(sm) {
+        display: none;
     }
+}
+@keyframes image3 {
+    0% {
+        transform: translate(-320px, 0);
+      }
+    
+      /* Finish changes by here */
+      60% {
+        transform: translate(150vw, 0);
+      }
+    
+      /* Between 20% and 100%, nothing changes */
+      100% {
+        transform: translate(150vw, 0);
+      }
+}
 
-    h1 {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: $font-size-base*1.5;
-        color: black;
+.img-hero-4{
+    position: absolute;
+    bottom:42%;
+    animation:image4 10s linear infinite;
+    max-width:260px;   
+    @include media-breakpoint-down(sm) {
+        display: none;
     }
+}
+@keyframes image4 {
+    0% {
+        transform: translate(150vw, 0);
+      }
+    
+      /* Finish changes by here */
+      60% {
+        transform: translate(-420px, 0);
+      }
+    
+      /* Between 20% and 100%, nothing changes */
+      100% {
+        transform: translate(-420px, 0);
+      }
+}
 
-    h2 {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: $font-size-base*1.25;
-        ;
-        color: black;
+.img-hero-5{
+    position: absolute;
+    bottom:20%;
+    right:100px;
+    animation:image5 1s ease-in-out infinite;
+    max-width:160px;   
+    @include media-breakpoint-down(sm) {
+        display: none;
     }
-
-    .form-control {
-        border: 1px solid black;
-        padding: 10px;
-
-        &::placeholder {
-            color: rgba(1, 1, 1, 0.32);
-        }
-    }
-
-    .infoblock {
-        border-top: 1px solid black;
-        padding-top: $spacer;
-        padding-bottom: $spacer;
-    }
-
-    .custom-file-label {
-        border: 1px solid black;
-        color: black;
-
-        &::after {
-            background-color: white;
-        }
-    }
-
-    .custom-file-input:lang(en)~.custom-file-label::after {
-        content: "Browse";
-    }
-
-    .blue-bubble {
-        display: inline-block;
-        position: relative;
-        ;
-        max-width: 300px;
-        height: auto;
-        padding: $spacer;
-        background-color: #11A2F3;
-        color: white;
-        line-height: 1.2;
-        border-radius: $spacer;
-
-        &:before {
-            content: "";
-            position: absolute;
-            top: 100%;
-            left: 20px;
-            width: 0;
-            border-top: 10px solid #11A2F3;
-            border-left: 10px solid transparent;
-            border-right: 10px solid transparent;
-        }
-        a{
-            color:white;
-        }
-    }
-
+}
+@keyframes image5 {
+    0%   {transform: rotate(0deg);}
+    50%  {transform: rotate(5deg);}
+    100% {transform: rotate(0deg);};
 }
