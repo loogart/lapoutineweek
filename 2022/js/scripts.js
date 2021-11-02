@@ -1,8 +1,8 @@
 //Load navbar and footer
 $(function(){
-  $("#navPout").load("./html/navbar.html");
-  $("#footPout").load("./html/footer.html");
-  $("#allModals").load("./html/modals.html");
+  $("#navPout").load("../html/navbar.html");
+  $("#footPout").load("../html/footer.html");
+  $("#allModals").load("../html/modals.html");
 });
 
 window.onload = function() {
