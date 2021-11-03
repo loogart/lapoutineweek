@@ -14,14 +14,15 @@ $beige: #FFE0AF;
 $brown:#A48D69;
 
 $primary: $blue;
-$light:#D9E9F6;
+$light: #D9E9F6;
 $info:white;
 $dark:#183643;
 
 $body-bg: $light;
+$body-color:$dark;
 $font-family-base:   'Nunito', sans-serif;
 $headings-font-family:'Playfair Display', serif;    
-$line-height-base: 1.25;
+$line-height-base: 1.4;
 $headings-font-weight: 900;
 $link-color: $dark;
 $text-muted:  lighten($dark,30%);
@@ -47,6 +48,19 @@ $navbar-light-toggler-border-color:transparent;
 $border-width:2px;
 $border-radius-lg: 24px;
 
+$input-bg:  $light;
+$input-color:  $dark;
+$input-placeholder-color: darken($light,10%);
+$input-focus-bg:   lighten($light,2%);  
+$input-focus-border-color: $blue;
+$input-border-color:  darken($light,10%);
+$input-border-radius-lg: 8px;
+$custom-control-indicator-border-color:$dark;
+$component-active-bg:$blue;
+
+$modal-fade-transform:  translate(0, 200px);
+$modal-transition:   all .25s ease-out;
+
 
 // 3. Include remainder of required Bootstrap stylesheets
 @import "../bootstrap/scss/variables";
@@ -59,6 +73,11 @@ $border-radius-lg: 24px;
 h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
     font-family: 'Nunito', sans-serif;
     font-weight: bold!important;
+    color: $dark;
+}
+
+select {
+    -webkit-appearance: none;
 }
 
 .navbar{
@@ -99,6 +118,20 @@ h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
 
 .img-object-contain{
     object-fit: contain;
+}
+
+label{
+    font-weight: bold;
+    color:lighten($dark,5%);
+    margin-bottom:.25rem;
+}
+
+.custom-border{
+    border:1px dotted darken($light,20%);
+}
+
+.faq-block{
+    border-bottom:2px dotted $dark;
 }
 
 
@@ -210,4 +243,57 @@ h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
     0%   {transform: rotate(0deg);}
     50%  {transform: rotate(5deg);}
     100% {transform: rotate(0deg);};
+}
+
+// dashboard
+.dashboard {
+    color: $dark !important;
+
+    .card {
+        border-color: $dark;
+        border-width: 1px;
+        background-color: $light;
+    }
+
+    h1 {
+        font-size: $font-size-base*2;
+        color: $dark;
+    }
+
+    h2 {
+        font-size: $font-size-base*1.25;
+        ;
+        color: $dark;
+    }
+
+    .form-control {
+        border: 1px solid black;
+        padding: 10px;
+
+        &::placeholder {
+            color: lighten($dark, 50%);
+        }
+    }
+
+    .infoblock {
+        border-top: 2px dotted $dark;
+        padding-top: $spacer*2;
+        padding-bottom: $spacer*2;
+    }
+
+    .custom-file-label {
+        border: 1px solid $dark;
+        color: $dark;
+
+        &::after {
+            background-color: $light;
+        }
+    }
+
+    .custom-file-input:lang(en)~.custom-file-label::after {
+        content: "Browse";
+    }
+    .input-group-text{
+        border-width: 1px;
+    }
 }
