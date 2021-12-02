@@ -60,7 +60,7 @@
                     <p>Hey Ginette Poutinomaker, welcome to your restaurant dashboard!</p>
                     <p>You can skip this step for now and come back later to add in your information and poutine recipe.
                         When you edit information, it is updated automatically and instantly (no save button). </p>
-                        <a href="./login.html" class="btn btn-outline-dark btn-sm w-25 my-2">Logout</a>
+                    <a href="./login.html" class="btn btn-outline-dark btn-sm w-25 my-2">Logout</a>
                 </div>
             </div>
 
@@ -133,7 +133,8 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-12">
-                                                <label for="ig-url"><i class="fab fa-instagram mr-2"></i>Instagram</label>
+                                                <label for="ig-url"><i
+                                                        class="fab fa-instagram mr-2"></i>Instagram</label>
                                                 <div class="input-group mb-3">
                                                     <div class="input-group-prepend">
                                                         <span class="input-group-text border-dark bg-light"
@@ -167,7 +168,8 @@
                                             </div>
                                             <div class="col-12">
                                                 <div class="form-group">
-                                                    <label for="inputOther"><i class="fas fa-link mr-2"></i>Doordash</label>
+                                                    <label for="inputOther"><i
+                                                            class="fas fa-link mr-2"></i>Doordash</label>
                                                     <input type="text" class="form-control" id="inputOther"
                                                         placeholder="https://doordash.com/...">
                                                 </div>
@@ -211,7 +213,8 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-12">
-                                                <label for="ig-url"><i class="fab fa-instagram mr-2"></i>Instagram</label>
+                                                <label for="ig-url"><i
+                                                        class="fab fa-instagram mr-2"></i>Instagram</label>
                                                 <div class="input-group mb-3">
                                                     <div class="input-group-prepend">
                                                         <span class="input-group-text border-dark bg-light"
@@ -245,7 +248,8 @@
                                             </div>
                                             <div class="col-12">
                                                 <div class="form-group">
-                                                    <label for="inputOther"><i class="fas fa-link mr-2"></i>Doordash</label>
+                                                    <label for="inputOther"><i
+                                                            class="fas fa-link mr-2"></i>Doordash</label>
                                                     <input type="text" class="form-control" id="inputOther"
                                                         placeholder="https://doordash.com/...">
                                                 </div>
@@ -319,7 +323,8 @@
                                         <div class="col-6 col-md-4">
                                             <div class="custom-control custom-checkbox">
                                                 <input type="checkbox" class="custom-control-input" id="customCheck2">
-                                                <label class="custom-control-label font-weight-normal" for="customCheck2">Vegan</label>
+                                                <label class="custom-control-label font-weight-normal"
+                                                    for="customCheck2">Vegan</label>
                                             </div>
                                         </div>
                                         <div class="col-6 col-md-4">
@@ -332,19 +337,22 @@
                                         <div class="col-6 col-md-4">
                                             <div class="custom-control custom-checkbox">
                                                 <input type="checkbox" class="custom-control-input" id="customCheck4">
-                                                <label class="custom-control-label font-weight-normal" for="customCheck4">Chicken</label>
+                                                <label class="custom-control-label font-weight-normal"
+                                                    for="customCheck4">Chicken</label>
                                             </div>
                                         </div>
                                         <div class="col-6 col-md-4">
                                             <div class="custom-control custom-checkbox">
                                                 <input type="checkbox" class="custom-control-input" id="customCheck5">
-                                                <label class="custom-control-label font-weight-normal" for="customCheck5">Seafood</label>
+                                                <label class="custom-control-label font-weight-normal"
+                                                    for="customCheck5">Seafood</label>
                                             </div>
                                         </div>
                                         <div class="col-6 col-md-4">
                                             <div class="custom-control custom-checkbox">
                                                 <input type="checkbox" class="custom-control-input" id="customCheck6">
-                                                <label class="custom-control-label font-weight-normal" for="customCheck6">Saputo
+                                                <label class="custom-control-label font-weight-normal"
+                                                    for="customCheck6">Saputo
                                                     Cheese</label>
                                             </div>
                                         </div>
@@ -354,6 +362,44 @@
                                         restrictions. Please ensure this is accurate to avoid confusing potential
                                         clients.
                                     </small>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- block Doordash-->
+            <div class="infoblock">
+                <div class="row justify-content-between">
+                    <div class="col-md-4 col-lg-4">
+                        <h2><img src="../img/logo/logo-partner-doordash-logomark.svg" style="height:20px"
+                                class="mr-2">&nbsp;Doordash customers</h2>
+                    </div>
+                    <div class="col-md-8 col-lg-7">
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="mb-1 font-weight-bold">Does the item have modifiers?</p>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="radio1" name="customRadioInline"
+                                        class="custom-control-input">
+                                    <label class="custom-control-label" for="radio1">Yes</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="radio2" name="customRadioInline"
+                                        class="custom-control-input">
+                                    <label class="custom-control-label" for="radio2">No</label>
+                                </div>
+                                <div class="form-group mt-3 d-none" id="modifsPlz">
+                                    <label for="modifEN">If yes, please list the required modifiers on your menu here:
+                                    </label>
+                                    <textarea class="form-control" id="modifEN" rows="3"
+                                        placeholder="E.g. Cheese choice, side choice, topping addition, etc"></textarea>
+                                </div>
+                                <div class="form-group mt-3">
+                                    <label for="posSvc">What POS service do you use with DoorDash?</label>
+                                    <input type="text" class="form-control" id="posSvc" placeholder="">
                                 </div>
 
                             </div>
@@ -412,7 +458,15 @@
     <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="../js/scripts.js"></script>
-
+    <script>
+        $("input[type=radio]").change(function () {
+            if ($("#radio1").is(':checked')) {
+                $("#modifsPlz").addClass("d-block");
+            } else {
+                $("#modifsPlz").removeClass("d-block");
+            }
+        });
+    </script>
 </body>
 
 </html>
