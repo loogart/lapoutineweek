@@ -20,46 +20,49 @@ $dark:#183643;
 
 $body-bg: $light;
 $body-color:$dark;
-$font-family-base:   'Nunito', sans-serif;
-$headings-font-family:'Playfair Display', serif;    
+$font-family-base: 'Nunito',
+sans-serif;
+$headings-font-family:'Playfair Display',
+serif;
 $line-height-base: 1.4;
 $headings-font-weight: 900;
 $link-color: $dark;
-$text-muted:  lighten($dark,30%);
-$dropdown-bg:  $light;
-$dropdown-border-color: darken($light,5%);
-$dropdown-box-shadow:
-6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+$text-muted: lighten($dark, 30%);
+$lead-font-size:  1.1rem;
+$lead-font-weight: 600;
+$dropdown-bg: $light;
+$dropdown-border-color: darken($light, 5%);
+$dropdown-box-shadow: 6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
 22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
-100px 100px 80px rgba(0, 0, 0, 0.07)
-;
-$dropdown-link-hover-bg:   darken($light,10%);
+100px 100px 80px rgba(0, 0, 0, 0.07);
+$dropdown-link-hover-bg: darken($light, 10%);
 
 
-$navbar-light-color:   $dark;
+$navbar-light-color: $dark;
 $navbar-light-hover-color: $blue;
 $navbar-light-active-color: $blue;
-$navbar-light-brand-color:  $dark;
+$navbar-light-brand-color: $dark;
 $navbar-light-brand-hover-color: $dark;
-$navbar-brand-font-size: 1rem;;
+$navbar-brand-font-size: 1rem;
+;
 $navbar-nav-link-padding-x: 1rem;
 $navbar-light-toggler-border-color:transparent;
 
 $border-width:2px;
 $border-radius-lg: 24px;
 
-$input-bg:  $light;
-$input-color:  $dark;
-$input-placeholder-color: darken($light,10%);
-$input-focus-bg:   lighten($light,2%);  
+$input-bg: $light;
+$input-color: $dark;
+$input-placeholder-color: darken($light, 10%);
+$input-focus-bg: lighten($light, 2%);
 $input-focus-border-color: $blue;
-$input-border-color:  darken($light,10%);
+$input-border-color: darken($light, 10%);
 $input-border-radius-lg: 8px;
 $custom-control-indicator-border-color:$dark;
 $component-active-bg:$blue;
 
-$modal-fade-transform:  translate(0, 200px);
-$modal-transition:   all .25s ease-out;
+$modal-fade-transform: translate(0, 200px);
+$modal-transition: all .25s ease-out;
 
 
 // 3. Include remainder of required Bootstrap stylesheets
@@ -70,9 +73,18 @@ $modal-transition:   all .25s ease-out;
 @import "../bootstrap/scss/bootstrap";
 
 
-h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
     font-family: 'Nunito', sans-serif;
-    font-weight: bold!important;
+    font-weight: bold !important;
     color: $dark;
 }
 
@@ -80,9 +92,10 @@ select {
     -webkit-appearance: none;
 }
 
-.navbar{
- font-weight: 500;
+.navbar {
+    font-weight: 500;
 }
+
 .btn-primary {
     color: white;
 
@@ -97,46 +110,56 @@ select {
     box-shadow: 0 2.1px 5.3px rgba(101, 94, 84, 0.028), 0 7.1px 17.9px rgba(101, 94, 84, 0.042), 0 32px 80px rgba(101, 94, 84, 0.07);
 }
 
-.navbar-brand,.nav-link{
-    font-weight:700;
+.navbar-brand,
+.nav-link {
+    font-weight: 700;
 }
 
-.stat{
+.stat {
     font-weight: 900;
     font-size: 4rem;
 }
 
 
-.bg-lighter{
-    background-color: lighten($light,5%);
+.bg-lighter {
+    background-color: lighten($light, 5%);
 }
 
 
-.h-100{
-    height:100%;
+.h-100 {
+    height: 100%;
 }
 
-.img-object-contain{
+.img-object-contain {
     object-fit: contain;
 }
 
-label{
+.img-object-fit-1{
+    object-fit: cover;
+    width:100%;
+    height:120px;
+    @include media-breakpoint-down(md) {
+        width: 200px;
+    }
+}
+
+label {
     font-weight: bold;
-    color:lighten($dark,5%);
-    margin-bottom:.25rem;
+    color: lighten($dark, 5%);
+    margin-bottom: .25rem;
 }
 
-.custom-border{
-    border:1px dotted darken($light,20%);
+.custom-border {
+    border: 1px dotted darken($light, 20%);
 }
 
-.faq-block{
-    border-bottom:2px dotted $dark;
+.faq-block {
+    border-bottom: 2px dotted $dark;
 }
 
 
 // Hero section design and animation
-.hero{
+.hero {
     background-image: url('../img/art/hero-street-city.png');
     background-size: cover;
     background-position: 50% 0;
@@ -145,104 +168,163 @@ label{
 
     @include media-breakpoint-up(lg) {
         background-size: contain;
-      }
+    }
 }
 
-.img-hero-1{
-    width:300px;
+.logo-hero {
+    width: 169px;
+
+    @include media-breakpoint-down(sm) {
+        width: 120px;
+    }
+}
+
+.img-hero-1 {
+    width: 300px;
     position: relative;
-    animation:image1 2s infinite ease-in-out; 
-    max-width:320px;   
+    animation: image1 2s infinite ease-in-out;
+    max-width: 320px;
+
     @include media-breakpoint-down(lg) {
-        width:75%
-      }
+        width: 75%
+    }
 }
+
 @keyframes image1 {
-    0%   {top:0px;right:0}
-    50%  {top:20px; right:20px;}
-    100% {top:0px;right:0}
+    0% {
+        top: 0px;
+        right: 0
+    }
+
+    50% {
+        top: 20px;
+        right: 20px;
+    }
+
+    100% {
+        top: 0px;
+        right: 0
+    }
 }
 
 
-.img-hero-2{
+.img-hero-2 {
     position: absolute;
-    bottom:30%;
-    animation:image2 4s infinite ease-in-out; 
-    max-width:240px;   
+    bottom: 30%;
+    animation: image2 4s infinite ease-in-out;
+    max-width: 240px;
+
     @include media-breakpoint-down(sm) {
         display: none;
     }
 }
+
+.video-embed{
+    border-radius: 0 24px 24px 0;
+    height:100%;
+    @include media-breakpoint-down(md) {
+        border-radius: 0 0 24px 24px;
+    }
+}
+
+
 @keyframes image2 {
-    0%   {transform: rotate(0deg);left:50px;}
-    50%  {transform: rotate(5deg);left:100px;}
-    100% {transform: rotate(0deg);left:50px;}
+    0% {
+        transform: rotate(0deg);
+        left: 50px;
+    }
+
+    50% {
+        transform: rotate(5deg);
+        left: 100px;
+    }
+
+    100% {
+        transform: rotate(0deg);
+        left: 50px;
+    }
 }
 
-.img-hero-3{
+.img-hero-3 {
     position: absolute;
-    bottom:48%;
-    animation:image3 8s linear infinite;
-    max-width:240px;   
+    bottom: 48%;
+    animation: image3 8s linear infinite;
+    max-width: 240px;
+
     @include media-breakpoint-down(sm) {
         display: none;
     }
 }
+
 @keyframes image3 {
     0% {
         transform: translate(-320px, 0);
-      }
-    
-      /* Finish changes by here */
-      60% {
+    }
+
+    /* Finish changes by here */
+    60% {
         transform: translate(150vw, 0);
-      }
-    
-      /* Between 20% and 100%, nothing changes */
-      100% {
+    }
+
+    /* Between 20% and 100%, nothing changes */
+    100% {
         transform: translate(150vw, 0);
-      }
+    }
 }
 
-.img-hero-4{
+.img-hero-4 {
     position: absolute;
-    bottom:42%;
-    animation:image4 10s linear infinite;
-    max-width:260px;   
+    bottom: 42%;
+    animation: image4 10s linear infinite;
+    max-width: 260px;
+
     @include media-breakpoint-down(sm) {
         display: none;
     }
 }
+
 @keyframes image4 {
     0% {
         transform: translate(150vw, 0);
-      }
-    
-      /* Finish changes by here */
-      60% {
+    }
+
+    /* Finish changes by here */
+    60% {
         transform: translate(-420px, 0);
-      }
-    
-      /* Between 20% and 100%, nothing changes */
-      100% {
+    }
+
+    /* Between 20% and 100%, nothing changes */
+    100% {
         transform: translate(-420px, 0);
-      }
+    }
 }
 
-.img-hero-5{
+.img-hero-5 {
     position: absolute;
-    bottom:20%;
-    right:100px;
-    animation:image5 1s ease-in-out infinite;
-    max-width:160px;   
+    bottom: 20%;
+    right: 100px;
+    animation: image5 1s ease-in-out infinite;
+    max-width: 160px;
+
     @include media-breakpoint-down(sm) {
         display: none;
     }
 }
+
 @keyframes image5 {
-    0%   {transform: rotate(0deg);}
-    50%  {transform: rotate(5deg);}
-    100% {transform: rotate(0deg);};
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+
+    ;
 }
 
 // dashboard
@@ -293,7 +375,8 @@ label{
     .custom-file-input:lang(en)~.custom-file-label::after {
         content: "Browse";
     }
-    .input-group-text{
+
+    .input-group-text {
         border-width: 1px;
     }
 }

@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="../img/favicon.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#009ade">
+    <meta name="apple-mobile-web-app-title" content="La Poutine Week">
+    <link rel="apple-touch-icon-precomposed" href="../img/favicon.png">
+    <meta name="theme-color" content="#009ade" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#009ade" media="(prefers-color-scheme: dark)">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/custom.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2d83ef6eb3.js" crossorigin="anonymous"></script>
+
+    <!-- Primary Meta Tags -->
+    <title>Dashboard | La Poutine Week 2022</title>
+    <meta name="title" content="Dashboard | La Poutine Week 2022">
+    <meta name="description"
+        content="La Poutine Week 2022 allows participants to discover new venues, while providing the opportunity to taste poutine creations they never would have originally.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://loogart.github.io/lapoutineweek/2022/pre/">
+    <meta property="og:title" content="Dashboard | La Poutine Week 2022">
+    <meta property="og:description"
+        content="La Poutine Week 2022 allows participants to discover new venues, while providing the opportunity to taste poutine creations they never would have originally.">
+    <meta property="og:image" content="https://loogart.github.io/lapoutineweek/2022/img/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://loogart.github.io/lapoutineweek/2022/pre/">
+    <meta property="twitter:title" content="Dashboard | La Poutine Week 2022">
+    <meta property="twitter:description"
+        content="La Poutine Week 2022 allows participants to discover new venues, while providing the opportunity to taste poutine creations they never would have originally.">
+    <meta property="twitter:image" content="https://loogart.github.io/lapoutineweek/2022/img/og-image.jpg">
+
+</head>
+
+<body>
+    <div id="navPoutLive2"></div>
+
+    <section class="dashboard pb-5">
+        <div class="container">
+
+            <div class="row justify-content-between align-items-center py-5">
+                <div class="col-md-10">
+                    <img src="../img/art/resto.png" class="mb-3" alt="" style="max-width:80px;">
+                    <h1 class="mb-4">Your restaurant information</h1>
+                    <p>Hey Ginette Poutinomaker, welcome to your restaurant dashboard!</p>
+                    <p>You can skip this step for now and come back later to add in your information and poutine recipe.
+                        When you edit information, it is updated automatically and instantly (no save button). </p>
+                    <a href="./login.html" class="btn btn-outline-dark btn-sm w-25 my-2">Logout</a>
+                </div>
+            </div>
+
+            <!-- block 1-->
+            <div class="infoblock">
+                <div class="row justify-content-between">
+                    <div class="col-md-4 col-lg-4">
+                        <h2>😋&nbsp;Your restaurant name</h2>
+                    </div>
+                    <div class="col-md-8 col-lg-7">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label for="inputNameEn">English</label>
+                                    <input type="text" class="form-control" id="inputNameEn"
+                                        placeholder="Restaurant name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputNamFr">Français</label>
+                                    <input type="text" class="form-control" id="inputNameFr"
+                                        placeholder="Nom de votre restaurant">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- block 2 -->
+            <div class="infoblock">
+                <div class="row justify-content-between">
+                    <div class="col-md-4 col-lg-4">
+                        <h2>📍&nbsp;Location information</h2>
+                        <p class="small">This includes the address of your restaurant, the phone number, the map
+                            information, social media accounts and your website.</p>
+                        <p class="small">If you are a franchise and have multiple locations, you can add them here.
+                        </p>
+                        <div class="my-3">
+                            <a href="#!" class="btn btn-info border-dark btn-lg"><i class="fas fa-plus mr-2"></i>Add
+                                another
+                                location</a></div>
+
+                    </div>
+                    <div class="col-md-8 col-lg-7">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <details open>
+                                    <summary>Location 1</summary>
+                                    <div class="py-3">
+                                        <div class="form-group">
+                                            <label for="inputAddress">Address</label>
+                                            <input type="text" class="form-control" id="inputAddress"
+                                                placeholder="Start typing the address">
+                                        </div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="form-group">
+                                                    <label for="inputPhone">Phone number</label>
+                                                    <input type="text" class="form-control" id="inputPhone"
+                                                        placeholder="(514) 123-4567">
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="form-group">
+                                                    <label for="inputWebsite">Website</label>
+                                                    <input type="text" class="form-control" id="inputWebsite"
+                                                        placeholder="http://yourwebsite.com">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <label for="ig-url"><i
+                                                        class="fab fa-instagram mr-2"></i>Instagram</label>
+                                                <div class="input-group mb-3">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text border-dark bg-light"
+                                                            id="ig-addon">facebook.com/</span>
+                                                    </div>
+                                                    <input type="text" class="form-control" id="ig-url"
+                                                        aria-describedby="ig-addon" placeholder="your Instagram handle">
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="fb-url"><i class="fab fa-facebook mr-2"></i>Facebook</label>
+                                                <div class="input-group mb-3">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text border-dark bg-light"
+                                                            id="fb-addon">instagram.com/</span>
+                                                    </div>
+                                                    <input type="text" class="form-control" id="fb-url"
+                                                        aria-describedby="fb-addon" placeholder="your Facebook handle">
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="tw-url"><i class="fab fa-twitter mr-2"></i>Twitter</label>
+                                                <div class="input-group mb-3">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text border-dark bg-light"
+                                                            id="tw-addon">twitter.com/</span>
+                                                    </div>
+                                                    <input type="text" class="form-control" id="tw-url"
+                                                        aria-describedby="tw-addon" placeholder="your Twitter handle">
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-group">
+                                                    <label for="inputOther"><i
+                                                            class="fas fa-link mr-2"></i>Doordash</label>
+                                                    <input type="text" class="form-control" id="inputOther"
+                                                        placeholder="https://doordash.com/...">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr class="custom-border">
+                                        <div class="text-center">
+                                            <a href="#!" class="text-danger" data-toggle="modal"
+                                                data-target="#popupConfirm"><u><i class="far fa-times mr-2"></i>
+                                                    Delete this location</u></a>
+                                        </div>
+                                    </div>
+                                </details>
+                            </div>
+                        </div>
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <details>
+                                    <summary>Location 2</summary>
+                                    <div class="py-3">
+                                        <div class="form-group">
+                                            <label for="inputAddress">Address</label>
+                                            <input type="text" class="form-control" id="inputAddress"
+                                                placeholder="Start typing the address">
+                                        </div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="form-group">
+                                                    <label for="inputPhone">Phone number</label>
+                                                    <input type="text" class="form-control" id="inputPhone"
+                                                        placeholder="(514) 123-4567">
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="form-group">
+                                                    <label for="inputWebsite">Website</label>
+                                                    <input type="text" class="form-control" id="inputWebsite"
+                                                        placeholder="http://yourwebsite.com">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <label for="ig-url"><i
+                                                        class="fab fa-instagram mr-2"></i>Instagram</label>
+                                                <div class="input-group mb-3">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text border-dark bg-light"
+                                                            id="ig-addon">facebook.com/</span>
+                                                    </div>
+                                                    <input type="text" class="form-control" id="ig-url"
+                                                        aria-describedby="ig-addon" placeholder="your Instagram handle">
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="fb-url"><i class="fab fa-facebook mr-2"></i>Facebook</label>
+                                                <div class="input-group mb-3">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text border-dark bg-light"
+                                                            id="fb-addon">instagram.com/</span>
+                                                    </div>
+                                                    <input type="text" class="form-control" id="fb-url"
+                                                        aria-describedby="fb-addon" placeholder="your Facebook handle">
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="tw-url"><i class="fab fa-twitter mr-2"></i>Twitter</label>
+                                                <div class="input-group mb-3">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text border-dark bg-light"
+                                                            id="tw-addon">twitter.com/</span>
+                                                    </div>
+                                                    <input type="text" class="form-control" id="tw-url"
+                                                        aria-describedby="tw-addon" placeholder="your Twitter handle">
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-group">
+                                                    <label for="inputOther"><i
+                                                            class="fas fa-link mr-2"></i>Doordash</label>
+                                                    <input type="text" class="form-control" id="inputOther"
+                                                        placeholder="https://doordash.com/...">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr class="custom-border">
+                                        <div class="text-center">
+                                            <a href="#!" class="text-danger" data-toggle="modal"
+                                                data-target="#popupConfirm"><u><i class="far fa-times mr-2"></i>
+                                                    Delete this location</u></a>
+                                        </div>
+                                    </div>
+                                </details>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- block 3-->
+            <div class="infoblock">
+                <div class="row justify-content-between">
+                    <div class="col-md-4 col-lg-4">
+                        <h2>🍔&nbsp;Your poutine recipe</h2>
+                    </div>
+                    <div class="col-md-8 col-lg-7">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label for="poutineEn">Poutine name in English</label>
+                                    <input type="text" class="form-control" id="poutineEn"
+                                        placeholder="Cool poutine Name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="poutineFr">Nom de votre poutine en français</label>
+                                    <input type="text" class="form-control" id="poutineFr"
+                                        placeholder="Nom de poutine hyper hawt">
+                                </div>
+                                <div class="form-group">
+                                    <label for="descEn">English description</label>
+                                    <textarea class="form-control" id="descEn" rows="3"
+                                        placeholder="Mention ingredients, fun facts, how it’s made..."></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="descFr">Description en français</label>
+                                    <textarea class="form-control" id="descFr" rows="3"
+                                        placeholder="Mentionnez les ingrédients utilisés, des faits intéressants, comment le recette est créée..."></textarea>
+                                </div>
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="customFile">
+                                    <label class="custom-file-label" for="customFile">Upload a photo</label>
+                                    <small class="form-text mt-3">
+                                        <strong>Note:</strong> This is what will get people to click on your poutine
+                                        on our website.
+                                        So make it count! We recommend a JPG or PNG image at least 1500 px wide and
+                                        a 2MB max size.
+                                    </small>
+                                </div>
+                                <div class="mt-3">
+                                    <label for="">Recipe filters</label>
+                                    <div class="row">
+                                        <div class="col-6 col-md-4">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                <label class="custom-control-label font-weight-normal"
+                                                    for="customCheck1">Vegetarian</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-4">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                                <label class="custom-control-label font-weight-normal"
+                                                    for="customCheck2">Vegan</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-4">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                                <label class="custom-control-label font-weight-normal"
+                                                    for="customCheck3">Glutten-free</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-4">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck4">
+                                                <label class="custom-control-label font-weight-normal"
+                                                    for="customCheck4">Chicken</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-4">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck5">
+                                                <label class="custom-control-label font-weight-normal"
+                                                    for="customCheck5">Seafood</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-4">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck6">
+                                                <label class="custom-control-label font-weight-normal"
+                                                    for="customCheck6">Saputo
+                                                    Cheese</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <small class="form-text mt-3">
+                                        This will help people find your poutine according to their taste and health
+                                        restrictions. Please ensure this is accurate to avoid confusing potential
+                                        clients.
+                                    </small>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- block Doordash-->
+            <div class="infoblock">
+                <div class="row justify-content-between">
+                    <div class="col-md-4 col-lg-4">
+                        <h2><img src="../img/logo/logo-partner-doordash-logomark.svg" style="height:20px"
+                                class="mr-2">&nbsp;Doordash customers</h2>
+                    </div>
+                    <div class="col-md-8 col-lg-7">
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="mb-1 font-weight-bold">Does the item have modifiers?</p>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="radio1" name="customRadioInline"
+                                        class="custom-control-input">
+                                    <label class="custom-control-label" for="radio1">Yes</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="radio2" name="customRadioInline"
+                                        class="custom-control-input">
+                                    <label class="custom-control-label" for="radio2">No</label>
+                                </div>
+                                <div class="form-group mt-3 d-none" id="modifsPlz">
+                                    <label for="modifEN">If yes, please list the required modifiers on your menu here:
+                                    </label>
+                                    <textarea class="form-control" id="modifEN" rows="3"
+                                        placeholder="E.g. Cheese choice, side choice, topping addition, etc"></textarea>
+                                </div>
+                                <div class="form-group mt-3">
+                                    <label for="posSvc">What POS service do you use with DoorDash?</label>
+                                    <input type="text" class="form-control" id="posSvc" placeholder="">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- block 4-->
+            <div class="infoblock">
+                <div class="row justify-content-between">
+                    <div class="col-md-4 col-lg-4">
+                        <h2>💰&nbsp;Payments</h2>
+                    </div>
+                    <div class="col-md-8 col-lg-7">
+                        <div class="card">
+                            <div class="card-body">
+                                <ul class="list-unstyled mb-0">
+                                    <li>Date: November 15, 2021</li>
+                                    <li>Stripe transaction No. X67388929999</li>
+                                    <li>Amount: $300.00</li>
+                                    <li>Email: Snoop@doggystyle.com</li>
+                                    <li>Phone: (514) 677-3091</li>
+                                    <li>Billing address: 1234 Snoop Doggy Road, Cantley QC, J8V 1G6</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- popup are you sure -->
+        <div class="modal fade" id="popupConfirm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-sm modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body text-center">
+                        <h3>Are you sure?</h3>
+                        <p>You cannot undo this action.</p>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <button type="button" class="btn btn-outline-dark mx-2" data-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-danger mx-2">Yes, delete</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <div id="footPout"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/scripts.js"></script>
+    <script>
+        $("input[type=radio]").change(function () {
+            if ($("#radio1").is(':checked')) {
+                $("#modifsPlz").addClass("d-block");
+            } else {
+                $("#modifsPlz").removeClass("d-block");
+            }
+        });
+    </script>
+</body>
+
+</html>
