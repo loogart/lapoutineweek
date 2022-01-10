@@ -54,26 +54,26 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-7 col-md-4 pr-0">
-                        <select class="flexselect form-control">
-                            <option value="" disabled selected>🔍 Search</option>
-                            <option value="1">Amazing Poutine Place</option>
-                            <option value="2">Arabian Nights</option>
-                            <option value="3">Blazing Balaszi</option>
-                            <option value="4">La Banquise</option>
-                            <option value="5">Benedict Berg</option>
-                            <option value="6">Behaved Buns</option>
-                            <option value="7">Cantley Fried Chicken</option>
-                            <option value="8">Harveys</option>
-                            <option value="9">JeePoutine Doan-Moi</option>
-                            <option value="10">Kentucky Fried Chicken</option>
-                            <option value="11">Loogart Poutine</option>
-                            <option value="12">Na'eem The Dream</option>
-                            <option value="13">Omnivore</option>
-                            <option value="14">Paulo et Suzanne</option>
-                            <option value="15">Stéphoutine Grondin</option>
-                            <option value="16">Thierry Mange Icitte</option>
-                            <option value="17">Why so serious?</option>
-                        </select>
+                    <select class="flexselect form-control">
+                        <option value="" disabled selected>🔍 Search</option>
+                        <option value="1">Amazing Poutine Place</option>
+                        <option value="2">Arabian Nights</option>
+                        <option value="3">Blazing Balaszi</option>
+                        <option value="4">La Banquise</option>
+                        <option value="5">Benedict Berg</option>
+                        <option value="6">Behaved Buns</option>
+                        <option value="7">Cantley Fried Chicken</option>
+                        <option value="8">Harveys</option>
+                        <option value="9">JeePoutine Doan-Moi</option>
+                        <option value="10">Kentucky Fried Chicken</option>
+                        <option value="11">Loogart Poutine</option>
+                        <option value="12">Na'eem The Dream</option>
+                        <option value="13">Omnivore</option>
+                        <option value="14">Paulo et Suzanne</option>
+                        <option value="15">Stéphoutine Grondin</option>
+                        <option value="16">Thierry Mange Icitte</option>
+                        <option value="17">Why so serious?</option>
+                    </select>
                 </div>
                 <div class="col-5 col-md-2">
                     <a class="btn btn-filter btn-block" data-toggle="modal" data-target="#modalFilter">
@@ -81,16 +81,308 @@
                     </a>
                 </div>
                 <div class="col-12 col-md-6">
-                    <span>Showing 169 poutines in</span> <strong><a href=""
-                        class="text-dark" data-toggle="modal" data-target="#modalLocation">
-                        Montreal</a></strong>
+                    <span>Showing 169 poutines in</span> <strong><a href="" class="text-dark" data-toggle="modal"
+                            data-target="#modalLocation">
+                            Montreal</a></strong>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- results NONE -->
-    
+    <section class="py-4">
+
+        <!-- results GRID -->
+        <div id="resultsGrid">
+            <div class="container">
+                <div class="row">
+
+                    <!-- grid item -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                        <a href="./resto.html" class="card d-flex bg-lighter rounded-md overflow-hidden text-decoration-none border border-dark" target="_blank">
+                            <img src="../img/poutines/poutine-2.jpg" class="img-object-fit-card border-bottom border-dark"
+                                alt="">
+                            <div class="p-3 border-bottom border-dark">
+                                <span class="small text-primary font-weight-bold d-block mb-1 text-cut">Restaurant name</span>
+                                <span class="h5 font-weight-bold d-block mb-0 text-cut">Poutine name that will be cut off for sho</span>
+                                <div class="row mt-2">
+                                    <div class="col-6">
+                                        <small>$14.00</small>
+                                    </div>
+                                    <div class="col-6 text-right">
+                                        <small>21.0 km</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="px-3 py-2 card-foot position-relative flex-shrink-1">
+                                <img src="../img/logo/logo-partner-saputo.svg" alt="" class="logo-saputo-card">                                                  
+                            </div>
+                            <a class="btn-fave" data-toggle="tooltip" data-placement="top" title="❤️ Favourite"><i class="fa-regular fa-heart fa-xl"></i></a>     
+                        </a>
+                    </div>
+
+                    <!-- grid item -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                        <a href="./resto.html" class="card d-block bg-lighter rounded-md overflow-hidden text-decoration-none border border-dark" target="_blank">
+                            <img src="../img/poutines/poutine-3.jpg" class="img-object-fit-card border-bottom border-dark"
+                                alt="">
+                            <div class="p-3 border-bottom border-dark">
+                                <span class="small text-primary font-weight-bold d-block mb-1 text-cut">Restaurant name that should be shorter</span>
+                                <span class="h5 font-weight-bold d-block mb-0 text-cut">Poutine name</span>
+                                <div class="row mt-2">
+                                    <div class="col-6">
+                                        <small>$10.99</small>
+                                    </div>
+                                    <div class="col-6 text-right">
+                                        <small>28.0 km</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="px-3 py-2 card-foot position-relative flex-shrink-1">
+                                <!-- <img src="../img/logo/logo-partner-saputo.svg" alt="" class="logo-saputo-card">       -->
+                                                
+                            </div>
+                            <a class="btn-fave" data-toggle="tooltip" data-placement="top" title="❤️ Favourite"><i class="fa-regular fa-heart fa-xl"></i></a>     
+                        </a>
+                    </div>   
+                    
+                    <!-- grid item -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                        <a href="./resto.html" class="card d-flex bg-lighter rounded-md overflow-hidden text-decoration-none border border-dark" target="_blank">
+                            <img src="../img/poutines/poutine-4.jpg" class="img-object-fit-card border-bottom border-dark"
+                                alt="">
+                            <div class="p-3 border-bottom border-dark">
+                                <span class="small text-primary font-weight-bold d-block mb-1 text-cut">Restaurant name</span>
+                                <span class="h5 font-weight-bold d-block mb-0 text-cut">Poutine name that will be cut off for sho</span>
+                                <div class="row mt-2">
+                                    <div class="col-6">
+                                        <small>$14.00</small>
+                                    </div>
+                                    <div class="col-6 text-right">
+                                        <small>21.0 km</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="px-3 py-2 card-foot position-relative flex-shrink-1">
+                                <img src="../img/logo/logo-partner-saputo.svg" alt="" class="logo-saputo-card">                                                  
+                            </div>
+                            <a class="btn-fave" data-toggle="tooltip" data-placement="top" title="❤️ Favourite"><i class="fa-regular fa-heart fa-xl"></i></a>     
+                        </a>
+                    </div>
+
+                    <!-- grid item -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                        <a href="./resto.html" class="card d-block bg-lighter rounded-md overflow-hidden text-decoration-none border border-dark" target="_blank">
+                            <img src="../img/poutines/poutine-5.jpg" class="img-object-fit-card border-bottom border-dark"
+                                alt="">
+                            <div class="p-3 border-bottom border-dark">
+                                <span class="small text-primary font-weight-bold d-block mb-1 text-cut">Restaurant name that should be shorter</span>
+                                <span class="h5 font-weight-bold d-block mb-0 text-cut">Poutine name</span>
+                                <div class="row mt-2">
+                                    <div class="col-6">
+                                        <small>$10.99</small>
+                                    </div>
+                                    <div class="col-6 text-right">
+                                        <small>28.0 km</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="px-3 py-2 card-foot position-relative flex-shrink-1">
+                                <!-- <img src="../img/logo/logo-partner-saputo.svg" alt="" class="logo-saputo-card">       -->
+                                                
+                            </div>
+                            <a class="btn-fave" data-toggle="tooltip" data-placement="top" title="❤️ Favourite"><i class="fa-regular fa-heart fa-xl"></i></a>     
+                        </a>
+                    </div>   
+
+                    <!-- grid item -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                        <a href="./resto.html" class="card d-flex bg-lighter rounded-md overflow-hidden text-decoration-none border border-dark" target="_blank">
+                            <img src="../img/poutines/poutine-6.jpg" class="img-object-fit-card border-bottom border-dark"
+                                alt="">
+                            <div class="p-3 border-bottom border-dark">
+                                <span class="small text-primary font-weight-bold d-block mb-1 text-cut">Restaurant name</span>
+                                <span class="h5 font-weight-bold d-block mb-0 text-cut">Poutine name that will be cut off for sho</span>
+                                <div class="row mt-2">
+                                    <div class="col-6">
+                                        <small>$14.00</small>
+                                    </div>
+                                    <div class="col-6 text-right">
+                                        <small>21.0 km</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="px-3 py-2 card-foot position-relative flex-shrink-1">
+                                <img src="../img/logo/logo-partner-saputo.svg" alt="" class="logo-saputo-card">                                                  
+                            </div>
+                            <a class="btn-fave" data-toggle="tooltip" data-placement="top" title="❤️ Favourite"><i class="fa-regular fa-heart fa-xl"></i></a>     
+                        </a>
+                    </div>
+
+                    <!-- grid item -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                        <a href="./resto.html" class="card d-block bg-lighter rounded-md overflow-hidden text-decoration-none border border-dark" target="_blank">
+                            <img src="../img/poutines/poutine-7.jpg" class="img-object-fit-card border-bottom border-dark"
+                                alt="">
+                            <div class="p-3 border-bottom border-dark">
+                                <span class="small text-primary font-weight-bold d-block mb-1 text-cut">Restaurant name that should be shorter</span>
+                                <span class="h5 font-weight-bold d-block mb-0 text-cut">Poutine name</span>
+                                <div class="row mt-2">
+                                    <div class="col-6">
+                                        <small>$10.99</small>
+                                    </div>
+                                    <div class="col-6 text-right">
+                                        <small>28.0 km</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="px-3 py-2 card-foot position-relative flex-shrink-1">
+                                <!-- <img src="../img/logo/logo-partner-saputo.svg" alt="" class="logo-saputo-card">       -->
+                                                
+                            </div>
+                            <a class="btn-fave" data-toggle="tooltip" data-placement="top" title="❤️ Favourite"><i class="fa-regular fa-heart fa-xl"></i></a>     
+                        </a>
+                    </div> 
+
+                    <!-- grid item -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                        <a href="./resto.html" class="card d-block bg-lighter rounded-md overflow-hidden text-decoration-none border border-dark" target="_blank">
+                            <img src="../img/poutines/poutine-8.jpg" class="img-object-fit-card border-bottom border-dark"
+                                alt="">
+                            <div class="p-3 border-bottom border-dark">
+                                <span class="small text-primary font-weight-bold d-block mb-1 text-cut">Restaurant name that should be shorter</span>
+                                <span class="h5 font-weight-bold d-block mb-0 text-cut">Poutine name</span>
+                                <div class="row mt-2">
+                                    <div class="col-6">
+                                        <small>$10.99</small>
+                                    </div>
+                                    <div class="col-6 text-right">
+                                        <small>28.0 km</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="px-3 py-2 card-foot position-relative flex-shrink-1">
+                                <!-- <img src="../img/logo/logo-partner-saputo.svg" alt="" class="logo-saputo-card">       -->
+                                                
+                            </div>
+                            <a class="btn-fave" data-toggle="tooltip" data-placement="top" title="❤️ Favourite"><i class="fa-regular fa-heart fa-xl"></i></a>     
+                        </a>
+                    </div>  
+
+                    <!-- grid item -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                        <a href="./resto.html" class="card d-block bg-lighter rounded-md overflow-hidden text-decoration-none border border-dark" target="_blank">
+                            <img src="../img/poutines/poutine-9.jpg" class="img-object-fit-card border-bottom border-dark"
+                                alt="">
+                            <div class="p-3 border-bottom border-dark">
+                                <span class="small text-primary font-weight-bold d-block mb-1 text-cut">Restaurant name that should be shorter</span>
+                                <span class="h5 font-weight-bold d-block mb-0 text-cut">Poutine name</span>
+                                <div class="row mt-2">
+                                    <div class="col-6">
+                                        <small>$10.99</small>
+                                    </div>
+                                    <div class="col-6 text-right">
+                                        <small>28.0 km</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="px-3 py-2 card-foot position-relative flex-shrink-1">
+                                <!-- <img src="../img/logo/logo-partner-saputo.svg" alt="" class="logo-saputo-card">       -->
+                                                
+                            </div>
+                            <a class="btn-fave" data-toggle="tooltip" data-placement="top" title="❤️ Favourite"><i class="fa-regular fa-heart fa-xl"></i></a>     
+                        </a>
+                    </div>    
+                </div>
+
+                <!-- load more button -->
+                <div class="text-center">
+                <a href="#!" class="btn btn-lg btn-primary rounded-pill border-dark border-3 my-4">+ Load more poutines 🤤</a>
+            </div>
+            </div>
+        </div>
+
+        <!-- results NONE -->
+        <div id="resultsNone" class="py-5 d-none">
+            <div class="container text-center">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-md-6">
+                    <img class="mb-4" src="../img/art/pug.png" alt="" style="max-width:150px">
+                    <h2>Sorry, we couldn't find any results.</h2>
+                    <p class="my-3">Try changing or resetting your filters.</p>
+                    <a href="./results.html" class="btn btn-outline-dark rounded-pill border-dark border-3"><i class="fa-solid fa-arrow-rotate-left mr-1"></i>Reset</a>
+                </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Modal Filter -->
+    <div class="modal" id="modalFilter" tabindex="-1" aria-labelledby="modalLocation" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <i class="fad fa-times-circle text-dark fa-2x"></i>
+            </button>
+            <div class="modal-body py-4">
+                <div class="container">
+                    <h4 class="font-weight-bold mb-3">Filters</h4>
+                    <hr class="border-dark">
+                    <div class="row my-4">
+                        <div class="col-md-6">
+                            <div class="custom-control custom-checkbox mb-2">
+                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                <label class="custom-control-label" for="customCheck1">Sea Food</label>
+                            </div>
+                            <div class="custom-control custom-checkbox mb-2">
+                                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                <label class="custom-control-label" for="customCheck2">Vegetarian</label>
+                            </div>
+                            <div class="custom-control custom-checkbox mb-2">
+                                <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                <label class="custom-control-label" for="customCheck3">Vegan</label>
+                            </div>
+                            <div class="custom-control custom-checkbox mb-2">
+                                <input type="checkbox" class="custom-control-input" id="customCheck4">
+                                <label class="custom-control-label" for="customCheck4">Glutten-free</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="custom-control custom-checkbox mb-2">
+                                <input type="checkbox" class="custom-control-input" id="customCheck5">
+                                <label class="custom-control-label" for="customCheck5"><img
+                                        src="../img/logo/logo-partner-saputo.svg" alt="Saputo"
+                                        style="width:50px">&nbsp;Cheese</label>
+                            </div>
+                            <div class="custom-control custom-checkbox mb-2">
+                                <input type="checkbox" class="custom-control-input" id="customCheck6">
+                                <label class="custom-control-label" for="customCheck6"><img
+                                        src="../img/logo/logo-partner-doordash.svg" alt="Doordash"
+                                        style="width:120px"></label>
+                            </div>
+                            <div class="custom-control custom-checkbox mb-2">
+                                <input type="checkbox" class="custom-control-input" id="customCheck7">
+                                <label class="custom-control-label" for="customCheck7">Beef</label>
+                            </div>
+                            <div class="custom-control custom-checkbox mb-2">
+                                <input type="checkbox" class="custom-control-input" id="customCheck8">
+                                <label class="custom-control-label" for="customCheck8">Chicken</label>
+                            </div>
+                            <div class="custom-control custom-checkbox mb-2">
+                                <input type="checkbox" class="custom-control-input" id="customCheck9">
+                                <label class="custom-control-label" for="customCheck9">Sauce du chef</label>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="border-dark">
+                    <a href="./results.html" class="text-dark"><i class="far fa-trash-alt mr-2"></i>Reset
+                        filters</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
 
     <div id="footPout"></div>
     <div id="allModals"></div>

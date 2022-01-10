@@ -67,13 +67,13 @@ $('#voteNow').click(function () {
 // toggle fave button
 $('.btn-fave').click(function () {
     if ($(this).hasClass("text-danger")) {
-        $(this).removeClass('text-danger').addClass('text-light');
-        ($(this).children()).removeClass('fas').addClass('fal');
+        $(this).removeClass('text-danger').addClass('text-dark');
+        ($(this).children()).removeClass('fas').addClass('far');
         $('#elementRemoved').toast('show');
         
     } else {
-        $(this).removeClass('text-light').addClass('text-danger');
-        ($(this).children()).removeClass('fal').addClass('fas');
+        $(this).removeClass('text-dark').addClass('text-danger');
+        ($(this).children()).removeClass('far').addClass('fas');
         $('#elementSaved').toast('show');
     }
 });
