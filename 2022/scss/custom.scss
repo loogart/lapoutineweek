@@ -155,6 +155,15 @@ select {
     }
 }
 
+.img-object-fit-resto{
+    object-fit: cover;
+    width:100%;
+    height:320px;
+    @include media-breakpoint-down(md) {
+        height: 200px;
+    }
+}
+
 .card{
     transition: all ease-out .15s;
     height:100%;

@@ -7937,6 +7937,14 @@ select {
     .img-object-fit-card {
       height: 200px; } }
 
+.img-object-fit-resto {
+  object-fit: cover;
+  width: 100%;
+  height: 320px; }
+  @media (max-width: 991.98px) {
+    .img-object-fit-resto {
+      height: 200px; } }
+
 .card {
   transition: all ease-out .15s;
   height: 100%;
