@@ -57,7 +57,7 @@ $(function () {
 $('#voteNow').click(function () {
     if ($(this).hasClass("btn-outline-danger")) {
         $('#modalUnvoted').modal('show');
-        $(this).removeClass('btn-outline-danger').addClass('btn-warning').text("⭐️ Rate burger");
+        $(this).removeClass('btn-outline-danger').addClass('btn-warning').text("⭐️ Rate this poutine");
     } else {
         $('#modalVote1').modal('show');
         $(this).removeClass('btn-warning').addClass('btn-outline-danger').text("❌ Remove rating");

@@ -4,14 +4,15 @@
     <div class="modal-content overflow-hidden">
       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
         <i class="fad fa-times-circle text-dark fa-2x"></i>
-    </button>
+      </button>
       <div class="modal-body p-0">
         <div class="container-fluid p-0">
           <div class="row">
             <div class="col-lg-7">
               <div class="p-5">
                 <h5>Select your location</h5>
-                <a href="./results.html" class="btn btn-info rounded-pill border-dark border-3 my-2 font-weight-bold">📍 Around me</a>
+                <a href="./results.html" class="btn btn-info rounded-pill border-dark border-3 my-2 font-weight-bold">📍
+                  Around me</a>
                 <hr class="border-dark my-3">
                 <div class="row">
                   <div class="col-md-6 mb-3">
@@ -111,93 +112,118 @@
   </div>
 </div>
 
-<!-- Modal Vote Step 2 -->
-<div class="preview-modal modal fade" id="modalVote2" tabindex="-1" aria-labelledby="exampleModalLabel"
-aria-hidden="true">
-<div class="modal-dialog modal-dialog-centered">
-  <div class="modal-content">
+<!-- Modal Login-->
+<div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm modal-dialog-centered">
+    <div class="modal-content overflow-hidden">
       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <i class="fas fa-times"></i>
+        <i class="fad fa-times-circle text-dark fa-2x"></i>
       </button>
-      <div class="modal-header modal-resto sr-only">
-          <h4 class="modal-title" id="exampleModalLabel">Thank you for voting!</h4>
+      
+      <div class="modal-body pt-4">
+        <div class="container">
+          <h4 class="font-weight-bold mb-3">Login</h4>
+          <hr class="border-dark">
+          <a href="./account.html" class="btn btn-block btn-outline-dark mb-3"><i class="fa-brands fa-google mr-2"></i>Sign in with Google</a>
+          <a href="./account.html" class="btn btn-block btn-outline-dark mb-3"><i class="fa-brands fa-apple mr-2"></i>Sign in with Apple</a>
+          <a href="./account.html" class="btn btn-block btn-outline-dark mb-3"><i class="fa-brands fa-facebook mr-2"></i>Sign in with Facebook</a>
+          <a href="./account.html" class="btn btn-block btn-outline-dark mb-3"><i class="fa-regular fa-envelope mr-2"></i>Sign in with email</a>
+
+        </div>
       </div>
-      <div class="modal-photo-holder pt-4 bg-brown text-center">
-          <img src="./img/artwork/popup-vote-thanks.png" alt="" style="max-width:200px;" class="mx-auto">
-      </div>
-      <div class="modal-body text-center">
-          <h3 class="my-3 h2 font-weight-bold">Thanks for voting!</h3>
-          <p>We appreciate your support!</p>
-      </div>
+      <img src="../img/art/live/modal-login.jpg" alt="" class="img-fluid">
+    </div>
+
   </div>
 </div>
+
+<!-- Modal Vote Step 2 -->
+<div class="preview-modal modal fade" id="modalVote2" tabindex="-1" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <i class="fas fa-times"></i>
+      </button>
+      <div class="modal-header modal-resto sr-only">
+        <h4 class="modal-title" id="exampleModalLabel">Thank you for voting!</h4>
+      </div>
+      <div class="modal-photo-holder pt-4 bg-brown text-center">
+        <img src="./img/artwork/popup-vote-thanks.png" alt="" style="max-width:200px;" class="mx-auto">
+      </div>
+      <div class="modal-body text-center">
+        <h3 class="my-3 h2 font-weight-bold">Thanks for voting!</h3>
+        <p>We appreciate your support!</p>
+      </div>
+    </div>
+  </div>
 </div>
 
 <!-- Modal Vote Removed-->
 <div class="preview-modal modal fade" id="modalUnvoted" tabindex="-1" aria-labelledby="exampleModalLabel"
-aria-hidden="true">
-<div class="modal-dialog modal-dialog-centered modal-sm">
-  <div class="modal-content">
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-sm">
+    <div class="modal-content">
       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <i class="fas fa-times"></i>
+        <i class="fas fa-times"></i>
       </button>
       <div class="modal-header modal-resto sr-only">
-          <h5 class="modal-title" id="exampleModalLabel">You have removed your rating.</h5>
+        <h5 class="modal-title" id="exampleModalLabel">You have removed your rating.</h5>
       </div>
       <div class="modal-photo-holder text-center bg-danger p-3">
-          <img src="./img/artwork/popup-vote-removed.png" alt="" style="max-width:200px;" class="mx-auto">
+        <img src="./img/artwork/popup-vote-removed.png" alt="" style="max-width:200px;" class="mx-auto">
       </div>
       <div class="modal-body text-center">
-          <h3 class="my-3 font-weight-bold">Rating removed.</h3>
-          <p>Your rating for this pizza has been removed.</p>
+        <h3 class="my-3 font-weight-bold">Rating removed.</h3>
+        <p>Your rating for this pizza has been removed.</p>
       </div>
+    </div>
   </div>
-</div>
 </div>
 
 <!-- Toast Saved and removed-->
 <div class="position-fixed bottom-0 right-0 p-3" style="z-index: 5; right: 0; bottom: 0;">
   <div id="elementSaved" class="toast hide text-dark" role="alert" aria-live="assertive" aria-atomic="true"
-      data-delay="2000">
-      <div class="toast-header text-dark">
-          <strong class="mr-auto">✅ Saved</strong>
-          <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-          </button>
-      </div>
-      <div class="toast-body">
-          View <a href="./account.html"><u>saved poutines</u></a>.
-      </div>
+    data-delay="2000">
+    <div class="toast-header text-dark">
+      <strong class="mr-auto">✅ Saved</strong>
+      <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="toast-body">
+      View <a href="./account.html"><u>saved poutines</u></a>.
+    </div>
   </div>
 </div>
 
 <div class="position-fixed bottom-0 right-0 p-3" style="z-index: 5; right: 0; bottom: 0;">
   <div id="elementRemoved" class="toast hide text-dark" role="alert" aria-live="assertive" aria-atomic="true"
-      data-delay="2000">
-      <div class="toast-header text-dark">
-          <strong class="mr-auto">❌ Removed</strong>
-          <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-          </button>
-      </div>
-      <div class="toast-body">
-          You removed this saved item.
-      </div>
+    data-delay="2000">
+    <div class="toast-header text-dark">
+      <strong class="mr-auto">❌ Removed</strong>
+      <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="toast-body">
+      You removed this saved item.
+    </div>
   </div>
 </div>
 
 <!-- Toast Removed-->
 <div class="position-fixed bottom-0 right-0 p-3" style="z-index: 5; right: 0; bottom: 0;">
   <div id="elementRemoved" class="toast hide text-dark" role="alert" aria-live="assertive" aria-atomic="true"
-      data-delay="2000">
-      <div class="toast-header text-dark">
-          <strong class="mr-auto">❌ Removed</strong>
-          <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-          </button>
-      </div>
-      <div class="toast-body">
-          You removed this saved item. <a href="account.html">Undo</a>
-      </div>
+    data-delay="2000">
+    <div class="toast-header text-dark">
+      <strong class="mr-auto">❌ Removed</strong>
+      <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="toast-body">
+      You removed this saved item. <a href="account.html">Undo</a>
+    </div>
   </div>
 </div>
