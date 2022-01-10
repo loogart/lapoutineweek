@@ -44,11 +44,11 @@ $navbar-light-active-color: $blue;
 $navbar-light-brand-color: $dark;
 $navbar-light-brand-hover-color: $dark;
 $navbar-brand-font-size: 1rem;
-;
 $navbar-nav-link-padding-x: 1rem;
 $navbar-light-toggler-border-color:transparent;
 
 $border-width:2px;
+$border-radius: 6px;
 $border-radius-lg: 24px;
 
 $input-bg: $light;
@@ -63,7 +63,9 @@ $component-active-bg:$blue;
 
 $modal-fade-transform: translate(0, 200px);
 $modal-transition: all .25s ease-out;
-
+$modal-content-bg: lighten($light, 2%);
+$modal-header-border-width: 0;
+$modal-footer-border-width: 0;
 
 // 3. Include remainder of required Bootstrap stylesheets
 @import "../bootstrap/scss/variables";
@@ -379,4 +381,77 @@ label {
     .input-group-text {
         border-width: 1px;
     }
+}
+
+
+// Search bar styles Flexselect
+.flexselect {
+    background-color: transparent;
+    border: 2px solid darken($light, 10%);
+    padding:.5rem;
+    width: 100%;
+}
+
+.flexselect_dropdown {
+    display: none;
+    position: absolute;
+    z-index: 999999;
+    margin: 0;
+    padding: 0;
+    border: 1px solid WindowFrame;
+    max-height: 200px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: Window;
+    color: WindowText;
+    text-align: left;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.19);
+    border-radius: 8px;
+}
+
+.flexselect_dropdown ul {
+    width: 100%;
+    list-style-position: outside;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.flexselect_dropdown li {
+    margin: 0px;
+    padding: 15px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    font: Menu;
+    overflow: hidden;
+}
+
+.flexselect_dropdown li.disabled {
+    cursor: not-allowed;
+    color: GrayText;
+}
+
+.flexselect_selected {
+    background-color: $blue;
+    color: white;
+}
+
+.btn-filter{
+    border: 2px solid darken($light, 10%);
+    width: 100%;
+    &:hover, &:focus, &:active{
+        background-color: lighten($light,2%);
+    }
+}
+
+.close{
+    display: inline-block;
+position: absolute;
+height: 50px;
+width: 50px;
+top: 10px;
+right: 10px;
+z-index: 1;
 }

@@ -1,20 +1,269 @@
-<!-- Modal -->
+<!-- Modal Location Selection-->
 <div class="modal fade" id="modalLocation" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal Location</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content overflow-hidden">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <i class="fad fa-times-circle text-dark fa-2x"></i>
+    </button>
+      <div class="modal-body p-0">
+        <div class="container-fluid p-0">
+          <div class="row">
+            <div class="col-lg-7">
+              <div class="p-5">
+                <h5>Select your location</h5>
+                <a href="./results.html" class="btn btn-info rounded-pill border-dark border-3 my-2 font-weight-bold">📍 Around me</a>
+                <hr class="border-dark my-3">
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <details>
+                      <summary><span class="font-weight-bold">British Columbia</span></summary>
+                      <ul class="list-unstyled mt-3">
+                        <li class="mb-2"><a href="./results.html">Kelowna</a></li>
+                        <li class="mb-2"><a href="./results.html">Surrey</a></li>
+                        <li class="mb-2"><a href="./results.html">Vancouver</a></li>
+                        <li class="mb-2"><a href="./results.html">Victoria</a></li>
+                      </ul>
+                    </details>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <details>
+                      <summary><span class="font-weight-bold">Alberta</span></summary>
+                      <ul class="list-unstyled mt-3">
+                        <li class="mb-2"><a href="./results.html">Edmonton</a></li>
+                        <li class="mb-2"><a href="./results.html">Calgary</a></li>
+                        <li class="mb-2"><a href="./results.html">Banff</a></li>
+                      </ul>
+                    </details>
+                  </div>
+                  <div class="col-md-6">
+                    <details>
+                      <summary><span class="font-weight-bold">Saskatchewan</span></summary>
+                      <ul class="list-unstyled mt-3">
+                        <li class="mb-2"><a href="./results.html">Regina</a></li>
+                        <li class="mb-2"><a href="./results.html">Saskatoon</a></li>
+                        <li class="mb-2"><a href="./results.html">Prince Albert</a></li>
+                      </ul>
+                    </details>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <details>
+                      <summary><span class="font-weight-bold">Manitoba</span></summary>
+                      <ul class="list-unstyled mt-3">
+                        <li class="mb-2"><a href="./results.html">Winnipeg</a></li>
+                        <li class="mb-2"><a href="./results.html">Churchill</a></li>
+                        <li class="mb-2"><a href="./results.html">Vancouver</a></li>
+                        <li class="mb-2"><a href="./results.html">Victoria</a></li>
+                      </ul>
+                    </details>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <details>
+                      <summary><span class="font-weight-bold">Ontario</span></summary>
+                      <ul class="list-unstyled mt-3">
+                        <li class="mb-2"><a href="./results.html">Toronto</a></li>
+                        <li class="mb-2"><a href="./results.html">Ottawa</a></li>
+                      </ul>
+                    </details>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <details>
+                      <summary><span class="font-weight-bold">Quebec</span></summary>
+                      <ul class="list-unstyled mt-3">
+                        <li class="mb-2"><a href="./results.html">Montreal</a></li>
+                        <li class="mb-2"><a href="./results.html">Quebec</a></li>
+                        <li class="mb-2"><a href="./results.html">Gatineau</a></li>
+
+                      </ul>
+                    </details>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <details>
+                      <summary><span class="font-weight-bold">East Coast</span></summary>
+                      <ul class="list-unstyled mt-3">
+                        <li class="mb-2"><a href="./results.html">Fredericton</a></li>
+                        <li class="mb-2"><a href="./results.html">Monctoc</a></li>
+                        <li class="mb-2"><a href="./results.html">St-John</a></li>
+
+                      </ul>
+                    </details>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <details>
+                      <summary><span class="font-weight-bold">International</span></summary>
+                      <ul class="list-unstyled mt-3">
+                        <li class="mb-2"><a href="./results.html">Adbu Dhabi</a></li>
+                        <li class="mb-2"><a href="./results.html">Cantley</a></li>
+                        <li class="mb-2"><a href="./results.html">In da hood</a></li>
+
+                      </ul>
+                    </details>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 p-0" style="background-color: #2B566A;">
+              <img src="../img/art/live/select-location.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
+</div>
+
+<!-- Modal Filter -->
+<div class="modal" id="modalFilter" tabindex="-1" aria-labelledby="modalLocation" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <i class="fad fa-times-circle text-dark fa-2x"></i>
+          </button>
+          <div class="modal-body py-4">
+              <div class="container">
+                  <h4 class="font-weight-bold mb-3">Filters</h4>
+                  <hr class="border-dark">
+                  <div class="row my-4">
+                      <div class="col-md-6">
+                          <div class="custom-control custom-checkbox mb-2">
+                              <input type="checkbox" class="custom-control-input" id="customCheck1">
+                              <label class="custom-control-label" for="customCheck1">Sea Food</label>
+                          </div>
+                          <div class="custom-control custom-checkbox mb-2">
+                              <input type="checkbox" class="custom-control-input" id="customCheck2">
+                              <label class="custom-control-label" for="customCheck2">Vegetarian</label>
+                          </div>
+                          <div class="custom-control custom-checkbox mb-2">
+                              <input type="checkbox" class="custom-control-input" id="customCheck3">
+                              <label class="custom-control-label" for="customCheck3">Vegan</label>
+                          </div>
+                          <div class="custom-control custom-checkbox mb-2">
+                              <input type="checkbox" class="custom-control-input" id="customCheck4">
+                              <label class="custom-control-label" for="customCheck4">Glutten-free</label>
+                          </div>
+                      </div>
+                      <div class="col-md-6">
+                          <div class="custom-control custom-checkbox mb-2">
+                              <input type="checkbox" class="custom-control-input" id="customCheck5">
+                              <label class="custom-control-label" for="customCheck5"><img
+                                      src="../img/logo/logo-partner-saputo.svg" alt="Saputo"
+                                      style="width:50px">&nbsp;Cheese</label>
+                          </div>
+                          <div class="custom-control custom-checkbox mb-2">
+                              <input type="checkbox" class="custom-control-input" id="customCheck6">
+                              <label class="custom-control-label" for="customCheck6"><img
+                                      src="../img/logo/logo-partner-doordash.svg" alt="Doordash"
+                                      style="width:120px"></label>
+                          </div>
+                          <div class="custom-control custom-checkbox mb-2">
+                              <input type="checkbox" class="custom-control-input" id="customCheck7">
+                              <label class="custom-control-label" for="customCheck7">Beef</label>
+                          </div>
+                          <div class="custom-control custom-checkbox mb-2">
+                              <input type="checkbox" class="custom-control-input" id="customCheck8">
+                              <label class="custom-control-label" for="customCheck8">Chicken</label>
+                          </div>
+                          <!-- <div class="custom-control custom-checkbox mb-2">
+                              <input type="checkbox" class="custom-control-input" id="customCheck9">
+                              <label class="custom-control-label" for="customCheck9">Sauce du chef</label>
+                          </div> -->
+                      </div>
+                  </div>
+                  <hr class="border-dark">
+                  <a href="./results.html" class="text-dark"><i class="far fa-trash-alt mr-2"></i>Reset
+                      filters</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- Modal Vote Step 2 -->
+<div class="preview-modal modal fade" id="modalVote2" tabindex="-1" aria-labelledby="exampleModalLabel"
+aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered">
+  <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <i class="fas fa-times"></i>
+      </button>
+      <div class="modal-header modal-resto sr-only">
+          <h4 class="modal-title" id="exampleModalLabel">Thank you for voting!</h4>
+      </div>
+      <div class="modal-photo-holder pt-4 bg-brown text-center">
+          <img src="./img/artwork/popup-vote-thanks.png" alt="" style="max-width:200px;" class="mx-auto">
+      </div>
+      <div class="modal-body text-center">
+          <h3 class="my-3 h2 font-weight-bold">Thanks for voting!</h3>
+          <p>We appreciate your support!</p>
+      </div>
+  </div>
+</div>
+</div>
+
+<!-- Modal Vote Removed-->
+<div class="preview-modal modal fade" id="modalUnvoted" tabindex="-1" aria-labelledby="exampleModalLabel"
+aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered modal-sm">
+  <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <i class="fas fa-times"></i>
+      </button>
+      <div class="modal-header modal-resto sr-only">
+          <h5 class="modal-title" id="exampleModalLabel">You have removed your rating.</h5>
+      </div>
+      <div class="modal-photo-holder text-center bg-danger p-3">
+          <img src="./img/artwork/popup-vote-removed.png" alt="" style="max-width:200px;" class="mx-auto">
+      </div>
+      <div class="modal-body text-center">
+          <h3 class="my-3 font-weight-bold">Rating removed.</h3>
+          <p>Your rating for this pizza has been removed.</p>
+      </div>
+  </div>
+</div>
+</div>
+
+<!-- Toast Saved and removed-->
+<div class="position-fixed bottom-0 right-0 p-3" style="z-index: 5; right: 0; bottom: 0;">
+  <div id="elementSaved" class="toast hide text-dark" role="alert" aria-live="assertive" aria-atomic="true"
+      data-delay="2000">
+      <div class="toast-header text-dark">
+          <strong class="mr-auto">✅ Saved</strong>
+          <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+      <div class="toast-body">
+          View <a href="./account.html"><u>saved pizzas</u></a>.
+      </div>
+  </div>
+</div>
+
+<div class="position-fixed bottom-0 right-0 p-3" style="z-index: 5; right: 0; bottom: 0;">
+  <div id="elementRemoved" class="toast hide text-dark" role="alert" aria-live="assertive" aria-atomic="true"
+      data-delay="2000">
+      <div class="toast-header text-dark">
+          <strong class="mr-auto">❌ Removed</strong>
+          <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+      <div class="toast-body">
+          You removed this saved item.
+      </div>
+  </div>
+</div>
+
+<!-- Toast Removed-->
+<div class="position-fixed bottom-0 right-0 p-3" style="z-index: 5; right: 0; bottom: 0;">
+  <div id="elementRemoved" class="toast hide text-dark" role="alert" aria-live="assertive" aria-atomic="true"
+      data-delay="2000">
+      <div class="toast-header text-dark">
+          <strong class="mr-auto">❌ Removed</strong>
+          <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+      <div class="toast-body">
+          You removed this saved item. <a href="account.html">Undo</a>
+      </div>
+  </div>
+</div>

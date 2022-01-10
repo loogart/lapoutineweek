@@ -37,16 +37,10 @@ AOS.init();
 // flex select
 $("select.flexselect").flexselect();
 
-// modal data mirror for prottotype
-$(".grid-item").click(function () {
-    var restoName = $(this).find(".resto-name").html();
-    var itemName = $(this).find(".item-name").html();
-    var itemPrice = $(this).find(".price").html();
-    var itemImage = $(this).find("img.img-item").attr("src");
-    $(".modal-resto").html(restoName);
-    $(".modal-burger").html(itemName);
-    $(".modal-price").html(itemPrice);
-    $('.modal-photo').attr('src', itemImage);
+//results none
+$('#customCheck9').change(function() {
+    $("#resultsNone").toggleClass("d-block");
+    $("#resultsGrid").toggleClass("d-none");
 });
 
 // lightbox plugin
