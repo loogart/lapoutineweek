@@ -7959,7 +7959,7 @@ select {
   height: 24px;
   max-width: 44px; }
 
-.btn-fave {
+.btn-fave, .btn-fave-account {
   position: absolute;
   bottom: 10px;
   right: 30px;
@@ -8191,5 +8191,21 @@ label {
   top: 10px;
   right: 10px;
   z-index: 1; }
+
+@media (max-width: 767.98px) {
+  .mobile-vote-sticky {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    bottom: 0;
+    left: 0;
+    padding: 15px !important;
+    border-radius: 0 !important;
+    background-color: transparent !important; } }
+
+.btn-rate {
+  transition: all ease-out .15s; }
+  .btn-rate:hover {
+    transform: scale(1.1); }
 
 /*# sourceMappingURL=custom.css.map */

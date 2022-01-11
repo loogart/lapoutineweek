@@ -3,8 +3,9 @@ $(function(){
   $("#navPout").load("../html/navbar.html");
   $("#navPoutLive").load("../html/navbar-live.html");
   $("#navPoutLive2").load("../html/navbar-live-loggedin.html");
-  $("#footPout").load("../html/footer.html");
   $("#allModals").load("../html/modals.html");
+  $("#footPout").load("../html/footer.html");
+
 });
 
 window.onload = function() {
@@ -57,10 +58,10 @@ $(function () {
 $('#voteNow').click(function () {
     if ($(this).hasClass("btn-outline-danger")) {
         $('#modalUnvoted').modal('show');
-        $(this).removeClass('btn-outline-danger').addClass('btn-warning').text("⭐️ Rate this poutine");
+        $(this).removeClass('btn-outline-danger').addClass('btn-outline-dark').text("⭐️ Rate this poutine");
     } else {
         $('#modalVote1').modal('show');
-        $(this).removeClass('btn-warning').addClass('btn-outline-danger').text("❌ Remove rating");
+        $(this).removeClass('btn-outline-dark').addClass('btn-outline-danger').text("❌ Remove rating");
     }
 });
 
@@ -76,15 +77,6 @@ $('.btn-fave').click(function () {
         ($(this).children()).removeClass('far').addClass('fas');
         $('#elementSaved').toast('show');
     }
-});
-
-// toggle fave button on account page
-$('.btn-fave-account').click(function () {
-    $(this).removeClass('text-danger').addClass('text-light');
-    ($(this).children()).removeClass('fas').addClass('fal');
-    $('#elementRemoved').toast('show');
-    $(this).parent().hide();
-    $(this).hide();
 });
 
 // toggle fave button on resto page
@@ -103,3 +95,4 @@ $('.btn-fave-page').click(function () {
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
+

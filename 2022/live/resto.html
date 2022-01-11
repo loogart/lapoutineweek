@@ -51,7 +51,7 @@
 <body>
     <div id="navPoutLive"></div>
 
-    <section class="py-5">
+    <section class="py-3">
         <div class="container">
             <div class="row justify-content-between">
                 <div class="col-md-5">
@@ -60,12 +60,11 @@
                             <img src="../img/poutines/poutine-2.jpg" class="img-object-fit-resto rounded-lg">
                         </a>
                     </div>
-                    <div class="d-flex justify-content-center align-items-center bg-lighter rounded-lg py-4">
+                    <div
+                        class="d-flex justify-content-center align-items-center bg-lighter rounded-lg py-4 mobile-vote-sticky">
                         <div>
-                            <span class="d-block h5">Tell us what you think</span>
-
-                            <a href="#!" id="voteNow" class="btn btn-lg btn-info rounded-pill border-dark border-3"
-                                data-toggle="modal" data-target="#modalVote1">⭐️ Rate this poutine</a>
+                            <span class="d-none d-md-block h5">Tell us what you think</span>
+                            <a href="#!" id="voteNow" class="btn btn-lg btn-outline-dark bg-lighter rounded-pill border-3 shadow">⭐️ Rate this poutine</a>
                         </div>
                     </div>
                 </div>
@@ -73,9 +72,9 @@
 
                     <!-- Main info -->
                     <h1 class="h5 text-primary mb-2">Poutine Cantley</h1>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
+                    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center mb-3">
                         <h3 class="h2 font-weight-bold">Name of the poutine</h3>
-                        <h3 class="h2 font-weight-bold ml-md-4">$16.95</h3>
+                        <h3 class="h5 font-weight-bold ml-md-4">$16.95</h3>
                     </div>
 
                     <!-- Saputo badge -->
@@ -110,15 +109,17 @@
 
                     <!-- action -->
                     <div class="row py-4">
-                        <div class="col-md-6 text-center">
+                        <div class="col-lg-6 text-center">
                             <a href="https://doordash.com/" target="_blank"
-                        class="btn btn-lg btn-danger btn-block rounded-pill border-dark border-3 shadow-lg mb-2">💰 Order now</a>
-                        <small>$8 off all poutines over $15 with</small>
-                        <img src="../img/logo/logo-partner-doordash.svg" alt="" style="width:110px">
+                                class="btn btn-lg btn-danger btn-block rounded-pill border-dark border-3 shadow-lg mb-2">💰
+                                Order now</a>
+                            <small>$8 off all poutines over $15 with</small>
+                            <img src="../img/logo/logo-partner-doordash.svg" alt="" style="width:110px">
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-lg-6 mt-4 mt-lg-0">
                             <a href="#!"
-                        class="btn-fave-page btn btn-lg btn-outline-dark btn-block rounded-pill border-dark">❤️ Save for later</a>
+                                class="btn-fave-page btn btn-lg btn-outline-dark btn-block rounded-pill border-dark">❤️
+                                Save for later</a>
                         </div>
                     </div>
 
@@ -127,6 +128,30 @@
         </div>
     </section>
 
+    <!-- Modal Vote Step 1 -->
+    <div class="preview-modal modal fade" id="modalVote1" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content overflow-hidden">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i class="fad fa-times-circle text-dark fa-2x"></i>
+                  </button>
+                <div class="bg-primary text-center position-relative">
+                    <img src="../img/art/plane-bird.png" alt="" class="mx-auto" style="max-width:250px;margin-bottom:-40px">
+                </div>
+                <div class="modal-body text-center pt-4">
+                    <h3 class="font-weight-bold">What did you think?</h3>
+                    <div class="d-flex justify-content-around align-sitems-center my-3 mx-auto" style="max-width:360px">
+                        <a href="" class="btn-rate text-decoration-none" data-toggle="modal" data-target="#modalVote2"><span class="h1">😩</span><span class="d-block font-weight-bold">Bad</span></a>
+                        <a href="" class="btn-rate text-decoration-none" data-toggle="modal" data-target="#modalVote2"><span class="h1">😕</span><span class="d-block font-weight-bold">Meh</span></a>
+                        <a href="" class="btn-rate text-decoration-none" data-toggle="modal" data-target="#modalVote2"><span class="h1">🙂</span><span class="d-block font-weight-bold">Good</span></a>
+                        <a href="" class="btn-rate text-decoration-none" data-toggle="modal" data-target="#modalVote2"><span class="h1">😃</span><span class="d-block font-weight-bold">Great</span></a>
+                        <a href="" class="btn-rate text-decoration-none" data-toggle="modal" data-target="#modalVote2"><span class="h1">😍</span><span class="d-block font-weight-bold">Wow!</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <div id="footPout"></div>
