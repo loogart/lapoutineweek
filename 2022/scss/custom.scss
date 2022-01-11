@@ -46,6 +46,7 @@ $navbar-light-brand-hover-color: $dark;
 $navbar-brand-font-size: 1rem;
 $navbar-nav-link-padding-x: 1rem;
 $navbar-light-toggler-border-color:transparent;
+$navbar-toggler-padding-x:  0;
 
 $border-width:2px;
 $border-radius: 6px;
@@ -97,6 +98,12 @@ select {
 
 .navbar {
     font-weight: 500;
+}
+
+.sticky-filter{
+    position:sticky;
+    top:0;
+    z-index:1;
 }
 
 .btn-primary {
@@ -188,7 +195,8 @@ select {
     max-width: 44px;
 }
 
-.btn-fave, .btn-fave-account {
+.btn-fave,
+.btn-fave-account {
     position: absolute;
     bottom: 10px;
     right: 30px;
@@ -386,9 +394,136 @@ label {
     100% {
         transform: rotate(0deg);
     }
-
-    ;
 }
+
+// aimations live
+.img-hero-bird {
+    width: 269px;
+    position: absolute;
+    animation: imageFryze 3s infinite ease-in-out;
+    transform-origin: bottom right;
+
+    @include media-breakpoint-down(md) {
+        width: 60%
+    }
+}
+
+@keyframes imageFryze {
+    0% {
+        top: -30px;
+        left: -30px;
+        rotate: -10deg;
+    }
+
+    50% {
+        top: 0;
+        left: 0;
+        rotate: 10deg;
+
+    }
+
+    100% {
+        top: -30px;
+        left: -30px;
+        rotate: -10deg;
+
+    }
+}
+
+.img-hero-dog-car {
+    width: 240px;
+    position: absolute;
+    animation: imageBakun 3s infinite ease-in-out;
+    transform-origin: top right;
+
+    @include media-breakpoint-down(md) {
+        width: 50%
+    }
+}
+
+@keyframes imageBakun {
+    0% {
+        bottom: -50px;
+        left: -30px;
+    }
+
+    70% {
+        bottom: -10px;
+        left: 80px;
+
+    }
+
+    100% {
+        bottom: -50px;
+        left: -30px;
+    }
+}
+
+.img-hero-bowser {
+    width: 169px;
+    position: absolute;
+    bottom:-10px;
+    right:0;
+    animation: imagePug 3s infinite ease-in-out;
+    transform-origin: bottom;
+
+    @include media-breakpoint-down(md) {
+        width: 35%
+    }
+}
+
+@keyframes imagePug {
+    0% {
+        transform: scaleY(1)
+    }
+
+    30% {
+        transform: scaleY(1.1)
+
+
+    }
+
+    100% {
+        transform: scaleY(1)
+    }
+}
+
+.img-hero-deliver {
+    position: absolute;
+    bottom: 90px;
+    animation: imageDoordash 5s linear infinite;
+    max-width: 240px;
+
+    @include media-breakpoint-down(sm) {
+        width: 60%
+    }
+}
+
+@keyframes imageDoordash {
+    0% {
+        transform: translate(-400px, 0);
+        opacity: 0;
+    }
+    10%{
+        opacity:100%;
+    }
+    50%{
+        opacity: 100%;
+    }
+
+    /* Finish changes by here */
+    60% {
+        transform: translate(-100px, 0);
+        opacity: 0;
+    }
+
+    /* Between 20% and 100%, nothing changes */
+    100% {
+        transform: translate(-100px, 0);
+        opacity: 0;
+    }
+}
+
 
 // dashboard
 .dashboard {
@@ -520,22 +655,23 @@ label {
     z-index: 1;
 }
 
-.mobile-vote-sticky{
+.mobile-vote-sticky {
     @include media-breakpoint-down(sm) {
-        position:fixed;
-        width:100%;
-        z-index:1000;
-        bottom:0;
-        left:0;
-        padding:15px!important;
-        border-radius: 0!important;
-        background-color: transparent!important;
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+        bottom: 0;
+        left: 0;
+        padding: 15px !important;
+        border-radius: 0 !important;
+        background-color: transparent !important;
     }
 }
 
-.btn-rate{
+.btn-rate {
     transition: all ease-out .15s;
-    &:hover{
+
+    &:hover {
         transform: scale(1.1);
     }
 }
